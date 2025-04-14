@@ -1,0 +1,17 @@
+---
+import Container from "@components/container.astro";
+import Faq from "@components/faq.astro";
+import EventDetails from "@components/event.astro";
+import Hero from "@components/hero.astro";
+import Newsletter from "@components/newsletter.astro";
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout>
+	<Container>
+		<Hero dynamic={true} />
+		<EventDetails />
+		<Faq />
+		<Newsletter />
+	</Container>
+</Layout>

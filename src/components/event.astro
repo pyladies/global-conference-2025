@@ -1,0 +1,97 @@
+---
+import Link from "@components/ui/link.astro";
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const features = [
+  {
+    title: "Experience",
+    description: "conf.experience",
+    icon: "bx:bxs-chart",
+    url: "#",
+  },
+  {
+    title: "The goal",
+    description: "conf.goal",
+    icon: "bx:bxs-rocket",
+    url: "#",
+  },
+  {
+    title: "The languages",
+    description: "conf.languages",
+    icon: "bx:bx-body",
+    url: "#",
+  },
+  {
+    title: "Insightful Talks",
+    description: "conf.talks",
+    icon: "bx:bxs-edit-alt",
+    url: "#",
+  },
+  {
+    title: "Engaging Panels",
+    description: "conf.panels",
+    icon: "bx:bxs-chat",
+    url: "#",
+  },
+  {
+    title: "Sprints and Workshop",
+    description: "conf.sprints",
+    icon: "bx:bxs-cog",
+    url: "#",
+  },
+  {
+    title: "Open Spaces",
+    description: "conf.openspaces",
+    icon: "bx:bxs-book-reader",
+    url: "/program/open-spaces",
+  },
+  {
+    title: "Collaborative Networking",
+    description: "conf.networking",
+    icon: "bx:bxs-network-chart",
+    url: "#",
+  },
+];
+---
+
+<div class="relative mx-auto max-w-5xl px-6 lg:px-8" id="event">
+  <div class="mx-auto max-w-2xl lg:text-center">
+    <h2 class="text-base font-semibold leading-7 text-pink">{t("event.title")}</h2>
+    <p class="mt-2 text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">{t("event.subtitle")}</p>
+    <p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-100">
+      {t("event.description")}
+    </p>
+  </div>
+  <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+      {
+        features.map((item) => (
+          <div class="flex flex-col">
+            <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
+              <div class="h-5 w-5 flex-none text-black dark:text-white">
+                <Icon name={item.icon} />
+              </div>
+              {item.title}
+            </dt>
+            <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-900 dark:text-gray-100">
+              <p class="flex-auto">{t(item.description)}</p>
+              <p class="mt-6">
+                {item.url != "#" && <Link href={item.url} style="muted" size="xs" class="leading-6 text-left text-black dark:text-white">
+                  {t("event.learn_more")}{" "}
+                  <span class="pl-1 text-black dark:text-white" aria-hidden="true">
+                    →
+                  </span>
+                </Link>}
+              </p>
+            </dd>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+</div>

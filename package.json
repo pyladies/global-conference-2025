@@ -1,0 +1,52 @@
+{
+	"name": "astros-pyladiescon",
+	"type": "module",
+	"version": "1.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "astro dev --host",
+		"start": "astro dev",
+		"build": "astro build",
+		"build:localized": "pnpm run build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"article:generate": "node ./scripts/generate-article.js",
+		"script:change-language-in-dynamic-pages": "node ./scripts/change-language-in-dynamic-pages.js",
+		"pwa:generate-assets": "pwa-assets-generator --preset minimal public/logo.svg"
+	},
+	"dependencies": {
+		"@astrojs/alpinejs": "^0.4.5",
+		"@astrojs/rss": "^4.0.11",
+		"@astrojs/sitemap": "^3.3.0",
+		"@astrojs/tailwind": "^5.1.5",
+		"@fontsource-variable/inter": "^5.2.5",
+		"@types/alpinejs": "^3.13.11",
+		"alpinejs": "^3.14.9",
+		"apexcharts": "3.46.0",
+		"astro": "^4.16.18",
+		"astro-icon": "^1.1.5",
+		"astro-seo": "^0.8.4",
+		"bad-words": "^3.0.4",
+		"dotenv": "^16.4.7",
+		"openai": "^4.91.1",
+		"rehype-autolink-headings": "^7.1.0",
+		"rehype-slug": "^6.0.0",
+		"rss-parser": "^3.13.0",
+		"tailwindcss": "^3.4.17"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.6.3",
+		"@iconify-json/bx": "^1.2.2",
+		"@iconify-json/carbon": "^1.2.8",
+		"@iconify-json/fluent": "^1.2.18",
+		"@iconify-json/ion": "^1.2.2",
+		"@iconify-json/mdi": "^1.2.3",
+		"@iconify-json/tabler": "^1.2.17",
+		"@tailwindcss/typography": "^0.5.16",
+		"@vite-pwa/assets-generator": "^0.2.6",
+		"@vite-pwa/astro": "^0.3.1",
+		"rehype": "^13.0.2",
+		"sharp": "^0.33.5",
+		"workbox-window": "^7.3.0"
+	}
+}
