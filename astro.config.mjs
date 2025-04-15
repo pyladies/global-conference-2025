@@ -68,9 +68,6 @@ export default defineConfig({
 			[rehypeAutolinkHeadings, autolinkConfig],
 		],
 	},
-	experimental: {
-		contentCollectionCache: true,
-	},
 	i18n: {
 		locales: ["en", "es"],
 		defaultLocale: "en",
