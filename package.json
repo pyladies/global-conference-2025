@@ -27,6 +27,7 @@
 		"bad-words": "^3.0.4",
 		"dotenv": "^16.4.7",
 		"hast-util-to-string": "^3.0.1",
+		"hastscript": "^9.0.1",
 		"openai": "^4.91.1",
 		"rehype-autolink-headings": "^7.1.0",
 		"rehype-slug": "^6.0.0",
