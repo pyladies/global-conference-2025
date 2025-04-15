@@ -6,14 +6,13 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
 
-
 export async function getStaticPaths() {
 	const posts = await getCollection("blog", ({ data }) => {
 		return !data.draft && data.publishDate < new Date();
 	});
 	const localizedPosts = posts.filter((page) => {
 		const [lang, ...slug] = page.slug.split("/");
-		return lang === "en"; //i18next.language;
+		return lang === "es"; //i18next.language;
 	});
 	const categories = new Set();
 	localizedPosts.map((post) => {
@@ -28,7 +27,7 @@ export async function getStaticPaths() {
 					(post) => typeof post.data.category === "string",
 				),
 				category: category,
-				lang: "en", //i18next.language,
+				lang: "es", //i18next.language,
 			},
 		};
 	});

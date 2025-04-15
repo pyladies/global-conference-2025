@@ -13,7 +13,7 @@ export async function getStaticPaths({ paginate }) {
 	// Preprocess the posts to split the slugs and get the languages
 	var processedPosts = posts.map((post) => {
 		const [...slug] = post.slug.split("/");
-		let lang = "en"; //i18next.language;
+		let lang = "es"; //i18next.language;
 		var firstSlug = post.slug.match(/^([^\/]*)\//);
 		if (firstSlug) {
 			lang = firstSlug[1];
@@ -26,7 +26,7 @@ export async function getStaticPaths({ paginate }) {
 	});
 	// Filter posts based on the current language
 	const localizedPosts = processedPosts.filter(
-		(post) => post.lang === "en", //i18next.language,
+		(post) => post.lang === "es", //i18next.language,
 	);
 	localizedPosts.sort(
 		(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),

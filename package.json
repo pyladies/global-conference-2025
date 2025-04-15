@@ -10,8 +10,6 @@
 		"build:localized": "pnpm run build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"article:generate": "node ./scripts/generate-article.js",
-		"script:change-language-in-dynamic-pages": "node ./scripts/change-language-in-dynamic-pages.js",
 		"pwa:generate-assets": "pwa-assets-generator --preset minimal public/logo.svg"
 	},
 	"dependencies": {

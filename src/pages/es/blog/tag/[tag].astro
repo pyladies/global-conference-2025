@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 	});
 	const localizedPosts = posts.filter((page) => {
 		const [lang, ...slug] = page.slug.split("/");
-		return lang === "en"; //i18next.language;
+		return lang === "es"; //i18next.language;
 	});
 	const tags = new Set();
 	localizedPosts.map((post) => {
@@ -29,7 +29,7 @@ export async function getStaticPaths() {
 						post.data.tags.find((elem) => elem.toLowerCase() === tag),
 				),
 				tag: tag,
-				lang: "en", //i18next.language,
+				lang: "es", //i18next.language,
 			},
 		};
 	});

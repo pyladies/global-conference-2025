@@ -1,25 +1,29 @@
 ---
-import { getCollection, render } from "astro:content";
+import { getCollection } from "astro:content";
 import Container from "@components/container.astro";
 import Layout from "@layouts/Layout.astro";
 import { getArticleReadingTime } from "@utils/blog";
 import { Icon } from "astro-icon/components";
 
+// Generate a new path for every collection post
 export async function getStaticPaths() {
-  const pages = await getCollection('blog');
-
-  const paths = pages.map(page => {
-    const [lang, ...slug] = page.slug.split('/');
-    return { params: { lang, slug: slug.join('/') || undefined }, props: page };
-  });
-
-  return paths;
+	const blogEntries = await getCollection("blog");
+	var localizedBlogEntries = blogEntries.filter((entry) =>
+		entry.slug.startsWith("es"),
+	);
+	return localizedBlogEntries.map((post) => {
+		let slug = post.slug;
+		slug = slug.substring(3).replaceAll("blog/", "");
+		return {
+			params: { slug: slug },
+			props: { post: post },
+		};
+	});
 }
-
-const { lang, slug } = Astro.params;
-const post = Astro.props;
-const formattedDate = post.data.date;//.toLocaleString(lang);
-const { Content } = await render(post);
+// Get the post directly from the prop on render
+const { post, lang } = Astro.props;
+const { data, render } = post;
+const { Content } = await render();
 const readTime = getArticleReadingTime(post.body);
 ---
 
