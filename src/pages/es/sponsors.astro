@@ -6,76 +6,215 @@ import Sponsors from "@components/sponsors.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
 
+const { align = "center" } = Astro.props;
+
 const pricingData = [
-	{
-		name: "Personal",
-		price: "Gratuito",
-		popular: false,
-		features: [
-			"Lifetime free",
-			"Up to 3 users",
-			"Unlimited Pages",
-			"Astro Sub domain",
-			"Basic Integrations",
-			"Community Support",
-		],
-		button: {
-			text: "Get Started",
-			link: "/",
-		},
-	},
-	{
-		name: "Startup",
-		price: {
-			monthly: "$19",
-			annual: "$16",
-			discount: "10%",
-			original: "$24",
-		},
-		popular: true,
-		features: [
-			"All Gratuito Features",
-			"Up to 20 users",
-			"20 Custom domains",
-			"Unlimited Collaborators",
-			"Advanced Integrations",
-			"Priority Support",
-		],
-		button: {
-			text: "Get Started",
-			link: "#",
-		},
-	},
-	{
-		name: "Enterprise",
-		price: "Custom",
-		popular: false,
-		features: [
-			"All Pro Features",
-			"Unlimited Custom domains",
-			"99.99% Uptime SLA",
-			"SAML & SSO Integration",
-			"24/7 Phone Support",
-		],
-		button: {
-			text: "Contact us",
-			link: "/contact",
-		},
-	},
+  {
+    name: "Champion",
+    price: "$10,000",
+    popular: false,
+    features: [
+      "Name listed on this website",
+      "Logo listed on this website",
+      "Call out in conference Open & Closing",
+      "4 LinkedIn posts",
+      "Dedicated Discord channel",
+      "Logo/info slide shown between talks",
+      "Promotional video shown 2 times each day",
+    ],
+    button: {
+      text: "Contact us",
+      link: "mailto:sponsors@pyladies.com",
+    },
+  },
+  {
+    name: "Supporter",
+    price: "$5,000",
+    popular: false,
+    features: [
+      "Name listed on this website",
+      "Logo listed on this website",
+      "Call out in conference Open & Closing",
+      "2 LinkedIn posts",
+      "Dedicated Discord channel",
+      "Logo/info slide shown timezones segments",
+      "Promotional video shown once each day",
+    ],
+    button: {
+      text: "Contact us",
+      link: "mailto:sponsors@pyladies.com",
+    },
+  },
+  {
+    name: "Booster",
+    price: "$1,000",
+    popular: true,
+    features: [
+      "Name listed on this website",
+      "Logo listed on this website",
+      "1 LinkedIn posts",
+      "Dedicated Discord channel",
+    ],
+    button: {
+      text: "Contact us",
+      link: "mailto:sponsors@pyladies.com",
+    },
+  },
+  {
+    name: "Partner",
+    price: "$500",
+    popular: false,
+    features: [
+      "Name listed on this website",
+      "Logo listed on this website",
+      "1 re-shared post",
+    ],
+    button: {
+      text: "Contact us",
+      link: "mailto:sponsors@pyladies.com",
+    },
+  },
+  {
+    name: "Individual",
+    price: "$50 +",
+    popular: false,
+    features: [
+      "Name listed on this website",
+    ],
+    button: {
+      text: "Register",
+      link: "#",
+    },
+  },
 ];
+
+const attendeesPositions = [
+  {
+    position: "Engineer",
+    count: "249",
+    percentage: "29.9%",
+  },
+  {
+    position: "Student/Intern",
+    count: "188",
+    percentage: "22.5%",
+  },
+  {
+    position: "Other",
+    count: "120",
+    percentage: "14.4%",
+  },
+  {
+    position: "No answer",
+    count: "100",
+    percentage: "12.0%",
+  },
+  {
+    position: "Scientist",
+    count: "77",
+    percentage: "9.2%",
+  },
+  {
+    position: "Hobbyist",
+    count: "38",
+    percentage: "4.6%",
+  },
+  {
+    position: "Product Owner/Manager",
+    count: "32",
+    percentage: "3.8%",
+  },
+  {
+    position: "Engineering/Scienstis Manager",
+    count: "27",
+    percentage: "3.2%",
+  },
+  {
+    position: "I'm currently retired",
+    count: "3",
+    percentage: "0.4%",
+  },
+];
+
+
+
 ---
 
-<Layout title="Sponsors">
-	<Container>
-		<Sectionhead>
-			<Fragment slot="title">Pricing</Fragment>
-			<Fragment slot="desc">Affordable Excellence: See Our Pricing.</Fragment>
-		</Sectionhead>
+<Layout title="Patrocinadores">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="subtitle">Prospectus para la Conferencia PyLadies global.</Fragment>
+      <Fragment slot="title">Patrocinadores</Fragment>
+      <Fragment slot="description">
+        Support PyLadies as we work to improve diversity by bringing fresh
+        talent into the Python community and to support both seasoned and
+        budding developers through workshops, community activities, and local
+        advocacy.<br><br>
 
-		<div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-20">
-			{pricingData.map((item) => <Sponsors plan={item} />)}
-		</div>
-		<!-- <Logos /> -->
-		<Faq />
-	</Container>
+        Your support will help PyLadies provide financial
+        support to help more women around the world with training, mentorship,
+        and aid to attend conferences and community events.<br><br>
+
+        To learn more and to join us as a sponsor, please contact us, and
+        a member of our sponsorship team will get back to you soon. Please get
+        in touch by writing to <a href="mailto:sponsors@pyladies.com">sponsors@pyladies.com</a>
+        <span class="pl-1 text-black dark:text-white" aria-hidden="true">
+          →
+        </span>
+      </Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-20">
+      {pricingData.map((item) => <Sponsors plan={item} />)}
+    </div>
+    <!-- <Logos /> -->
+  </Container>
+
+  <!-- The attendees -->
+  <Container>
+    <div class:list={["mt-8", "md:mt-16", align === "center" && "text-center"]}>
+      <h2 class="text-2xl mt-4 text-slate-800">
+        The Attendees
+      </h2>
+      <p class="text-lg mt-4 text-slate-600 dark:text-white">
+        The attendees of last year’s conference represented companies and
+        organizations from all sectors, and held the following types of
+        positions:
+      </p>
+
+    <table class="mx-auto w-50 mt-10 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Current Position
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Count
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Percentage
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+          {
+            attendeesPositions.map((item) =>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    { item.position }
+                </th>
+                <td class="px-6 py-4">
+                    { item.count }
+                </td>
+                <td class="px-6 py-4">
+                    { item.percentage }
+                </td>
+            </tr>
+           )
+          }
+        </tbody>
+    </table>
+
+    </div>
+  </Container>
 </Layout>

@@ -4,71 +4,256 @@ import Sectionhead from "@components/sectionhead.astro";
 import Button from "@components/ui/button.astro";
 import Layout from "@layouts/Layout.astro";
 
-const contacts = [
-	{
-		title: "Marketing",
-		email: "test@yourcompany.com",
-		phone: "+1 (555) 555-5555",
-	},
-	{
-		title: "Human Resources",
-		email: "test@yourcompany.com",
-		phone: "+1 (555) 555-5555",
-	},
-	{
-		title: "Finance",
-		email: "test@yourcompany.com",
-		phone: "+1 (555) 555-5555",
-	},
-	{
-		title: "Research and Development",
-		email: "test@yourcompany.com",
-		phone: "+1 (555) 555-5555",
-	},
+const standards = [
+  {
+    title: "Inappropriate Behavior",
+    content: `Examples of unacceptable behavior by participants include:</p><ul class="list-disc px-10 py-5"><li>Harassment of any participants in any form</li><li>Deliberate intimidation, stalking, or following</li><li>Logging or taking screenshots of online activity for harassment purposes</li><li>Publishing others’ private information, such as a physical or electronic
+address, without explicit permission</li><li>Violent threats or language directed against another person</li><li>Incitement of violence or harassment towards any individual, including
+encouraging a person to commit suicide or to engage in self-harm</li><li>Creating additional online accounts in order to harass another person or
+circumvent a ban</li><li>Sexual language and imagery in online communities or in any conference venue,
+including talks</li><li>Insults, put downs, or jokes that are based upon stereotypes, that are
+exclusionary, or that hold others up for ridicule</li><li>Excessive swearing</li><li>Unwelcome sexual attention or advances</li><li>Unwelcome physical contact, including simulated physical contact (e.g.,
+textual descriptions like “hug” or “backrub”) without consent or after
+a request to stop</li><li>Pattern of inappropriate social contact, such as requesting/assuming
+inappropriate levels of intimacy with others</li><li>Sustained disruption of online community discussions, in-person
+presentations, or other in-person events</li><li>Continued one-on-one communication after requests to cease</li><li>Other conduct that is inappropriate for a professional audience including
+people of many different backgrounds</li></ul><strong>Community members asked to stop any inappropriate behavior are expected to
+comply immediately.</strong>`,
+  },
+  {
+    title: "Consequences",
+    content: `If a participant engages in behavior that violates this Code of Conduct, the
+PyLadies Code of Conduct team may take any action they deem appropriate,
+including warning the offender or expulsion from the community and community
+events with no refund of event tickets.</p><p>The full list of consequences for inappropriate behavior is listed in
+<a href="/coc/enforcement">the Enforcement Procedures</a>.</p><p>Thank you for helping make this a welcoming, friendly community for everyone.`,
+  },
+  {
+    title: "Scope",
+    content: `<h4 class="text-lg my-2">PyLadiesCon events</h4><p>This Code of Conduct applies to the following people at PyLadiesCon:</p><ul class="list-disc px-10 py-5"><li>speakers</li><li>panelists</li><li>tutorial or workshop leaders</li><li>sponsors</li><li>organizers</li><li>volunteers</li><li>all attendees</li></ul><p>The Code of Conduct applies to interactions with official event accounts on
+social media spaces including:</p><ul class="list-disc px-10 py-5"><li>comments made on event video hosting services</li><li>comments made on the official event hashtag or panel hashtags</li></ul><p>Event organizers will enforce this code throughout the event.</p><h4 class="text-lg my-2">PyLadiesCon online spaces</h4><p>This Code of Conduct applies to the following online spaces:</p><ul class="list-disc px-10 py-5"><li>Code repositories, issue trackers, and pull requests made against any
+PyLadiesCon repository</li><li>Any other online space administered by PyLadiesCon</li></ul><p>This Code of Conduct applies to the following people in official PyLadiesCon
+online spaces:</p><ul class="list-disc px-10 py-5"><li>admins of the online space</li><li>maintainers</li><li>reviewers</li><li>contributors</li><li>all community members</li></ul><p>The PyLadiesCon Code of Conduct team will receive and evaluate incident reports
+from the online communities listed above. The PyLadiesCon Code of Conduct team
+will work with online community administrators/moderators to suggest actions to
+take in response to a report. In cases where the administrators/moderators
+disagree on the suggested resolution for a report, the PyLadiesCon Code of
+Conduct team may choose to notify the Python Software Foundation Code of
+Conduct team or the Python Software Foundation board.</p>`,
+  },
+];
+
+const process = [
+  {
+    title: "Reporting an Incident",
+    content: `If you believe that someone is violating the code of conduct please contact a member of the Code of Conduct team. They can be reached by emailing conference_conduct@pyladies.com which is monitored by the Code of Conduct team (Mariatta, Micaela, Maria Jose, and Cheuk).<br><br>In case of a conflict of interest, you can individually contact: Mariatta Wijaya (mariatta@pyladies.com).<br><br>The organizing and Code of Conduct team will be happy to assist any attendee to feel safe for the duration of the conference. We value your attendance.`,
+  },
+  {
+    title: "Procedure for handling incidents",
+    content: `<ul class="list-disc px-10 py-5"><li><a href="/coc-reporting">Procedure For Reporting Code of Conduct Incidents</a></li><li><a href="/coc-enforcement">Enforcement procedures</a></li></ul>`,
+  },
+  {
+    title: "License",
+    content: `This Code of Conduct is licensed under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.`,
+  },
+  {
+    title: "Attribution",
+    content: `This Code of Conduct is based on the <a href="https://us.pycon.org/2023/about/code-of-conduct/">PyCon US Code of
+Conduct</a> which was forked from the example policy from the <a href="https://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">Geek
+Feminism wiki, created by the Ada Initiative and other volunteers</a>, which is
+under a <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative
+Commons Zero license.</a>`,
+  },
 ];
 ---
 
-<Layout title="Contact">
-	<Container>
-		<Sectionhead>
-			<Fragment slot="title">Contact</Fragment>
-			<Fragment slot="desc">Mettiti in contatto.</Fragment>
-		</Sectionhead>
+<Layout title="Código de Conducta">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Código de Conducta</Fragment>
+      <Fragment slot="subtitle"></Fragment>
+      <Fragment slot="description">
+        PyLadiesCon is a community conference intended for networking and
+        collaboration. We aim to provide a safe, inclusive, welcoming, and
+        harassment-free for everyone in our community.
+      </Fragment>
+    </Sectionhead>
 
-		<div class="py-24 sm:py-32">
-			<div class="mx-auto max-w-7xl px-6 lg:px-8">
-				<div class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
-					<div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
-						<div>
-							<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Departments</h2>
-							<p class="mt-4 leading-7 text-gray-600 dark:text-gray-200">Reach Out to Our Dedicated Teams.</p>
-						</div>
-						<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
-							{
-								contacts.map((item) => (
-									<div class="rounded-2xl bg-gray-50 dark:bg-stone-800 p-10">
-										<h3 class="text-base font-semibold leading-7 text-gray-900 dark:text-white">{item.title}</h3>
-										<dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600 dark:text-white">
-											<div>
-												<dt class="sr-only">Email</dt>
-												<dd>
-													<a class="font-semibold text-stone-600 dark:text-white" href="mailto:collaborate@example.com">
-														{item.email}
-													</a>
-												</dd>
-											</div>
-											<div class="mt-1">
-												<dt class="sr-only">Phone number</dt>
-												<dd>{item.phone}</dd>
-											</div>
-										</dl>
-									</div>
-								))
-							}
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</Container>
+    <div class="py-24 sm:py-16">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
+            <div class="lg:col-span-1 bg-gray-50 p-5 dark:bg-stone-800">
+              <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">1.</h2>
+              <p class="mt-4 leading-7 text-gray-600 dark:text-gray-200">
+                We want all participants to have an enjoyable and fulfilling experience.
+                Accordingly, all participants are expected to show respect and courtesy to
+                other participants throughout the conference and at all conference-related
+                events and activities.
+              </p>
+            </div>
+            <div class="lg:col-span-1 bg-gray-50 p-5 dark:bg-stone-800">
+              <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">2.</h2>
+              <p class="mt-4 leading-7 text-gray-600 dark:text-gray-200">
+                To make clear what is expected, all members of the organizing committee,
+                attendees, speakers, organizers, sponsors, and volunteers at any PyLadiesCon
+                event are required to conform to the following Code of Conduct as set forth by
+                the Python Software Foundation. Organizers will enforce this code throughout
+                the event.
+              </p>
+            </div>
+            <div class="lg:col-span-1 bg-gray-50 p-5 dark:bg-stone-800">
+              <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">3.</h2>
+              <p class="mt-4 leading-7 text-gray-600 dark:text-gray-200">
+                The Python community is made up of members from around the globe with a diverse
+                set of skills, personalities, and experiences. It is through these differences
+                that our community experiences great successes and continued growth. When
+                you’re working with members of the community, this Code of Conduct will help
+                steer your interactions and keep Python a positive, successful, and growing
+                community.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Community -->
+    <div class="py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
+            <div class="lg:col-span-1">
+              <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Our Community</h2>
+              <p class="mt-4 leading-7 text-gray-600 dark:text-gray-200">
+                Members of the Python community are open, considerate, and
+                respectful. Behaviors that reinforce these values contribute to
+                a positive environment, and include:
+              </p>
+            </div>
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-1 lg:col-span-3 lg:gap-8">
+              <div class="rounded-2xl bg-gray-50 dark:bg-stone-800 p-10">
+                <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600 dark:text-white">
+                  <div>
+                    <dd>
+                      <ul class="list-disc px-10 py-5">
+                        <li>
+                          <strong>Being open.</strong> Members of the community are open to
+                          collaboration, whether it’s on PEPs, patches, problems, or otherwise.
+                        </li>
+                        <li>
+                          <strong>Focusing on what is best for the community.</strong> We’re
+                          respectful of the processes set forth in the community, and we work
+                          within them.
+                        </li>
+                        <li>
+                          <strong>Acknowledging time and effort.</strong> We’re respectful of the
+                          volunteer efforts that permeate the Python community. We’re toughtful
+                          when addressing the efforts of others, keeping in mind that often times
+                          the labor was completed simply for the good of the community.
+                        </li>
+                        <li>
+                          <strong>Being respectful of differing viewpoints and experiences.
+                          </strong> We’re receptive to constructive comments and criticism,
+                          experiences and skill sets of other members contribute to the whole of
+                          our efforts.
+                        </li>
+                        <li>
+                          <strong>Showing empathy towards other community members.</strong> We’re
+                          attentive in our communications, whether in person or online, and we’re
+                          tactful when approaching differing views.
+                        </li>
+                        <li>
+                          <strong>Being considerate.</strong> Members of the community are
+                          considerate of their peers – other Python users.
+                        </li>
+                        <li>
+                          <strong>Being respectful.</strong> We’re respectful of others, their
+                          positions, their skills, their commitments, and their  efforts.
+                        </li>
+                        <li>
+                          <strong>Gracefully accepting constructive criticism.</strong> When we
+                          disagree, we are courteous in raising our issues.
+                        </li>
+                        <li>
+                          <strong>Using welcoming and inclusive
+                          language.</strong> We’re accepting of all who wish to
+                          take part in our activities, fostering an environment
+                          where anyone can participate and everyone can make
+                          a difference.
+                        </li>
+            </ul>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Standards -->
+    <div class="py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
+            <div class="lg:col-span-1">
+              <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Our Standards</h2>
+              <p class="mt-4 leading-7 text-gray-600 dark:text-gray-200">
+                Every member of our community has the right to have their identity respected.
+                The Python community is dedicated to providing a positive experience for
+                everyone, regardless of age, gender identity and expression, sexual
+                orientation, disability, physical appearance, body size, ethnicity,
+                nationality, race, or religion (or lack thereof), education, or socio-economic
+                status.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-1 lg:col-span-3 lg:gap-8">
+              {
+                standards.map((item) => (
+                  <div class="rounded-2xl bg-gray-50 dark:bg-stone-800 p-10">
+                    <h3 class="text-base font-semibold leading-7 text-gray-900 dark:text-white">{item.title}</h3>
+                    <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600 dark:text-white">
+                      <div>
+                        <dd set:html={item.content}></dd>
+                      </div>
+                    </dl>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Process -->
+    <div class="py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
+            <div class="lg:col-span-1">
+              <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Our Process</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-1 lg:col-span-3 lg:gap-8">
+              {
+                process.map((item) => (
+                  <div class="rounded-2xl bg-gray-50 dark:bg-stone-800 p-10">
+                    <h3 class="text-base font-semibold leading-7 text-gray-900 dark:text-white">{item.title}</h3>
+                    <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600 dark:text-white">
+                      <div>
+                        <dd set:html={item.content}></dd>
+                      </div>
+                    </dl>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </Container>
 </Layout>
