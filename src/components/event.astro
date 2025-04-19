@@ -9,51 +9,57 @@ const t = useTranslations(lang);
 
 const features = [
   {
-    title: "Experience",
+    title: "conf.experience_title",
     description: "conf.experience",
     icon: "bx:bxs-chart",
     url: "#",
   },
   {
-    title: "The goal",
+    title: "conf.goal_title",
     description: "conf.goal",
     icon: "bx:bxs-rocket",
     url: "#",
   },
   {
-    title: "The languages",
+    title: "conf.languages_title",
     description: "conf.languages",
     icon: "bx:bx-body",
     url: "#",
   },
   {
-    title: "Insightful Talks",
+    title: "conf.talks_title",
     description: "conf.talks",
     icon: "bx:bxs-edit-alt",
     url: "#",
   },
   {
-    title: "Engaging Panels",
+    title: "conf.panels_title",
     description: "conf.panels",
     icon: "bx:bxs-chat",
     url: "#",
   },
   {
-    title: "Sprints and Workshop",
+    title: "conf.sprints_title",
     description: "conf.sprints",
     icon: "bx:bxs-cog",
     url: "#",
   },
   {
-    title: "Open Spaces",
+    title: "conf.openspaces_title",
     description: "conf.openspaces",
     icon: "bx:bxs-book-reader",
     url: "/program/open-spaces",
   },
   {
-    title: "Collaborative Networking",
+    title: "conf.networking_title",
     description: "conf.networking",
     icon: "bx:bxs-network-chart",
+    url: "#",
+  },
+  {
+    title: "conf.volunteers_title",
+    description: "conf.volunteers",
+    icon: "bx:bxs-heart",
     url: "#",
   },
 ];
@@ -76,7 +82,7 @@ const features = [
               <div class="h-5 w-5 flex-none text-black dark:text-white">
                 <Icon name={item.icon} />
               </div>
-              {item.title}
+              {t(item.title)}
             </dt>
             <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-900 dark:text-gray-100">
               <p class="flex-auto">{t(item.description)}</p>

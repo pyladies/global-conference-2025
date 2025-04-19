@@ -1,5 +1,14 @@
 :root {
   --pyladies-pink: #ee264d;
+  --pyladies-pink-rgb: 238, 38, 77;
+  --pyladies-darkblue: #232f40;
+  --pyladies-lightblue: #b2cce5;
+  --pyladies-darkyellow: #ffd700;
+  --pyladies-lightyellow: #ffed8c;
+}
+
+@theme {
+  --color-pyladies-pink: var(--pyladies-pink);
 }
 
 .bg-pink-700 {
@@ -8,6 +17,26 @@
 
 .text-pink {
   color: var(--pyladies-pink);
+}
+
+.text-pink-80 {
+  color: rgba(var(--pyladies-pink-rgb), 0.8);
+}
+
+.text-darkblue {
+  color: var(--pyladies-darkblue);
+}
+
+.text-lightblue {
+  color: var(--pyladies-lightblue);
+}
+
+.text-darkyellow {
+  color: var(--pyladies-darkyellow);
+}
+
+.text-lightyellow {
+  color: var(--pyladies-lightyellow);
 }
 
 .heading-wrapper {
@@ -79,8 +108,16 @@
   display: inline;
 }
 
-a:hover {
-  color: var(--pyladies-pink);
-
+/* Make a difference for the URLs in some sections of the website */
+dd a, li a, p a {
+  text-decoration: underline !important;
 }
 
+a:hover {
+  color: var(--pyladies-pink) !important;
+}
+
+
+.thefont {
+  font-family: "Orbitron";
+}

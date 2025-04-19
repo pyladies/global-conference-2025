@@ -1,0 +1,31 @@
+---
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Button from "@components/ui/button.astro";
+import Prose from "@components/Prose.astro";
+import Layout from "@layouts/Layout.astro";
+
+import {Content as Reporting} from './content/coc-reporting-content.md';
+
+---
+
+<Layout title="Code of Conduct">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Code of Conduct</Fragment>
+      <Fragment slot="subtitle">General Reporting Procedure</Fragment>
+      <Fragment slot="description">
+      Steps for doing a proper report of an event that happened in the conference
+      </Fragment>
+    </Sectionhead>
+
+    <div class="mx-auto max-w-2xl px-4 py-10 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div class="flex flex-col items-center gap-8 sm:gap-10 lg:col-span-2">
+        <Prose>
+          <Reporting />
+        </Prose>
+      </div>
+    </div>
+
+  </Container>
+</Layout>
