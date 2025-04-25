@@ -10,7 +10,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://conference.pyladies.com",
+	site: "https://2025.conference.pyladies.com",
 	vite: {
 		define: {
 			__DATE__: `'${new Date().toISOString()}'`,
