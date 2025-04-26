@@ -11,16 +11,25 @@ const { align = "center" } = Astro.props;
 const pricingData = [
   {
     name: "Champion",
-    price: "$10,000",
+    price: "$12,000",
+    slots: 1,
     popular: false,
     features: [
-      "Name listed on this website",
-      "Logo listed on this website",
-      "Call out in conference Open & Closing",
-      "4 LinkedIn posts",
-      "Dedicated Discord channel",
-      "Logo/info slide shown between talks",
-      "Promotional video shown 2 times each day",
+      "Keynote Intro",
+      "Technical Talk Slot",
+      "Panel Discussion",
+      "Brand visibility during talks braks",
+      "Shoutout in opening and closing",
+      "Dedicated discord channel",
+      "Inclusion in Email blast",
+      "Custom Discord Role",
+      "Logo on Website",
+      "Name visibility on website",
+      "Social media mentions",
+      "Blog posts writeup",
+      "LinkedIn posts (6)",
+      "Job Listing on website",
+      "Speed Job Interviews",
     ],
     button: {
       text: "Contact us",
@@ -29,16 +38,45 @@ const pricingData = [
   },
   {
     name: "Supporter",
-    price: "$5,000",
+    price: "$6,000",
     popular: false,
+    slots: 4,
     features: [
-      "Name listed on this website",
-      "Logo listed on this website",
-      "Call out in conference Open & Closing",
-      "2 LinkedIn posts",
-      "Dedicated Discord channel",
-      "Logo/info slide shown timezones segments",
-      "Promotional video shown once each day",
+      "Technical Talk Slot",
+      "Panel Discussion",
+      "Brand visibility during talks braks",
+      "Shoutout in opening and closing",
+      "Dedicated discord channel",
+      "Custom Discord Role",
+      "Logo on Website",
+      "Name visibility on website",
+      "Social media mentions",
+      "Blog posts writeup",
+      "LinkedIn posts (4)",
+      "Job Listing on website",
+      "Speed Job Interviews",
+    ],
+    button: {
+      text: "Contact us",
+      link: "mailto:sponsors@pyladies.com",
+    },
+  },
+  {
+    name: "Connector",
+    price: "$3,000",
+    popular: false,
+    slots: 10,
+    features: [
+      "Shoutout in opening and closing",
+      "Dedicated discord channel",
+      "Custom Discord Role",
+      "Logo on Website",
+      "Name visibility on website",
+      "Social media mentions",
+      "Blog posts writeup",
+      "LinkedIn posts (2)",
+      "Job Listing on website",
+      "Speed Job Interviews",
     ],
     button: {
       text: "Contact us",
@@ -47,13 +85,18 @@ const pricingData = [
   },
   {
     name: "Booster",
-    price: "$1,000",
+    price: "$1,500",
     popular: true,
+    slots: "-",
     features: [
-      "Name listed on this website",
-      "Logo listed on this website",
-      "1 LinkedIn posts",
-      "Dedicated Discord channel",
+      "Dedicated discord channel",
+      "Custom Discord Role",
+      "Logo on Website",
+      "Name visibility on website",
+      "Social media mentions",
+      "LinkedIn posts (1)",
+      "Job Listing on website",
+      "Speed Job Interviews (+ $100)",
     ],
     button: {
       text: "Contact us",
@@ -62,24 +105,34 @@ const pricingData = [
   },
   {
     name: "Partner",
-    price: "$500",
+    price: "$750",
     popular: false,
+    slots: "-",
     features: [
-      "Name listed on this website",
-      "Logo listed on this website",
-      "1 re-shared post",
+      "Custom Discord Role",
+      "Logo on Website",
+      "Name visibility on website",
+      "Social media mentions",
+      "LinkedIn posts (1)",
+      "Job Listing on website",
+      "Speed Job Interviews (+ $100)",
     ],
     button: {
-      text: "Contact us",
-      link: "mailto:sponsors@pyladies.com",
+      text: "Register",
+      link: "#",
     },
   },
   {
     name: "Individual",
     price: "$50 +",
     popular: false,
+    slots: "-",
     features: [
-      "Name listed on this website",
+      "Custom Discord Role",
+      "Logo on Website",
+      "Name visibility on website",
+      "Social media mentions",
+      "Speed Job Interviews (+ $100)",
     ],
     button: {
       text: "Register",
@@ -164,57 +217,157 @@ const attendeesPositions = [
       </Fragment>
     </Sectionhead>
 
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-20">
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-5xl mt-20">
       {pricingData.map((item) => <Sponsors plan={item} />)}
     </div>
-    <!-- <Logos /> -->
+  </Container>
+
+  <!-- Other Options -->
+  <Container>
+    <div class:list={["mt-8", "md:mt-16", align === "center" && "text-center"]}>
+      <h2 class="text-3xl mt-4 text-slate-800 pb-10 dark:text-white">
+        Other Sponsorship Options
+      </h2>
+      <div class="grid md:grid-cols-2 gap-10 mx-auto dark:text-white">
+        <div class="rounded-md p-8 xl:p-10 ring-1 ring-gray-200 dark:bg-stone-950 dark:ring-gray-700 text-start">
+          <h3 class="text-2xl font-bold py-2">PyLadies Chapter Sponsor</h3>
+          <h4 class="text-xl">$600 | Unlimited</h4>
+          <p class="py-5">
+            Every year we have special short videos featuring different
+            PyLadies Chapters around the world. The PyLadies Chapter Sponsor get to have
+            the exclusive branding visibility on these videos during the intro and outro
+            videcard. These videos will also remain on our official Youtube channel which
+            means you will enjoy an evergreen branding visibility.
+          </p>
+          <ul class="list-inside pt-5">
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              Prominent placement of logo and link on the website (all year round)</li>
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              Social media mentions</li>
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              Logo visibility on opening and closing of every PyLadies Chapter</li>
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              Custom Discord Role</li>
+          </ul>
+        </div>
+        <div class="rounded-md p-8 xl:p-10 ring-1 ring-gray-200 dark:bg-stone-950 dark:ring-gray-700 text-start">
+          <h3 class="text-2xl font-bold py-2">PyLadies Discussion Sponsor</h3>
+          <h4 class="text-xl">$600 | 6 slots</h4>
+          <p class="py-10">
+            PyLadiesCon has 6 different panel discussion each year streaming
+            live from different regions around the world. These panels are usually one of
+            the most popular talks. Panel discussion sponsors
+          </p>
+          <ul class="list-inside pt-5">
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              Prominent placement of logo and link on the website (all year round)</li>
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              Social media mentions</li>
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              Logo visibility on opening and closing of every PyLadies Chapter</li>
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              Custom Discord Role</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </Container>
 
   <!-- The attendees -->
   <Container>
     <div class:list={["mt-8", "md:mt-16", align === "center" && "text-center"]}>
-      <h2 class="text-2xl mt-4 text-slate-800">
+      <h2 class="text-3xl mt-4 text-slate-800 dark:text-white">
         The Attendees
       </h2>
-      <p class="text-lg mt-4 text-slate-600 dark:text-white">
-        The attendees of last year’s conference represented companies and
-        organizations from all sectors, and held the following types of
-        positions:
-      </p>
+      <div class="grid md:grid-cols-2 gap-10 mx-auto dark:text-white">
+        <div>
+          <p class="text-lg mt-4 text-white text-start px-10 pt-10">
+            The attendees of last year’s conference represented companies and
+            organizations from all sectors, and held the types of
+            position on the right table.
+          </p>
+          <h2 class="text-start pl-10 text-lg pt-10">Quick stats</h2>
+          <ul class="list-disc list-inside pl-10 pt-5 text-start">
+            <li>In 2023, we had more than 600 attendees,</li>
+            <li>In 2024, we had 732 attendees</li>
+          </ul>
+          <h2 class="text-start pl-10 text-lg pt-10">Benefits of Sponsorship</h2>
+          <ul class="list-disc list-inside pl-10 pt-5 text-start">
+            <li>
+              <strong>Targeted Audience</strong>: Reach out to a targeted
+              market with those who could potentially become your employees. Find
+              passionate Pythonistas to hire.
+            </li>
+            <li>
+              <strong>Branding</strong>: Increasing your brand exposure and
+              elevating your corporate identity within the community.
+            </li>
+            <li>
+              <strong>Community Contribution</strong>: Contribute, support and
+              sustain the underrepresented Python community.
+            </li>
+          </ul>
+        </div>
 
-    <table class="mx-auto w-50 mt-10 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-            <tr>
-                <th scope="col" class="px-6 py-3">
-                    Current Position
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Count
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Percentage
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-          {
-            attendeesPositions.map((item) =>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    { item.position }
-                </th>
-                <td class="px-6 py-4">
-                    { item.count }
-                </td>
-                <td class="px-6 py-4">
-                    { item.percentage }
-                </td>
-            </tr>
-           )
-          }
-        </tbody>
-    </table>
-
+        <div>
+          <table class="mx-auto w-50 mt-10 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+              <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-300 dark:text-gray-800">
+                  <tr>
+                      <th scope="col" class="px-6 py-3">
+                          Current Position
+                      </th>
+                      <th scope="col" class="px-6 py-3">
+                          Count
+                      </th>
+                      <th scope="col" class="px-6 py-3">
+                          Percentage
+                      </th>
+                  </tr>
+              </thead>
+              <tbody>
+                {
+                  attendeesPositions.map((item) =>
+                  <tr class="bg-white border-b dark:bg-gray-700 dark:border-gray-700 border-gray-200">
+                      <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                          { item.position }
+                      </th>
+                      <td class="px-6 py-4 text-end dark:text-white">
+                          { item.count }
+                      </td>
+                      <td class="px-6 py-4 text-end dark:text-white">
+                          { item.percentage }
+                      </td>
+                  </tr>
+                 )
+                }
+              </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </Container>
 </Layout>

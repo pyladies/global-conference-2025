@@ -6,9 +6,9 @@ import { Icon } from "astro-icon/components";
 const { plan } = Astro.props;
 ---
 
-<div class="rounded-md p-8 xl:p-10 ring-1 ring-gray-200 dark:bg-stone-950 dark:ring-gray-700">
+<div class="rounded-md p-5 xl:p-8 ring-1 ring-gray-200 dark:bg-stone-950 dark:ring-gray-700">
 	<div class="flex items-center justify-between gap-x-4">
-		<h3 id="tier-enterprise" class="text-lg font-semibold leading-8 text-gray-900 dark:text-white">{plan.name}</h3>
+		<h3 id="tier-enterprise" class="text-xl font-semibold leading-8 text-gray-900 dark:text-white">{plan.name}</h3>
 		{plan.popular && <h3 class="flex align-center text-pink"><slot name="icon">
                 <Icon name="bx:bxs-star" class="inline-icon"/>Popular
 		</slot></h3>}
