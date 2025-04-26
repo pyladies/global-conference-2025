@@ -22,6 +22,11 @@ export const menuitems = [
     ],
   },
   {
+   title: "header.blog",
+   path: "",
+   url: "https://conference.pyladies.com/blog/",
+  },
+  {
     title: "header.sponsors",
     path: "/sponsors",
   },
@@ -104,7 +109,7 @@ export const menuitems = [
                 <div class="px-2 py-2 rounded-md shadow dark:bg-gray-800">
                   {item.children.map((subitem) => (
                     <Link
-                      href={translatePath(subitem.path)}
+                      href={subitem.url || translatePath(subitem.path)}
                       style="hover"
                       size="sm"
                       class="block"
@@ -129,7 +134,7 @@ export const menuitems = [
             </div>
           ) : (
             <Link
-              href={translatePath(item.path)}
+              href={item.url || translatePath(item.path)}
               style="hover"
               size="sm"
               x-data="{ isActive: false }"
