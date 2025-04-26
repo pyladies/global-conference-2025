@@ -41,17 +41,142 @@ const globeMaxSize = 500;
 			offset: [0, 0],
 			opacity: 0.9,
 			markers: [
-				{ location: [37.7595, -122.4367], size: 0.1 },
-				{ location: [40.7128, -74.006], size: 0.1 },
-				{ location: [-39.7128, -74.006], size: 0.05 }, // Chile
-				{ location: [-9.7128, -45.006], size: 0.2 }, // Brazil
-				{ location: [50.7128, 12.006], size: 0.05 }, // Germany
+				{ location: [52.37, 4.89], size: 0.05 }, // Amsterdam, the Netherlands
+				{ location: [39.9167, 32.8333], size: 0.05 }, // Ankara, Turkey
+				{ location: [-18.9333, 47.5167], size: 0.05 }, // Antananarivo, MDG
+				{ location: [-4.5611543, -37.7689913], size: 0.05 }, // Aracati, Brazil
+				{ location: [-16.398776, -71.53687], size: 0.05 }, // Arequipa, Peru
+				{ location: [33.7490987, -84.3901849], size: 0.05 }, // Atlanta, GA
+				{ location: [30.27, -97.74], size: 0.05 }, // Austin, TX
+				{ location: [-24.7761086, 134.755], size: 0.05 }, // Australia
+				{ location: [12.9791703, 77.5912429], size: 0.05 }, // Bangalore, India
+				{ location: [10.301, 9.8237], size: 0.05 }, // Bauchi, NG
+				{ location: [-1.3410047, -48.5904714], size: 0.05 }, // Belem, Brazil
+				{ location: [-19.92, -43.94], size: 0.05 }, // Belo Horizonte, Brazil
+				{ location: [52.52, 13.38], size: 0.05 }, // Berlin, Germany
+				{ location: [20.2961, 85.8245], size: 0.05 }, // Bhubaneswar, India
+				{ location: [-26.915415, -49.072152], size: 0.05 }, // Blumenau, Brazil
+				{ location: [40.015, -105.2705], size: 0.05 }, // Boulder, CO
+				{ location: [42.36, -71.06], size: 0.05 }, // Boston, MA
+				{ location: [48.148598, 17.107748], size: 0.05 }, // Bratislava, Slovakia
+				{ location: [-10.3333333, -53.2], size: 0.05 }, // Brazil
+				{ location: [-27.46, 153.02], size: 0.05 }, // Brisbane, Australia
+				{ location: [50.08, 14.43], size: 0.05 }, // Brno, Czech Republic
+				{ location: [50.85, 4.35], size: 0.05 }, // Brussels, Belgium
+				{ location: [51.04, -114.06], size: 0.05 }, // Calgary, Alberta, Canada
+				{ location: [-22.909992, -47.063006], size: 0.05 }, // Campinas, Brazil
+				{ location: [39.9167, 32.8333], size: 0.05 }, // Canakkale, Turkey
+				{ location: [-29.16806, -51.17944], size: 0.05 }, // Caxias do Sul, Brazil
+				{ location: [19.43, -99.14], size: 0.05 }, // CDMX, M&eacute;xico
+				{ location: [13.09, 80.27], size: 0.05 }, // Chennai, India
+				{ location: [32.7876012, -79.9402728], size: 0.05 }, // Charleston, SC
+				{ location: [41.88, -87.63], size: 0.05 }, // Chicago, IL
+				{ location: [41.49, -81.67], size: 0.05 }, // Cleveland, OH
+				{ location: [-17.41403, -66.17727], size: 0.05 }, // Cochabamba, Bolivia
+				{ location: [-25.4167, -49.25], size: 0.05 }, // Curitiba, Brazil
+				{ location: [32.7776162, -96.7970585], size: 0.05 }, // Dallas, TX
+				{ location: [39.7392, -104.9903], size: 0.05 }, // Denver, CO
+				{ location: [-15.7941454, -47.8825479], size: 0.05 }, // DF - Distrito Federal, Brazil
+				{ location: [44.731389, 18.084444], size: 0.05 }, // Doboj, BiH
+				{ location: [53.33, -6.25], size: 0.05 }, // Dublin, Ireland
+				{ location: [-22.6433502, -43.4457786], size: 0.05 }, // Duque de Caxias, RJ
+				{ location: [55.95, -3.2], size: 0.05 }, // Edinburgh, Scotland
+				{ location: [9.005401, 38.763611], size: 0.05 }, // Ethiopia, Addis Ababa
+				{ location: [47.997791, 7.842609], size: 0.05 }, // Freiburg, Germany
+				{ location: [6.946527, -1.023194], size: 0.05 }, // Ghana
+				{ location: [42.96, -85.66], size: 0.05 }, // Grand Rapids, MI
+				{ location: [23.253627, 72.6338228], size: 0.05 }, // Gujarat, India
+				{ location: [53.55, 10.0], size: 0.05 }, // Hamburg, Germany
+				{ location: [60.17, 24.94], size: 0.05 }, // Helsinki, Finland
+				{ location: [10.776889, 106.700806], size: 0.05 }, // Ho Chi Minh, Vietnam
+				{ location: [29.09, -110.95], size: 0.05 }, // Hermosillo, M&eacute;xico
+				{ location: [29.77, -95.4], size: 0.05 }, // Houston, TX
+				{ location: [28.67, 77.21], size: 0.05 }, // India
+				{ location: [9.2446, 9.3673], size: 0.05 }, // Jos, plateau
+				{ location: [0.347596, 32.58252], size: 0.05 }, // Kampala, Uganda
+				{ location: [55.798697, 49.1039413], size: 0.05 }, // Kazan, Russia
+				{ location: [48.716385, 21.261074], size: 0.05 }, // Kosice, Slovakia
+				{ location: [35.0117, 135.7683], size: 0.05 }, // Kyoto
+				{ location: [-16.52, -68.1], size: 0.05 }, // La Paz, Bolivia
+				{ location: [-16.5, -68.21], size: 0.05 }, // El Alto, Bolivia
+				{ location: [38.736946, -9.142685], size: 0.05 }, // Lisbon, Portugal
+				{ location: [51.51, -0.13], size: 0.05 }, // London, UK
+				{ location: [34.04, -118.25], size: 0.05 }, // Los Angeles, CA
+				{ location: [32.62, -97.15], size: 0.05 }, // Mavs PyLadies
+				{ location: [-9.6498487, -35.708949200000006], size: 0.05 }, // Maceio, Brazil
+				{ location: [-3.10719, -60.0261], size: 0.05 }, // Manaus, Brazil
+				{ location: [45.46, 9.19], size: 0.05 }, // Milan, Italy
+				{ location: [-37.81, 144.96], size: 0.05 }, // Melbourne, Australia
+				{ location: [30.704649, 76.717873], size: 0.05 }, // Mohali
+				{ location: [45.52, -73.58], size: 0.05 }, // Montreal, Canada
+				{ location: [33.97159, -6.849813], size: 0.05 }, // Morocco
+				{ location: [18.9523804, 72.8327112], size: 0.05 }, // Mumbai, India
+				{ location: [48.14, 11.58], size: 0.05 }, // Munich, Germany
+				{ location: [26.14234, -81.79596], size: 0.05 }, // South Florida, USA
+				{ location: [36.1622296, -86.7743531], size: 0.05 }, // Nashville, TN
+				{ location: [-5.7792569, -35.200916], size: 0.05 }, // Natal, Brazil
+				{ location: [39.6832884, -75.7497231], size: 0.05 }, // Newark, DE
+				{ location: [40.75, -73.99], size: 0.05 }, // New York, NY
+				{ location: [6.465422, 3.406448], size: 0.05 }, // Nigeria
+				{ location: [7.1557102, 3.3450899], size: 0.05 }, // Ojere, NG
+				{ location: [26.3305244, 127.8767851], size: 0.05 }, // Okinawa, Japan
+				{ location: [59.9111889074049, 10.750322585469299], size: 0.05 }, // Oslo, Norway
+				{ location: [-7.24, -36.782], size: 0.05 }, // Paraiba, Brazil
+				{ location: [48.86, 2.34], size: 0.05 }, // Paris, France
+				{ location: [52.0977181, 19.0258159], size: 0.05 }, // Poland
+				{ location: [35.77, -78.64], size: 0.05 }, // Portland, OR
+				{ location: [-30.0333, -51.2], size: 0.05 }, // Porto Alegre, Brazil
+				{ location: [18.53, 73.84], size: 0.05 }, // Pune, India
+				{ location: [-0.17752, -78.465686], size: 0.05 }, // Quito, Ecuador
+				{ location: [35.77, -78.64], size: 0.05 }, // Raleigh-Durham, NC
+				{ location: [-8.0475458, -34.8769621], size: 0.05 }, // Recife, Brazil
+				{ location: [-22.9082998, -43.1970773], size: 0.05 }, // Rio de Janeiro, Brazil
+				{ location: [41.6449294, -112.2535647], size: 0.05 }, // Salt Lake Area, Utah
+				{ location: [59.9343, 30.3351], size: 0.05 }, // Saint Petersburg, Russia
+				{ location: [-12.9704, -38.5124], size: 0.05 }, // Salvador, Brazil
+				{ location: [32.76, -117.2], size: 0.05 }, // San Diego, CA
+				{ location: [37.77, -122.4], size: 0.05 }, // San Francisco, CA
+				{ location: [36.99, -122.06], size: 0.05 }, // Santa Cruz, CA
+				{ location: [-22.0087175, -47.8909142], size: 0.05 }, // Sao Carlos, Brazil
+				{ location: [-2.53073, -44.3068], size: 0.05 }, // São Luís, Brazil
+				{ location: [47.68, -122.29], size: 0.05 }, // Seattle, WA
+				{ location: [37.5666791, 126.9782914], size: 0.05 }, // Seoul, Korea
+				{ location: [37.37, -122.03], size: 0.05 }, // Silicon Valley, CA
+				{ location: [-23.50167, -47.45806], size: 0.05 }, // Sorocaba, SP
+				{ location: [1.2904527, 103.852038], size: 0.05 }, // Singapore
+				{ location: [40.0028028, -4.003104], size: 0.05 }, // Spain
+				{ location: [40.42, -3.71], size: 0.05 }, // Madrid, Spain
+				{ location: [59.33, 18.07], size: 0.05 }, // Stockholm, Sweden
+				{ location: [-20.718889, -46.609722], size: 0.05 }, // Sul de Minas, Brazil
+				{ location: [-33.87, 151.21], size: 0.05 }, // Sydney, Australia
+				{ location: [25.02, 121.45], size: 0.05 }, // Taiwan
+				{ location: [-5.1816948, -43.0212865], size: 0.05 }, // Teresina, Brazil
+				{ location: [41.327953, 19.819025], size: 0.05 }, // Tirana, Albania
+				{ location: [35.6, 139.7], size: 0.05 }, // Tokyo
+				{ location: [43.65, -79.44], size: 0.05 }, // Toronto, Canada
+				{ location: [36.806389, 10.181667], size: 0.05 }, // Tunis, Tunisia
+				{ location: [-34.87, -56.17], size: 0.05 }, // PyLadies Uruguay
+				{ location: [-23.2237, -45.9009], size: 0.05 }, // Vale do Paraiba, Brazil
+				{ location: [49.28, -123.04], size: 0.05 }, // Vancouver, Canada
+				{ location: [48.22, 16.37], size: 0.05 }, // Vienna, Austria
+				{ location: [38.95, -77.02], size: 0.05 }, // Washington, DC
+				{ location: [7.6559, 11.1517], size: 0.05 }, // Zaria, Kaduna
+				{ location: [-22.742238, -43.458664], size: 0.05 }, // Nova Iguacu, RJ
+				{ location: [6.313333, -10.801389], size: 0.05 }, // Monrovia, Liberia
+				{ location: [5.47631, 7.025853], size: 0.05 }, // Imo, Nigeria
+				{ location: [41.4, 2.17], size: 0.05 }, // Barcelona, BCN
+				{ location: [6.19824, 6.73187], size: 0.05 }, // Asaba, Nigeria
+				{ location: [14.62, -90.52], size: 0.05 }, // Guatemala city, Guatemala
+				{ location: [25.9692, 32.5732], size: 0.05 }, // Maputo, Mozambique
+				{ location: [-33.45, -70.666667], size: 0.05 }, // Santiago, Chile
+				{ location: [-17.6394, -71.3376], size: 0.05 }, // Ilo, PERU
+				{ location: [8.54, 80.78], size: 0.05 }, // Panama
 			],
 			onRender: (state) => {
 				// Called on every animation frame.
 				// `state` will be an empty object, return updated params.
 				state.phi = phi;
-				phi += 0.001;
+				phi += 0.01;
 			},
 		});
 
