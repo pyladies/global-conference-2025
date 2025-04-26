@@ -71,7 +71,7 @@ is not equipped to handle emergency situations.
 If the incident is less urgent, the report will be discussed by the CoC team,
 who will meet to determine an appropriate response. Examples of possible
 incident responses are outlined in the [Procedure For Incident
-Response](/en/coc-enforcement).
+Response](/en/coc-enforcing).
 
 Before the conference, the CoC team review the outlined procedures. After the
 conference, all CoC team members will attend a debriefing session with the CoC
