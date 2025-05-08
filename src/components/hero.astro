@@ -5,8 +5,6 @@ import Link from "@components/ui/link.astro";
 import abstractDottedGlobeIllustration from "assets/abstract-dotted-globe-illustration.png";
 import { socials } from "./footer.astro";
 
-const { dynamic = false } = Astro.props;
-
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
@@ -65,28 +63,15 @@ const t = useTranslations(lang);
           <Link class="bg-pink-700 dark:bg-pink-700 dark:text-white dark:hover:bg-green-400"
               href="https://psfmember.org/civicrm/contribute/transact/?reset=1&id=53">{t("hero.donate_button_text")}
           </Link>
-          {
-            dynamic ? (
-              <Link href="/en" style="muted">
-                {t("hero_animated.secondary_button_text")}
-                <span aria-hidden="true" class="pl-1 text-black dark:text-white">
-                  →
-                </span>
-              </Link>
-            ) : (
-              <Link href="/en/animated" style="muted">
-                {t("hero.secondary_button_text")}
-                <span aria-hidden="true" class="pl-1 text-black dark:text-white">
-                  →
-                </span>
-              </Link>
-            )
-          }
+          <Link href="https://conference.pyladies.com" style="muted">
+              {t("hero_animated.secondary_button_text")}
+              <span aria-hidden="true" class="pl-1 text-black dark:text-white">
+                →
+              </span>
+          </Link>
         </div>
       </div>
       <div class="flex justify-center items-center mt-4 md:mt-8">
-        {
-          dynamic ? (
             <>
               <h2
                 class="text-2xl md:text-4xl max-w-2xl text-center font-bold tracking-tight text-black dark:text-white absolute"
@@ -95,22 +80,6 @@ const t = useTranslations(lang);
               </h2>
               <Cobe />
             </>
-          ) : (
-            <Image
-              class="inline-block mt-12 md:mt-20"
-              src={abstractDottedGlobeIllustration}
-              alt="Astros"
-              width={600}
-              height={600}
-              loading="eager"
-            />
-              <h2
-                class="text-2xl md:text-4xl max-w-2xl text-center font-bold tracking-tight text-black dark:text-white absolute"
-                style="line-height: 1.5">
-                {t("hero.globe_title")}
-              </h2>
-          )
-        }
       </div>
     </div>
   </div>
