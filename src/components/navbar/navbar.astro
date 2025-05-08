@@ -32,7 +32,11 @@ export const menuitems = [
   },
   {
     title: "header.coc",
-    path: "/coc",
+    children: [
+      { title: "header.coc_read", path: "/coc" },
+      { title: "header.coc_reporting", path: "/coc-reporting" },
+      { title: "header.coc_enforcing", path: "/coc-enforcing" },
+    ],
   },
 ];
 ---
