@@ -47,7 +47,7 @@ export const ui = {
     "conf.goal": "This conference is designed to promote diversity, learning, and empowerment within the Python community. We enthusiastically welcome presenters from members and supporters of the PyLadies Community. Prior experience is optional to share your insights and expertise. ",
     "conf.languages_title": "The languages",
     "conf.languages": "Given that we are a global community, we warmly invite talks in the following languages: English, Español, Português, Deutsch, 日本語 and 中文.",
-    "conf.volunteers_title": "Voluntariado",
+    "conf.volunteers_title": "Volunteering",
     "conf.volunteers": "We would not be able to run this conference without help from our volunteers. Please check the Volunteer page for more details on how to volunteer!",
     "header.secondary_button_text": "Login",
     "event.learn_more": "Learn more",
