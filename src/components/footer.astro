@@ -54,21 +54,30 @@ export const socials = [
         Astros
       </span>
     </a> -->
-    <ul role="list" class="flex flex-wrap items-center justify-center gap-4 py-4 text-gray-600 dark:text-white sm:gap-8">
+    <ul role="list" class="flex flex-wrap justify-center gap-4 py-4 text-gray-600 dark:text-white sm:gap-8">
       <li role="listitem">
-        <a href={"/"} class="duration-300">Home</a>
+        <a href={translatePath("/")} class="duration-300">Home</a>
       </li>
       {
-        menuitems.map(
-          (item) =>
-            item &&
-            item.path && (
+        menuitems.map((item) =>
+          item.children && item.children.length ? (
+              <div>
+                <b>{t(item.title)}</b>
+                  {item.children.map((subitem) => (
+                    <li role="listitem">
+                      <a href={subitem.url || translatePath(subitem.path)} class="duration-300">
+                        {t(subitem.title)}
+                      </a>
+                    </li>
+                  ))}
+               </div>
+          ) : (
               <li role="listitem">
-                <a href={item.path} class="duration-300">
+                <a href={item.url || translatePath(item.path)} class="duration-300">
                   {t(item.title)}
                 </a>
               </li>
-            )
+          )
         )
       }
     </ul>
