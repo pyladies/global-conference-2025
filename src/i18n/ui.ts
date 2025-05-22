@@ -166,6 +166,6 @@ export const ui = {
     "org.georgi": "Madre de 2 adultos | Directora @PSF | Fellow @PSF | Premio de servicio comunitario 2020 PSF | Directora del grupo de trabajo PSF D&I | Líder de diseño en PyCon US desde 2022",
     "org.abigail": "Colaboradora y parte de la comunidad de Python Africa y ha servido como organizadora de eventos comunitarios locales e internacionales. Obtuvo el premio de servicio comunitario en la PSF.",
     "org.cristian": "Organizador serial de comunidades y conferencias Pythonzer, que contribuye a muchas iniciativas Open Source. Él es un director la junta de la PSF y también un PSF Fellow. Actualmente, él trabaja en The Qt Company.",
-    "org.lais": "Desarrollador y defensor del código abierto. Miembro de la EuroPython Society, Premio al Servicio Comunitario PSF 2025, exmiembro de la Junta Directiva de Python Irlanda y EuroPython. Organizador de Humble Data. Organizador de la comunidad.",
+    "org.lais": "Desarrolladora y defensora del código abierto. Miembro de la EuroPython Society, Premio al Servicio Comunitario PSF 2025, exmiembro de la Junta Directiva de Python Irlanda y EuroPython. Organizadora de Humble Data. Compulsiva organizadora de la comunidad.",
   },
 } as const;
