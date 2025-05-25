@@ -86,6 +86,7 @@ export const ui = {
     "org.georgi": "Mother of 2 adults | Director @PSF | Fellow Member | 2020 PSF community service award | PSF D&I Workgroup Chair | PyCon US Design Lead since 2022",
     "org.abigail": "Contributor and community member in the African Python Software Community and has served as an organizer for local and international community events. She is a Fellow and a Community Service award winner at the PSF.",
     "org.cristian": "Python community and conference serial organizer, contributing to many Open Source initiatives. He is a PSF Board Director and Fellow. He is currently working at The Qt Company.",
+    "org.lais": "Developer and Open Source advocate. EuroPython Society Fellow, 2025 PSF Community Service Award, former Board of Python Ireland and EuroPython. Organiser of Humble Data. Compulsive Community organiser.",
   },
   es: {
     "nav.home": "Inicio",
@@ -165,5 +166,6 @@ export const ui = {
     "org.georgi": "Madre de 2 adultos | Directora @PSF | Fellow @PSF | Premio de servicio comunitario 2020 PSF | Directora del grupo de trabajo PSF D&I | Líder de diseño en PyCon US desde 2022",
     "org.abigail": "Colaboradora y parte de la comunidad de Python Africa y ha servido como organizadora de eventos comunitarios locales e internacionales. Obtuvo el premio de servicio comunitario en la PSF.",
     "org.cristian": "Organizador serial de comunidades y conferencias Pythonzer, que contribuye a muchas iniciativas Open Source. Él es un director la junta de la PSF y también un PSF Fellow. Actualmente, él trabaja en The Qt Company.",
+    "org.lais": "Desarrolladora y defensora del código abierto. Miembro de la EuroPython Society, Premio al Servicio Comunitario PSF 2025, exmiembro de la Junta Directiva de Python Irlanda y EuroPython. Organizadora de Humble Data. Compulsiva organizadora de la comunidad.",
   },
 } as const;
