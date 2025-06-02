@@ -11,4 +11,11 @@ module.exports = {
 	},
 	plugins: [require("@tailwindcss/typography")],
 	darkMode: "class",
+	theme: {
+		extend: {
+			colors: {
+				pinkpyladies: '#ee264d',
+			}
+		}
+	}
 };
