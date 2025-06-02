@@ -1,10 +1,12 @@
 ---
 import Container from "@components/container.astro";
 import Faq from "@components/faq.astro";
+import Link from "@components/ui/link.astro";
 import Logos from "@components/logos.astro";
 import Sponsors from "@components/sponsors.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
 
 const { align = "center" } = Astro.props;
 
@@ -217,6 +219,19 @@ const attendeesPositions = [
         </span>
       </Fragment>
     </Sectionhead>
+
+    <div class="rounded-md p-5 xl:-8 ring-1 ring-gray-200 dark:bg-stone-950 dark:ring-gray-700 grid md:grid-cols-1 gap-10 mx-auto max-w-5xl mt-20">
+      <div class="flex items-center justify-between gap-x-4">
+        <h3 id="tier-enterprise" class="text-xl font-semibold leading-8 text-gray-900 dark:text-white">Patrocinio personalizado</h3>
+        <span class="text-red-500 flex align-center"><Icon name="bx:heart" class="inline-icon"/>Most requested</span></h3>
+      </div>
+      <p>
+      También estaremos encantados de personalizar un paquete de patrocinio para darle la libertad de elegir lo que crea que funciona mejor para alcanzar sus objetivos de participación en el evento.
+      </p>
+      <Link href="mailto:sponsors@pyladies.com" aria-describedby="tier-enterprise" style="outline" class="block w-full">
+        Contact us
+      </Link>
+    </div>
 
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-5xl mt-20">
       {pricingData.map((item) => <Sponsors plan={item} />)}
