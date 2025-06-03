@@ -9,22 +9,27 @@ const faqs = [
   {
     title: "sponsorship_faq.q_keynoteintro",
     description: "sponsorship_faq.a_keynoteintro",
+    id: "faq_keynoteintro",
   },
   {
     title: "sponsorship_faq.q_technicaltalk",
     description: "sponsorship_faq.a_technicaltalk",
+    id: "faq_technicaltalk",
   },
   {
     title: "sponsorship_faq.q_paneldiscussion",
     description: "sponsorship_faq.a_paneldiscussion",
+    id: "faq_paneldiscussion",
   },
   {
     title: "sponsorship_faq.q_mentionsocialmedia",
     description: "sponsorship_faq.a_mentionsocialmedia",
+    id: "faq_mentionsocialmedia",
   },
   {
     title: "sponsorship_faq.q_speedjobinterview",
     description: "sponsorship_faq.a_speedjobinterview",
+    id: "faq_speedjobinterview",
   },
 ];
 ---
@@ -35,7 +40,7 @@ const faqs = [
     <dl class="mt-10 space-y-6 divide-y divide-gray-900/10 dark:divide-gray-100/10">
       {
         faqs.map((faq) => (
-          <div class="pt-6" x-data="{ open: false }">
+          <div class="pt-6" x-data="{ open: false }" id={ faq.id }>
             <dt>
               <button
                 type="button"
