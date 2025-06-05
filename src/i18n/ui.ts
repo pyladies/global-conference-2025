@@ -93,11 +93,11 @@ export const ui = {
     "sponsorship_faq.q_technicaltalk": "What is the «Technical Talk Slot»?",
     "sponsorship_faq.a_technicaltalk": "Sponsors on the Champion and Supporter tier will have an accepted talk in the conference. Talks at PyLadiesCon last 15 minutes + 5 minutes Q&A, and the slot will be assigned once the schedule is announced.",
     "sponsorship_faq.q_paneldiscussion": "What is the «Panel Discussion»?",
-    "sponsorship_faq.a_paneldiscussion": "Sponsors with Champion or Supporter tier will be able to participate in a Panel formed only by sponsors during the conference. Panels last 35 minutes and the sponsor one will be allocated on the timezone with higher demand.",
+    "sponsorship_faq.a_paneldiscussion": "Participate in a panel discussion formed by Sponsors (topic of choice) with all participants. Share your perspective and clarify participant’s questions about the tech industry and the job market. These are the most popular sessions of the conference. It lasts around 35 minutes and is usually allocated on the timezone with higher demand.",
     "sponsorship_faq.q_mentionsocialmedia": "What does the «Mentions in social media» includes?",
     "sponsorship_faq.a_mentionsocialmedia": "We will create a series of posts for all our sponsors in order to thank them by their support and post in our social media.",
     "sponsorship_faq.q_speedjobinterview": "How does the «Speed job interviews» work?",
-    "sponsorship_faq.a_speedjobinterview": "We will allocate a specific time for each sponsor participating in this process, where they will have 5 minutes for each candidate in order to have a quick interview. Participants will be able to check the job description beforehand, and a maximum of 10 participants will be included. Depending on the interest from people, and availability from the sponsor, this number might change.",
+    "sponsorship_faq.a_speedjobinterview": "A fast-paced online networking event where employers and job seekers get 5 minutes to introduce themselves and ask crucial questions. If both parties are interested, they connect for a formal interview afterwards. Participants should be able to check the job description beforehand.",
   },
   es: {
     "nav.home": "Inicio",
