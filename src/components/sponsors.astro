@@ -30,7 +30,7 @@ const { plan } = Astro.props;
 							clip-rule="evenodd"
 						/>
 					</svg>
-					{item}
+					<span set:html={item}></span>
 				</li>
 			))
 		}

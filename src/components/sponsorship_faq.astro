@@ -1,0 +1,94 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const { plan } = Astro.props;
+
+const faqs = [
+  {
+    title: "sponsorship_faq.q_keynoteintro",
+    description: "sponsorship_faq.a_keynoteintro",
+    id: "faq_keynoteintro",
+  },
+  {
+    title: "sponsorship_faq.q_technicaltalk",
+    description: "sponsorship_faq.a_technicaltalk",
+    id: "faq_technicaltalk",
+  },
+  {
+    title: "sponsorship_faq.q_paneldiscussion",
+    description: "sponsorship_faq.a_paneldiscussion",
+    id: "faq_paneldiscussion",
+  },
+  {
+    title: "sponsorship_faq.q_mentionsocialmedia",
+    description: "sponsorship_faq.a_mentionsocialmedia",
+    id: "faq_mentionsocialmedia",
+  },
+  {
+    title: "sponsorship_faq.q_speedjobinterview",
+    description: "sponsorship_faq.a_speedjobinterview",
+    id: "faq_speedjobinterview",
+  },
+];
+---
+
+<div class="mx-auto max-w-5xl px-6 py-24 sm:py-36 lg:px-8 lg:py-52 dark:bg-stone-950" id="faq">
+  <div class="mx-auto divide-y divide-gray-900/10 dark:divide-gray-100/10">
+    <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900 dark:text-white">{t("sponsorship_faq.title")}</h2>
+    <dl class="mt-10 space-y-6 divide-y divide-gray-900/10 dark:divide-gray-100/10">
+      {
+        faqs.map((faq) => (
+          <div class="pt-6" x-data="{ open: false }" id={ faq.id }>
+            <dt>
+              <button
+                type="button"
+                class="flex w-full items-start justify-between text-left text-gray-900 dark:text-white"
+                @click="open = !open"
+                :x-bind:aria-expanded="open.toString()">
+                <span class="text-base font-semibold leading-7">{t(faq.title)}</span>
+                <span class="ml-6 flex h-7 items-center">
+                  <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    x-show="!open">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+                  </svg>
+                  <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    x-show="open">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6"></path>
+                  </svg>
+                </span>
+              </button>
+            </dt>
+            <dd
+              x-transition:enter="transition ease-out duration-100"
+              x-transition:enter-start="opacity-0 transform scale-90"
+              x-transition:enter-end="opacity-100 transform scale-100"
+              x-transition:leave="transition ease-in duration-100"
+              x-transition:leave-start="opacity-100 transform scale-100"
+              x-transition:leave-end="opacity-0 transform scale-90"
+              class="mt-2 pr-12"
+              id="faq-0"
+              x-show="open">
+              <span class="text-base leading-7 text-gray-600 dark:text-gray-100">
+                <span set:html={t(faq.description)}></span>
+              </span>
+            </dd>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+</div>
