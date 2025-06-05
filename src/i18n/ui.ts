@@ -97,7 +97,7 @@ export const ui = {
     "sponsorship_faq.q_mentionsocialmedia": "What does the «Mentions in social media» includes?",
     "sponsorship_faq.a_mentionsocialmedia": "We will create a series of posts for all our sponsors in order to thank them by their support and post in our social media.",
     "sponsorship_faq.q_speedjobinterview": "How does the «Speed job interviews» work?",
-    "sponsorship_faq.a_speedjobinterview": "We will allocate a specific time for each sponsor participating in this process, where they will have 5 minutes for each candidate in order to have a quick interview. Participants will be able to check the job offer beforehand, and a maximum of 10 participants will be included. Depending on the interest from people, and availability from the sponsor, this number might change.",
+    "sponsorship_faq.a_speedjobinterview": "We will allocate a specific time for each sponsor participating in this process, where they will have 5 minutes for each candidate in order to have a quick interview. Participants will be able to check the job description beforehand, and a maximum of 10 participants will be included. Depending on the interest from people, and availability from the sponsor, this number might change.",
   },
   es: {
     "nav.home": "Inicio",
