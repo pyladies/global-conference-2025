@@ -226,6 +226,10 @@ const attendeesPositions = [
       </Link>
     </div>
 
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-5xl mt-20">
+      {pricingData.map((item) => <Sponsors plan={item} />)}
+    </div>
+
     <div class="rounded-md p-5 xl:-8 ring-1 ring-gray-200 dark:bg-stone-950 dark:ring-gray-700 grid md:grid-cols-1 gap-10 mx-auto max-w-5xl mt-20">
       <div class="flex items-center justify-between gap-x-4">
         <h3 id="tier-enterprise" class="text-xl font-semibold leading-8 text-gray-900 dark:text-white">Custom Sponsorship</h3>
@@ -239,9 +243,6 @@ const attendeesPositions = [
       </Link>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-5xl mt-20">
-      {pricingData.map((item) => <Sponsors plan={item} />)}
-    </div>
   </Container>
 
   <!-- Other Options -->
