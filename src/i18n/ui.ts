@@ -89,7 +89,7 @@ export const ui = {
     "org.lais": "Developer and Open Source advocate. EuroPython Society Fellow, 2025 PSF Community Service Award, former Board of Python Ireland and EuroPython. Organiser of Humble Data. Compulsive Community organiser.",
     "sponsorship_faq.title": "Sponsorship Frequently Asked Questions",
     "sponsorship_faq.q_keynoteintro": "What is the «Keynote Intro»?",
-    "sponsorship_faq.a_keynoteintro": "Before each keynote, we will have a short video thanking all our sponsors on the Champion tier.",
+    "sponsorship_faq.a_keynoteintro": "We will play a short 2-5 minutes video from our Champion sponsor before each of the keynote session.",
     "sponsorship_faq.q_technicaltalk": "What is the «Technical Talk Slot»?",
     "sponsorship_faq.a_technicaltalk": "Sponsors on the Champion and Supporter tier will have an accepted talk in the conference. Talks at PyLadiesCon last 15 minutes + 5 minutes Q&A, and the slot will be assigned once the schedule is announced.",
     "sponsorship_faq.q_paneldiscussion": "What is the «Panel Discussion»?",
