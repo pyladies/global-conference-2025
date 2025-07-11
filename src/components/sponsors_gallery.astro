@@ -1,0 +1,91 @@
+---
+import Link from "@components/ui/link.astro";
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const champions = [
+  {
+    name: "One",
+    logo: "",
+    url: "",
+  },
+  {
+    name: "Two",
+    logo: "",
+    url: "",
+  },
+];
+
+const supporters = [
+  {
+    name: "",
+    logo: "",
+    url: "",
+  },
+];
+
+const connectors = [
+  {
+    name: "",
+    logo: "",
+    url: "",
+  },
+];
+
+const boosters = [
+  {
+    name: "",
+    logo: "",
+    url: "",
+  },
+];
+
+
+const partners = [
+  {
+    name: "",
+    logo: "",
+    url: "",
+  },
+];
+
+const individuals = [
+  {
+    name: "",
+    logo: "",
+    url: "",
+  },
+];
+---
+
+<div class="relative mx-auto max-w-5xl px-6 lg:px-8 mt-10" id="organization">
+  <div class="mx-auto max-w-2xl lg:text-center">
+    <h2 class="text-base font-semibold leading-7 text-pink">{t("sponsors_gallery.title")}</h2>
+    <p class="mt-2 text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">{t("sponsors_gallery.subtitle")}</p>
+    <p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-100">
+      {t("sponsors_gallery.description")}
+    </p>
+  </div>
+
+  <!-- Champion -->
+  <h2 class="font-semibold text-yellow-200 text-2xl">Champion Sponsors</h2>
+  <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+      {
+        champions.map((item) => (
+          <div class="flex flex-col border">
+            <dt class="flex items-center align-center justify-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
+              <img class="w-64 h-64" src={item.logo} />
+            </dt>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+
+
+</div>
