@@ -98,6 +98,9 @@ export const ui = {
     "sponsorship_faq.a_mentionsocialmedia": "We will create a series of posts for all our sponsors in order to thank them by their support and post in our social media.",
     "sponsorship_faq.q_speedjobinterview": "How does the «Speed job interviews» work?",
     "sponsorship_faq.a_speedjobinterview": "A fast-paced online networking event where employers and job seekers get 5 minutes to introduce themselves and ask crucial questions. If both parties are interested, they connect for a formal interview afterwards. Participants should be able to check the job description beforehand.",
+    "sponsors_gallery.title": "Meet the sponsors of our conference.",
+    "sponsors_gallery.subtitle": "Our Sponsors",
+    "sponsors_gallery.description": "description",
   },
   es: {
     "nav.home": "Inicio",
