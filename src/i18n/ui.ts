@@ -98,6 +98,8 @@ export const ui = {
     "sponsorship_faq.a_mentionsocialmedia": "We will create a series of posts for all our sponsors in order to thank them by their support and post in our social media.",
     "sponsorship_faq.q_speedjobinterview": "How does the «Speed job interviews» work?",
     "sponsorship_faq.a_speedjobinterview": "A fast-paced online networking event where employers and job seekers get 5 minutes to introduce themselves and ask crucial questions. If both parties are interested, they connect for a formal interview afterwards. Participants should be able to check the job description beforehand.",
+    "sponsors_gallery.title": "Meet the sponsors of our conference.",
+    "sponsors_gallery.subtitle": "Our Sponsors",
   },
   es: {
     "nav.home": "Inicio",
@@ -178,5 +180,7 @@ export const ui = {
     "org.abigail": "Colaboradora y parte de la comunidad de Python Africa y ha servido como organizadora de eventos comunitarios locales e internacionales. Obtuvo el premio de servicio comunitario en la PSF.",
     "org.cristian": "Organizador serial de comunidades y conferencias Pythonzer, que contribuye a muchas iniciativas Open Source. Él es un director la junta de la PSF y también un PSF Fellow. Actualmente, él trabaja en The Qt Company.",
     "org.lais": "Desarrolladora y defensora del código abierto. Miembro de la EuroPython Society, Premio al Servicio Comunitario PSF 2025, exmiembro de la Junta Directiva de Python Irlanda y EuroPython. Organizadora de Humble Data. Compulsiva organizadora de la comunidad.",
+    "sponsors_gallery.title": "Conoce a los patrocinadores de nuestra conferencia.",
+    "sponsors_gallery.subtitle": "Nuestros Patrocinadores",
   },
 } as const;

@@ -1,0 +1,161 @@
+---
+import Link from "@components/ui/link.astro";
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const champions = [
+];
+const supporters = [
+];
+const connectors = [
+  {
+    name: "Gel Data",
+    logo: "/images/sponsors/geldata.svg",
+    url: "https://www.geldata.com/",
+  },
+];
+const boosters = [
+];
+const partners = [
+  {
+    name: "Caktus",
+    logo: "/images/sponsors/caktus.png",
+    url: "https://www.caktusgroup.com/",
+  },
+  {
+    name: "Lincoln Loop",
+    logo: "/images/sponsors/lincolnloop-logo.svg",
+    url: "https://lincolnloop.com/",
+  },
+];
+const individuals = [
+];
+
+---
+
+<div class="relative mx-auto max-w-5xl px-6 lg:px-8 mt-10" id="organization">
+  <div class="mx-auto max-w-2xl lg:text-center">
+    <h2 class="text-base font-semibold leading-7 text-pink">{t("sponsors_gallery.title")}</h2>
+    <p class="mt-2 mb-10 text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">{t("sponsors_gallery.subtitle")}</p>
+  </div>
+
+  <!-- Champion -->
+  { champions.length ?
+  <h2 class="font-semibold text-yellow-200 dark:text-red-200 text-2xl">Champions Sponsors</h2>
+  <div class="mx-auto my-2 max-w-2xl sm:my-5 lg:my-8 lg:max-w-none">
+    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-1">
+      {
+        champions.map((item) => (
+          <div class="flex flex-col hover:bg-gray-50 dark:hover:bg-red-50">
+            <dt class="flex items-center align-center justify-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
+              <a href={item.url}><img class="w-64 h-64" src={item.logo} /></a>
+            </dt>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+  : null
+  }
+
+  <!-- Supporters -->
+  { supporters.length ?
+  <h2 class="font-semibold text-yellow-200 text-3xl mt-20">Supporters Sponsors</h2>
+  <div class="mx-auto my-2 max-w-2xl sm:my-5 lg:my-8 lg:max-w-none">
+    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+      {
+        supporters.map((item) => (
+          <div class="flex flex-col hover:bg-gray-50 dark:hover:bg-red-50">
+            <dt class="flex items-center align-center justify-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
+              <a href={item.url}><img class="w-64 h-64" src={item.logo} /></a>
+            </dt>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+  : null
+  }
+
+  <!-- Connectors -->
+  { connectors.length > 0 ?
+  <h2 class="font-semibold dark:text-white text-3xl mt-20">Connectors</h2>
+  <div class="mx-auto my-2 max-w-2xl sm:my-5 lg:my-8 lg:max-w-none">
+    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+      {
+        connectors.map((item) => (
+          <div class="flex flex-col hover:bg-gray-50 dark:hover:bg-red-50">
+            <dt class="flex items-center align-center justify-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
+              <a href={item.url}><img class="w-64 h-64" src={item.logo} /></a>
+            </dt>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+  : null
+  }
+
+  <!-- Boosters -->
+  { boosters.length > 0 ?
+  <h2 class="font-semibold dark:text-white text-2xl mt-20">Boosters</h2>
+  <div class="mx-auto my-2 max-w-2xl sm:my-5 lg:my-8 lg:max-w-none">
+    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4">
+      {
+        boosters.map((item) => (
+          <div class="flex flex-col hover:bg-gray-50 dark:hover:bg-red-50">
+            <dt class="flex items-center align-center justify-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
+              <a href={item.url}><img class="w-64 h-64" src={item.logo} /></a>
+            </dt>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+  : null
+  }
+
+  <!-- Partners -->
+  { partners.length > 0 ?
+  <h2 class="font-semibold dark:text-white text-3xl mt-20">Partners</h2>
+  <div class="mx-auto my-2 max-w-2xl sm:my-5 lg:my-8 lg:max-w-none">
+    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-5">
+      {
+        partners.map((item) => (
+          <div class="flex flex-col hover:bg-gray-50 dark:hover:bg-red-50">
+            <dt class="flex items-center align-center justify-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
+              <a href={item.url}><img class="w-64" src={item.logo} /></a>
+            </dt>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+  : null
+  }
+
+  <!-- Individuals -->
+  { individuals.length ?
+  <h2 class="font-semibold dark:text-white text-2xl mt-20">Individuals Sponsors</h2>
+  <div class="mx-auto my-2 max-w-2xl sm:my-5 lg:my-8 lg:max-w-none">
+    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+      {
+        individuals.map((item) => (
+          <div class="flex flex-col hover:bg-gray-50 dark:hover:bg-red-50">
+            <dt class="flex items-center align-center justify-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
+              <a href={item.url}><img class="w-64 h-64" src={item.logo} /></a>
+            </dt>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+  : null
+  }
+
+
+</div>
