@@ -109,6 +109,7 @@ export const ui = {
     "hero.subtitle": "Diciembre 5-7 | Multi-lenguaje | Multi-timonzon",
     "hero.globe_title": "La conferencia en línea de las comunidades de PyLadies en todo el mundo.",
     "hero.main_button_text": "Llamado de propuestas",
+    "hero.volunteer_button_text": "Inscríbete al voluntariado",
     "hero.donate_button_text": "Donar",
     "hero.secondary_button_text": "Ir a página meta",
     "hero_animated.secondary_button_text": "Ir a la versión base",
