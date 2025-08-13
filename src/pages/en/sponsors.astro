@@ -6,7 +6,12 @@ import Logos from "@components/logos.astro";
 import Sponsors from "@components/sponsors.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
+import SponsorsGallery from "@components/sponsors_gallery.astro";
 import { Icon } from "astro-icon/components";
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const { align = "center" } = Astro.props;
 
@@ -121,7 +126,7 @@ const pricingData = [
     ],
     button: {
       text: "Register",
-      link: "#",
+      link: "mailto:sponsors@pyladies.com",
     },
   },
   {
@@ -131,14 +136,13 @@ const pricingData = [
     slots: "-",
     features: [
       "Custom Discord Role",
-      "Logo on the website",
       "Name visibility on the website",
       `<a href="#faq_mentionsocialmedia">Mentions on Social media</a>`,
       `<a href="#faq_speedjobinterview">Speed Job Interviews</a> (+ $100)`,
     ],
     button: {
       text: "Register",
-      link: "#",
+      link: "mailto:sponsors@pyladies.com",
     },
   },
 ];
@@ -198,7 +202,7 @@ const attendeesPositions = [
 <Layout title="Sponsors">
   <Container>
     <Sectionhead>
-      <Fragment slot="subtitle">Prospectus for the global PyLadies Conference.</Fragment>
+      <Fragment slot="subtitle">{t("header.sponsors_subtitle")}</Fragment>
       <Fragment slot="title">Sponsors</Fragment>
       <Fragment slot="description">
         Support PyLadies as we work to improve diversity by bringing fresh
@@ -394,4 +398,5 @@ const attendeesPositions = [
     </div>
   </Container>
   <Faq/>
+  <SponsorsGallery/>
 </Layout>
