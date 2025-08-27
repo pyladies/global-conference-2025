@@ -20,7 +20,7 @@
 		"@types/alpinejs": "^3.13.11",
 		"alpinejs": "^3.14.9",
 		"apexcharts": "3.46.0",
-		"astro": "^5.12.8",
+		"astro": "^5.13.4",
 		"astro-icon": "^1.1.5",
 		"astro-seo": "^0.8.4",
 		"bad-words": "^3.0.4",
