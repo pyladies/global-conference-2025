@@ -102,7 +102,7 @@ export const ui = {
     "sponsorship_faq.q_speedjobinterview": "How does the «Speed job interviews» work?",
     "sponsorship_faq.q_mentionsocialmedia": "What does the «Mentions in social media» includes?",
     "sponsorship_faq.a_mentionsocialmedia": "We will create a series of posts for all our sponsors in order to thank them by their support and post in our social media.",
-    "sponsorship_faq.title": "Sponsorship Frequently Asked Questions",
+    "sponsorship_faq.title": "Sponsorship Frequently Asked Questions"
   },
   es: {
     "conf.experience": "En PyLadiesCon, estamos trayendo el mundo de Python directamente a tu puerta. Asegúrate de marcar tu calendario para el segundo fin de semana de diciembre mientras nos embarcamos en un viaje de dos días que promete ser inolvidable.",
