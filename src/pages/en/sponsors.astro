@@ -8,6 +8,10 @@ import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
 import SponsorsGallery from "@components/sponsors_gallery.astro";
 import { Icon } from "astro-icon/components";
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const { align = "center" } = Astro.props;
 
@@ -122,7 +126,7 @@ const pricingData = [
     ],
     button: {
       text: "Register",
-      link: "#",
+      link: "mailto:sponsors@pyladies.com",
     },
   },
   {
@@ -138,7 +142,7 @@ const pricingData = [
     ],
     button: {
       text: "Register",
-      link: "#",
+      link: "mailto:sponsors@pyladies.com",
     },
   },
 ];
@@ -198,7 +202,7 @@ const attendeesPositions = [
 <Layout title="Sponsors">
   <Container>
     <Sectionhead>
-      <Fragment slot="subtitle">Prospectus for the global PyLadies Conference.</Fragment>
+      <Fragment slot="subtitle">{t("header.sponsors_subtitle")}</Fragment>
       <Fragment slot="title">Sponsors</Fragment>
       <Fragment slot="description">
         Support PyLadies as we work to improve diversity by bringing fresh
@@ -308,7 +312,7 @@ const attendeesPositions = [
               <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
               </svg>
-              Logo visibility on opening and closing of every PyLadies Chapter</li>
+              Logo visibility on opening and closing of every PyLadies Panel Discussions</li>
             <li class="flex gap-x-3">
               <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />

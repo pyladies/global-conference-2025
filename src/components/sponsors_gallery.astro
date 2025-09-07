@@ -17,6 +17,11 @@ const connectors = [
     logo: "/images/sponsors/geldata.svg",
     url: "https://www.geldata.com/",
   },
+  {
+    name: "Python Software Foundation",
+    logo: "/images/sponsors/psf.png",
+    url: "https://www.python.org/psf-landing/",
+  },
 ];
 const boosters = [
 ];
@@ -32,12 +37,29 @@ const partners = [
     url: "https://lincolnloop.com/",
   },
   {
+    name: "Django Software Foundation",
+    logo: "/images/sponsors/dsf.png",
+    url: "https://www.djangoproject.com/",
+  },
+  {
     name: "Quansight",
     logo: "/images/sponsors/quansight-logo.png",
     url: "",
   },
+  {
+    name: "Willing Consulting",
+    logo: "/images/sponsors/willing_consulting.png",
+    url: "https://www.willingconsulting.com/",
+  },
 ];
 const individuals = [
+];
+const media_partners = [
+  {
+    name: "PyPodcats",
+    logo: "/images/sponsors/pypodcats.webp",
+    url: "https://pypodcats.live/",
+  },
 ];
 
 ---
@@ -93,7 +115,7 @@ const individuals = [
     <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
       {
         connectors.map((item) => (
-          <div class="flex flex-col hover:bg-gray-50 dark:hover:bg-red-50">
+          <div class="flex flex-col dark:bg-slate-300 hover:bg-gray-50 dark:hover:bg-red-50">
             <dt class="flex items-center align-center justify-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
               <a href={item.url}><img class="w-64 h-64" src={item.logo} /></a>
             </dt>
@@ -112,7 +134,7 @@ const individuals = [
     <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4">
       {
         boosters.map((item) => (
-          <div class="flex flex-col hover:bg-gray-50 dark:hover:bg-red-50">
+          <div class="flex flex-col dark:bg-slate-300 hover:bg-gray-50 dark:hover:bg-red-50">
             <dt class="flex items-center align-center justify-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
               <a href={item.url}><img class="w-64 h-64" src={item.logo} /></a>
             </dt>
@@ -131,7 +153,7 @@ const individuals = [
     <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-5">
       {
         partners.map((item) => (
-          <div class="flex flex-col hover:bg-gray-50 dark:hover:bg-red-50">
+          <div class="flex flex-col dark:bg-slate-300 hover:bg-gray-50 dark:hover:bg-red-50">
             <dt class="flex items-center align-center justify-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
               <a href={item.url}><img class="w-64" src={item.logo} /></a>
             </dt>
@@ -152,7 +174,26 @@ const individuals = [
         individuals.map((item) => (
           <div class="flex flex-col hover:bg-gray-50 dark:hover:bg-red-50">
             <dt class="flex items-center align-center justify-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
-              <a href={item.url}><img class="w-64 h-64" src={item.logo} /></a>
+              <a href={item.url}><img class="w-64" src={item.logo} /></a>
+            </dt>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+  : null
+  }
+
+  <!-- Media Partners -->
+  { media_partners.length ?
+  <h2 class="font-semibold dark:text-white text-3xl mt-20">Media Partners</h2>
+  <div class="mx-auto my-2 max-w-2xl sm:my-5 lg:my-8 lg:max-w-none">
+    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-5">
+      {
+        media_partners.map((item) => (
+          <div class="flex flex-col dark:bg-slate-300 hover:bg-gray-50 dark:hover:bg-red-50">
+            <dt class="flex items-center align-center justify-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
+              <a href={item.url}><img class="w-64" src={item.logo} /></a>
             </dt>
           </div>
         ))
