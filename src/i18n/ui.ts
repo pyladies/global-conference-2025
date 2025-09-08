@@ -63,6 +63,7 @@ export const ui = {
     "header.coc_read": "Read the CoC",
     "header.coc_reporting": "Reporting process",
     "header.features": "Features",
+    "header.jobs": "Jobs Board",
     "header.primary_button_text": "Donate",
     "header.secondary_button_text": "Login",
     "header.sponsors": "Sponsors",
