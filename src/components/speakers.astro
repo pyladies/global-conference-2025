@@ -1,0 +1,211 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import Link from "./ui/link.astro";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const speakers = [
+    {
+        name: "Sophia Yang",
+        photo: "/images/logo.svg",
+        bio: "She is passionate about the data science community and the Python open-source community. She is the author of multiple Python open-source libraries such as condastats, cranlogs, PyPowerUp, intake-stripe, and intake-salesforce.",
+        linkedin: "#",
+        twitter: "#",
+        talks: [
+            {
+                title: "Data Science in Python: Past, Present, and Future",                
+                date: "2nd Dec",
+                hour: "16:00 - 16:45",
+                link: "#",
+            },
+            {
+                title: "The Future of Data Science with Python",                
+                date: "5nd Dec",
+                hour: "16:00 - 16:45",
+                link: "#",
+            },
+        ],
+    },
+    {
+        name: "Tania Aebi",
+        photo: "/images/logo.svg",
+        bio: "She has wide experience in software development and data science, having worked in various industries including finance, healthcare, and technology. She is passionate about using Python to solve complex problems and improve business processes. She is also an advocate for diversity and inclusion in the tech community.",
+        linkedin: "#",
+        twitter: "#",
+        talks: [
+            {
+                title: "How to Build a Data Science Career with Python",                
+                date: "6nd Dec",
+                hour: "11:00 - 11:45",
+                link: "#",
+            }
+        ],
+    },
+    {
+        name: "Sophia Yang",
+        photo: "/images/logo.svg",
+        bio: "She is passionate about the data science community and the Python open-source community. She is the author of multiple Python open-source libraries such as condastats, cranlogs, PyPowerUp, intake-stripe, and intake-salesforce.",
+        linkedin: "#",
+        twitter: "#",
+        talks: [
+            {
+                title: "Data Science in Python: Past, Present, and Future",                
+                date: "2nd Dec",
+                hour: "16:00 - 16:45",
+                link: "#",
+            },
+            {
+                title: "Data Science in Python: Past, Present, and Future",                
+                date: "2nd Dec",
+                hour: "16:00 - 16:45",
+                link: "#",
+            },
+            {
+                title: "How to Build a Data Science Career with Python",                
+                date: "6nd Dec",
+                hour: "11:00 - 11:45",
+                link: "#",
+            }
+        ],
+    },
+    {
+        name: "Tania Aebi",
+        photo: "/images/logo.svg",
+        bio: "She has wide experience in software development and data science, having worked in various industries including finance, healthcare, and technology. She is passionate about using Python to solve complex problems and improve business processes. She is also an advocate for diversity and inclusion in the tech community.",
+        linkedin: "#",
+        twitter: "#",
+        talks: [
+            {
+                title: "How to Build a Data Science Career with Python",                
+                date: "6nd Dec",
+                hour: "11:00 - 11:45",
+                link: "#",
+            }
+        ],
+    },
+    {
+        name: "Tania Aebi",
+        photo: "/images/logo.svg",
+        bio: "She has wide experience in software development and data science, having worked in various industries including finance, healthcare, and technology. She is passionate about using Python to solve complex problems and improve business processes. She is also an advocate for diversity and inclusion in the tech community.",
+        linkedin: "#",
+        twitter: "#",
+        talks: [
+            {
+                title: "How to Build a Data Science Career with Python",                
+                date: "6nd Dec",
+                hour: "11:00 - 11:45",
+                link: "#",
+            }
+        ],
+    },
+    {
+        name: "Tania Aebi",
+        photo: "/images/logo.svg",
+        bio: "She has wide experience in software development and data science, having worked in various industries including finance, healthcare, and technology. She is passionate about using Python to solve complex problems and improve business processes. She is also an advocate for diversity and inclusion in the tech community.",
+        linkedin: "#",
+        twitter: "#",
+        talks: [
+            {
+                title: "How to Build a Data Science Career with Python",                
+                date: "6nd Dec",
+                hour: "11:00 - 11:45",
+                link: "#",
+            }
+        ],
+    },
+    {
+        name: "Tania Aebi",
+        photo: "/images/logo.svg",
+        bio: "She has wide experience in software development and data science, having worked in various industries including finance, healthcare, and technology. She is passionate about using Python to solve complex problems and improve business processes. She is also an advocate for diversity and inclusion in the tech community.",
+        linkedin: "#",
+        twitter: "#",
+        talks: [
+            {
+                title: "How to Build a Data Science Career with Python",                
+                date: "6nd Dec",
+                hour: "11:00 - 11:45",
+                link: "#",
+            }
+        ],
+    },
+];
+
+
+const socials = {
+  linkedin: {
+    title: "LinkedIn",
+    svgpath: `<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" id="path1" style="fill:#ee264d;fill-opacity:1" />`,
+  },
+  twitter: {
+    title: "X (Twitter)",
+    svgpath: `<path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" id="path1" style="fill:#ee264d;fill-opacity:1" />`,
+  },
+}
+---
+
+<div class="relative mx-auto max-w-5xl px-6 lg:px-8" id="keynotes">
+  <div class="mx-auto max-w-2xl lg:text-center">
+    <p class="text-base font-semibold leading-7 text-pink">{t("speakers.subtitle")}</p>
+    <h2 class="mt-2 text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">{t("speakers.title")}</h2>
+  </div>
+
+  <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-4 lg:max-w-none lg:grid-cols-3">
+      {
+        speakers.map((item) => (
+          <div class="flex flex-col p-4">
+           
+            <dt class="block items-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
+                <!-- Speaker Pic -->
+                <div class="flex justify-center">
+                    <img class="w-40 h-40 rounded-full flex self-center" src={item.photo} />
+                </div>
+                <!-- Speaker Links -->
+              <div class="font-medium items-center block text-black dark:text-white">
+                <div class="text-center">{item.name}</div>
+                <div class="flex justify-center mt-4">
+                    <div class="flex text-black dark:text-white content-center">
+                  {item.linkedin && (
+                    <a class="duration-300 hover:text-gray-900 dark:hover:text-gray-100 pr-3" href={item.linkedin} title={socials.linkedin.title} target="blank" aria-label={socials.linkedin.title}>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="m-auto h-5 w-5" viewBox="0 0 32 32" set:html={socials.linkedin.svgpath}></svg>
+                    </a>
+                  )}
+                  {item.twitter && (
+                    <a class="duration-300 hover:text-gray-900 dark:hover:text-gray-100" href={item.twitter} title={socials.twitter.title} target="blank" aria-label={socials.twitter.title}>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="m-auto h-5 w-5" viewBox="0 0 32 32" set:html={socials.twitter.svgpath}></svg>
+                    </a>
+                  )}
+                </div>
+                </div>
+                
+              </div>
+            </dt>
+            <!-- Speaker Bio -->
+            <dd class="mt-4 flex flex-col text-center leading-7 text-gray-900 dark:text-gray-100">
+              <p class="flex-auto">{item.bio}</p>
+            </dd>
+            <!-- Speaker Talks -->
+            <div class="mt-4 border-t">
+                <div class="text-sm font-semibold text-gray-900 dark:text-white mt-4 mb-2 text-center">{t("speakers.talks")}</div>
+                <div class="space-y-4">
+                    {
+                        item.talks.map((talk) => (
+                            <div class="p-4 border rounded-lg">
+                                <div class="text-base font-semibold text-gray-900 dark:text-white">{talk.title}</div>
+                                <div class="text-sm text-gray-600 dark:text-gray-400">{talk.date} | {talk.hour}</div>
+                                {talk.link && (
+                                    <div class="mt-4 flex content-center flex-wrap justify-center">
+                                        <Link href={talk.link} style="outline" class="text-sm hover:border-pink">View Details</Link>
+                                    </div>
+                                )}
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+</div>
