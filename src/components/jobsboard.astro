@@ -1,0 +1,35 @@
+---
+import { Tick } from "@components/ui/icons";
+import Link from "@components/ui/link.astro";
+import { Icon } from "astro-icon/components";
+
+const { details } = Astro.props;
+---
+
+<div class="rounded-md p-5 xl:p-8 ring-1 ring-gray-200 dark:bg-stone-950 dark:ring-gray-700">
+  <a class="flex items-center" href={details.companyurl}>
+    <h3 class="text-md font-semibold leading-8 text-pinkpyladies">{details.company}</h3>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-pinkpyladies">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+</svg>
+  </a>
+  <h2 class="text-xl font-semibold leading-8 text-gray-900 dark:text-white">{details.title}</h2>
+  <h4 class="flex items-center text-lg leading-8 text-gray-900 dark:text-white">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-pinkpyladies mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg>
+
+  {details.salary}</h4>
+  <h3 class="mt-3 text-md font-semibold leading-8 text-black dark:text-white">About the job:</h3>
+  <p class="" set:html={details.description} />
+  <ul class="flex text-sm leading-6 text-gray-600 dark:text-gray-300 xl:my-5 my33">
+    {
+      details.keywords.map((tag) => (
+        <li class="mr-2">
+          <span class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-yellow-600/20 ring-inset" set:html={tag}/>
+        </li>
+      ))
+    }
+  </ul>
+  {details.joburl && <Link href={details.joburl} aria-describedby="tier-enterprise" style="outline" class="">Read more</Link>}
+</div>

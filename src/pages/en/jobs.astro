@@ -1,0 +1,64 @@
+---
+import Container from "@components/container.astro";
+import Link from "@components/ui/link.astro";
+import Logos from "@components/logos.astro";
+import JobsBoard from "@components/jobsboard.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const { align = "center" } = Astro.props;
+
+const jobs = [
+  {
+    title: "Super Software Engineer",
+    company: "The Tech Company",
+    companyurl: "https://pyladies.com",
+    description: `Something cool <a href="https://pyladies.com">website</a> Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development. Its purpose is to permit a page layout to be designed, independently of the copy that will subsequently populate it, or to demonstrate various fonts of a typeface without meaningful text that could be distracting. Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin. `,
+    salary: "50000-100000 EUR",
+    joburl: "https://pyladies.com",
+    email: "pyladiescon@pyladies.com",
+    keywords: ["Python", "PyTorch", "CSS"],
+  },
+  {
+    title: "VP From the World Engineer",
+    company: "The Tech Company",
+    companyurl: "https://pyladies.com",
+    description: `Something cool <a href="https://pyladies.com">website</a> Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development. Its purpose is to permit a page layout to be designed, independently of the copy that will subsequently populate it, or to demonstrate various fonts of a typeface without meaningful text that could be distracting. Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin. `,
+    salary: "50000-100000 EUR",
+    joburl: "https://pyladies.com",
+    email: "pyladiescon@pyladies.com",
+    keywords: ["Python", "PyTorch", "Java", "Tensorflow", "Rust"],
+  },
+];
+
+
+
+---
+
+<Layout title="Job Board">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="subtitle">Find opportunities from our sponsors</Fragment>
+      <Fragment slot="title">Jobs Board</Fragment>
+      <Fragment slot="description">
+        Description
+        in touch by writing to <a href="mailto:sponsors@pyladies.com">sponsors@pyladies.com</a>
+        <span class="pl-1 text-black dark:text-white" aria-hidden="true">
+          →
+        </span>
+      </Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-1 gap-10 mx-auto max-w-5xl mt-5">
+      {
+        jobs.map((job) => <JobsBoard details={job} />)
+      }
+    </div>
+
+  </Container>
+</Layout>
