@@ -75,6 +75,8 @@ export const ui = {
     "hero.title": "PyLadiesCon 2025",
     "hero.volunteer_button_text": "Sign up as volunteer",
     "hero_animated.secondary_button_text": "Visit our meta website",
+    "keynotes.title": "Meet our keynote speakers",
+    "keynotes.subtitle": "Keynote Speakers",
     "nav.about": "About",
     "nav.home": "Home",
     "nav.twitter": "Twitter",
