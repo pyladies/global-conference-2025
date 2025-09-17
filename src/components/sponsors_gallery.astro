@@ -10,6 +10,11 @@ const t = useTranslations(lang);
 const champions = [
 ];
 const supporters = [
+  {
+    name: "Anaconda",
+    logo: "/images/sponsors/anaconda.png",
+    url: "https://www.anaconda.com/",
+  }
 ];
 const connectors = [
   {
@@ -98,15 +103,15 @@ const media_partners = [
   }
 
   <!-- Supporters -->
-  { supporters.length ?
-  <h2 class="font-semibold text-yellow-200 text-3xl mt-20">Supporters Sponsors</h2>
+  { supporters.length > 0 ?
+  <h2 class="font-semibold dark:text-white text-3xl mt-20">Supporters</h2>
   <div class="mx-auto my-2 max-w-2xl sm:my-5 lg:my-8 lg:max-w-none">
     <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
       {
         supporters.map((item) => (
-          <div class="flex flex-col hover:bg-gray-50 dark:hover:bg-red-50">
+          <div class="flex flex-col dark:bg-slate-300 hover:bg-gray-50 dark:hover:bg-red-50">
             <dt class="flex items-center align-center justify-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
-              <a href={item.url}><img class="w-64 h-64" src={item.logo} /></a>
+              <a href={item.url}><img class="w-80 h-80" src={item.logo} /></a>
             </dt>
           </div>
         ))
