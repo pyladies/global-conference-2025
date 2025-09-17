@@ -29,6 +29,11 @@ const connectors = [
   },
 ];
 const boosters = [
+  {
+    name: "Numberly, Inc",
+    logo: "/images/sponsors/numberly.png",
+    url: "https://numberly.com/en/",
+  }
 ];
 const partners = [
   {
@@ -142,14 +147,14 @@ const media_partners = [
 
   <!-- Boosters -->
   { boosters.length > 0 ?
-  <h2 class="font-semibold dark:text-white text-2xl mt-20">Boosters</h2>
+  <h2 class="font-semibold dark:text-white text-3xl mt-20">Boosters</h2>
   <div class="mx-auto my-2 max-w-2xl sm:my-5 lg:my-8 lg:max-w-none">
     <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4">
       {
         boosters.map((item) => (
           <div class="flex flex-col dark:bg-slate-300 hover:bg-gray-50 dark:hover:bg-red-50">
             <dt class="flex items-center align-center justify-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
-              <a href={item.url}><img class="w-64 h-64" src={item.logo} /></a>
+              <a href={item.url}><img class="w-64" src={item.logo} /></a>
             </dt>
           </div>
         ))
