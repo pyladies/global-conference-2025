@@ -174,6 +174,8 @@ export const ui = {
     "hero.title": "PyLadiesCon 2025",
     "hero.volunteer_button_text": "Inscríbete al voluntariado",
     "hero_animated.secondary_button_text": "Ir a la versión base",
+    "keynotes.title": "Conoce a nuestros ponentes principales",
+    "keynotes.subtitle": "Ponentes principales",
     "nav.about": "Acerca de",
     "nav.home": "Inicio",
     "nav.twitter": "Twitter",
