@@ -6,8 +6,6 @@ const t = useTranslations(lang);
 
 const { speakerInfo, speakerSubmissions } = Astro.props;
 
-// const speakers = Object.entries(speakerData);
-
 const socials = {
   linkedin: {
     title: "LinkedIn",
@@ -20,132 +18,125 @@ const socials = {
 };
 ---
 
-<!-- 
-  <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-    <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-4 lg:max-w-none lg:grid-cols-3">
-      <div class="flex flex-col p-4">
-            
-    </dl>
-</div> -->
-      
-                <div class="flex flex-col p-4">
-<dt
-  class="block items-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white"
->
-  <!-- Speaker Pic -->
-  <div class="flex justify-center">
-    <img
-      class="w-40 h-40 rounded-full flex self-center"
-      src={speakerInfo.avatar || "../images/logo.svg"}
-      loading="lazy"
-    />
-  </div>
-  <!-- Speaker Links -->
-  <div class="font-medium items-center block text-black dark:text-white">
-    <div class="text-center text-xl">{speakerInfo.name}</div>
-    <div class="text-center font-light italic">{speakerInfo.affiliation}</div>
-    <div class="flex justify-center mt-4">
-      <div class="flex text-black dark:text-white content-center">
-        {
-          speakerInfo.linkedin_url && (
-            <a
-              class="duration-300 hover:text-gray-900 dark:hover:text-gray-100 pr-3"
-              href={speakerInfo.linkedin_url}
-              title={socials.linkedin.title}
-              target="blank"
-              aria-label={socials.linkedin.title}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                class="m-auto h-5 w-5"
-                viewBox="0 0 32 32"
-                set:html={socials.linkedin.svgpath}
-              />
-            </a>
-          )
-        }
-        {
-          speakerInfo.bluesky_url && (
-            <a
-              class="duration-300 hover:text-gray-900 dark:hover:text-gray-100"
-              href={speakerInfo.bluesky_url}
-              title={socials.twitter.title}
-              target="blank"
-              aria-label={socials.twitter.title}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                class="m-auto h-5 w-5"
-                viewBox="0 0 32 32"
-                set:html={socials.twitter.svgpath}
-              />
-            </a>
-          )
-        }
+<div class="flex flex-col p-4">
+  <dt
+    class="block items-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white"
+  >
+    <!-- Speaker Pic -->
+    <div class="flex justify-center">
+      <img
+        class="w-40 h-40 rounded-full flex self-center"
+        src={speakerInfo.avatar || "/logo.svg"}
+        loading="lazy"
+      />
+    </div>
+    <!-- Speaker Links -->
+    <div class="font-medium items-center block text-black dark:text-white">
+      <div class="text-center text-xl">{speakerInfo.name}</div>
+      <div class="text-center font-light italic">{speakerInfo.affiliation}</div>
+      <div class="flex justify-center mt-4">
+        <div class="flex text-black dark:text-white content-center">
+          {
+            speakerInfo.linkedin_url && (
+              <a
+                class="duration-300 hover:text-gray-900 dark:hover:text-gray-100 pr-3"
+                href={speakerInfo.linkedin_url}
+                title={socials.linkedin.title}
+                target="blank"
+                aria-label={socials.linkedin.title}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="m-auto h-5 w-5"
+                  viewBox="0 0 32 32"
+                  set:html={socials.linkedin.svgpath}
+                />
+              </a>
+            )
+          }
+          {
+            speakerInfo.bluesky_url && (
+              <a
+                class="duration-300 hover:text-gray-900 dark:hover:text-gray-100"
+                href={speakerInfo.bluesky_url}
+                title={socials.twitter.title}
+                target="blank"
+                aria-label={socials.twitter.title}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="m-auto h-5 w-5"
+                  viewBox="0 0 32 32"
+                  set:html={socials.twitter.svgpath}
+                />
+              </a>
+            )
+          }
+        </div>
       </div>
     </div>
-  </div>
-</dt>
-<!-- Speaker Bio -->
-<dd
-  class="mt-4 flex flex-col text-center leading-7 text-gray-900 dark:text-gray-100"
->
-  <p class="flex-auto">{speakerInfo.biography}</p>
-</dd>
-<!-- Speaker Talks -->
-
-<div class="mt-4 border-t">
-  <div
-    class="text-sm font-semibold text-gray-900 dark:text-white mt-4 mb-2 text-center"
+  </dt>
+  <!-- Speaker Bio -->
+  <dd
+    class="mt-4 flex flex-col text-center leading-7 text-gray-900 dark:text-gray-100"
   >
-    {t("speakers.talks")}
-  </div>
-  <div class="space-y-4">
-    {
-      speakerSubmissions.map((sub) => (
-        <div class="p-4 border rounded-lg">
-          <div class="text-base font-semibold text-gray-900 dark:text-white">
-            {sub.title}
-          </div>
-          <div class="text-sm font-bold dark:text-white">
-            Language:{" "}
-            <span class="text-sm font-light dark:text-white">
-              {sub.language.toUpperCase()}
-            </span>
-          </div>
-          <div class="text-sm font-bold dark:text-white">
-            Timezone:{" "}
-            <span class="text-sm font-light dark:text-white">
-              {speakerInfo.timezone}
-            </span>
-          </div>
-          <div class="text-sm font-bold dark:text-white">
-            Duration:{" "}
-            <span class="text-sm font-light dark:text-white">
-              {sub.duration}"
-            </span>
-          </div>
-          <div class="text-sm font-bold dark:text-white">
-            Level:{" "}
-            <span class="text-sm font-light dark:text-white">{sub.level}</span>
-          </div>
-          {sub.website_url && (
-            <div class="mt-4 flex content-center flex-wrap justify-center">
-              <Link
-                href={sub.website_url}
-                style="outline"
-                class="text-sm hover:border-pink"
-              >
-                {t("speakers.view_details")}
-              </Link>
+    <p class="flex-auto">{speakerInfo.biography}</p>
+  </dd>
+  <!-- Speaker Talks -->
+
+  <div class="mt-4 border-t">
+    <div
+      class="text-sm font-semibold text-gray-900 dark:text-white mt-4 mb-2 text-center"
+    >
+      {t("speakers.talks")}
+    </div>
+    <div class="space-y-4">
+      {
+        speakerSubmissions.map((sub) => (
+          <div class="p-4 border rounded-lg">
+            <div class="text-base font-semibold text-gray-900 dark:text-white">
+              {sub.title}
             </div>
-          )}
-        </div>
-      ))
-    }
+            <div class="text-sm font-bold dark:text-white">
+              Language:{" "}
+              <span class="text-sm font-light dark:text-white">
+                {sub.language.toUpperCase()}
+              </span>
+            </div>
+            <div class="text-sm font-bold dark:text-white">
+              Timezone:{" "}
+              <span class="text-sm font-light dark:text-white">
+                {speakerInfo.timezone}
+              </span>
+            </div>
+            <div class="text-sm font-bold dark:text-white">
+              Duration:{" "}
+              <span class="text-sm font-light dark:text-white">
+                {sub.duration}"
+              </span>
+            </div>
+            <div class="text-sm font-bold dark:text-white">
+              Level:{" "}
+              <span class="text-sm font-light dark:text-white">
+                {sub.level}
+              </span>
+            </div>
+            {sub.website_url && (
+              <div class="mt-4 flex content-center flex-wrap justify-center">
+                <Link
+                  href={sub.website_url}
+                  style="outline"
+                  class="text-sm hover:border-pink"
+                >
+                  {t("speakers.view_details")}
+                </Link>
+              </div>
+            )}
+          </div>
+        ))
+      }
+    </div>
   </div>
 </div>
-
-                </div>
