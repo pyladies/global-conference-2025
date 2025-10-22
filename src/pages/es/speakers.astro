@@ -1,0 +1,27 @@
+---
+
+import Container from "@components/container.astro";
+import SpeakersComponent from "@components/speakers.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+
+
+<Layout title="Sponsors">
+    <Container>
+        <Sectionhead>
+      <Fragment slot="subtitle">{t("speakers.subtitle")}</Fragment>
+      <Fragment slot="title">{t("speakers.title")}</Fragment>
+      <Fragment slot="description">
+      </Fragment>
+    </Sectionhead>
+<SpeakersComponent />
+    </Container>
+    
+</Layout>
