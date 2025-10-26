@@ -102,7 +102,7 @@ const media_partners = [
 
 ---
 
-<div class="relative mx-auto max-w-5xl px-6 lg:px-8 mt-10" id="organization">
+<div class="relative mx-auto max-w-5xl px-6 lg:px-8 mt-10" id="sponsors">
   <div class="mx-auto max-w-2xl lg:text-center">
     <h2 class="text-base font-semibold leading-7 text-pink">{t("sponsors_gallery.title")}</h2>
     <p class="mt-2 mb-10 text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">{t("sponsors_gallery.subtitle")}</p>
@@ -110,7 +110,7 @@ const media_partners = [
 
   <!-- Champion -->
   { champions.length ?
-  <h2 class="font-semibold text-yellow-200 dark:text-red-200 text-2xl">Champions Sponsors</h2>
+  <h2 class="font-semibold text-yellow-200 dark:text-red-200 text-2xl" id="champions-sponsors">Champions Sponsors</h2>
   <div class="mx-auto my-2 max-w-2xl sm:my-5 lg:my-8 lg:max-w-none">
     <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-1">
       {
@@ -129,7 +129,7 @@ const media_partners = [
 
   <!-- Supporters -->
   { supporters.length > 0 ?
-  <h2 class="font-semibold dark:text-white text-3xl mt-20">Supporters</h2>
+  <h2 class="font-semibold dark:text-white text-3xl mt-20" id="supporters-sponsors">Supporters</h2>
   <div class="mx-auto my-2 max-w-2xl sm:my-5 lg:my-8 lg:max-w-none">
     <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
       {
@@ -148,7 +148,7 @@ const media_partners = [
 
   <!-- Connectors -->
   { connectors.length > 0 ?
-  <h2 class="font-semibold dark:text-white text-3xl mt-20">Connectors</h2>
+  <h2 class="font-semibold dark:text-white text-3xl mt-20" id="connectors-sponsors">Connectors</h2>
   <div class="mx-auto my-2 max-w-2xl sm:my-5 lg:my-8 lg:max-w-none">
     <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
       {
@@ -167,7 +167,7 @@ const media_partners = [
 
   <!-- Boosters -->
   { boosters.length > 0 ?
-  <h2 class="font-semibold dark:text-white text-3xl mt-20">Boosters</h2>
+  <h2 class="font-semibold dark:text-white text-3xl mt-20" id="boosters-sponsors">Boosters</h2>
   <div class="mx-auto my-2 max-w-2xl sm:my-5 lg:my-8 lg:max-w-none">
     <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4">
       {
@@ -186,7 +186,7 @@ const media_partners = [
 
   <!-- Partners -->
   { partners.length > 0 ?
-  <h2 class="font-semibold dark:text-white text-3xl mt-20">Partners</h2>
+  <h2 class="font-semibold dark:text-white text-3xl mt-20" id="partners-sponsors">Partners</h2>
   <div class="mx-auto my-2 max-w-2xl sm:my-5 lg:my-8 lg:max-w-none">
     <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-5">
       {
@@ -205,7 +205,7 @@ const media_partners = [
 
   <!-- Individuals -->
   { individuals.length ?
-  <h2 class="font-semibold dark:text-white text-2xl mt-20">Individuals Sponsors</h2>
+  <h2 class="font-semibold dark:text-white text-2xl mt-20" id="individuals-sponsors">Individuals Sponsors</h2>
   <div class="mx-auto my-2 max-w-2xl sm:my-5 lg:my-8 lg:max-w-none">
     <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
       {
@@ -224,7 +224,7 @@ const media_partners = [
 
   <!-- Media Partners -->
   { media_partners.length ?
-  <h2 class="font-semibold dark:text-white text-3xl mt-20">Media Partners</h2>
+  <h2 class="font-semibold dark:text-white text-3xl mt-20" id="media-partners">Media Partners</h2>
   <div class="mx-auto my-2 max-w-2xl sm:my-5 lg:my-8 lg:max-w-none">
     <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-5">
       {
