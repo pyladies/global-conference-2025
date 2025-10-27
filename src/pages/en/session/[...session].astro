@@ -1,6 +1,5 @@
 ---
 import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
 import SpeakerData from "../../../data/speakers.json";
 import Submissions from "../../../data/speakers_talks.json";
 import Layout from "@layouts/Layout.astro";
@@ -29,11 +28,12 @@ export async function getStaticPaths() {
         .filter(([key, value]) => value.slug === session)
         .map(([key, value]) => (
           <div class="my-12">
-            <h1 class="text-4xl font-bold mb-4 text-pinkpyladies">{value.title}</h1>
+            <h1 class="text-4xl font-bold mb-4 text-pinkpyladies text-center">{value.title}</h1>
             
+            <!-- Session details section -->
             <div class="mt-16">
-              <div class="max-w-md">
-                <div class="grid grid-cols-1 md:grid-cols-2 mt-6 gap-2">
+              <div class="max-w-md xs:text-center">
+                <div class="grid grid-cols-1 md:grid-cols-2 mt-6 gap-2 text-center md:text-left lg:text-left">
                 { value.track &&
                 ( 
                 <p class="text-black dark:text-white font-bold">{t("session.track")}</p>
@@ -82,7 +82,9 @@ export async function getStaticPaths() {
               </div>
               
             </div>
-            
+
+
+            <!--Abstract section -->
             <div class="mt-20">
               <h2 class="text-3xl font-bold text-black dark:text-white">{t("session.abstract")}</h3>
             <p class="mt-4 text-lg leading-relaxed dark:text-white mb-6">
@@ -90,17 +92,25 @@ export async function getStaticPaths() {
             </p>
             </div>
               
-            <h2 class="text-3xl font-bold mb-4 text-black dark:text-white">{t("session.speakers")}</h2>
-            <ul>
-              {
-                value.speakers.map((speakerId) => (
-                  speakers.filter(([spkKey, spkValue]) => spkKey === speakerId).map(([spkKey, spkValue]) => (
-                    <li class="mt-4 text-black dark:text-white">
-                      <a class="text-xl font-semibold" href={"/en/speaker/"+spkValue.slug}>{spkValue.name}</a>
-                    </li>)
-                )))
-              }
-            </ul>
+            <!--Speakers section -->
+            <div class="mt-16">
+  <h2 class="text-3xl font-bold mb-4 text-black dark:text-white">{t("session.speakers")}</h2>
+              <ul>
+                {
+                  value.speakers.map((speakerId) => (
+                    speakers.filter(([spkKey, spkValue]) => spkKey === speakerId).map(([spkKey, spkValue]) => (
+                      <li class="mt-4 text-black dark:text-white">
+                        <a class="text-xl font-semibold" href={"/en/speaker/"+spkValue.slug}>{spkValue.name}</a>
+                      </li>)
+                  )))
+                }
+              </ul>
+            </div>
+            
+
+            <!-- Other sessions -->
+
+            
           </div>
         ))
     }
