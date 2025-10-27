@@ -4,7 +4,7 @@ import Link from "./ui/link.astro";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const { speakerInfo, speakerSubmissions } = Astro.props;
+const { speakerInfo } = Astro.props;
 
 const socials = {
   mastodon: {
@@ -48,20 +48,23 @@ const socials = {
 
 <div class="flex flex-col p-4">
   <dt
-    class="block items-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white"
+    class="block mx-auto items-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white"
   >
-    <!-- Speaker Pic -->
-    <div class="flex justify-center">
+    <div class="w-52 h-52 mx-auto rounded-full p-1 hover:p-2 transition-all duration-300">
+  <div class="w-full h-full rounded-full border-4 border-transparent hover:border-pinkpyladies overflow-hidden">
+    <a href={t("speakers.slug_url")+speakerInfo.slug || "#"} target="_blank" rel="noopener noreferrer">
       <img
-        class="w-40 h-40 rounded-full flex self-center"
-        src={speakerInfo.avatar || "/logo.svg"}
-        loading="lazy"
-      />
-    </div>
+      class="w-full h-full object-cover"
+      src={speakerInfo.avatar || "/logo.svg"}
+      loading="lazy"
+    />
+    </a>    
+  </div>
+</div>
     <!-- Speaker Links -->
     <div class="font-medium items-center block text-black dark:text-white">
-      <div class="text-center text-xl">{speakerInfo.name}</div>
-      <div class="text-center font-light italic">{speakerInfo.affiliation}</div>
+      <div class="text-center text-l">{speakerInfo.name}</div>
+      <div class="text-center font-light italic text-sm">{speakerInfo.affiliation}</div>
       <div class="flex justify-center mt-4">
         <div class="flex text-black dark:text-white content-center">
           
@@ -202,65 +205,4 @@ const socials = {
       </div>
     </div>
   </dt>
-  <!-- Speaker Bio -->
-  <dd
-    class="mt-4 flex flex-col text-center leading-7 text-gray-900 dark:text-gray-100"
-  >
-    <p class="flex-auto">{speakerInfo.biography}</p>
-  </dd>
-  <!-- Speaker Talks -->
-
-  <div class="mt-4 border-t">
-    <div
-      class="text-sm font-semibold text-gray-900 dark:text-white mt-4 mb-2 text-center"
-    >
-      {t("speakers.talks")}
-    </div>
-    <div class="space-y-4">
-      {
-        speakerSubmissions.map((sub) => (
-          <div class="p-4 border rounded-lg">
-            <div class="text-base font-semibold text-gray-900 dark:text-white">
-              {sub.title}
-            </div>
-            <div class="text-sm font-bold dark:text-white">
-              Language:{" "}
-              <span class="text-sm font-light dark:text-white">
-                {sub.language.toUpperCase()}
-              </span>
-            </div>
-            <div class="text-sm font-bold dark:text-white">
-              Timezone:{" "}
-              <span class="text-sm font-light dark:text-white">
-                {speakerInfo.timezone}
-              </span>
-            </div>
-            <div class="text-sm font-bold dark:text-white">
-              Duration:{" "}
-              <span class="text-sm font-light dark:text-white">
-                {sub.duration}"
-              </span>
-            </div>
-            <div class="text-sm font-bold dark:text-white">
-              Level:{" "}
-              <span class="text-sm font-light dark:text-white">
-                {sub.level}
-              </span>
-            </div>
-            {sub.website_url && (
-              <div class="mt-4 flex content-center flex-wrap justify-center">
-                <Link
-                  href={sub.website_url}
-                  style="outline"
-                  class="text-sm hover:border-pink"
-                >
-                  {t("speakers.view_details")}
-                </Link>
-              </div>
-            )}
-          </div>
-        ))
-      }
-    </div>
-  </div>
 </div>

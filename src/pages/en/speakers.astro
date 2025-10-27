@@ -3,7 +3,7 @@ import Container from "@components/container.astro";
 import SpeakersComponent from "@components/speakers.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import speakerData from "../../data/speakers.json";
-import speakersTalks from "../../data/speakers_talks.json";
+import submissionsData from "../../data/speakers_talks.json";
 import Layout from "@layouts/Layout.astro";
 
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
@@ -22,14 +22,14 @@ const speakers = Object.entries(speakerData);
             <Fragment slot="description"> </Fragment>
         </Sectionhead>
 
-        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-4 lg:max-w-none lg:grid-cols-3">     
+        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none justify-center">
+            <dl class="grid ax-w-none md:grid-cols-3 gap-x-1 gap-y-1 lg:max-w-none lg:grid-cols-5">     
                     {
                         speakers.map(([key, value]) => (
                             <SpeakersComponent
                                 speakerInfo={value}
                                 speakerSubmissions={value.submissions.map(
-                                    (sub) => speakersTalks[sub],
+                                    (sub) => submissionsData[sub],
                                 )}
                             />
                         ))

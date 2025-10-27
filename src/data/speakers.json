@@ -119,6 +119,26 @@
     "twitter_url": null,
     "website_url": "https://2025.conference.pyladies.com/speaker/mars-weng"
   },
+  "9XSYUK": {
+    "affiliation": "LATAM Airlines",
+    "avatar": "https://pretalx.com/media/avatars/9XSYUK_ZJRGwrC.jpg",
+    "biography": "CTO | Tech Strategy | Digital Transformation | Agile Leadership | High-Performance Teams\r\n\r\nEjecutiva de tecnolog\u00eda con m\u00e1s de 15 a\u00f1os liderando equipos de ingenier\u00eda e iniciativas de transformaci\u00f3n digital en organizaciones de alto impacto. Me apasiona desarrollar capacidades organizacionales escalables, desde empoderar a equipos tecnol\u00f3gicos aut\u00f3nomos hasta promover la excelencia operativa y la mejora continua.\r\n\r\nEspecializada en entrega de software, m\u00e9tricas de flujo, metodolog\u00edas \u00e1giles, dise\u00f1o organizacional y liderazgo t\u00e9cnico. Mi experiencia abarca startups, scaleups, empresas tradicionales y consultoras internacionales, combinando siempre pensamiento estrat\u00e9gico, ejecuci\u00f3n \u00e1gil y una mentalidad centrada en las personas.\r\n\r\nMi prop\u00f3sito: ayudar a equipos y organizaciones a alcanzar su m\u00e1ximo potencial fomentando las estructuras, habilidades y mentalidades adecuadas para un impacto real.\r\n\r\n\ud83d\udce2 Public Speaker | \ud83d\udcca Data-Driven Delivery | \ud83d\udee0\ufe0f Lean Inception Facilitator | \ud83e\udd1d Tech & Leadership Mentor",
+    "bluesky_url": null,
+    "code": "9XSYUK",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": null,
+    "mastodon_url": null,
+    "name": "Patty Trejo",
+    "slug": "patty-trejo",
+    "submissions": [
+      "WRPAMN"
+    ],
+    "timezone": "UTC-3",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/patty-trejo"
+  },
   "AMGWA8": {
     "affiliation": "Hungryroot",
     "avatar": "https://pretalx.com/media/avatars/AMGWA8_sTMRLyn.JPG",
@@ -338,6 +358,26 @@
     "timezone": "UTC-7",
     "twitter_url": null,
     "website_url": "https://2025.conference.pyladies.com/speaker/azul-garza"
+  },
+  "FYVKMX": {
+    "affiliation": null,
+    "avatar": "https://pretalx.com/media/avatars/FYVKMX_10HODjz.jpg",
+    "biography": "Alyssa has been a CPython core contributor since 2005, and served on the inaugural Python Steering Council in 2019. She was the default approval delegate for Python packaging interoperability PEPs from 2013 to 2018. She was elected for two terms on the Python Software Foundation Board of Directors (2014-2016), and founded the PyCon Australia Education Seminar in 2015.\r\n\r\nProfessionally, Alyssa's career has spanned high frequency radio communications in the Australian defence sector, automated hardware integration testing infrastructure for Red Hat Enterprise Linux, remote management and monitoring of global EV fast charging systems, and, most recently, enabling local execution of generative AI language models.",
+    "bluesky_url": null,
+    "code": "FYVKMX",
+    "gitx_url": null,
+    "homepage": "https://www.curiousefficiency.org",
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/alyssa-coghlan",
+    "mastodon_url": "https://mastodon.social/@ancoghlan",
+    "name": "Alyssa Coghlan",
+    "slug": "alyssa-coghlan",
+    "submissions": [
+      "SXJPB7"
+    ],
+    "timezone": "UTC+10",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/alyssa-coghlan"
   },
   "GMSKCP": {
     "affiliation": null,
@@ -700,9 +740,9 @@
     "website_url": "https://2025.conference.pyladies.com/speaker/milena-miernik"
   },
   "RY9CPQ": {
-    "affiliation": "\u682a\u5f0f\u4f1a\u793e\u30d3\u30fc\u30d7\u30e9\u30a6\u30c9",
+    "affiliation": "\u682a\u5f0f\u4f1a\u793e\u30d3\u30fc\u30d7\u30e9\u30a6\u30c9 / BeProud Inc.",
     "avatar": "https://pretalx.com/media/avatars/RY9CPQ_5Z7QXau.png",
-    "biography": "\u6240\u5c5e: \u682a\u5f0f\u4f1a\u793e\u30d3\u30fc\u30d7\u30e9\u30a6\u30c9\r\nPython\u3092\u7528\u3044\u305f\u30c7\u30fc\u30bf\u30b5\u30a4\u30a8\u30f3\u30b9\u5206\u91ce\u306e\u6280\u8853\u652f\u63f4\u3084\u30b7\u30b9\u30c6\u30e0\u958b\u767a\u306a\u3069\u306b\u5f93\u4e8b\u3002\r\nWorking at BeProud Inc., focusing on data science support and system development with Python.\r\n\r\nX: @komo_fr",
+    "biography": "Tomoko Furuki works at BeProud Inc., focusing on data science support and system development with Python.\r\nRecently, in her free time, she enjoys working on hobby projects with LLMs \u2014 such as a voice-controlled toy car and a program that rewrites classic literature for children using LangChain and LangGraph.\r\n\r\nX: @komo_fr\r\nGitHub: https://github.com/komo-fr",
     "bluesky_url": null,
     "code": "RY9CPQ",
     "gitx_url": null,
@@ -738,6 +778,26 @@
     "timezone": null,
     "twitter_url": null,
     "website_url": "https://2025.conference.pyladies.com/speaker/bonny-p-mcclain"
+  },
+  "SKGET8": {
+    "affiliation": "MongoDB / Django Software Foundation",
+    "avatar": "https://pretalx.com/media/avatars/SKGET8_YoHm3Tm.jpg",
+    "biography": "Abigail Afi Gbadago is a software engineer and developer advocate with a deep passion for technology and community. \r\nShe serves on the Django Software Foundation board, is the programme chair for DjangoCon US 2025, is the regional executor for Black Python devs, and is a Microsoft MVP for the Python and Web track. Additionally, Abigail is a contributing member of the Python Software Foundation, a contributor to the Django Newsletter, and a Djangonaut. \r\nShe has served on various organising teams, including the programme committee for the Open Source Summit Europe 2024 (Linux Foundation) and as an organiser for PyCon UK 2025. \r\nAfi is passionate about building tech spaces and contributing to global tech ecosystems through her leadership.",
+    "bluesky_url": null,
+    "code": "SKGET8",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/abigail-afi-gbadago",
+    "mastodon_url": null,
+    "name": "Abigail Afi Gbadago",
+    "slug": "abigail-afi-gbadago",
+    "submissions": [
+      "BUP8JK"
+    ],
+    "timezone": "UTC+1",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/abigail-afi-gbadago"
   },
   "TC39WF": {
     "affiliation": null,
@@ -962,7 +1022,7 @@
   },
   "YY9HAB": {
     "affiliation": "Vinta Software",
-    "avatar": "https://pretalx.com/media/avatars/YY9HAB_P1AWR3t.jpg",
+    "avatar": "https://pretalx.com/media/avatars/YY9HAB_PARFdPV.jpg",
     "biography": "Amanda is an Engineering Manager at Vinta Software. She considers herself to be a hybrid professional, having a background in business and software engineering. Amanda enjoys getting into technical topics, having been a speaker at conferences such as DjangoCon US, DjangoCon Europe and Python Brasil in the past, but loves discussing the overlap and challenges around technical and non-technical domains. She\u2019s a social introvert with a passion for cooking, writing, music, video games and (shockingly, based on her history) strength training. Her current goal is to be less chronically online and touch some grass from time to time.",
     "bluesky_url": null,
     "code": "YY9HAB",

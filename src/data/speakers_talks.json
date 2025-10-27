@@ -363,6 +363,33 @@
     "website_url": "https://2025.conference.pyladies.com/session/flinta-job-hunting-in-2025",
     "youtube_url": null
   },
+  "BUP8JK": {
+    "abstract": "Draft",
+    "code": "BUP8JK",
+    "delivery": "",
+    "duration": "30",
+    "end": null,
+    "language": "en",
+    "level": "intermediate",
+    "next_session": null,
+    "prev_session": null,
+    "resources": null,
+    "room": null,
+    "session_type": "Keynote",
+    "sessions_after": null,
+    "sessions_before": null,
+    "sessions_in_parallel": null,
+    "slug": "draft",
+    "speakers": [
+      "SKGET8"
+    ],
+    "start": null,
+    "title": "Draft",
+    "track": "The Python programming language",
+    "tweet": "",
+    "website_url": "https://2025.conference.pyladies.com/session/draft",
+    "youtube_url": null
+  },
   "C7W8QM": {
     "abstract": "In this presentation, my son and I will talk about building a random route generator to augment the board game Ticket to Ride.  Our code chooses cities at random and computes their shortest distance, which translates to points in the game.  We explore playful learning and the concepts of computational thinking to learn and implement an algorithm.   It\u2019s been a joy to share my love of coding and we are working to improve our project.",
     "code": "C7W8QM",
@@ -1200,6 +1227,33 @@
     "website_url": "https://2025.conference.pyladies.com/session/how-to-teach-your-language-to-python-with-cpython",
     "youtube_url": null
   },
+  "SXJPB7": {
+    "abstract": "The free and open-source software community is an astonishing global feat of human collaboration, independently of the software that it creates. Taking a more active role in this community offers significant potential benefits, but also plenty of opportunities for frustration and disappointment. Sparing some time for personal reflection on the question posed in this talk can go a long way towards making our community interactions a positive experience for all involved.",
+    "code": "SXJPB7",
+    "delivery": "",
+    "duration": "30",
+    "end": null,
+    "language": "en",
+    "level": "beginner",
+    "next_session": null,
+    "prev_session": null,
+    "resources": null,
+    "room": null,
+    "session_type": "Keynote",
+    "sessions_after": null,
+    "sessions_before": null,
+    "sessions_in_parallel": null,
+    "slug": "do-you-want-to-get-more-involved-in-open-source",
+    "speakers": [
+      "FYVKMX"
+    ],
+    "start": null,
+    "title": "Do you want to get more involved in open source?",
+    "track": "Community management",
+    "tweet": "",
+    "website_url": "https://2025.conference.pyladies.com/session/do-you-want-to-get-more-involved-in-open-source",
+    "youtube_url": null
+  },
   "UAJAKB": {
     "abstract": "Acquisition of satellite imagery, frequently becomes corrupted by various forms of noise, which degrades image quality and impedes accurate interpretation and subsequent analysis. This paper presents a novel, integrated approach for effective noise removal from such imagery, utilizing the capabilities of the Wavelet transform based thresholding, Singular Value Decomposition (SVD), and also autoencoders. The Wiener filter, proves adept at addressing stationary noise, particularly effective in suppressing additive Gaussian noise whilst preserving important details based on local statistics. Following this, SVDs are employed to exploit the inherent low-rank structure characteristic of natural images, enabling further noise reduction by reconstructing the image from its more significant singular values, thereby separating signal from noise components. Finally, an autoencoder, which is are powerful deep learning architecture, is then utilized for its capacity to learn complex, non-linear representations from noisy inputs. This data-driven strategy allows the autoencoder to effectively apprehend intricate noise patterns and reconstruct high-fidelity images, offering particular benefit for complex or non-stationary noise types where traditional filters may struggle. By combining these complementary techniques, the proposed methodology aims for superior noise suppression, the preservation of crucial image features, and the enhancement of overall visual quality and analytical utility of satellite images. Expected results demonstrate significant improvements in signal-to-noise ratio and perceptual quality compared to individual methods, highlighting the synergistic benefits of this combined framework.",
     "code": "UAJAKB",
@@ -1284,6 +1338,33 @@
     "track": "AI / ML",
     "tweet": "",
     "website_url": "https://2025.conference.pyladies.com/session/main-character-energy-taking-back-control-of-your-data-from-ai",
+    "youtube_url": null
+  },
+  "WRPAMN": {
+    "abstract": "Ser mujer en tecnolog\u00eda no es solo ocupar un espacio en un sector hist\u00f3ricamente dominado por hombres: es transformar la manera en que lideramos, innovamos y construimos futuro. En esta charla exploraremos c\u00f3mo el liderazgo femenino puede convertirse en una fuerza catalizadora dentro de la industria del software, impulsando culturas m\u00e1s humanas, colaborativas y de alto desempe\u00f1o.\r\n\r\nDurante 30 minutos recorreremos los desaf\u00edos y oportunidades de liderar en el mundo tech desde la autenticidad, la visi\u00f3n estrat\u00e9gica y la empat\u00eda. Hablaremos de herramientas pr\u00e1cticas para desarrollar liderazgo t\u00e9cnico y organizacional, gestionar talento diverso, fomentar la innovaci\u00f3n y construir equipos aut\u00f3nomos que escalan sin perder su esencia.\r\n\r\nTambi\u00e9n abordaremos las claves para crecer como l\u00edder: c\u00f3mo navegar entornos de alta complejidad, ganar influencia sin perder la voz propia, y convertir la diversidad en una ventaja competitiva. A trav\u00e9s de ejemplos reales, compartir\u00e9 aprendizajes sobre c\u00f3mo crear entornos donde las personas puedan brillar, las ideas fluyan y la excelencia se sostenga en el tiempo.\r\n\r\nEsta charla es una invitaci\u00f3n a repensar el liderazgo desde el ADN femenino: m\u00e1s colaborativo que jer\u00e1rquico, m\u00e1s orientado al prop\u00f3sito que al control, y profundamente consciente de que la tecnolog\u00eda no solo resuelve problemas, sino que moldea la forma en que habitamos el mundo.",
+    "code": "WRPAMN",
+    "delivery": "",
+    "duration": "30",
+    "end": null,
+    "language": "es",
+    "level": "intermedio",
+    "next_session": null,
+    "prev_session": null,
+    "resources": null,
+    "room": null,
+    "session_type": "Keynote",
+    "sessions_after": null,
+    "sessions_before": null,
+    "sessions_in_parallel": null,
+    "slug": "liderazgo-femenino-en-el-mundo-tech",
+    "speakers": [
+      "9XSYUK"
+    ],
+    "start": null,
+    "title": "Liderazgo femenino en el mundo Tech",
+    "track": "Habilidades de liderazgo",
+    "tweet": "",
+    "website_url": "https://2025.conference.pyladies.com/session/liderazgo-femenino-en-el-mundo-tech",
     "youtube_url": null
   },
   "WZTMVK": {
