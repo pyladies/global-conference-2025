@@ -8,6 +8,11 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const champions = [
+  {
+    name: "Meta",
+    logo: "/images/sponsors/meta.png",
+    url: "https://www.meta.com/",
+  },
 ];
 const supporters = [
   {
@@ -109,13 +114,13 @@ const media_partners = [
   </div>
 
   <!-- Champion -->
-  { champions.length ?
-  <h2 class="font-semibold text-yellow-200 dark:text-red-200 text-2xl" id="champions-sponsors">Champions Sponsors</h2>
+  { champions.length > 0 ?
+  <h2 class="font-semibold dark:text-white text-3xl mt-20" id="champion-sponsors">Champion</h2>
   <div class="mx-auto my-2 max-w-2xl sm:my-5 lg:my-8 lg:max-w-none">
     <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-1">
       {
         champions.map((item) => (
-          <div class="flex flex-col hover:bg-gray-50 dark:hover:bg-red-50">
+          <div class="flex flex-col dark:bg-slate-300 hover:bg-gray-50 dark:hover:bg-red-50">
             <dt class="flex items-center align-center justify-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white">
               <a href={item.url}><img class="w-64 h-64" src={item.logo} /></a>
             </dt>
