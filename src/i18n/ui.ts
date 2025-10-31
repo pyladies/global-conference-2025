@@ -21,7 +21,7 @@ export const ui = {
     "conf.panels": "Join thought-provoking discussions on topics ranging from Python development to career growth and beyond.",
     "conf.panels_title": "Engaging Panels",
     "conf.sprints": "Learning hands-on or contributing to a project, you decide! Join the sprints and workshops.",
-    "conf.sprints_title": "Sprints And Workshop",
+    "conf.sprints_title": "Sprints and Workshop",
     "conf.talks": "Dive deep into Python’s latest trends, best practices, and cutting-edge technologies with our inspiring speakers.",
     "conf.talks_title": "Insightful Talks",
     "conf.volunteers": "We would not be able to run this conference without help from our volunteers. Please check the Volunteer guide for more details on how to volunteer!",
