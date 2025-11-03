@@ -6,7 +6,6 @@
 	"scripts": {
 		"dev": "astro dev --host",
 		"start": "astro dev",
-  		"prebuild": "node fetch-json.js",
 		"build": "astro build",
 		"build:localized": "pnpm run build",
 		"preview": "astro preview",
