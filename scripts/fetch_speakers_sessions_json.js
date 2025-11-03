@@ -16,10 +16,27 @@ fs.mkdirSync(destFolder, { recursive: true });
 const speakersResult = await fetch(urlSpeakers);
 if (!speakersResult.ok) throw new Error(`Error fetching data: ${speakersResult.status}`);
 
-const speakers = await speakersResult.text();
+const speakers = await speakersResult.json();
 
-fs.writeFileSync(destSpeakersPath, speakers);
-console.log(`Speakers saved in ${destSpeakersPath}`);
+const speakersArray = Object.entries(speakers).map(([key, value]) => ({
+  id: key,
+  ...value
+}));
+
+speakersArray.sort((a, b) =>
+  (a.slug || "").localeCompare(b.slug || "", undefined, { sensitivity: "base" })
+);
+
+const orderedSpeakers = Object.fromEntries(
+  speakersArray.map(s => [s.id, s])
+);
+
+fs.writeFileSync(destSpeakersPath, JSON.stringify(orderedSpeakers, null, 2));
+console.log(`Speakers saved (ordered) in ${destSpeakersPath}`);
+
+
+// fs.writeFileSync(destSpeakersPath, speakers);
+// console.log(`Speakers saved in ${destSpeakersPath}`);
 
 const sessionsResult = await fetch(urlSessions);
 if (!sessionsResult.ok) throw new Error(`Error fetching data: ${sessionsResult.status}`);

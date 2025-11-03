@@ -1,45 +1,258 @@
 {
-  "7G8DH3": {
-    "affiliation": "AgileLab",
-    "avatar": "https://pretalx.com/media/avatars/7G8DH3_rc7mKfI.jpg",
-    "biography": "Giulia Silvestro is a highly skilled data professional specializing in big data engineering, data processing pipelines, and advanced analytics solutions. Currently a Big Data Engineer at Agile Lab, she focuses on designing and optimizing data architectures that power scalable, high-performance applications.",
+  "SKGET8": {
+    "id": "SKGET8",
+    "affiliation": "MongoDB / Django Software Foundation",
+    "avatar": "https://pretalx.com/media/avatars/SKGET8_zVGqPJl.webp",
+    "biography": "Abigail Afi Gbadago is a software engineer and developer advocate with a deep passion for technology and community. \r\nShe serves on the Django Software Foundation board, is the programme chair for DjangoCon US 2025, is the regional executor for Black Python devs, and is a Microsoft MVP for the Python and Web track. Additionally, Abigail is a contributing member of the Python Software Foundation, a contributor to the Django Newsletter, and a Djangonaut. \r\nShe has served on various organising teams, including the programme committee for the Open Source Summit Europe 2024 (Linux Foundation) and as an organiser for PyCon UK 2025. \r\nAfi is passionate about building tech spaces and contributing to global tech ecosystems through her leadership.",
     "bluesky_url": null,
-    "code": "7G8DH3",
+    "code": "SKGET8",
     "gitx_url": null,
     "homepage": null,
     "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/giuliasilvestro",
+    "linkedin_url": "https://linkedin.com/in/abigail-afi-gbadago",
     "mastodon_url": null,
-    "name": "Giulia Silvestro",
-    "slug": "giulia-silvestro",
+    "name": "Abigail Afi Gbadago",
+    "slug": "abigail-afi-gbadago",
     "submissions": [
-      "3RFQUE"
+      "BUP8JK"
     ],
-    "timezone": "UTC+2",
+    "timezone": "UTC+1",
     "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/giulia-silvestro"
+    "website_url": "https://2025.conference.pyladies.com/speaker/abigail-afi-gbadago"
   },
-  "7Q3TSS": {
-    "affiliation": "Mest Africa",
-    "avatar": "https://pretalx.com/media/avatars/7Q3TSS_oUIFAzB.jpg",
-    "biography": null,
+  "NMFFCT": {
+    "id": "NMFFCT",
+    "affiliation": "AsyncAPI Initiative & OpenNest-Africa",
+    "avatar": "https://pretalx.com/media/avatars/NMFFCT_KpAURs4.webp",
+    "biography": "Aishat Muibudeen is the Design Lead at the AsyncAPI Initiative, where she also serves on the Code of Conduct and Technical Steering Committees. She’s an active contributor to CHAOSS and the founder of OpenNest-Africa, a community built to make open source less intimidating and more fun, especially for folks from underrepresented backgrounds.\r\n\r\nHer work intersects inclusive design, community care, and open-source sustainability. She’s a frequent speaker on these topics and presented her paper “Beyond the Code: How Diversity and Inclusion Shape the Future of Open Source” at the OpenForum Academy Symposium (OFA) in 2024.\r\n\r\nDriven by a love for storytelling and systems change, Aishat believes community is just as critical as code. She's passionate about helping people feel seen, supported, and safe in tech spaces — and yes, she’s learning German too, weil Wachstum nicht am Keyboard endet.",
     "bluesky_url": null,
-    "code": "7Q3TSS",
+    "code": "NMFFCT",
+    "gitx_url": null,
+    "homepage": "https://www.linkedin.com/in/aishatmuibudeen",
+    "instagram_url": "https://instagram.com/maya_ux_ui",
+    "linkedin_url": "https://linkedin.com/in/aishatmuibudeen",
+    "mastodon_url": null,
+    "name": "Aishat Muibudeen",
+    "slug": "aishat-muibudeen",
+    "submissions": [
+      "7UL7TG"
+    ],
+    "timezone": "UTC+1",
+    "twitter_url": "https://x.com/maya_ux_ui",
+    "website_url": "https://2025.conference.pyladies.com/speaker/aishat-muibudeen"
+  },
+  "FYVKMX": {
+    "id": "FYVKMX",
+    "affiliation": null,
+    "avatar": "https://pretalx.com/media/avatars/FYVKMX_j4L3AAK.webp",
+    "biography": "Alyssa has been a CPython core contributor since 2005, and served on the inaugural Python Steering Council in 2019. She was the default approval delegate for Python packaging interoperability PEPs from 2013 to 2018. She was elected for two terms on the Python Software Foundation Board of Directors (2014-2016), and founded the PyCon Australia Education Seminar in 2015.\r\n\r\nProfessionally, Alyssa's career has spanned high frequency radio communications in the Australian defence sector, automated hardware integration testing infrastructure for Red Hat Enterprise Linux, remote management and monitoring of global EV fast charging systems, and, most recently, enabling local execution of generative AI language models.",
+    "bluesky_url": null,
+    "code": "FYVKMX",
+    "gitx_url": null,
+    "homepage": "https://www.curiousefficiency.org",
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/alyssa-coghlan",
+    "mastodon_url": "https://mastodon.social/@ancoghlan",
+    "name": "Alyssa Coghlan",
+    "slug": "alyssa-coghlan",
+    "submissions": [
+      "SXJPB7"
+    ],
+    "timezone": "UTC+10",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/alyssa-coghlan"
+  },
+  "YY9HAB": {
+    "id": "YY9HAB",
+    "affiliation": "Vinta Software",
+    "avatar": "https://pretalx.com/media/avatars/YY9HAB_2ae7psx.webp",
+    "biography": "Amanda is an Engineering Manager at Vinta Software. She considers herself to be a hybrid professional, having a background in business and software engineering. Amanda enjoys getting into technical topics, having been a speaker at conferences such as DjangoCon US, DjangoCon Europe and Python Brasil in the past, but loves discussing the overlap and challenges around technical and non-technical domains. She’s a social introvert with a passion for cooking, writing, music, video games and (shockingly, based on her history) strength training. Her current goal is to be less chronically online and touch some grass from time to time.",
+    "bluesky_url": null,
+    "code": "YY9HAB",
     "gitx_url": null,
     "homepage": null,
     "instagram_url": null,
     "linkedin_url": null,
     "mastodon_url": null,
-    "name": "Rahmat Akintola",
-    "slug": "rahmat-akintola",
+    "name": "Amanda Savluchinske",
+    "slug": "amanda-savluchinske",
     "submissions": [
-      "YL3LZC"
+      "DA7ZYQ"
+    ],
+    "timezone": "UTC-3",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/amanda-savluchinske"
+  },
+  "KFWB9G": {
+    "id": "KFWB9G",
+    "affiliation": null,
+    "avatar": "https://pretalx.com/media/avatars/KFWB9G_JISHeej.webp",
+    "biography": "Ana se graduó de la carrera de grado Ingeniera en Sistemas de Información y del posgrado Especialista en Inteligencia Artificial. Trabaja como docente e investigadora universitaria y brindando asesoramiento en proyectos de ciencia de datos. Es fundadora y co-organizadora del capítulo R-Ladies de Mendoza, Argentina.",
+    "bluesky_url": "https://bsky.app/profile/anadiedrichs.bsky.social",
+    "code": "KFWB9G",
+    "gitx_url": null,
+    "homepage": "https://anadiedrichs.github.io/",
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/ana-laura-diedrichs",
+    "mastodon_url": null,
+    "name": "Ana Laura Diedrichs",
+    "slug": "ana-laura-diedrichs",
+    "submissions": [
+      "9UC39C"
+    ],
+    "timezone": "UTC-12",
+    "twitter_url": "https://x.com/anadiedrichs",
+    "website_url": "https://2025.conference.pyladies.com/speaker/ana-laura-diedrichs"
+  },
+  "PEGZDM": {
+    "id": "PEGZDM",
+    "affiliation": "Bloomberg",
+    "avatar": "https://pretalx.com/media/avatars/PEGZDM_zAKhBH6.webp",
+    "biography": "Ava Katushka is a software engineer and artist who blends creativity with code. By day, she builds back-end systems and tinkers with front-end projects at Bloomberg; by night, she creates watercolor art, postcards, and quirky illustrations. Prior to joining Bloomberg, Ava worked at Yandex, Google and Mozilla. She loves algorithms and data structures and has [her own website](ava-coding.com) dedicated to them.\r\n\r\nDuring conferences, Ava love to make art notes. Her unique note-taking style combines doodles, symbols, and words to make conference learning stick — and she’s on a mission to help others turn their notes into visual stories worth remembering. You can see some of her [notes from EuroPython 2025 here](https://www.linkedin.com/posts/ava-katushka-0628ab104_second-day-on-europyton-was-so-exciting-activity-7351861808082657280-8dGv.).\r\n\r\nAva earned a bachelor's degree in computer science from the Moscow Institute of Physics and Technology",
+    "bluesky_url": null,
+    "code": "PEGZDM",
+    "gitx_url": null,
+    "homepage": "ava-coding.com",
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/ava-katushka-0628ab104",
+    "mastodon_url": null,
+    "name": "Ava Katushka",
+    "slug": "ava-katushka",
+    "submissions": [
+      "RURANB"
     ],
     "timezone": "UTC+0",
     "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/rahmat-akintola"
+    "website_url": "https://2025.conference.pyladies.com/speaker/ava-katushka"
+  },
+  "FSVYU9": {
+    "id": "FSVYU9",
+    "affiliation": "timecopilot.dev",
+    "avatar": "https://pretalx.com/media/avatars/FSVYU9_2sUU9lq.webp",
+    "biography": "🇲🇽🏳️‍⚧️ Machine Learning and AI leader with a background in econometrics and mathematics. She served as a CTO and Co-Founder of Nixtla. Co-creator of the Nixtlaverse. She loves live coding and has spoken at events like ISF, Microsoft Build, AWS reInvent, and PyCons. Author of peer-reviewed papers and recipient of prestigious awards in forecasting and AI.",
+    "bluesky_url": "https://bsky.app/profile/azulgarza.bsky.social",
+    "code": "FSVYU9",
+    "gitx_url": null,
+    "homepage": "https://github.com/AzulGarza",
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/azul-garza-ramirez",
+    "mastodon_url": null,
+    "name": "Azul Garza",
+    "slug": "azul-garza",
+    "submissions": [
+      "QQRHRF"
+    ],
+    "timezone": "UTC-7",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/azul-garza"
+  },
+  "Z9DWXE": {
+    "id": "Z9DWXE",
+    "affiliation": "Becc Academy",
+    "avatar": "https://pretalx.com/media/avatars/Z9DWXE_lxyI03y.webp",
+    "biography": "Barbara Asiamah is a Digital Skills Training Specialist, Data Analyst, and passionate Python educator based in Ghana. She has over four years of experience designing and delivering beginner-friendly tech programs, with a focus on empowering women and young people. Barbara has organized and mentored at multiple community events, including Django Girls Koforidua, and is committed to making technology accessible and inclusive. She is also actively involved in teaching Python, web development, and data skills through workshops and community-driven initiatives.",
+    "bluesky_url": "https://bsky.app/profile/barbaraasiamah.bsky.social",
+    "code": "Z9DWXE",
+    "gitx_url": null,
+    "homepage": "becc-innovators.netlify.app",
+    "instagram_url": "https://instagram.com/barbara_asiamah",
+    "linkedin_url": "https://linkedin.com/in/barbara-asiamah",
+    "mastodon_url": null,
+    "name": "Barbara Asiamah",
+    "slug": "barbara-asiamah",
+    "submissions": [
+      "DL9FEZ"
+    ],
+    "timezone": "UTC+0",
+    "twitter_url": "https://x.com/barbaraasiamah5",
+    "website_url": "https://2025.conference.pyladies.com/speaker/barbara-asiamah"
+  },
+  "SEKTPR": {
+    "id": "SEKTPR",
+    "affiliation": null,
+    "avatar": "https://pretalx.com/media/avatars/SEKTPR_psJXt7m.webp",
+    "biography": null,
+    "bluesky_url": null,
+    "code": "SEKTPR",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": null,
+    "mastodon_url": null,
+    "name": "bonny p mcclain",
+    "slug": "bonny-p-mcclain",
+    "submissions": [
+      "GMGLFN"
+    ],
+    "timezone": null,
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/bonny-p-mcclain"
+  },
+  "GXBKTT": {
+    "id": "GXBKTT",
+    "affiliation": "Cumbuca Dev",
+    "avatar": "https://pretalx.com/media/avatars/GXBKTT_X3YRK7p.webp",
+    "biography": "Backend developer focused on Developer Experience and co-founder of Cumbuca Dev, an organization that promotes diversity in technology through education and open source. People > Technology 💜",
+    "bluesky_url": null,
+    "code": "GXBKTT",
+    "gitx_url": null,
+    "homepage": "https://www.cmaiacd.com/",
+    "instagram_url": "https://instagram.com/cmaiacd",
+    "linkedin_url": "https://linkedin.com/in/cmaiacd",
+    "mastodon_url": "https://mastodon.social/@cmaiacd",
+    "name": "Camila Maia",
+    "slug": "camila-maia",
+    "submissions": [
+      "YHBWR8"
+    ],
+    "timezone": "UTC-3",
+    "twitter_url": "https://x.com/cmaiacd",
+    "website_url": "https://2025.conference.pyladies.com/speaker/camila-maia"
+  },
+  "BEXEUC": {
+    "id": "BEXEUC",
+    "affiliation": "Collin College",
+    "avatar": "https://pretalx.com/media/avatars/BEXEUC_KNsR3O3.webp",
+    "biography": "Cary Jim holds a Ph.D. in Information Science with a concentration in Data Science. She brings a strong background in user research and analytics, applying a holistic approach to understanding user characteristics and behavior across diverse environments. Cary is passionate about leveraging data to drive meaningful insights and enjoys getting hands-on with the latest technology tools. Outside of work, she loves experimenting with new recipes in the kitchen and unwinding with British detective shows.",
+    "bluesky_url": null,
+    "code": "BEXEUC",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/cary-k-jim-40046152",
+    "mastodon_url": null,
+    "name": "Cary Jim",
+    "slug": "cary-jim",
+    "submissions": [
+      "GJNWXT"
+    ],
+    "timezone": "UTC-5",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/cary-jim"
+  },
+  "TJGMMZ": {
+    "id": "TJGMMZ",
+    "affiliation": null,
+    "avatar": "https://pretalx.com/media/avatars/TJGMMZ_CytIWGV.webp",
+    "biography": "Cecilia  é coorganizadora do capitulo Pyladies Maputo. Actualmente, tem colaborado activamente na promoão da diversidade e inclusão de género no sector tecnológico.",
+    "bluesky_url": null,
+    "code": "TJGMMZ",
+    "gitx_url": null,
+    "homepage": "https://ctivir.github.io",
+    "instagram_url": "https://instagram.com/ctivir",
+    "linkedin_url": "https://linkedin.com/in/ctivir",
+    "mastodon_url": null,
+    "name": "Cecilia Tivir",
+    "slug": "cecilia-tivir",
+    "submissions": [
+      "JSXHTQ"
+    ],
+    "timezone": "UTC+2",
+    "twitter_url": "https://x.com/ctivir",
+    "website_url": "https://2025.conference.pyladies.com/speaker/cecilia-tivir"
   },
   "7QVDVR": {
+    "id": "7QVDVR",
     "affiliation": "Bioconductor",
     "avatar": "",
     "biography": null,
@@ -59,89 +272,10 @@
     "twitter_url": null,
     "website_url": "https://2025.conference.pyladies.com/speaker/chioma-onyido"
   },
-  "8AXEMT": {
-    "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/8AXEMT_wDD9PLc.jpg",
-    "biography": "As an educator, committed to exploring the use of python in data science, machine learning and artificial intelligence for teaching and learning. Passionate about special needs learners and with  the rise in the number of learners with disability to read and write in Nigeria (Dyslexia), I desire to impact learners the more to read, write and attain academic excellence using Python Programming Language",
-    "bluesky_url": null,
-    "code": "8AXEMT",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/olukemi-jacobs-924971275",
-    "mastodon_url": null,
-    "name": "Oluwakemi Omowunmi Jacobs",
-    "slug": "oluwakemi-omowunmi-jacobs",
-    "submissions": [
-      "A7MQRH"
-    ],
-    "timezone": "UTC-12",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/oluwakemi-omowunmi-jacobs"
-  },
-  "8T7CFD": {
-    "affiliation": "PublicNext",
-    "avatar": "https://pretalx.com/media/avatars/8T7CFD_IRGx4r2.png",
-    "biography": "Vasiliki is a software engineer and R&D Engineering Lead, currently focusing on projects at the intersection of AI, innovation, and social good. She\u2019s a PyGreece organizer, Women Techmakers Ambassador, and #IAmRemarkable facilitator, supporting inclusive tech communities and mentoring newcomers. She also co-leads Boundless Minds, a space for open conversations about impostor syndrome, public speaking, and emotional well-being in the workplace. When she's not coding or organizing events, you'll find her sketching ideas for her next handmade bag or swapping movie tips over coffee.",
-    "bluesky_url": null,
-    "code": "8T7CFD",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": "https://instagram.com/vadal87",
-    "linkedin_url": "https://linkedin.com/in/vadalakiari",
-    "mastodon_url": null,
-    "name": "Vassiliki Dalakiari",
-    "slug": "vassiliki-dalakiari",
-    "submissions": [
-      "QQDM7H"
-    ],
-    "timezone": "UTC+2",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/vassiliki-dalakiari"
-  },
-  "9G37BP": {
-    "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/9G37BP_hwXisT3.jpg",
-    "biography": "\u64c1\u6709\u8d85\u904e\u5341\u5e74\u7684 Data Engineer \u7d93\u9a57\uff0c\u64c5\u9577\u8cc7\u6599\u6574\u7406\u8207\u61c9\u7528\uff0c\u81f4\u529b\u65bc\u8b93\u8cc7\u6599\u6210\u70ba\u6c7a\u7b56\u7684\u53c3\u8003\u3002\u71b1\u611b\u6559\u80b2\u8207\u793e\u7fa4\u53c3\u8207\uff0c\u9577\u5e74\u900f\u904e\u6559\u5b78\u8207\u6d3b\u52d5\u8a2d\u8a08\uff0c\u5354\u52a9\u5404\u7a2e\u5e74\u9f61\u8207\u80cc\u666f\u7684\u4eba\u9081\u5165\u7a0b\u5f0f\u4e16\u754c\uff0c\u4e5f\u6301\u7e8c\u5728 PyLadies Taiwan \u7b49\u793e\u7fa4\u63a8\u52d5\u6280\u8853\u50b3\u627f\u8207\u4ea4\u6d41\u3002",
-    "bluesky_url": null,
-    "code": "9G37BP",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/marsw",
-    "mastodon_url": null,
-    "name": "Mars Weng",
-    "slug": "mars-weng",
-    "submissions": [
-      "QZFBCH"
-    ],
-    "timezone": "UTC+8",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/mars-weng"
-  },
-  "9XSYUK": {
-    "affiliation": "LATAM Airlines",
-    "avatar": "https://pretalx.com/media/avatars/9XSYUK_ZJRGwrC.jpg",
-    "biography": "CTO | Tech Strategy | Digital Transformation | Agile Leadership | High-Performance Teams\r\n\r\nEjecutiva de tecnolog\u00eda con m\u00e1s de 15 a\u00f1os liderando equipos de ingenier\u00eda e iniciativas de transformaci\u00f3n digital en organizaciones de alto impacto. Me apasiona desarrollar capacidades organizacionales escalables, desde empoderar a equipos tecnol\u00f3gicos aut\u00f3nomos hasta promover la excelencia operativa y la mejora continua.\r\n\r\nEspecializada en entrega de software, m\u00e9tricas de flujo, metodolog\u00edas \u00e1giles, dise\u00f1o organizacional y liderazgo t\u00e9cnico. Mi experiencia abarca startups, scaleups, empresas tradicionales y consultoras internacionales, combinando siempre pensamiento estrat\u00e9gico, ejecuci\u00f3n \u00e1gil y una mentalidad centrada en las personas.\r\n\r\nMi prop\u00f3sito: ayudar a equipos y organizaciones a alcanzar su m\u00e1ximo potencial fomentando las estructuras, habilidades y mentalidades adecuadas para un impacto real.\r\n\r\n\ud83d\udce2 Public Speaker | \ud83d\udcca Data-Driven Delivery | \ud83d\udee0\ufe0f Lean Inception Facilitator | \ud83e\udd1d Tech & Leadership Mentor",
-    "bluesky_url": null,
-    "code": "9XSYUK",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": null,
-    "mastodon_url": null,
-    "name": "Patty Trejo",
-    "slug": "patty-trejo",
-    "submissions": [
-      "WRPAMN"
-    ],
-    "timezone": "UTC-3",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/patty-trejo"
-  },
   "AMGWA8": {
+    "id": "AMGWA8",
     "affiliation": "Hungryroot",
-    "avatar": "https://pretalx.com/media/avatars/AMGWA8_sTMRLyn.JPG",
+    "avatar": "https://pretalx.com/media/avatars/AMGWA8_uxKpAsK.webp",
     "biography": "Backend (sometimes Full-Stack) Engineer who loves dogs and the circus and making Developers' lives easier and more enjoyable.",
     "bluesky_url": null,
     "code": "AMGWA8",
@@ -159,710 +293,10 @@
     "twitter_url": null,
     "website_url": "https://2025.conference.pyladies.com/speaker/colleen-dunlap"
   },
-  "BEXEUC": {
-    "affiliation": "Collin College",
-    "avatar": "https://pretalx.com/media/avatars/BEXEUC_9VyXvdR.jpg",
-    "biography": "Cary Jim holds a Ph.D. in Information Science with a concentration in Data Science. She brings a strong background in user research and analytics, applying a holistic approach to understanding user characteristics and behavior across diverse environments. Cary is passionate about leveraging data to drive meaningful insights and enjoys getting hands-on with the latest technology tools. Outside of work, she loves experimenting with new recipes in the kitchen and unwinding with British detective shows.",
-    "bluesky_url": null,
-    "code": "BEXEUC",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/cary-k-jim-40046152",
-    "mastodon_url": null,
-    "name": "Cary Jim",
-    "slug": "cary-jim",
-    "submissions": [
-      "GJNWXT"
-    ],
-    "timezone": "UTC-5",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/cary-jim"
-  },
-  "BT38TD": {
-    "affiliation": "World Resources Institute",
-    "avatar": "https://pretalx.com/media/avatars/BT38TD_Bu71EcB.jpeg",
-    "biography": "Jessica Ertel is a Data Science Manager at the World Resources Institute, where she applies artificial intelligence and remote sensing to monitor environmental restoration at scale. She leads research prioritization and delivery, and enjoys translating complex scientific research into scalable, cloud-based geospatial workflows in Python.\r\n\r\nJessica has over a decade of experience bridging technical, operational, and strategic roles in the environmental sector, including forestry, renewable energy, conservation and urban water management. She holds a self-designed, interdisciplinary B.A. in Global Environmental Affairs from Bucknell University.",
-    "bluesky_url": null,
-    "code": "BT38TD",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/jessicaertel",
-    "mastodon_url": null,
-    "name": "Jessica Ertel",
-    "slug": "jessica-ertel",
-    "submissions": [
-      "JV7TG9"
-    ],
-    "timezone": "UTC-5",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/jessica-ertel"
-  },
-  "CBMJA7": {
-    "affiliation": "Posit, PBC",
-    "avatar": "https://pretalx.com/media/avatars/CBMJA7_MUmU0X4.JPG",
-    "biography": "I am a software engineer at Posit, PBC, where I build Python-based open source data science tools. I\u2019m an Emeritus Editor in Chief at pyOpenSci, an organization that supports scientific Python tools by offering peer reviews of packages. I graduated from Florida Polytechnic University with my Masters in Computer Science, focused in Data Science. When not thinking about computers, I enjoy reading and teaching my dog tricks.",
-    "bluesky_url": "https://bsky.app/profile/isabelizimm.bsky.social",
-    "code": "CBMJA7",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/isabel-zimmerman",
-    "mastodon_url": null,
-    "name": "Isabel Zimmerman",
-    "slug": "isabel-zimmerman",
-    "submissions": [
-      "CCAGCB"
-    ],
-    "timezone": "UTC-12",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/isabel-zimmerman"
-  },
-  "CLHQXK": {
-    "affiliation": "Microsoft",
-    "avatar": "https://pretalx.com/media/avatars/CLHQXK_bT8aLkw.jpg",
-    "biography": "Pamela Fox is a human that loves to learn, teach, and create. She's currently a Cloud Advocate in Python at Microsoft, where she helps developers use Python with the many Azure offerings.\r\n\r\nOn the teaching front, Pamela has taught computer science at UC Berkeley and volunteered in bay area classrooms as part of the TEALS, GirlsWhoCode, and CoderDojo organizations. She also started the SF chapter of GirlDevelopIt, where she taught dozens of web development workshops.\r\n\r\nPamela's been in the tech industry for 15 years now, starting with her first role at Google as one of their first developer advocates. She went on to be an early full-stack engineer at Coursera and spent many years after at Khan Academy, both as an engineer and the creator of the computer programming content.",
-    "bluesky_url": "https://bsky.app/profile/pamelafox.bsky.social",
-    "code": "CLHQXK",
-    "gitx_url": null,
-    "homepage": "https://pamelafox.org/",
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/pamela-s-fox",
-    "mastodon_url": "https://fosstodon.org/@pamelafox",
-    "name": "Pamela Fox",
-    "slug": "pamela-fox",
-    "submissions": [
-      "EPHCZC"
-    ],
-    "timezone": "UTC-8",
-    "twitter_url": "https://x.com/pamelafox",
-    "website_url": "https://2025.conference.pyladies.com/speaker/pamela-fox"
-  },
-  "CYGEJV": {
-    "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/CYGEJV_BSzOkDg.jpg",
-    "biography": "I am a leadership-focused professional with a deep background in tech, dedicated to fostering inclusive cultures and driving meaningful organizational change.\r\n\r\nI\u2019m passionate about creating environments where psychological safety is the foundation, where every team member feels trusted, heard, and empowered to take risks and grow. My approach to leadership centers on empathy, clear communication, and mentoring others to reach their full potential. I believe emotional intelligence is as critical as technical skill to building innovative, resilient teams.",
-    "bluesky_url": "https://bsky.app/profile/tialobo.bsky.social",
-    "code": "CYGEJV",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/ebwolf",
-    "mastodon_url": null,
-    "name": "Erica Wolf",
-    "slug": "erica-wolf",
-    "submissions": [
-      "AWCC7R"
-    ],
-    "timezone": "UTC+1",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/erica-wolf"
-  },
-  "DNUJPT": {
-    "affiliation": "KLS Gogte Institute of Technology",
-    "avatar": "https://pretalx.com/media/avatars/DNUJPT_iq6PZjG.jpg",
-    "biography": "**Swarooprani Manoor** is an **Assistant Professor** in the **Master of Computer Applications department** at KLS Gogte Institute of Technology, Belagavi, India, with over **20 years of teaching experience**. She specializes in **Python Programming, Data Science, Unix Shell Scripting**, and **Blockchain Technology**.\r\n\r\nSwarooprani is passionate about making technical education accessible. She has conducted several **Python workshops** for colleges and schools, including a PyDiverse workshop under **PyCon India 2023** for school students. She has also spoken at Python community events such as **PyLadiesCon 2023** & **PyLadiesCon 2024** and **BelPy 2024**.\r\n\r\nOutside the classroom, she is a well-known tech communicator. She writes technical articles in Kannada and is a **two-time Quora Kannada Top Writer (2021, 2022)**. She manages the **Quora space Ganakayantra Tantrajnana**, and also runs a popular **LinkedIn newsletter, Python: Unlock Your Skills**, with over 1150 subscribers.\r\nYou can find her newsletter on LinkedIn: [Python: Unlock Your Skills](https://www.linkedin.com/newsletters/7025088461330145281/)\r\n\r\nLinkedIn Profile: [Swarooprani Manoor](https://www.linkedin.com/in/swaroopranimanoor)\r\n\r\nTechnical articles in Kannada: [Ganakayantra Tantrajnana Quora Space](https://qr.ae/pK62kE)",
-    "bluesky_url": null,
-    "code": "DNUJPT",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/swaroopranimanoor",
-    "mastodon_url": null,
-    "name": "Swarooprani Manoor",
-    "slug": "swarooprani-manoor",
-    "submissions": [
-      "HBMEYA"
-    ],
-    "timezone": "UTC+5",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/swarooprani-manoor"
-  },
-  "ERBJFG": {
-    "affiliation": "Sunan Kalijaga State Islamic University Yogyakarta",
-    "avatar": "https://pretalx.com/media/avatars/ERBJFG_GojfK4T.jpg",
-    "biography": "Muh Naufal Muzhaffar is an AI and Natural Language Processing (NLP) enthusiast with a strong interest in computational linguistics and local language technology. He is currently pursuing his postgraduate degree in Informatics at the Faculty of Science and Technology, Sunan Kalijaga State Islamic University, Yogyakarta, Indonesia. With a background in programming and a focus on NLP-based language processing, he actively works on developing digital dictionaries and language resources for Indonesia\u2019s local languages. His work combines AI, open-source collaboration, and linguistic preservation through technology.",
-    "bluesky_url": null,
-    "code": "ERBJFG",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": "https://instagram.com/mnaufalmuzhaffar",
-    "linkedin_url": null,
-    "mastodon_url": null,
-    "name": "Muh Naufal Muzhaffar",
-    "slug": "muh-naufal-muzhaffar",
-    "submissions": [
-      "DQB3PR"
-    ],
-    "timezone": "UTC+7",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/muh-naufal-muzhaffar"
-  },
-  "EXVYFF": {
-    "affiliation": "Synics AG",
-    "avatar": "https://pretalx.com/media/avatars/EXVYFF_psWncrm.png",
-    "biography": "Hi! I\u2019m Sofi, a computer engineering graduate and currently an intern at Synics. I\u2019m passionate about tech communities\u2014I\u2019ve even co-founded a few: the Google Developer Student Club Univalle, the Bolivian Hub of Artificial Intelligence, and JS Bolivia. I\u2019m also an active member of Google Developers Group Cochabamba, where I contribute both by helping organize events and by giving talks at meetups and conferences.\r\n\r\nOutside of tech, I enjoy reading, listening to Twenty One Pilots, and going out for food with friends after events. I look forward to meeting you!",
-    "bluesky_url": null,
-    "code": "EXVYFF",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": "https://instagram.com/__sofi__.py",
-    "linkedin_url": "https://linkedin.com/in/sofitoro",
-    "mastodon_url": null,
-    "name": "Sofia Toro",
-    "slug": "sofia-toro",
-    "submissions": [
-      "SNLZFB"
-    ],
-    "timezone": "UTC+2",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/sofia-toro"
-  },
-  "F8QLX9": {
-    "affiliation": "Pontificia Universidad Cat\u00f3lica",
-    "avatar": "https://pretalx.com/media/avatars/F8QLX9_gLo7YFK.jpeg",
-    "biography": "[EN]\r\nI am a very passionate software developer, always looking for challenges in the industry. I specialize in data visualization & game development. I started programming at 14, following a book my mother gave me; my first program drew a wonky house using Turtle. Now, alongside other creators, I make games, work a daytime job as a software developer, and study at nightshift.",
-    "bluesky_url": null,
-    "code": "F8QLX9",
-    "gitx_url": null,
-    "homepage": "https://programat3.github.io/",
-    "instagram_url": "https://instagram.com/gatitechno",
-    "linkedin_url": "https://linkedin.com/in/lia-dsr",
-    "mastodon_url": null,
-    "name": "L\u00eda Da Silva - Rojas",
-    "slug": "lia-da-silva-rojas",
-    "submissions": [
-      "CMYZH3"
-    ],
-    "timezone": "UTC-4",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/lia-da-silva-rojas"
-  },
-  "FSVYU9": {
-    "affiliation": "timecopilot.dev",
-    "avatar": "https://pretalx.com/media/avatars/FSVYU9_fye7HIF.jpeg",
-    "biography": "\ud83c\uddf2\ud83c\uddfd\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f Machine Learning and AI leader with a background in econometrics and mathematics. She served as a CTO and Co-Founder of Nixtla. Co-creator of the Nixtlaverse. She loves live coding and has spoken at events like ISF, Microsoft Build, AWS reInvent, and PyCons. Author of peer-reviewed papers and recipient of prestigious awards in forecasting and AI.",
-    "bluesky_url": "https://bsky.app/profile/azulgarza.bsky.social",
-    "code": "FSVYU9",
-    "gitx_url": null,
-    "homepage": "https://github.com/AzulGarza",
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/azul-garza-ramirez",
-    "mastodon_url": null,
-    "name": "Azul Garza",
-    "slug": "azul-garza",
-    "submissions": [
-      "QQRHRF"
-    ],
-    "timezone": "UTC-7",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/azul-garza"
-  },
-  "FYVKMX": {
-    "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/FYVKMX_10HODjz.jpg",
-    "biography": "Alyssa has been a CPython core contributor since 2005, and served on the inaugural Python Steering Council in 2019. She was the default approval delegate for Python packaging interoperability PEPs from 2013 to 2018. She was elected for two terms on the Python Software Foundation Board of Directors (2014-2016), and founded the PyCon Australia Education Seminar in 2015.\r\n\r\nProfessionally, Alyssa's career has spanned high frequency radio communications in the Australian defence sector, automated hardware integration testing infrastructure for Red Hat Enterprise Linux, remote management and monitoring of global EV fast charging systems, and, most recently, enabling local execution of generative AI language models.",
-    "bluesky_url": null,
-    "code": "FYVKMX",
-    "gitx_url": null,
-    "homepage": "https://www.curiousefficiency.org",
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/alyssa-coghlan",
-    "mastodon_url": "https://mastodon.social/@ancoghlan",
-    "name": "Alyssa Coghlan",
-    "slug": "alyssa-coghlan",
-    "submissions": [
-      "SXJPB7"
-    ],
-    "timezone": "UTC+10",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/alyssa-coghlan"
-  },
-  "GMSKCP": {
-    "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/GMSKCP_Ov1MwDR.png",
-    "biography": "Karla Doctor es consultora en Machine Learning e inteligencia artificial, especializada en visi\u00f3n por computadora y modelos de lenguaje natural. Su trabajo se centra en la creaci\u00f3n de soluciones innovadoras que transforman industrias, impulsando la eficiencia operativa y la toma de decisiones estrat\u00e9gicas.\r\n\r\nA lo largo de su carrera, ha desarrollado e implementado tecnolog\u00edas en sectores como agricultura, transporte y retail, adapt\u00e1ndose a distintos niveles de madurez digital. Su metodolog\u00eda integra la anal\u00edtica avanzada para maximizar el valor empresarial y el desarrollo tecnol\u00f3gico responsable.\r\n\r\nAdem\u00e1s, Karla colabora activamente con comunidades globales para impulsar el avance de la IA a trav\u00e9s de proyectos y charlas.",
-    "bluesky_url": null,
-    "code": "GMSKCP",
-    "gitx_url": null,
-    "homepage": "https://karladoctormauricio.github.io/IA_KarlaDoctorMauricio.github.io/experience.html",
-    "instagram_url": "https://instagram.com/karla.doctorm",
-    "linkedin_url": "https://linkedin.com/in/karla-doctor",
-    "mastodon_url": null,
-    "name": "Karla Angelica Doctor Mauricio",
-    "slug": "karla-angelica-doctor-mauricio",
-    "submissions": [
-      "ZQ98FN"
-    ],
-    "timezone": "UTC-6",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/karla-angelica-doctor-mauricio"
-  },
-  "GXBKTT": {
-    "affiliation": "Cumbuca Dev",
-    "avatar": "https://pretalx.com/media/avatars/GXBKTT_ALSH4L4.jpg",
-    "biography": "Backend developer focused on Developer Experience and co-founder of Cumbuca Dev, an organization that promotes diversity in technology through education and open source. People > Technology \ud83d\udc9c",
-    "bluesky_url": null,
-    "code": "GXBKTT",
-    "gitx_url": null,
-    "homepage": "https://www.cmaiacd.com/",
-    "instagram_url": "https://instagram.com/cmaiacd",
-    "linkedin_url": "https://linkedin.com/in/cmaiacd",
-    "mastodon_url": "https://mastodon.social/@cmaiacd",
-    "name": "Camila Maia",
-    "slug": "camila-maia",
-    "submissions": [
-      "YHBWR8"
-    ],
-    "timezone": "UTC-3",
-    "twitter_url": "https://x.com/cmaiacd",
-    "website_url": "https://2025.conference.pyladies.com/speaker/camila-maia"
-  },
-  "HEUNYT": {
-    "affiliation": "CNRS",
-    "avatar": "https://pretalx.com/media/avatars/HEUNYT_312jbEM.jpg",
-    "biography": "I am a software developer since 1990, first in telecommunications for a decade and then in a computer research laboratory, [LIRIS](https://liris.cnrs.fr/) in Lyon, as [CNRS](https://www.cnrs.fr/en) research support staff.\r\n\r\nI develop in Python for more than fifteen years, whether for web development or data manipulation.\r\n\r\nI have had a portrait in the CNRS comicbook [The CodebreakHers of the digital world](https://www.ins2i.cnrs.fr/en/codebreakhers-digital-world) published in french in 2021 and translated in english in 2023.\r\n\r\nI am a member of the [APRIL](https://april.org/) Board, a french association which promotes and defends free software, since february 2024.",
-    "bluesky_url": null,
-    "code": "HEUNYT",
-    "gitx_url": null,
-    "homepage": "https://perso.liris.cnrs.fr/francoise.conil/",
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/fran%c3%a7oise-conil-a0357752",
-    "mastodon_url": "https://framapiaf.org/@fcodvpt",
-    "name": "Fran\u00e7oise CONIL",
-    "slug": "francoise-conil",
-    "submissions": [
-      "XGNKTB"
-    ],
-    "timezone": "UTC+1",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/francoise-conil"
-  },
-  "HM3RRT": {
-    "affiliation": "Torchbox",
-    "avatar": "https://pretalx.com/media/avatars/HM3RRT_0Fa2GcW.jpg",
-    "biography": "Meagen Voss began her journey into content management nerdery with a WordPress website in the early 2000s and is now Wagtail Community Manager and Editor for Wagtail.org. She officially works for Torchbox, an agency that supports non-profits and other groups doing good in the world. When she\u2019s not coding or writing fiction, you can find her staring at waterfalls in the mountains of North Carolina or cruising around a lake on her paddle board.",
-    "bluesky_url": "https://bsky.app/profile/meagenvoss.bsky.social",
-    "code": "HM3RRT",
-    "gitx_url": null,
-    "homepage": "https://www.meagenvoss.com/",
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/meagenvoss",
-    "mastodon_url": "https://fosstodon.org/@vossisboss",
-    "name": "Meagen Voss",
-    "slug": "meagen-voss",
-    "submissions": [
-      "NLGURP"
-    ],
-    "timezone": "UTC-4",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/meagen-voss"
-  },
-  "JG3EPU": {
-    "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/JG3EPU_j6axpvC.jpg",
-    "biography": "Rachel Kaufman is a full-stack software engineer working in the martech space. She loves writing unit tests (seriously), strongly-typed languages, and the Oxford comma. She's also a lead organizer with Women and Gender eXpansive Coders DC, a group for women and nonbinary people in tech in the Washington, DC area.",
-    "bluesky_url": null,
-    "code": "JG3EPU",
-    "gitx_url": null,
-    "homepage": "https://readwriterachel.com",
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/rachelkaufman13",
-    "mastodon_url": null,
-    "name": "Rachel Kaufman",
-    "slug": "rachel-kaufman",
-    "submissions": [
-      "KMCPKM"
-    ],
-    "timezone": "UTC-5",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/rachel-kaufman"
-  },
-  "JNGHT3": {
-    "affiliation": "Planet Innovation",
-    "avatar": "https://pretalx.com/media/avatars/JNGHT3_iXaQnfq.jpg",
-    "biography": "Lydia thrives at the intersection of leadership and technical challenges. She brings over 15 years of experience in professional development, coaching, and quality improvement to her recent roles in data and software. This combination of perspectives and experience enables her to support teams to succeed at technical challenges (while picking off a few technical challenges herself when the opportunity presents).",
-    "bluesky_url": null,
-    "code": "JNGHT3",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/lydia-peabody",
-    "mastodon_url": null,
-    "name": "Lydia Peabody",
-    "slug": "lydia-peabody",
-    "submissions": [
-      "HNZPGJ"
-    ],
-    "timezone": "UTC+11",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/lydia-peabody"
-  },
-  "KFWB9G": {
-    "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/KFWB9G_Z04qcY6.jpg",
-    "biography": "Ana se gradu\u00f3 de la carrera de grado Ingeniera en Sistemas de Informaci\u00f3n y del posgrado Especialista en Inteligencia Artificial. Trabaja como docente e investigadora universitaria y brindando asesoramiento en proyectos de ciencia de datos. Es fundadora y co-organizadora del cap\u00edtulo R-Ladies de Mendoza, Argentina.",
-    "bluesky_url": "https://bsky.app/profile/anadiedrichs.bsky.social",
-    "code": "KFWB9G",
-    "gitx_url": null,
-    "homepage": "https://anadiedrichs.github.io/",
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/ana-laura-diedrichs",
-    "mastodon_url": null,
-    "name": "Ana Laura Diedrichs",
-    "slug": "ana-laura-diedrichs",
-    "submissions": [
-      "9UC39C"
-    ],
-    "timezone": "UTC-12",
-    "twitter_url": "https://x.com/anadiedrichs",
-    "website_url": "https://2025.conference.pyladies.com/speaker/ana-laura-diedrichs"
-  },
-  "KQHVSU": {
-    "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/KQHVSU_PYcNPxa.jpeg",
-    "biography": "De profesi\u00f3n Ingeniera Civil Industrial y estudiante de segundo a\u00f1o en el Mag\u00edster en Data Science de la Universidad del Desarrollo. Llevo m\u00e1s de 20 a\u00f1os trabajando en an\u00e1lisis de datos, inteligencia de negocios y transformaci\u00f3n digital, liderando proyectos en banca, educaci\u00f3n, industria y empresas productivas. Mi foco siempre ha sido integrar soluciones tecnol\u00f3gicas que generen valor y mejoren la toma de decisiones.\r\nMe apasiona la visualizaci\u00f3n de datos y la ense\u00f1anza de herramientas tecnol\u00f3gicas. He impartido cursos y talleres sobre Python, Power BI, desarrollo web y an\u00e1lisis de datos, buscando siempre un equilibrio entre la teor\u00eda y ejemplos pr\u00e1cticos que faciliten el aprendizaje.\r\nActualmente, desarrollo mi proyecto de consultor\u00eda y formaci\u00f3n en anal\u00edtica de datos, apoyando a empresas y profesionales a utilizar la informaci\u00f3n de forma estrat\u00e9gica para resolver problemas reales. Creo firmemente que la programaci\u00f3n y la anal\u00edtica son puentes que conectan los datos con las personas, y que el conocimiento debe ser accesible, pr\u00e1ctico y aplicable.",
-    "bluesky_url": null,
-    "code": "KQHVSU",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/ingrid-solis-gonzalez",
-    "mastodon_url": null,
-    "name": "Ingrid Solis",
-    "slug": "ingrid-solis",
-    "submissions": [
-      "WZTMVK"
-    ],
-    "timezone": "UTC-3",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/ingrid-solis"
-  },
-  "LKLNAE": {
-    "affiliation": null,
-    "avatar": "",
-    "biography": null,
-    "bluesky_url": null,
-    "code": "LKLNAE",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": null,
-    "mastodon_url": null,
-    "name": "samasyakhadka",
-    "slug": "samasyakhadka",
-    "submissions": [
-      "VN37NU"
-    ],
-    "timezone": null,
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/samasyakhadka"
-  },
-  "LXQGX3": {
-    "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/LXQGX3_tGo182J.png",
-    "biography": "Yashasvi Misra is a software engineer at Pure Storage, mentor, and advocate for ethical tech practices. She builds scalable data pipelines, with a focus on modernizing legacy systems and embedding transparency into data workflows. Outside of engineering, Yashasvi serves as Chair of the NumFOCUS Code of Conduct Working Group and actively mentors women in tech through PyLadies India and Women Techmakers. She\u2019s passionate about creating inclusive communities, ethical engineering, and empowering others to lead with empathy in their code.",
-    "bluesky_url": null,
-    "code": "LXQGX3",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": null,
-    "mastodon_url": null,
-    "name": "Yashasvi Misra",
-    "slug": "yashasvi-misra",
-    "submissions": [
-      "HSUHCH"
-    ],
-    "timezone": "UTC-12",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/yashasvi-misra"
-  },
-  "NKJDAR": {
-    "affiliation": "EdYou Abroad",
-    "avatar": "https://pretalx.com/media/avatars/NKJDAR_4yxRxOZ.jpg",
-    "biography": "Astronomy enthusiast and independent researcher.",
-    "bluesky_url": null,
-    "code": "NKJDAR",
-    "gitx_url": null,
-    "homepage": "https://phiwhyyy.medium.com/",
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/sreyaghosh99",
-    "mastodon_url": null,
-    "name": "SREYA GHOSH",
-    "slug": "sreya-ghosh",
-    "submissions": [
-      "UAJAKB"
-    ],
-    "timezone": "UTC-6",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/sreya-ghosh"
-  },
-  "NMFFCT": {
-    "affiliation": "AsyncAPI Initiative & OpenNest-Africa",
-    "avatar": "https://pretalx.com/media/avatars/NMFFCT_M3qRmgx.png",
-    "biography": "Aishat Muibudeen is the Design Lead at the AsyncAPI Initiative, where she also serves on the Code of Conduct and Technical Steering Committees. She\u2019s an active contributor to CHAOSS and the founder of OpenNest-Africa, a community built to make open source less intimidating and more fun, especially for folks from underrepresented backgrounds.\r\n\r\nHer work intersects inclusive design, community care, and open-source sustainability. She\u2019s a frequent speaker on these topics and presented her paper \u201cBeyond the Code: How Diversity and Inclusion Shape the Future of Open Source\u201d at the OpenForum Academy Symposium (OFA) in 2024.\r\n\r\nDriven by a love for storytelling and systems change, Aishat believes community is just as critical as code. She's passionate about helping people feel seen, supported, and safe in tech spaces \u2014 and yes, she\u2019s learning German too, weil Wachstum nicht am Keyboard endet.",
-    "bluesky_url": null,
-    "code": "NMFFCT",
-    "gitx_url": null,
-    "homepage": "https://www.linkedin.com/in/aishatmuibudeen",
-    "instagram_url": "https://instagram.com/maya_ux_ui",
-    "linkedin_url": "https://linkedin.com/in/aishatmuibudeen",
-    "mastodon_url": null,
-    "name": "Aishat Muibudeen",
-    "slug": "aishat-muibudeen",
-    "submissions": [
-      "7UL7TG"
-    ],
-    "timezone": "UTC+1",
-    "twitter_url": "https://x.com/maya_ux_ui",
-    "website_url": "https://2025.conference.pyladies.com/speaker/aishat-muibudeen"
-  },
-  "NSTXEP": {
-    "affiliation": "Microsoft",
-    "avatar": "https://pretalx.com/media/avatars/NSTXEP_o2hysuM.jpg",
-    "biography": "From content-first design to data-first systems\u2014I'm building the future of AI-powered UX.\r\n\r\nI\u2019m a Senior Content Designer turned Data Engineer and AI Specialist at Microsoft, where I bridge the gap between human-centered design and machine intelligence. My work lives at the intersection of LLMs, data science, and content engineering, helping teams build intuitive, data-driven experiences across the Microsoft ecosystem.",
-    "bluesky_url": null,
-    "code": "NSTXEP",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/jenniferkelleman",
-    "mastodon_url": null,
-    "name": "Jen Kelleman",
-    "slug": "jen-kelleman",
-    "submissions": [
-      "CU33B8"
-    ],
-    "timezone": "UTC-12",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/jen-kelleman"
-  },
-  "PEGZDM": {
-    "affiliation": "Bloomberg",
-    "avatar": "https://pretalx.com/media/avatars/PEGZDM_dmZbiXU.jpg",
-    "biography": "Ava Katushka is a software engineer and artist who blends creativity with code. By day, she builds back-end systems and tinkers with front-end projects at Bloomberg; by night, she creates watercolor art, postcards, and quirky illustrations. Prior to joining Bloomberg, Ava worked at Yandex, Google and Mozilla. She loves algorithms and data structures and has [her own website](ava-coding.com) dedicated to them.\r\n\r\nDuring conferences, Ava love to make art notes. Her unique note-taking style combines doodles, symbols, and words to make conference learning stick \u2014 and she\u2019s on a mission to help others turn their notes into visual stories worth remembering. You can see some of her [notes from EuroPython 2025 here](https://www.linkedin.com/posts/ava-katushka-0628ab104_second-day-on-europyton-was-so-exciting-activity-7351861808082657280-8dGv.).\r\n\r\nAva earned a bachelor's degree in computer science from the Moscow Institute of Physics and Technology",
-    "bluesky_url": null,
-    "code": "PEGZDM",
-    "gitx_url": null,
-    "homepage": "ava-coding.com",
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/ava-katushka-0628ab104",
-    "mastodon_url": null,
-    "name": "Ava Katushka",
-    "slug": "ava-katushka",
-    "submissions": [
-      "RURANB"
-    ],
-    "timezone": "UTC+0",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/ava-katushka"
-  },
-  "PKJQTM": {
-    "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/PKJQTM_e52qoKJ.jpg",
-    "biography": "Neyde Rosa Cumbane is a passionate and driven Mozambican student in her final year of the Informatics Management program at Universidade Wutivi. With a deep interest in technology, data, and ethical innovation, she is dedicated to using digital tools to create meaningful social impact.\r\n\r\nThroughout her academic journey, Neyde has demonstrated strong leadership and initiative, participating in events such as the Data Wave and actively engaging with communities like MozDevz. Her curiosity and dedication to learning have led her to explore fields such as backend development, databases, and artificial intelligence ethics. She believes that ethical technology can transform societies when built with responsibility and inclusivity.\r\n\r\nProfessionally, Neyde has contributed to the acquisition of IT equipment and software at Wanda Honwana & Associados and served as a trainer and internship supervisor at the Samora Machel Technical Institute. These roles have strengthened her skills in analysis, communication, and mentoring.\r\n\r\nBeyond academics and work, Neyde is committed to empowering women in tech and promoting ethical digital development. With a forward-thinking mindset and a collaborative spirit, she aspires to continue growing as a professional who bridges innovation with integrity.",
-    "bluesky_url": null,
-    "code": "PKJQTM",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": "https://instagram.com/neycumbane_",
-    "linkedin_url": "https://linkedin.com/in/neyde-cumbane-800a61263",
-    "mastodon_url": null,
-    "name": "Neyde Rosa Cumbane",
-    "slug": "neyde-rosa-cumbane",
-    "submissions": [
-      "DPD9ME"
-    ],
-    "timezone": "UTC+2",
-    "twitter_url": "https://x.com/neycumbane",
-    "website_url": "https://2025.conference.pyladies.com/speaker/neyde-rosa-cumbane"
-  },
-  "PUYUYE": {
-    "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/PUYUYE_iUU9aCC.jpeg",
-    "biography": "I\u2019m a Mechatronics Engineering student passionate about using Python to solve real-world problems. I\u2019m actively involved in several Python-focused communities, including ML Collective Nigeria, where I currently lead the Medical Imaging Focus Group. I\u2019m also a Microsoft Learn Student Ambassador and a member of AfricaAI, the largest community of Africans improving medical imaging with AI. On campus, I serve as the co-lead of machine learning at the Google Developer Student Club, where I help others explore the power of AI. My Python journey began with web development using Flask and Django, but my current focus is on research in deep learning for medical imaging\u2014applying computer vision to health challenges in low-resource settings.",
-    "bluesky_url": null,
-    "code": "PUYUYE",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/ilerioluwakiiye",
-    "mastodon_url": null,
-    "name": "Ilerioluwakiiye Abolade",
-    "slug": "ilerioluwakiiye-abolade",
-    "submissions": [
-      "AGGQXK"
-    ],
-    "timezone": "UTC+1",
-    "twitter_url": "https://x.com/llerioluwakiiye",
-    "website_url": "https://2025.conference.pyladies.com/speaker/ilerioluwakiiye-abolade"
-  },
-  "QCZ7SY": {
-    "affiliation": "Cumbuca Dev",
-    "avatar": "https://pretalx.com/media/avatars/QCZ7SY_2mPEhBO.jpeg",
-    "biography": "Co-founder of Cumbuca Dev, Maria Ant\u00f4nia Maia makes open source accessible and inclusive, creating practical paths for beginners to gain real-world experience.",
-    "bluesky_url": null,
-    "code": "QCZ7SY",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": "https://instagram.com/m.antoniamaia",
-    "linkedin_url": "https://linkedin.com/in/antoniamaia",
-    "mastodon_url": null,
-    "name": "Maria Ant\u00f4nia Maia",
-    "slug": "maria-antonia-maia",
-    "submissions": [
-      "QUZXXK"
-    ],
-    "timezone": "UTC-3",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/maria-antonia-maia"
-  },
-  "R9YNT9": {
-    "affiliation": "Aixia",
-    "avatar": "https://pretalx.com/media/avatars/R9YNT9_OE6U3OV.jpg",
-    "biography": "Milena Miernik is a former language teacher turned AI software developer, blending her background in linguistics with a passion for building smart, human-centered tools. Based in Sweden, she holds a Master\u2019s in sociolinguistics and now works at Aixia AB, where she develops AI solutions with a focus on language and education.\r\n\r\nWith experience teaching advanced English and learning Swedish herself, Milena brings a unique perspective to multilingual AI. She\u2019s especially interested in self-hosted, open-source models and agentic workflows that promote transparency and decentralization. Her DIY spirit and cross-disciplinary mindset drive projects that are both technically inventive and deeply user-focused.",
-    "bluesky_url": null,
-    "code": "R9YNT9",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/milena-miernik",
-    "mastodon_url": null,
-    "name": "Milena Miernik",
-    "slug": "milena-miernik",
-    "submissions": [
-      "JFDDUV"
-    ],
-    "timezone": "UTC-12",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/milena-miernik"
-  },
-  "RY9CPQ": {
-    "affiliation": "\u682a\u5f0f\u4f1a\u793e\u30d3\u30fc\u30d7\u30e9\u30a6\u30c9 / BeProud Inc.",
-    "avatar": "https://pretalx.com/media/avatars/RY9CPQ_5Z7QXau.png",
-    "biography": "Tomoko Furuki works at BeProud Inc., focusing on data science support and system development with Python.\r\nRecently, in her free time, she enjoys working on hobby projects with LLMs \u2014 such as a voice-controlled toy car and a program that rewrites classic literature for children using LangChain and LangGraph.\r\n\r\nX: @komo_fr\r\nGitHub: https://github.com/komo-fr",
-    "bluesky_url": null,
-    "code": "RY9CPQ",
-    "gitx_url": null,
-    "homepage": "https://github.com/komo-fr",
-    "instagram_url": null,
-    "linkedin_url": null,
-    "mastodon_url": null,
-    "name": "Tomoko Furuki\uff08@komo_fr\uff09",
-    "slug": "tomoko-furuki-komo-fr",
-    "submissions": [
-      "33W8ES"
-    ],
-    "timezone": "UTC+9",
-    "twitter_url": "https://x.com/komo_fr",
-    "website_url": "https://2025.conference.pyladies.com/speaker/tomoko-furuki-komo-fr"
-  },
-  "SEKTPR": {
-    "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/SEKTPR_cxbxtH6.jpg",
-    "biography": null,
-    "bluesky_url": null,
-    "code": "SEKTPR",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": null,
-    "mastodon_url": null,
-    "name": "bonny p mcclain",
-    "slug": "bonny-p-mcclain",
-    "submissions": [
-      "GMGLFN"
-    ],
-    "timezone": null,
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/bonny-p-mcclain"
-  },
-  "SKGET8": {
-    "affiliation": "MongoDB / Django Software Foundation",
-    "avatar": "https://pretalx.com/media/avatars/SKGET8_YoHm3Tm.jpg",
-    "biography": "Abigail Afi Gbadago is a software engineer and developer advocate with a deep passion for technology and community. \r\nShe serves on the Django Software Foundation board, is the programme chair for DjangoCon US 2025, is the regional executor for Black Python devs, and is a Microsoft MVP for the Python and Web track. Additionally, Abigail is a contributing member of the Python Software Foundation, a contributor to the Django Newsletter, and a Djangonaut. \r\nShe has served on various organising teams, including the programme committee for the Open Source Summit Europe 2024 (Linux Foundation) and as an organiser for PyCon UK 2025. \r\nAfi is passionate about building tech spaces and contributing to global tech ecosystems through her leadership.",
-    "bluesky_url": null,
-    "code": "SKGET8",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/abigail-afi-gbadago",
-    "mastodon_url": null,
-    "name": "Abigail Afi Gbadago",
-    "slug": "abigail-afi-gbadago",
-    "submissions": [
-      "BUP8JK"
-    ],
-    "timezone": "UTC+1",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/abigail-afi-gbadago"
-  },
-  "TC39WF": {
-    "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/TC39WF_I0pDel5.jpg",
-    "biography": "Hi!  I\u2019m Fay and I am an organizer for PyLadies Boston. I am passionate about using data for good and I am an advocate for cyclist and pedestrian safety (https://mosey-score.streamlit.app).  I mostly code by myself, but I\u2019m excited to contribute to open source.",
-    "bluesky_url": null,
-    "code": "TC39WF",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/fayshaw",
-    "mastodon_url": "https://mastodon.social/@fayshaw",
-    "name": "Fay Shaw",
-    "slug": "fay-shaw",
-    "submissions": [
-      "C7W8QM"
-    ],
-    "timezone": "UTC-5",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/fay-shaw"
-  },
-  "TCA73V": {
-    "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/TCA73V_A81nb6G.jpg",
-    "biography": "Desenvolvedora Front-End formada pela {reprograma}, onde iniciou sua transi\u00e7\u00e3o de carreira aos 36 anos ap\u00f3s digitar sua primeira linha de c\u00f3digo. \r\nAtua como Analista de Projetos Pedag\u00f3gicos em Tecnologia. \r\nJ\u00e1 participou em iniciativas apoiadas pelo MCTI voltadas \u00e0 capacita\u00e7\u00e3o em Letramento Digital. \r\n\u00c9 tamb\u00e9m Coordenadora de Marketing e M\u00eddias Sociais da ONG STEM for Women, organiza\u00e7\u00e3o dedicada ao incentivo de meninas e mulheres em carreiras STEM. \r\nPossui certifica\u00e7\u00e3o de Solu\u00e7\u00f5es em Nuvem pela AWS e est\u00e1 se preparando para se tornar arquiteta de Solu\u00e7\u00f5es em Nuvem.",
-    "bluesky_url": null,
-    "code": "TCA73V",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": "https://instagram.com/roma_vegan",
-    "linkedin_url": "https://linkedin.com/in/romeniaishiyama-tecnologia-educacao-inovacao",
-    "mastodon_url": null,
-    "name": "Rom\u00eania Noriko Ishiyama",
-    "slug": "romenia-noriko-ishiyama",
-    "submissions": [
-      "9BXCRG",
-      "XW9BLX"
-    ],
-    "timezone": "UTC-3",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/romenia-noriko-ishiyama"
-  },
-  "TCSZSH": {
-    "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/TCSZSH_xjWWFC3.jpg",
-    "biography": "Joy Tari-Bagshaw is a Software Engineer, Developer Advocate, and Community Leader passionate about the transformative power of AI and technology in solving real-world challenges. As the first female Google Developer Student Club Lead at her university, she has been a driving force in fostering tech inclusivity, digital empowerment, and AI literacy across diverse communities.\r\nHer work spans AI ethics, open-source contributions, and developer education, with a strong focus on making emerging technologies more accessible and impactful. She has mentored over 60 aspiring technologists, led AI, EdTech-focused and software development workshops, and spoken at global summits, helping bridge the gap between innovation and practical application.\r\nWith a background in Full-Stack Development and AI, Joy is committed to leveraging technology to drive meaningful change, create opportunities for underrepresented groups, and shape the future of responsible AI adoption and digital transformation.",
-    "bluesky_url": null,
-    "code": "TCSZSH",
-    "gitx_url": null,
-    "homepage": "https://joytaribagshaw.github.io/My-Portfolio/",
-    "instagram_url": "https://instagram.com/thejoyoftech_",
-    "linkedin_url": "https://linkedin.com/in/joytaribagshaw",
-    "mastodon_url": null,
-    "name": "The Joy of Tech",
-    "slug": "the-joy-of-tech",
-    "submissions": [
-      "7BB9MZ"
-    ],
-    "timezone": "UTC+0",
-    "twitter_url": "https://x.com/joytaribagshaw",
-    "website_url": "https://2025.conference.pyladies.com/speaker/the-joy-of-tech"
-  },
   "TEJVNB": {
+    "id": "TEJVNB",
     "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/TEJVNB_6ulkDJU.jpg",
+    "avatar": "https://pretalx.com/media/avatars/TEJVNB_mjbPl2j.webp",
     "biography": "Emma Saroyan is a passionate developer community builder, developer and open source advocate based in Armenia. She serves on the DISC committee of NumFOCUS and Diversity Committee of PgUS. She is the author of the book \"Generative AI for Web Development: Building Web Applications Powered by OpenAI APIs and Next.js\" published by Apress. Emma is the founder and leader of the Armenia PostgreSQL User Group. She regularly contributes to open source communities by mentoring, giving talks, and organizing meetups.",
     "bluesky_url": null,
     "code": "TEJVNB",
@@ -880,27 +314,92 @@
     "twitter_url": null,
     "website_url": "https://2025.conference.pyladies.com/speaker/emma-saroyan"
   },
-  "TJGMMZ": {
+  "CYGEJV": {
+    "id": "CYGEJV",
     "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/TJGMMZ_EECESxw.JPG",
-    "biography": "Cecilia  \u00e9 coorganizadora do capitulo Pyladies Maputo. Actualmente, tem colaborado activamente na promo\u00e3o da diversidade e inclus\u00e3o de g\u00e9nero no sector tecnol\u00f3gico.",
-    "bluesky_url": null,
-    "code": "TJGMMZ",
+    "avatar": "https://pretalx.com/media/avatars/CYGEJV_oIXyPBl.webp",
+    "biography": "I am a leadership-focused professional with a deep background in tech, dedicated to fostering inclusive cultures and driving meaningful organizational change.\r\n\r\nI’m passionate about creating environments where psychological safety is the foundation, where every team member feels trusted, heard, and empowered to take risks and grow. My approach to leadership centers on empathy, clear communication, and mentoring others to reach their full potential. I believe emotional intelligence is as critical as technical skill to building innovative, resilient teams.",
+    "bluesky_url": "https://bsky.app/profile/tialobo.bsky.social",
+    "code": "CYGEJV",
     "gitx_url": null,
-    "homepage": "https://ctivir.github.io",
-    "instagram_url": "https://instagram.com/ctivir",
-    "linkedin_url": "https://linkedin.com/in/ctivir",
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/ebwolf",
     "mastodon_url": null,
-    "name": "Cecilia Tivir",
-    "slug": "cecilia-tivir",
+    "name": "Erica Wolf",
+    "slug": "erica-wolf",
     "submissions": [
-      "JSXHTQ"
+      "AWCC7R"
+    ],
+    "timezone": "UTC+1",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/erica-wolf"
+  },
+  "TC39WF": {
+    "id": "TC39WF",
+    "affiliation": null,
+    "avatar": "https://pretalx.com/media/avatars/TC39WF_BNR47hh.webp",
+    "biography": "Hi!  I’m Fay and I am an organizer for PyLadies Boston. I am passionate about using data for good and I am an advocate for cyclist and pedestrian safety (https://mosey-score.streamlit.app).  I mostly code by myself, but I’m excited to contribute to open source.",
+    "bluesky_url": null,
+    "code": "TC39WF",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/fayshaw",
+    "mastodon_url": "https://mastodon.social/@fayshaw",
+    "name": "Fay Shaw",
+    "slug": "fay-shaw",
+    "submissions": [
+      "C7W8QM"
+    ],
+    "timezone": "UTC-5",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/fay-shaw"
+  },
+  "HEUNYT": {
+    "id": "HEUNYT",
+    "affiliation": "CNRS",
+    "avatar": "https://pretalx.com/media/avatars/HEUNYT_bJO5lDF.webp",
+    "biography": "I am a software developer since 1990, first in telecommunications for a decade and then in a computer research laboratory, [LIRIS](https://liris.cnrs.fr/) in Lyon, as [CNRS](https://www.cnrs.fr/en) research support staff.\r\n\r\nI develop in Python for more than fifteen years, whether for web development or data manipulation.\r\n\r\nI have had a portrait in the CNRS comicbook [The CodebreakHers of the digital world](https://www.ins2i.cnrs.fr/en/codebreakhers-digital-world) published in french in 2021 and translated in english in 2023.\r\n\r\nI am a member of the [APRIL](https://april.org/) Board, a french association which promotes and defends free software, since february 2024.",
+    "bluesky_url": null,
+    "code": "HEUNYT",
+    "gitx_url": null,
+    "homepage": "https://perso.liris.cnrs.fr/francoise.conil/",
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/fran%c3%a7oise-conil-a0357752",
+    "mastodon_url": "https://framapiaf.org/@fcodvpt",
+    "name": "Françoise CONIL",
+    "slug": "francoise-conil",
+    "submissions": [
+      "XGNKTB"
+    ],
+    "timezone": "UTC+1",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/francoise-conil"
+  },
+  "7G8DH3": {
+    "id": "7G8DH3",
+    "affiliation": "AgileLab",
+    "avatar": "https://pretalx.com/media/avatars/7G8DH3_wYb2gr7.webp",
+    "biography": "Giulia Silvestro is a highly skilled data professional specializing in big data engineering, data processing pipelines, and advanced analytics solutions. Currently a Big Data Engineer at Agile Lab, she focuses on designing and optimizing data architectures that power scalable, high-performance applications.",
+    "bluesky_url": null,
+    "code": "7G8DH3",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/giuliasilvestro",
+    "mastodon_url": null,
+    "name": "Giulia Silvestro",
+    "slug": "giulia-silvestro",
+    "submissions": [
+      "3RFQUE"
     ],
     "timezone": "UTC+2",
-    "twitter_url": "https://x.com/ctivir",
-    "website_url": "https://2025.conference.pyladies.com/speaker/cecilia-tivir"
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/giulia-silvestro"
   },
   "UHQVKU": {
+    "id": "UHQVKU",
     "affiliation": "AIOFarm / PyLadies Seoul",
     "avatar": "",
     "biography": null,
@@ -920,10 +419,221 @@
     "twitter_url": null,
     "website_url": "https://2025.conference.pyladies.com/speaker/hwayoung"
   },
-  "UKNKWW": {
+  "PUYUYE": {
+    "id": "PUYUYE",
     "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/UKNKWW_x5EqWg7.jpg",
-    "biography": "Loredana Horezeanu is a global health data analyst and visualization designer with over seven years\u2019 experience turning complex datasets into clear, actionable stories for decision-makers. She has consulted for organizations including the World Bank and leading US- and UK-based health consultancies, creating impactful visuals that bridge technical insight with narrative clarity. Less than a year ago, she began learning Python to expand her skill set and explore interactive dashboards with Dash. Her current projects lie at the intersection of technology, science, and art \u2014 driven by her passion for meaningful storytelling.",
+    "avatar": "https://pretalx.com/media/avatars/PUYUYE_cswMBJL.webp",
+    "biography": "I’m a Mechatronics Engineering student passionate about using Python to solve real-world problems. I’m actively involved in several Python-focused communities, including ML Collective Nigeria, where I currently lead the Medical Imaging Focus Group. I’m also a Microsoft Learn Student Ambassador and a member of AfricaAI, the largest community of Africans improving medical imaging with AI. On campus, I serve as the co-lead of machine learning at the Google Developer Student Club, where I help others explore the power of AI. My Python journey began with web development using Flask and Django, but my current focus is on research in deep learning for medical imaging—applying computer vision to health challenges in low-resource settings.",
+    "bluesky_url": null,
+    "code": "PUYUYE",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/ilerioluwakiiye",
+    "mastodon_url": null,
+    "name": "Ilerioluwakiiye Abolade",
+    "slug": "ilerioluwakiiye-abolade",
+    "submissions": [
+      "AGGQXK"
+    ],
+    "timezone": "UTC+1",
+    "twitter_url": "https://x.com/llerioluwakiiye",
+    "website_url": "https://2025.conference.pyladies.com/speaker/ilerioluwakiiye-abolade"
+  },
+  "KQHVSU": {
+    "id": "KQHVSU",
+    "affiliation": null,
+    "avatar": "https://pretalx.com/media/avatars/KQHVSU_qVngBbL.webp",
+    "biography": "De profesión Ingeniera Civil Industrial y estudiante de segundo año en el Magíster en Data Science de la Universidad del Desarrollo. Llevo más de 20 años trabajando en análisis de datos, inteligencia de negocios y transformación digital, liderando proyectos en banca, educación, industria y empresas productivas. Mi foco siempre ha sido integrar soluciones tecnológicas que generen valor y mejoren la toma de decisiones.\r\nMe apasiona la visualización de datos y la enseñanza de herramientas tecnológicas. He impartido cursos y talleres sobre Python, Power BI, desarrollo web y análisis de datos, buscando siempre un equilibrio entre la teoría y ejemplos prácticos que faciliten el aprendizaje.\r\nActualmente, desarrollo mi proyecto de consultoría y formación en analítica de datos, apoyando a empresas y profesionales a utilizar la información de forma estratégica para resolver problemas reales. Creo firmemente que la programación y la analítica son puentes que conectan los datos con las personas, y que el conocimiento debe ser accesible, práctico y aplicable.",
+    "bluesky_url": null,
+    "code": "KQHVSU",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/ingrid-solis-gonzalez",
+    "mastodon_url": null,
+    "name": "Ingrid Solis",
+    "slug": "ingrid-solis",
+    "submissions": [
+      "WZTMVK"
+    ],
+    "timezone": "UTC-3",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/ingrid-solis"
+  },
+  "Z87LT8": {
+    "id": "Z87LT8",
+    "affiliation": "Agile Lab",
+    "avatar": "https://pretalx.com/media/avatars/Z87LT8_vsCs4OW.webp",
+    "biography": "Irene Donato is the Lead Data Scientist at Agile Lab, working on the development and application of machine learning models. With an academic background that includes postdoctoral research at the University of Alberta and Aix-Marseille Université, she transitioned to industry, where she has led data science projects and teams.\r\n\r\nIrene enjoys bridging the gap between deep research and practical application. She is passionate about making complex topics accessible to the developer community.",
+    "bluesky_url": null,
+    "code": "Z87LT8",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": null,
+    "mastodon_url": null,
+    "name": "Irene Donato",
+    "slug": "irene-donato",
+    "submissions": [
+      "ZGPVCU"
+    ],
+    "timezone": "UTC-12",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/irene-donato"
+  },
+  "CBMJA7": {
+    "id": "CBMJA7",
+    "affiliation": "Posit, PBC",
+    "avatar": "https://pretalx.com/media/avatars/CBMJA7_P7kHtF2.webp",
+    "biography": "I am a software engineer at Posit, PBC, where I build Python-based open source data science tools. I’m an Emeritus Editor in Chief at pyOpenSci, an organization that supports scientific Python tools by offering peer reviews of packages. I graduated from Florida Polytechnic University with my Masters in Computer Science, focused in Data Science. When not thinking about computers, I enjoy reading and teaching my dog tricks.",
+    "bluesky_url": "https://bsky.app/profile/isabelizimm.bsky.social",
+    "code": "CBMJA7",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/isabel-zimmerman",
+    "mastodon_url": null,
+    "name": "Isabel Zimmerman",
+    "slug": "isabel-zimmerman",
+    "submissions": [
+      "CCAGCB"
+    ],
+    "timezone": "UTC-12",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/isabel-zimmerman"
+  },
+  "NSTXEP": {
+    "id": "NSTXEP",
+    "affiliation": "Microsoft",
+    "avatar": "https://pretalx.com/media/avatars/NSTXEP_SMMzf6j.webp",
+    "biography": "From content-first design to data-first systems—I'm building the future of AI-powered UX.\r\n\r\nI’m a Senior Content Designer turned Data Engineer and AI Specialist at Microsoft, where I bridge the gap between human-centered design and machine intelligence. My work lives at the intersection of LLMs, data science, and content engineering, helping teams build intuitive, data-driven experiences across the Microsoft ecosystem.",
+    "bluesky_url": null,
+    "code": "NSTXEP",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/jenniferkelleman",
+    "mastodon_url": null,
+    "name": "Jen Kelleman",
+    "slug": "jen-kelleman",
+    "submissions": [
+      "CU33B8"
+    ],
+    "timezone": "UTC-12",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/jen-kelleman"
+  },
+  "BT38TD": {
+    "id": "BT38TD",
+    "affiliation": "World Resources Institute",
+    "avatar": "https://pretalx.com/media/avatars/BT38TD_RELboRh.webp",
+    "biography": "Jessica Ertel is a Data Science Manager at the World Resources Institute, where she applies artificial intelligence and remote sensing to monitor environmental restoration at scale. She leads research prioritization and delivery, and enjoys translating complex scientific research into scalable, cloud-based geospatial workflows in Python.\r\n\r\nJessica has over a decade of experience bridging technical, operational, and strategic roles in the environmental sector, including forestry, renewable energy, conservation and urban water management. She holds a self-designed, interdisciplinary B.A. in Global Environmental Affairs from Bucknell University.",
+    "bluesky_url": null,
+    "code": "BT38TD",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/jessicaertel",
+    "mastodon_url": null,
+    "name": "Jessica Ertel",
+    "slug": "jessica-ertel",
+    "submissions": [
+      "JV7TG9"
+    ],
+    "timezone": "UTC-5",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/jessica-ertel"
+  },
+  "GMSKCP": {
+    "id": "GMSKCP",
+    "affiliation": null,
+    "avatar": "https://pretalx.com/media/avatars/GMSKCP_BEIXiju.webp",
+    "biography": "Karla Doctor es consultora en Machine Learning e inteligencia artificial, especializada en visión por computadora y modelos de lenguaje natural. Su trabajo se centra en la creación de soluciones innovadoras que transforman industrias, impulsando la eficiencia operativa y la toma de decisiones estratégicas.\r\n\r\nA lo largo de su carrera, ha desarrollado e implementado tecnologías en sectores como agricultura, transporte y retail, adaptándose a distintos niveles de madurez digital. Su metodología integra la analítica avanzada para maximizar el valor empresarial y el desarrollo tecnológico responsable.\r\n\r\nAdemás, Karla colabora activamente con comunidades globales para impulsar el avance de la IA a través de proyectos y charlas.",
+    "bluesky_url": null,
+    "code": "GMSKCP",
+    "gitx_url": null,
+    "homepage": "https://karladoctormauricio.github.io/IA_KarlaDoctorMauricio.github.io/experience.html",
+    "instagram_url": "https://instagram.com/karla.doctorm",
+    "linkedin_url": "https://linkedin.com/in/karla-doctor",
+    "mastodon_url": null,
+    "name": "Karla Angelica Doctor Mauricio",
+    "slug": "karla-angelica-doctor-mauricio",
+    "submissions": [
+      "ZQ98FN"
+    ],
+    "timezone": "UTC-6",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/karla-angelica-doctor-mauricio"
+  },
+  "F8QLX9": {
+    "id": "F8QLX9",
+    "affiliation": "Pontificia Universidad Católica",
+    "avatar": "https://pretalx.com/media/avatars/F8QLX9_4dcKd40.webp",
+    "biography": "[EN]\r\nI am a very passionate software developer, always looking for challenges in the industry. I specialize in data visualization & game development. I started programming at 14, following a book my mother gave me; my first program drew a wonky house using Turtle. Now, alongside other creators, I make games, work a daytime job as a software developer, and study at nightshift.",
+    "bluesky_url": null,
+    "code": "F8QLX9",
+    "gitx_url": null,
+    "homepage": "https://programat3.github.io/",
+    "instagram_url": "https://instagram.com/gatitechno",
+    "linkedin_url": "https://linkedin.com/in/lia-dsr",
+    "mastodon_url": null,
+    "name": "Lía Da Silva - Rojas",
+    "slug": "lia-da-silva-rojas",
+    "submissions": [
+      "CMYZH3"
+    ],
+    "timezone": "UTC-4",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/lia-da-silva-rojas"
+  },
+  "WWKB3X": {
+    "id": "WWKB3X",
+    "affiliation": null,
+    "avatar": "https://pretalx.com/media/avatars/WWKB3X_SiNHYPx.webp",
+    "biography": "Lilinoe Harbottle is an Indigenous (Kanaka ʻŌiwi) Data Scientist who bridges algorithms, robotics, and healthcare. She leads AI initiatives at a San Francisco startup, developing advanced models. At Auris Health (Johnson & Johnson), she enhanced medical robotic systems, improving bronchoscopy and urology procedures. A champion for open source and inclusive tech communities, she is a Sequoyah Fellow of the American Indian Science & Engineering Society (AISES).",
+    "bluesky_url": null,
+    "code": "WWKB3X",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/lili-h",
+    "mastodon_url": null,
+    "name": "Lilinoe Harbottle",
+    "slug": "lilinoe-harbottle",
+    "submissions": [
+      "YKRHA3"
+    ],
+    "timezone": "UTC-8",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/lilinoe-harbottle"
+  },
+  "Z98SEA": {
+    "id": "Z98SEA",
+    "affiliation": "Codevixens",
+    "avatar": "https://pretalx.com/media/avatars/Z98SEA_CKFYgoa.webp",
+    "biography": "Lois Bassey is a software engineer and infrastructure specialist who cares deeply about reliability, simplicity, and helping developers build things that don’t break in production. With experience across backend development and DevOps, she enjoys making infrastructure feel less intimidating, especially for those new to it.\r\n\r\nShe’s also the founder of Codevixens, an initiative that trains and supports people, especially women looking to start or grow tech careers. Her work focuses on bridging knowledge gaps and making technical growth more accessible.\r\n\r\nOutside of work, she mentors aspiring engineers and builds personal learning experiences around DevOps, cloud, and automation.",
+    "bluesky_url": null,
+    "code": "Z98SEA",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": "https://instagram.com/elle.bsy",
+    "linkedin_url": "https://linkedin.com/in/lois-bassey-291870174",
+    "mastodon_url": null,
+    "name": "Lois Bassey",
+    "slug": "lois-bassey",
+    "submissions": [
+      "R9NZ7G"
+    ],
+    "timezone": "UTC+1",
+    "twitter_url": "https://x.com/that_lady_dev",
+    "website_url": "https://2025.conference.pyladies.com/speaker/lois-bassey"
+  },
+  "UKNKWW": {
+    "id": "UKNKWW",
+    "affiliation": null,
+    "avatar": "https://pretalx.com/media/avatars/UKNKWW_PHa5fux.webp",
+    "biography": "Loredana Horezeanu is a global health data analyst and visualization designer with over seven years’ experience turning complex datasets into clear, actionable stories for decision-makers. She has consulted for organizations including the World Bank and leading US- and UK-based health consultancies, creating impactful visuals that bridge technical insight with narrative clarity. Less than a year ago, she began learning Python to expand her skill set and explore interactive dashboards with Dash. Her current projects lie at the intersection of technology, science, and art — driven by her passion for meaningful storytelling.",
     "bluesky_url": null,
     "code": "UKNKWW",
     "gitx_url": null,
@@ -940,10 +650,32 @@
     "twitter_url": null,
     "website_url": "https://2025.conference.pyladies.com/speaker/loredana-horezeanu"
   },
+  "JNGHT3": {
+    "id": "JNGHT3",
+    "affiliation": "Planet Innovation",
+    "avatar": "https://pretalx.com/media/avatars/JNGHT3_TumYNKg.webp",
+    "biography": "Lydia thrives at the intersection of leadership and technical challenges. She brings over 15 years of experience in professional development, coaching, and quality improvement to her recent roles in data and software. This combination of perspectives and experience enables her to support teams to succeed at technical challenges (while picking off a few technical challenges herself when the opportunity presents).",
+    "bluesky_url": null,
+    "code": "JNGHT3",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/lydia-peabody",
+    "mastodon_url": null,
+    "name": "Lydia Peabody",
+    "slug": "lydia-peabody",
+    "submissions": [
+      "HNZPGJ"
+    ],
+    "timezone": "UTC+11",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/lydia-peabody"
+  },
   "VDTPUP": {
+    "id": "VDTPUP",
     "affiliation": "Box",
-    "avatar": "https://pretalx.com/media/avatars/VDTPUP_Zoi8xdb.jpg",
-    "biography": "Maggie Wolff is a Marketer turned Data Scientist, with experience spanning multiple industries including tech, e-commerce, travel, corporate real estate, healthcare, and non-profits. She holds a Master of Science in Data Science from DePaul University and a Bachelor of Arts in Communication from Loyola University Chicago. She spent the first decade of her career in public relations & marketing roles and has spent the past decade working in analytics and data science, focused on supporting marketing, product, and go-to-market teams through experimentation, A/B testing, reporting, insights, and predictive modeling. She is currently a Data Scientist at Box. \r\n\r\nMaggie also supports the local data community in Chicago as an organizer of the Women in Data Science Chicago regional conference in the spring, as well as the Chicago MeasureCamp \u201cunconference\u201d in the fall. \r\n\r\nIn her free time, she loves to dance and occasionally performs around town with the Chicago Chorus Girls Project.",
+    "avatar": "https://pretalx.com/media/avatars/VDTPUP_7fwZ9X2.webp",
+    "biography": "Maggie Wolff is a Marketer turned Data Scientist, with experience spanning multiple industries including tech, e-commerce, travel, corporate real estate, healthcare, and non-profits. She holds a Master of Science in Data Science from DePaul University and a Bachelor of Arts in Communication from Loyola University Chicago. She spent the first decade of her career in public relations & marketing roles and has spent the past decade working in analytics and data science, focused on supporting marketing, product, and go-to-market teams through experimentation, A/B testing, reporting, insights, and predictive modeling. She is currently a Data Scientist at Box. \r\n\r\nMaggie also supports the local data community in Chicago as an organizer of the Women in Data Science Chicago regional conference in the spring, as well as the Chicago MeasureCamp “unconference” in the fall. \r\n\r\nIn her free time, she loves to dance and occasionally performs around town with the Chicago Chorus Girls Project.",
     "bluesky_url": "https://bsky.app/profile/data-maggie.bsky.social",
     "code": "VDTPUP",
     "gitx_url": null,
@@ -960,9 +692,73 @@
     "twitter_url": null,
     "website_url": "https://2025.conference.pyladies.com/speaker/maggie-wolff"
   },
-  "WHRL9U": {
+  "QCZ7SY": {
+    "id": "QCZ7SY",
+    "affiliation": "Cumbuca Dev",
+    "avatar": "https://pretalx.com/media/avatars/QCZ7SY_DjgqObo.webp",
+    "biography": "Co-founder of Cumbuca Dev, Maria Antônia Maia makes open source accessible and inclusive, creating practical paths for beginners to gain real-world experience.",
+    "bluesky_url": null,
+    "code": "QCZ7SY",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": "https://instagram.com/m.antoniamaia",
+    "linkedin_url": "https://linkedin.com/in/antoniamaia",
+    "mastodon_url": null,
+    "name": "Maria Antônia Maia",
+    "slug": "maria-antonia-maia",
+    "submissions": [
+      "QUZXXK"
+    ],
+    "timezone": "UTC-3",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/maria-antonia-maia"
+  },
+  "9G37BP": {
+    "id": "9G37BP",
     "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/WHRL9U_McGaYQZ.jpeg",
+    "avatar": "https://pretalx.com/media/avatars/9G37BP_ob5IuJn.webp",
+    "biography": "擁有超過十年的 Data Engineer 經驗，擅長資料整理與應用，致力於讓資料成為決策的參考。熱愛教育與社群參與，長年透過教學與活動設計，協助各種年齡與背景的人邁入程式世界，也持續在台灣的 PyLadies 社群推動技術傳承與交流。",
+    "bluesky_url": null,
+    "code": "9G37BP",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/marsw",
+    "mastodon_url": null,
+    "name": "Mars Weng",
+    "slug": "mars-weng",
+    "submissions": [
+      "QZFBCH"
+    ],
+    "timezone": "UTC+8",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/mars-weng"
+  },
+  "HM3RRT": {
+    "id": "HM3RRT",
+    "affiliation": "Torchbox",
+    "avatar": "https://pretalx.com/media/avatars/HM3RRT_WNPhTCW.webp",
+    "biography": "Meagen Voss began her journey into content management nerdery with a WordPress website in the early 2000s and is now Wagtail Community Manager and Editor for Wagtail.org. She officially works for Torchbox, an agency that supports non-profits and other groups doing good in the world. When she’s not coding or writing fiction, you can find her staring at waterfalls in the mountains of North Carolina or cruising around a lake on her paddle board.",
+    "bluesky_url": "https://bsky.app/profile/meagenvoss.bsky.social",
+    "code": "HM3RRT",
+    "gitx_url": null,
+    "homepage": "https://www.meagenvoss.com/",
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/meagenvoss",
+    "mastodon_url": "https://fosstodon.org/@vossisboss",
+    "name": "Meagen Voss",
+    "slug": "meagen-voss",
+    "submissions": [
+      "NLGURP"
+    ],
+    "timezone": "UTC-4",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/meagen-voss"
+  },
+  "WHRL9U": {
+    "id": "WHRL9U",
+    "affiliation": null,
+    "avatar": "https://pretalx.com/media/avatars/WHRL9U_ZPrcLDY.webp",
     "biography": "Megan Speir leads dev communities and toddler negotiations with equal energy. A DevRel leader with 10+ years building global developer programs at Twilio and Segment. She's passionate about inclusive communities and helping the next million developers turn ideas into impact.",
     "bluesky_url": null,
     "code": "WHRL9U",
@@ -980,29 +776,221 @@
     "twitter_url": null,
     "website_url": "https://2025.conference.pyladies.com/speaker/megan"
   },
-  "WWKB3X": {
-    "affiliation": null,
-    "avatar": "https://pretalx.com/media/avatars/WWKB3X_K6HYB1q.jpg",
-    "biography": "Lilinoe Harbottle is an Indigenous (Kanaka \u02bb\u014ciwi) Data Scientist who bridges algorithms, robotics, and healthcare. She leads AI initiatives at a San Francisco startup, developing advanced models. At Auris Health (Johnson & Johnson), she enhanced medical robotic systems, improving bronchoscopy and urology procedures. A champion for open source and inclusive tech communities, she is a Sequoyah Fellow of the American Indian Science & Engineering Society (AISES).",
+  "R9YNT9": {
+    "id": "R9YNT9",
+    "affiliation": "Aixia",
+    "avatar": "https://pretalx.com/media/avatars/R9YNT9_NvmbtHn.webp",
+    "biography": "Milena Miernik is a former language teacher turned AI software developer, blending her background in linguistics with a passion for building smart, human-centered tools. Based in Sweden, she holds a Master’s in sociolinguistics and now works at Aixia AB, where she develops AI solutions with a focus on language and education.\r\n\r\nWith experience teaching advanced English and learning Swedish herself, Milena brings a unique perspective to multilingual AI. She’s especially interested in self-hosted, open-source models and agentic workflows that promote transparency and decentralization. Her DIY spirit and cross-disciplinary mindset drive projects that are both technically inventive and deeply user-focused.",
     "bluesky_url": null,
-    "code": "WWKB3X",
+    "code": "R9YNT9",
     "gitx_url": null,
     "homepage": null,
     "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/lili-h",
+    "linkedin_url": "https://linkedin.com/in/milena-miernik",
     "mastodon_url": null,
-    "name": "Lilinoe Harbottle",
-    "slug": "lilinoe-harbottle",
+    "name": "Milena Miernik",
+    "slug": "milena-miernik",
     "submissions": [
-      "YKRHA3"
+      "JFDDUV"
+    ],
+    "timezone": "UTC-12",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/milena-miernik"
+  },
+  "ERBJFG": {
+    "id": "ERBJFG",
+    "affiliation": "Sunan Kalijaga State Islamic University Yogyakarta",
+    "avatar": "https://pretalx.com/media/avatars/ERBJFG_Dho1IQ4.webp",
+    "biography": "Muh Naufal Muzhaffar is an AI and Natural Language Processing (NLP) enthusiast with a strong interest in computational linguistics and local language technology. He is currently pursuing his postgraduate degree in Informatics at the Faculty of Science and Technology, Sunan Kalijaga State Islamic University, Yogyakarta, Indonesia. With a background in programming and a focus on NLP-based language processing, he actively works on developing digital dictionaries and language resources for Indonesia’s local languages. His work combines AI, open-source collaboration, and linguistic preservation through technology.",
+    "bluesky_url": null,
+    "code": "ERBJFG",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": "https://instagram.com/mnaufalmuzhaffar",
+    "linkedin_url": null,
+    "mastodon_url": null,
+    "name": "Muh Naufal Muzhaffar",
+    "slug": "muh-naufal-muzhaffar",
+    "submissions": [
+      "DQB3PR"
+    ],
+    "timezone": "UTC+7",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/muh-naufal-muzhaffar"
+  },
+  "PKJQTM": {
+    "id": "PKJQTM",
+    "affiliation": null,
+    "avatar": "https://pretalx.com/media/avatars/PKJQTM_DYnVhcA.webp",
+    "biography": "Neyde Rosa Cumbane is a passionate and driven Mozambican student in her final year of the Informatics Management program at Universidade Wutivi. With a deep interest in technology, data, and ethical innovation, she is dedicated to using digital tools to create meaningful social impact.\r\n\r\nThroughout her academic journey, Neyde has demonstrated strong leadership and initiative, participating in events such as the Data Wave and actively engaging with communities like MozDevz. Her curiosity and dedication to learning have led her to explore fields such as backend development, databases, and artificial intelligence ethics. She believes that ethical technology can transform societies when built with responsibility and inclusivity.\r\n\r\nProfessionally, Neyde has contributed to the acquisition of IT equipment and software at Wanda Honwana & Associados and served as a trainer and internship supervisor at the Samora Machel Technical Institute. These roles have strengthened her skills in analysis, communication, and mentoring.\r\n\r\nBeyond academics and work, Neyde is committed to empowering women in tech and promoting ethical digital development. With a forward-thinking mindset and a collaborative spirit, she aspires to continue growing as a professional who bridges innovation with integrity.",
+    "bluesky_url": null,
+    "code": "PKJQTM",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": "https://instagram.com/neycumbane_",
+    "linkedin_url": "https://linkedin.com/in/neyde-cumbane-800a61263",
+    "mastodon_url": null,
+    "name": "Neyde Rosa Cumbane",
+    "slug": "neyde-rosa-cumbane",
+    "submissions": [
+      "DPD9ME"
+    ],
+    "timezone": "UTC+2",
+    "twitter_url": "https://x.com/neycumbane",
+    "website_url": "https://2025.conference.pyladies.com/speaker/neyde-rosa-cumbane"
+  },
+  "8AXEMT": {
+    "id": "8AXEMT",
+    "affiliation": null,
+    "avatar": "https://pretalx.com/media/avatars/8AXEMT_pte7KHt.webp",
+    "biography": "As an educator, committed to exploring the use of python in data science, machine learning and artificial intelligence for teaching and learning. Passionate about special needs learners and with  the rise in the number of learners with disability to read and write in Nigeria (Dyslexia), I desire to impact learners the more to read, write and attain academic excellence using Python Programming Language",
+    "bluesky_url": null,
+    "code": "8AXEMT",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/olukemi-jacobs-924971275",
+    "mastodon_url": null,
+    "name": "Oluwakemi Omowunmi Jacobs",
+    "slug": "oluwakemi-omowunmi-jacobs",
+    "submissions": [
+      "A7MQRH"
+    ],
+    "timezone": "UTC-12",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/oluwakemi-omowunmi-jacobs"
+  },
+  "CLHQXK": {
+    "id": "CLHQXK",
+    "affiliation": "Microsoft",
+    "avatar": "https://pretalx.com/media/avatars/CLHQXK_Uqm5FAv.webp",
+    "biography": "Pamela Fox is a human that loves to learn, teach, and create. She's currently a Cloud Advocate in Python at Microsoft, where she helps developers use Python with the many Azure offerings.\r\n\r\nOn the teaching front, Pamela has taught computer science at UC Berkeley and volunteered in bay area classrooms as part of the TEALS, GirlsWhoCode, and CoderDojo organizations. She also started the SF chapter of GirlDevelopIt, where she taught dozens of web development workshops.\r\n\r\nPamela's been in the tech industry for 15 years now, starting with her first role at Google as one of their first developer advocates. She went on to be an early full-stack engineer at Coursera and spent many years after at Khan Academy, both as an engineer and the creator of the computer programming content.",
+    "bluesky_url": "https://bsky.app/profile/pamelafox.bsky.social",
+    "code": "CLHQXK",
+    "gitx_url": null,
+    "homepage": "https://pamelafox.org/",
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/pamela-s-fox",
+    "mastodon_url": "https://fosstodon.org/@pamelafox",
+    "name": "Pamela Fox",
+    "slug": "pamela-fox",
+    "submissions": [
+      "EPHCZC"
     ],
     "timezone": "UTC-8",
+    "twitter_url": "https://x.com/pamelafox",
+    "website_url": "https://2025.conference.pyladies.com/speaker/pamela-fox"
+  },
+  "9XSYUK": {
+    "id": "9XSYUK",
+    "affiliation": "LATAM Airlines",
+    "avatar": "https://pretalx.com/media/avatars/9XSYUK_O7OuJAm.webp",
+    "biography": "CTO | Tech Strategy | Digital Transformation | Agile Leadership | High-Performance Teams\r\n\r\nEjecutiva de tecnología con más de 15 años liderando equipos de ingeniería e iniciativas de transformación digital en organizaciones de alto impacto. Me apasiona desarrollar capacidades organizacionales escalables, desde empoderar a equipos tecnológicos autónomos hasta promover la excelencia operativa y la mejora continua.\r\n\r\nEspecializada en entrega de software, métricas de flujo, metodologías ágiles, diseño organizacional y liderazgo técnico. Mi experiencia abarca startups, scaleups, empresas tradicionales y consultoras internacionales, combinando siempre pensamiento estratégico, ejecución ágil y una mentalidad centrada en las personas.\r\n\r\nMi propósito: ayudar a equipos y organizaciones a alcanzar su máximo potencial fomentando las estructuras, habilidades y mentalidades adecuadas para un impacto real.\r\n\r\n📢 Public Speaker | 📊 Data-Driven Delivery | 🛠️ Lean Inception Facilitator | 🤝 Tech & Leadership Mentor",
+    "bluesky_url": null,
+    "code": "9XSYUK",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": null,
+    "mastodon_url": null,
+    "name": "Patty Trejo",
+    "slug": "patty-trejo",
+    "submissions": [
+      "WRPAMN"
+    ],
+    "timezone": "UTC-3",
     "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/lilinoe-harbottle"
+    "website_url": "https://2025.conference.pyladies.com/speaker/patty-trejo"
+  },
+  "JG3EPU": {
+    "id": "JG3EPU",
+    "affiliation": null,
+    "avatar": "https://pretalx.com/media/avatars/JG3EPU_Qle5k1V.webp",
+    "biography": "Rachel Kaufman is a full-stack software engineer working in the martech space. She loves writing unit tests (seriously), strongly-typed languages, and the Oxford comma. She's also a lead organizer with Women and Gender eXpansive Coders DC, a group for women and nonbinary people in tech in the Washington, DC area.",
+    "bluesky_url": null,
+    "code": "JG3EPU",
+    "gitx_url": null,
+    "homepage": "https://readwriterachel.com",
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/rachelkaufman13",
+    "mastodon_url": null,
+    "name": "Rachel Kaufman",
+    "slug": "rachel-kaufman",
+    "submissions": [
+      "KMCPKM"
+    ],
+    "timezone": "UTC-5",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/rachel-kaufman"
+  },
+  "7Q3TSS": {
+    "id": "7Q3TSS",
+    "affiliation": "Mest Africa",
+    "avatar": "https://pretalx.com/media/avatars/7Q3TSS_XfN2oPT.webp",
+    "biography": null,
+    "bluesky_url": null,
+    "code": "7Q3TSS",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": null,
+    "mastodon_url": null,
+    "name": "Rahmat Akintola",
+    "slug": "rahmat-akintola",
+    "submissions": [
+      "YL3LZC"
+    ],
+    "timezone": "UTC+0",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/rahmat-akintola"
+  },
+  "TCA73V": {
+    "id": "TCA73V",
+    "affiliation": null,
+    "avatar": "https://pretalx.com/media/avatars/TCA73V_7gXKMGz.webp",
+    "biography": "Desenvolvedora Front-End formada pela {reprograma}, onde iniciou sua transição de carreira aos 36 anos após digitar sua primeira linha de código. \r\nAtua como Analista de Projetos Pedagógicos em Tecnologia. \r\nJá participou em iniciativas apoiadas pelo MCTI voltadas à capacitação em Letramento Digital. \r\nÉ também Coordenadora de Marketing e Mídias Sociais da ONG STEM for Women, organização dedicada ao incentivo de meninas e mulheres em carreiras STEM. \r\nPossui certificação de Soluções em Nuvem pela AWS e está se preparando para se tornar arquiteta de Soluções em Nuvem.",
+    "bluesky_url": null,
+    "code": "TCA73V",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": "https://instagram.com/roma_vegan",
+    "linkedin_url": "https://linkedin.com/in/romeniaishiyama-tecnologia-educacao-inovacao",
+    "mastodon_url": null,
+    "name": "Romênia Noriko Ishiyama",
+    "slug": "romenia-noriko-ishiyama",
+    "submissions": [
+      "9BXCRG",
+      "XW9BLX"
+    ],
+    "timezone": "UTC-3",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/romenia-noriko-ishiyama"
+  },
+  "LKLNAE": {
+    "id": "LKLNAE",
+    "affiliation": null,
+    "avatar": "",
+    "biography": null,
+    "bluesky_url": null,
+    "code": "LKLNAE",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": null,
+    "mastodon_url": null,
+    "name": "samasyakhadka",
+    "slug": "samasyakhadka",
+    "submissions": [
+      "VN37NU"
+    ],
+    "timezone": null,
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/samasyakhadka"
   },
   "YLSDKF": {
+    "id": "YLSDKF",
     "affiliation": "Prelude.tech",
-    "avatar": "https://pretalx.com/media/avatars/YLSDKF_GmfFWsR.jpg",
+    "avatar": "https://pretalx.com/media/avatars/YLSDKF_NXQI9h2.webp",
     "biography": "My early career saw me working as a software engineer and technical leader across multiple startups. But it was my passion for education that led me to devote the last 5+ years to re-imagining how we teach people to code professionally.\r\n\r\nOver the last half decade I have had the opportunity to work in the Non-profit space and build alternative education systems from the ground up. Along the way I have learned a lot about how to teach well, how to build organisational systems that teach well, and how traditional education systems fall short.\r\n\r\nI lead the Guild of Educators, a community I founded to empower tech educators through shared resources, support, and evidence-based teaching practices. Additionally, I run Prelude, where I provide rigorous technical training, as well as consultation, and coaching for technical educators, and organisations with education functions (for example grad programs and similar).\r\n\r\nI also founded Prelude.tech where I run advanced Python and \"soft skills\" training.",
     "bluesky_url": null,
     "code": "YLSDKF",
@@ -1020,109 +1008,73 @@
     "twitter_url": "https://x.com/sheena_oconnell",
     "website_url": "https://2025.conference.pyladies.com/speaker/sheena"
   },
-  "YY9HAB": {
-    "affiliation": "Vinta Software",
-    "avatar": "https://pretalx.com/media/avatars/YY9HAB_PARFdPV.jpg",
-    "biography": "Amanda is an Engineering Manager at Vinta Software. She considers herself to be a hybrid professional, having a background in business and software engineering. Amanda enjoys getting into technical topics, having been a speaker at conferences such as DjangoCon US, DjangoCon Europe and Python Brasil in the past, but loves discussing the overlap and challenges around technical and non-technical domains. She\u2019s a social introvert with a passion for cooking, writing, music, video games and (shockingly, based on her history) strength training. Her current goal is to be less chronically online and touch some grass from time to time.",
+  "EXVYFF": {
+    "id": "EXVYFF",
+    "affiliation": "Synics AG",
+    "avatar": "https://pretalx.com/media/avatars/EXVYFF_CsejgBO.webp",
+    "biography": "Hi! I’m Sofi, a computer engineering graduate and currently an intern at Synics. I’m passionate about tech communities—I’ve even co-founded a few: the Google Developer Student Club Univalle, the Bolivian Hub of Artificial Intelligence, and JS Bolivia. I’m also an active member of Google Developers Group Cochabamba, where I contribute both by helping organize events and by giving talks at meetups and conferences.\r\n\r\nOutside of tech, I enjoy reading, listening to Twenty One Pilots, and going out for food with friends after events. I look forward to meeting you!",
     "bluesky_url": null,
-    "code": "YY9HAB",
+    "code": "EXVYFF",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": "https://instagram.com/__sofi__.py",
+    "linkedin_url": "https://linkedin.com/in/sofitoro",
+    "mastodon_url": null,
+    "name": "Sofia Toro",
+    "slug": "sofia-toro",
+    "submissions": [
+      "SNLZFB"
+    ],
+    "timezone": "UTC+2",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/sofia-toro"
+  },
+  "NKJDAR": {
+    "id": "NKJDAR",
+    "affiliation": "EdYou Abroad",
+    "avatar": "https://pretalx.com/media/avatars/NKJDAR_MAGoV5f.webp",
+    "biography": "Astronomy enthusiast and independent researcher.",
+    "bluesky_url": null,
+    "code": "NKJDAR",
+    "gitx_url": null,
+    "homepage": "https://phiwhyyy.medium.com/",
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/sreyaghosh99",
+    "mastodon_url": null,
+    "name": "SREYA GHOSH",
+    "slug": "sreya-ghosh",
+    "submissions": [
+      "UAJAKB"
+    ],
+    "timezone": "UTC-6",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/sreya-ghosh"
+  },
+  "DNUJPT": {
+    "id": "DNUJPT",
+    "affiliation": "KLS Gogte Institute of Technology",
+    "avatar": "https://pretalx.com/media/avatars/DNUJPT_oxw5G0m.webp",
+    "biography": "**Swarooprani Manoor** is an **Assistant Professor** in the **Master of Computer Applications department** at KLS Gogte Institute of Technology, Belagavi, India, with over **20 years of teaching experience**. She specializes in **Python Programming, Data Science, Unix Shell Scripting**, and **Blockchain Technology**.\r\n\r\nSwarooprani is passionate about making technical education accessible. She has conducted several **Python workshops** for colleges and schools, including a PyDiverse workshop under **PyCon India 2023** for school students. She has also spoken at Python community events such as **PyLadiesCon 2023** & **PyLadiesCon 2024** and **BelPy 2024**.\r\n\r\nOutside the classroom, she is a well-known tech communicator. She writes technical articles in Kannada and is a **two-time Quora Kannada Top Writer (2021, 2022)**. She manages the **Quora space Ganakayantra Tantrajnana**, and also runs a popular **LinkedIn newsletter, Python: Unlock Your Skills**, with over 1150 subscribers.\r\nYou can find her newsletter on LinkedIn: [Python: Unlock Your Skills](https://www.linkedin.com/newsletters/7025088461330145281/)\r\n\r\nLinkedIn Profile: [Swarooprani Manoor](https://www.linkedin.com/in/swaroopranimanoor)\r\n\r\nTechnical articles in Kannada: [Ganakayantra Tantrajnana Quora Space](https://qr.ae/pK62kE)",
+    "bluesky_url": null,
+    "code": "DNUJPT",
     "gitx_url": null,
     "homepage": null,
     "instagram_url": null,
-    "linkedin_url": null,
+    "linkedin_url": "https://linkedin.com/in/swaroopranimanoor",
     "mastodon_url": null,
-    "name": "Amanda Savluchinske",
-    "slug": "amanda-savluchinske",
+    "name": "Swarooprani Manoor",
+    "slug": "swarooprani-manoor",
     "submissions": [
-      "DA7ZYQ"
+      "HBMEYA"
     ],
-    "timezone": "UTC-3",
+    "timezone": "UTC+5",
     "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/amanda-savluchinske"
-  },
-  "Z3U7JW": {
-    "affiliation": "Bold Metrics",
-    "avatar": "https://pretalx.com/media/avatars/Z3U7JW_VdPXWsf.jpg",
-    "biography": "Na \u00e1rea de tecnologia desde 2019, quando entrei na gradua\u00e7\u00e3o sem saber de nada. Entrei na \u00e1rea de dados e me desenvolvi como Engenheira de Dados. Sou apaixonada pela \u00e1rea de ensino e meu sonho \u00e9 conseguir compartilhar meu conhecimento com iniciantes da area.",
-    "bluesky_url": null,
-    "code": "Z3U7JW",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": "https://linkedin.com/in/vitoriarleonardo",
-    "mastodon_url": null,
-    "name": "Vitoria Rodrigues",
-    "slug": "vitoria-rodrigues",
-    "submissions": [
-      "MGAN8V"
-    ],
-    "timezone": "UTC-4",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/vitoria-rodrigues"
-  },
-  "Z87LT8": {
-    "affiliation": "Agile Lab",
-    "avatar": "https://pretalx.com/media/avatars/Z87LT8_vN8mdZQ.png",
-    "biography": "Irene Donato is the Lead Data Scientist at Agile Lab, working on the development and application of machine learning models. With an academic background that includes postdoctoral research at the University of Alberta and Aix-Marseille Universit\u00e9, she transitioned to industry, where she has led data science projects and teams.\r\n\r\nIrene enjoys bridging the gap between deep research and practical application. She is passionate about making complex topics accessible to the developer community.",
-    "bluesky_url": null,
-    "code": "Z87LT8",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": null,
-    "linkedin_url": null,
-    "mastodon_url": null,
-    "name": "Irene Donato",
-    "slug": "irene-donato",
-    "submissions": [
-      "ZGPVCU"
-    ],
-    "timezone": "UTC-12",
-    "twitter_url": null,
-    "website_url": "https://2025.conference.pyladies.com/speaker/irene-donato"
-  },
-  "Z98SEA": {
-    "affiliation": "Codevixens",
-    "avatar": "https://pretalx.com/media/avatars/Z98SEA_DPHrTF2.jpeg",
-    "biography": "Lois Bassey is a software engineer and infrastructure specialist who cares deeply about reliability, simplicity, and helping developers build things that don\u2019t break in production. With experience across backend development and DevOps, she enjoys making infrastructure feel less intimidating, especially for those new to it.\r\n\r\nShe\u2019s also the founder of Codevixens, an initiative that trains and supports people, especially women looking to start or grow tech careers. Her work focuses on bridging knowledge gaps and making technical growth more accessible.\r\n\r\nOutside of work, she mentors aspiring engineers and builds personal learning experiences around DevOps, cloud, and automation.",
-    "bluesky_url": null,
-    "code": "Z98SEA",
-    "gitx_url": null,
-    "homepage": null,
-    "instagram_url": "https://instagram.com/elle.bsy",
-    "linkedin_url": "https://linkedin.com/in/lois-bassey-291870174",
-    "mastodon_url": null,
-    "name": "Lois Bassey",
-    "slug": "lois-bassey",
-    "submissions": [
-      "R9NZ7G"
-    ],
-    "timezone": "UTC+1",
-    "twitter_url": "https://x.com/that_lady_dev",
-    "website_url": "https://2025.conference.pyladies.com/speaker/lois-bassey"
-  },
-  "Z9DWXE": {
-    "affiliation": "Becc Academy",
-    "avatar": "https://pretalx.com/media/avatars/Z9DWXE_Awdrg86.jpg",
-    "biography": "Barbara Asiamah is a Digital Skills Training Specialist, Data Analyst, and passionate Python educator based in Ghana. She has over four years of experience designing and delivering beginner-friendly tech programs, with a focus on empowering women and young people. Barbara has organized and mentored at multiple community events, including Django Girls Koforidua, and is committed to making technology accessible and inclusive. She is also actively involved in teaching Python, web development, and data skills through workshops and community-driven initiatives.",
-    "bluesky_url": "https://bsky.app/profile/barbaraasiamah.bsky.social",
-    "code": "Z9DWXE",
-    "gitx_url": null,
-    "homepage": "becc-innovators.netlify.app",
-    "instagram_url": "https://instagram.com/barbara_asiamah",
-    "linkedin_url": "https://linkedin.com/in/barbara-asiamah",
-    "mastodon_url": null,
-    "name": "Barbara Asiamah",
-    "slug": "barbara-asiamah",
-    "submissions": [
-      "DL9FEZ"
-    ],
-    "timezone": "UTC+0",
-    "twitter_url": "https://x.com/barbaraasiamah5",
-    "website_url": "https://2025.conference.pyladies.com/speaker/barbara-asiamah"
+    "website_url": "https://2025.conference.pyladies.com/speaker/swarooprani-manoor"
   },
   "ZY8XCZ": {
+    "id": "ZY8XCZ",
     "affiliation": "City of Austin, Texas, USA",
-    "avatar": "https://pretalx.com/media/avatars/ZY8XCZ_2D3mvPT.jpg",
+    "avatar": "https://pretalx.com/media/avatars/ZY8XCZ_fzduq8s.webp",
     "biography": "Tanvi Sharma is a Gen Z data enthusiast with over 5 years of experience in Data Science, Machine Learning, and Data Visualization. As a data scientist with the City of Austin, Texas, USA, she champions open data and builds dashboards that drive transparent governance and community impact. With a LinkedIn following of 15,000+, Tanvi loves sharing insights and inspiring others in the data world. Equal parts techie and storyteller, she's passionate about using data to empower smarter cities and stronger communities. Off the clock, she's an adventurer, culture enthusiast, and a dancer at heart.",
     "bluesky_url": null,
     "code": "ZY8XCZ",
@@ -1139,5 +1091,110 @@
     "timezone": "UTC-12",
     "twitter_url": null,
     "website_url": "https://2025.conference.pyladies.com/speaker/tanvi-sharma"
+  },
+  "TCSZSH": {
+    "id": "TCSZSH",
+    "affiliation": null,
+    "avatar": "https://pretalx.com/media/avatars/TCSZSH_nAZzMtP.webp",
+    "biography": "Joy Tari-Bagshaw is a Software Engineer, Developer Advocate, and Community Leader passionate about the transformative power of AI and technology in solving real-world challenges. As the first female Google Developer Student Club Lead at her university, she has been a driving force in fostering tech inclusivity, digital empowerment, and AI literacy across diverse communities.\r\nHer work spans AI ethics, open-source contributions, and developer education, with a strong focus on making emerging technologies more accessible and impactful. She has mentored over 60 aspiring technologists, led AI, EdTech-focused and software development workshops, and spoken at global summits, helping bridge the gap between innovation and practical application.\r\nWith a background in Full-Stack Development and AI, Joy is committed to leveraging technology to drive meaningful change, create opportunities for underrepresented groups, and shape the future of responsible AI adoption and digital transformation.",
+    "bluesky_url": null,
+    "code": "TCSZSH",
+    "gitx_url": null,
+    "homepage": "https://joytaribagshaw.github.io/My-Portfolio/",
+    "instagram_url": "https://instagram.com/thejoyoftech_",
+    "linkedin_url": "https://linkedin.com/in/joytaribagshaw",
+    "mastodon_url": null,
+    "name": "The Joy of Tech",
+    "slug": "the-joy-of-tech",
+    "submissions": [
+      "7BB9MZ"
+    ],
+    "timezone": "UTC+0",
+    "twitter_url": "https://x.com/joytaribagshaw",
+    "website_url": "https://2025.conference.pyladies.com/speaker/the-joy-of-tech"
+  },
+  "RY9CPQ": {
+    "id": "RY9CPQ",
+    "affiliation": "株式会社ビープラウド / BeProud Inc.",
+    "avatar": "https://pretalx.com/media/avatars/RY9CPQ_FseqVjK.webp",
+    "biography": "Tomoko Furuki works at BeProud Inc., focusing on data science support and system development with Python.\r\nRecently, in her free time, she enjoys working on hobby projects with LLMs — such as a voice-controlled toy car and a program that rewrites classic literature for children using LangChain and LangGraph.\r\n\r\nX: @komo_fr\r\nGitHub: https://github.com/komo-fr",
+    "bluesky_url": null,
+    "code": "RY9CPQ",
+    "gitx_url": null,
+    "homepage": "https://github.com/komo-fr",
+    "instagram_url": null,
+    "linkedin_url": null,
+    "mastodon_url": null,
+    "name": "Tomoko Furuki（@komo_fr）",
+    "slug": "tomoko-furuki-komo-fr",
+    "submissions": [
+      "33W8ES"
+    ],
+    "timezone": "UTC+9",
+    "twitter_url": "https://x.com/komo_fr",
+    "website_url": "https://2025.conference.pyladies.com/speaker/tomoko-furuki-komo-fr"
+  },
+  "8T7CFD": {
+    "id": "8T7CFD",
+    "affiliation": "PublicNext",
+    "avatar": "https://pretalx.com/media/avatars/8T7CFD_yJSqe0B.webp",
+    "biography": "Vasiliki is a software engineer and AI/R&D manager, currently focusing on projects at the intersection of AI, innovation, and social good. She’s a PyGreece organizer, Women Techmakers Ambassador, and #IAmRemarkable facilitator, supporting inclusive tech communities and mentoring newcomers. She also co-leads Boundless Minds, a space for open conversations about impostor syndrome, public speaking, and emotional well-being in the workplace. When she's not coding or organizing events, you'll find her sketching ideas for her next handmade bag or swapping movie tips over coffee.",
+    "bluesky_url": null,
+    "code": "8T7CFD",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": "https://instagram.com/vadal87",
+    "linkedin_url": "https://linkedin.com/in/vadalakiari",
+    "mastodon_url": null,
+    "name": "Vassiliki Dalakiari",
+    "slug": "vassiliki-dalakiari",
+    "submissions": [
+      "QQDM7H"
+    ],
+    "timezone": "UTC+2",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/vassiliki-dalakiari"
+  },
+  "Z3U7JW": {
+    "id": "Z3U7JW",
+    "affiliation": "Bold Metrics",
+    "avatar": "https://pretalx.com/media/avatars/Z3U7JW_mEdDzao.webp",
+    "biography": "Na área de tecnologia desde 2019, quando entrei na graduação sem saber de nada. Entrei na área de dados e me desenvolvi como Engenheira de Dados. Sou apaixonada pela área de ensino e meu sonho é conseguir compartilhar meu conhecimento com iniciantes da area.",
+    "bluesky_url": null,
+    "code": "Z3U7JW",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": "https://linkedin.com/in/vitoriarleonardo",
+    "mastodon_url": null,
+    "name": "Vitoria Rodrigues",
+    "slug": "vitoria-rodrigues",
+    "submissions": [
+      "MGAN8V"
+    ],
+    "timezone": "UTC-4",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/vitoria-rodrigues"
+  },
+  "LXQGX3": {
+    "id": "LXQGX3",
+    "affiliation": null,
+    "avatar": "https://pretalx.com/media/avatars/LXQGX3_csM9A2b.webp",
+    "biography": "Yashasvi Misra is a software engineer at Pure Storage, mentor, and advocate for ethical tech practices. She builds scalable data pipelines, with a focus on modernizing legacy systems and embedding transparency into data workflows. Outside of engineering, Yashasvi serves as Chair of the NumFOCUS Code of Conduct Working Group and actively mentors women in tech through PyLadies India and Women Techmakers. She’s passionate about creating inclusive communities, ethical engineering, and empowering others to lead with empathy in their code.",
+    "bluesky_url": null,
+    "code": "LXQGX3",
+    "gitx_url": null,
+    "homepage": null,
+    "instagram_url": null,
+    "linkedin_url": null,
+    "mastodon_url": null,
+    "name": "Yashasvi Misra",
+    "slug": "yashasvi-misra",
+    "submissions": [
+      "HSUHCH"
+    ],
+    "timezone": "UTC-12",
+    "twitter_url": null,
+    "website_url": "https://2025.conference.pyladies.com/speaker/yashasvi-misra"
   }
 }

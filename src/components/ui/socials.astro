@@ -1,0 +1,21 @@
+---
+import socials from '../../icons/socials_icons.json';
+const { speakerSocialUrl, social } = Astro.props;
+
+---
+
+<a
+    class="duration-300 hover:text-gray-900 dark:hover:text-gray-100 pr-3"
+    href={speakerSocialUrl}
+    title={socials[social]?.title}
+    target="blank"
+    aria-label={socials[social]?.title}
+>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        class="m-auto h-5 w-5"
+        viewBox="0 0 32 32"
+        set:html={socials[social]?.svgpath}
+    />
+</a>

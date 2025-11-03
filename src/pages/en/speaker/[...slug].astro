@@ -56,11 +56,12 @@ export async function getStaticPaths() {
                 { value.homepage &&
                 ( 
                 <p class="text-black dark:text-white font-bold">Homepage</p>
-                <a class="text-black dark:text-white underline break-all whitespace-pre-wrap" href={value.homepage}></a>)
+                <a class="text-black dark:text-white underline break-all whitespace-pre-wrap" href={value.homepage.startsWith('http') ? value.homepage : `https://${value.homepage}`}>{value.homepage}</a>)
 
               }
               { value.linkedin_url &&
-                ( <p class="text-black dark:text-white font-bold ">LinkedIn</p>
+                ( 
+                <p class="text-black dark:text-white font-bold ">LinkedIn</p>
                 <a class="text-black dark:text-white underline break-all whitespace-pre-wrap" href={value.linkedin_url}>{value.linkedin_url}</a>)
               
               }
