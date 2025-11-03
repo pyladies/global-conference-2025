@@ -1,12 +1,12 @@
 ---
 import socials from '../../icons/socials_icons.json';
-const { speakerSocialUrl, social } = Astro.props;
+const { speakersSocialUrl, social } = Astro.props;
 
 ---
 
 <a
-    class="duration-300 hover:text-gray-900 dark:hover:text-gray-100 pr-3"
-    href={speakerSocialUrl}
+    class="duration-300 pr-3 cursor-help hover:gray-500"
+    href={speakersSocialUrl}
     title={socials[social]?.title}
     target="blank"
     aria-label={socials[social]?.title}

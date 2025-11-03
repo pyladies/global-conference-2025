@@ -11,7 +11,7 @@ const { speakerInfo } = Astro.props;
 
 ---
 
-<div class="flex py-4 flex-col hover:bg-gray-900 hover:rounded-xl cursor-pointer transition-all duration-300" 
+<div class="speaker-item flex py-4 flex-col hover:bg-gray-900 hover:rounded-xl cursor-pointer transition-all duration-300" 
 onclick={`window.location.href='${t("speakers.slug_url")}${speakerInfo.slug}'`}>
   <dt
       class="block mx-auto items-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white"
@@ -102,7 +102,15 @@ onclick={`window.location.href='${t("speakers.slug_url")}${speakerInfo.slug}'`}>
 </div>
 
 <script>
-  document.querySelectorAll(".speaker_div a").forEach(a =>
-    a.addEventListener("click", e => e.stopPropagation())
-  );
+  // Esperamos que el DOM ya tenga los elementos (script al final de la página)
+  document.querySelectorAll(".speaker-item").forEach(card => {
+
+    // Evitamos que los clicks en enlaces o botones dentro del card hagan burbuja
+    // Selecciona anchors, botones y elementos interactivos dentro del card
+    card.querySelectorAll("a, button, [role='button']").forEach(el => {
+      el.addEventListener("click", (ev) => ev.stopPropagation());
+      // si quieres prevenir también el keydown que burbujee:
+      el.addEventListener("keydown", (ev) => ev.stopPropagation());
+    });
+  });
 </script>
