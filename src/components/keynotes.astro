@@ -49,9 +49,8 @@ const socials = {
           <dt class="max-w-full rounded overflow-hidden text-base text-center font-semibold leading-7 text-black dark:text-white flex flex-col items-center">
             <img class="w-48 h-48 md:w-64 md:h-64 rounded-full" src={item.data.image} />
             <div class="pt-3 font-medium flex-none text-black dark:text-white">
-              <p class="text-2xl">{item.data.title}</p>
-              <p class="text-md text-black dark:text-white pb-2">{item.data.role}</p>
-              <p class="text-md text-pink dark:text-gray-400 pb-2">{item.data.org}</p>
+              <a href={item.data.url} class="text-2xl">{item.data.name}</a>
+              <p class="text-md text-pink dark:text-gray-400 pb-2">{item.data.tagline}</p>
               <div class="flex justify-center text-black dark:text-white">
                 {item.data.social?.linkedin && (
                   <a class="duration-300 hover:text-gray-900 dark:hover:text-gray-100 pr-3" href={item.data.social.linkedin} title={socials.linkedin.title} target="blank" aria-label={socials.linkedin.title}>

@@ -4,12 +4,10 @@ import { glob } from 'astro/loaders';
 const keynotes = defineCollection({ 
   loader: glob({ pattern: "**/*.md", base: "./src/content/keynotes" }),
   schema: z.object({
-    title: z.string(),
-    meta_title: z.string().optional(),
-    role: z.string(),
-    org: z.string(),
+    name: z.string(),
     image: z.string(),
-    description: z.string().optional(),
+    url: z.string(),
+    tagline: z.string(),
     social: z.object({
       linkedin: z.string().url().optional(),
       x: z.string().url().optional(),
@@ -18,6 +16,7 @@ const keynotes = defineCollection({
       mastodon: z.string().url().optional(),
       bluesky: z.string().url().optional(),
     }).partial().optional(),
+    order: z.number().optional(),
   }),
  });
 
