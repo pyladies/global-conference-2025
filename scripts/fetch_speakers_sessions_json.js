@@ -8,7 +8,7 @@ const urlSessions = "https://programapi.conference.pyladies.com/sessions.json";
 const destFolder = "./src/data";
 
 const destSpeakersPath = path.join(destFolder, "speakers.json");
-const destSessionsPath = path.join(destFolder, "speakers_talks.json");
+const destSessionsPath = path.join(destFolder, "sessions.json");
 
 //Creates folder
 fs.mkdirSync(destFolder, { recursive: true });
@@ -33,10 +33,6 @@ const orderedSpeakers = Object.fromEntries(
 
 fs.writeFileSync(destSpeakersPath, JSON.stringify(orderedSpeakers, null, 2));
 console.log(`Speakers saved (ordered) in ${destSpeakersPath}`);
-
-
-// fs.writeFileSync(destSpeakersPath, speakers);
-// console.log(`Speakers saved in ${destSpeakersPath}`);
 
 const sessionsResult = await fetch(urlSessions);
 if (!sessionsResult.ok) throw new Error(`Error fetching data: ${sessionsResult.status}`);
