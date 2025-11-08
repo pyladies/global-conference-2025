@@ -33,7 +33,10 @@ export const menuitems = [
   },
   {
     title: "header.sponsors",
-    path: "/sponsors",
+    children: [
+      { title: "header.sponsorsplan", path: "/sponsors" },
+      { title: "header.jobs", path: "/jobs" },
+    ],
   },
   {
     title: "header.coc",
