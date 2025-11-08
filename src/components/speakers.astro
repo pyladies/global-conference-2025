@@ -1,7 +1,5 @@
 ---
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
-import { navigate } from "astro/virtual-modules/transitions-router.js";
-import Link from "./ui/link.astro";
 import SocialsComponent from "./ui/socials.astro";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -101,14 +99,11 @@ onclick={`window.location.href='${t("speakers.slug_url")}${speakerInfo.slug}'`}>
 </div>
 
 <script>
-  // Esperamos que el DOM ya tenga los elementos (script al final de la página)
+  //This click handler prevents nested clickable elements from triggering the card click event
   document.querySelectorAll(".speaker-item").forEach(card => {
 
-    // Evitamos que los clicks en enlaces o botones dentro del card hagan burbuja
-    // Selecciona anchors, botones y elementos interactivos dentro del card
     card.querySelectorAll("a, button, [role='button']").forEach(el => {
       el.addEventListener("click", (ev) => ev.stopPropagation());
-      // si quieres prevenir también el keydown que burbujee:
       el.addEventListener("keydown", (ev) => ev.stopPropagation());
     });
   });

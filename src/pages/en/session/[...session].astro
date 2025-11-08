@@ -3,6 +3,7 @@ import Container from "@components/container.astro";
 import SpeakerData from "../../../data/speakers.json";
 import Submissions from "../../../data/sessions.json";
 import Layout from "@layouts/Layout.astro";
+import SpeakersComponent from "@components/speakers.astro";
 
 import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
 
@@ -95,16 +96,34 @@ export async function getStaticPaths() {
             <!--Speakers section -->
             <div class="mt-16">
   <h2 class="text-3xl font-bold mb-4 text-black dark:text-white">{t("session.speakers")}</h2>
-              <ul>
-                {
+  <div class="mx-auto mt-2 max-w-2xl sm:mt-1 lg:mt-2 lg:max-w-none justify-center">
+                  <dl class="grid ax-w-none md:grid-cols-3 gap-x-3 gap-y-1 lg:max-w-none lg:grid-cols-5">
+                    
+                     {
+                  
                   value.speakers.map((speakerId) => (
                     speakers.filter(([spkKey, spkValue]) => spkKey === speakerId).map(([spkKey, spkValue]) => (
-                      <li class="mt-4 text-black dark:text-white">
-                        <a class="text-xl font-semibold" href={"/en/speaker/"+spkValue.slug}>{spkValue.name}</a>
-                      </li>)
+                     
+                    <div>
+                      <SpeakersComponent
+                              speakerInfo={spkValue}
+                              speakerSubmissions={spkValue.submissions.map(
+                                  (sub) => Submissions[sub],
+                              )}
+                          />
+                      <p class="text-black text-center font-normal dark:text-white">{spkValue.biography?.substring(0, 200)}... 
+                         </p>
+                        <a class="text-black text-center dark:text-white flex text-center mx-auto justify-center items-center cursor-pointer font-bold" href={t("speakers.slug_url")+spkValue.slug}>{t("session.see_more")}
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ee264d"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
+                          
+                        
+                    </div>
+                )
                   )))
                 }
-              </ul>
+                  </dl>
+                </div>
+             
             </div>
             
 
