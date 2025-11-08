@@ -21,7 +21,7 @@ const { details } = Astro.props;
 
   {details.salary}</h4>
   <h3 class="mt-3 text-md font-semibold leading-8 text-black dark:text-white">About the job:</h3>
-  <p class="" set:html={details.description} />
+  <p class="text-black dark:text-white" set:html={details.description} />
   <ul class="flex text-sm leading-6 text-gray-600 dark:text-gray-300 xl:my-5 my33">
     {
       details.keywords.map((tag) => (
