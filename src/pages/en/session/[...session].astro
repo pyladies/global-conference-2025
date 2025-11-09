@@ -111,11 +111,6 @@ export async function getStaticPaths() {
                                   (sub) => Submissions[sub],
                               )}
                           />
-                      <p class="text-black text-center font-normal dark:text-white">{spkValue.biography?.substring(0, 200)}... 
-                         </p>
-                        <a class="text-black text-center dark:text-white flex text-center mx-auto justify-center items-center cursor-pointer font-bold" href={t("speakers.slug_url")+spkValue.slug}>{t("session.see_more")}
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ee264d"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-                          
                         
                     </div>
                 )
