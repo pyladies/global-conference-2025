@@ -1,0 +1,241 @@
+---
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const { align = "center" } = Astro.props;
+const chatSvg = `<svg class="inline w-5 fill-blue-400" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WeChat</title><path d="M 8.691,2.188 C 3.891,2.188 0,5.476 0,9.53 c 0,2.212 1.17,4.203 3.002,5.55 0.2086337,0.151345 0.2948774,0.420604 0.213,0.665 l -0.39,1.48 c -0.019,0.07 -0.048,0.141 -0.048,0.213 0,0.163 0.13,0.295 0.29,0.295 0.059556,-0.0024 0.1173167,-0.02107 0.167,-0.054 l 1.903,-1.114 c 0.2131475,-0.136005 0.4751737,-0.171819 0.717,-0.098 0.9218794,0.267684 1.8770435,0.403367 2.837,0.403 0.276,0 0.543,-0.027 0.811,-0.05 -0.857,-2.578 0.157,-4.972 1.932,-6.446 1.703,-1.415 3.882,-1.98 5.853,-1.838 C 16.711,4.953 13.091,2.188 8.691,2.188 Z m 8.247,6.67 c -1.797,-0.052 -3.746,0.512 -5.28,1.786 -1.72,1.428 -2.687,3.72 -1.78,6.22 0.942,2.453 3.666,4.229 6.884,4.229 0.826,0 1.622,-0.12 2.361,-0.336 0.201744,-0.0613 0.420203,-0.03134 0.598,0.082 l 1.584,0.926 c 0.04144,0.02828 0.08989,0.04454 0.14,0.047 0.134,0 0.24,-0.111 0.24,-0.247 0,-0.06 -0.023,-0.12 -0.038,-0.177 L 21.32,20.155 c -0.01471,-0.05072 -0.02245,-0.103197 -0.023,-0.156 -7.37e-4,-0.157232 0.07402,-0.305266 0.201,-0.398 C 23.024,18.48 24,16.82 24,14.98 24,11.77 21.069,9.143 17.344,8.892 V 8.89 C 17.209,8.88 17.074,8.863 16.937,8.86 Z"</svg>`;
+const discordSvg = `<svg class="inline w-10 fill-indigo-500" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Discord</title><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>`;
+
+const steps = [
+    {
+        number: 1,
+        title: "Obtén tu ticket",
+        subtitle: `Visita pretix para obtener uno.`,
+        url: "#get-ticket",
+    },
+    {
+        number: 2,
+        title: "Únete a Discord",
+        subtitle: `Usando el enlace de invitación`,
+        url: "#join-discord",
+    },
+    {
+        number: 3,
+        title: "Regístrate en Discord",
+        subtitle: `Con tu <b>Nombre</b> y <b>Número de entrada</b>`,
+        url: "#register-discord",
+    },
+    {
+        number: 4,
+        title: "¡Disfruta la conferencia!",
+        subtitle: "Mira la estructura del server",
+        url: "#server-structure",
+    },
+];
+---
+<Layout title="Discord">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="subtitle">{t("header.attending_subtitle")}</Fragment>
+          <Fragment slot="title">{t("header.attending")} <span class="pl-2" set:html={discordSvg}/></Fragment>
+      <Fragment slot="description">
+        Únete al servidor de Discord de la conferencia para conocer a todas las personas que participan,
+        incluidos ponentes, patrocinadores, oradores principales, voluntarios y organizadores.
+        ¡Disfruta de charlas, talleres, espacios abiertos, obtén enlaces a las transmisiones en
+        directo y muchas actividades más!<br>Sigue los siguientes pasos para disfrutar de la
+        conferencia:
+      </Fragment>
+    </Sectionhead>
+
+    <!-- Steps -->
+    <div class="flex items-center pb-2 mb-4 text-sm">
+        <div class="mx-auto max-w-5xl mt-10 text-black dark:text-white">
+            <ol class="items-center w-full space-y-4 sm:flex sm:space-x-8 sm:space-y-0 rtl:space-x-reverse">
+                {
+                steps.map((step) =>
+                <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
+                    <span class="flex items-center justify-center w-8 h-8 border border-black dark:border-white rounded-full shrink-0">
+                        {step.number}
+                    </span>
+                    <span>
+                        <a href={step.url}><h3 class="text-lg font-medium leading-tight no-underline pb-1">{step.title}</h3></a>
+                        <p class="text-sm" set:html={step.subtitle} />
+                    </span>
+                </li>
+                )}
+            </ol>
+        </div>
+    </div>
+
+
+    <!-- Long explanation of the server -->
+    <div class="mx-auto max-w-5xl mt-10 text-black dark:text-white">
+      <h2 class="text-3xl mt-4 py-10" id="get-ticket">
+        Obtén tu ticket
+      </h2>
+      <div class="pl-5">
+        <div class="flex items-center p-4 mb-4 text-sm text-yellow-800 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300" role="alert">
+          <svg class="shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+          </svg>
+          <span class="sr-only">Info</span>
+          <div>
+              <span class="font-bold">Importante:</span> todas las personas que asisten la conferencia necesitan un
+
+            <a class="underline" href="https://pretix.eu/pyladiescon/2025">ticket de la conferencia</a>
+            para poder acceder a los canales correctos en el servidor de Discordn; incluyendo
+            Participantes, Voluntarios, y Patrocinantes.
+          </div>
+        </div>
+        <p class="py-2">
+        Puedes obtener un ticket de la conference en <a href="https://pretix.eu/pyladiescon/2025">nuestra página en pretix</a>.
+        </p>
+      </div>
+      <h2 class="text-3xl mt-4 py-10" id="join-discord">
+        Únete a Discord
+      </h2>
+      <div class="pl-5">
+        <div class="flex items-center p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
+          <svg class="shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+          </svg>
+          <span class="sr-only">Info</span>
+          <div>
+              <span class="font-medium"><b>Nota:</b></span> En caso que ya tengas una cuenta en
+              Discord, no necesitas crear una nueva.
+          </div>
+        </div>
+        <p class="py-2">
+        Deberías haber recibido un enlace de invitación en tu email, pero en caso que no puedas
+        encontrarlo, usa éste: <a href="#">Not available yet</a>
+        </p>
+      </div>
+      <h2 class="text-3xl mt-4 py-10" id="register-discord">
+          Regístrate en Discord
+      </h2>
+      <div class="pl-5">
+        <p class="py-2">
+        Una vez dentro del servidor, dirígete al canal <code class="text-blue-400">#registration-form</code>,
+        haz clic en el botón
+        <button type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-3 py-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Register here 👈</button>
+        y se abrirá una ventana modal donde deberás ingresar tu <b>Nombre</b> y <b>Número de entrada</b>.
+        </p>
+        <p class="py-2">
+        Debes ingresar <b>la información exacta</b> de tu entrada para la conferencia, la cual
+        recibiste por correo electrónico con el asunto:<br><code class="text-gray-300">[PyLadiesCon 2025] Your
+        order: XXXXX</code>, cuando adquiriste la entrada.
+        </p>
+        <h3 class="pt-5 pb-2 text-xl font-semibold leading-8">
+            Únete como Participante
+        </h3>
+        <p>
+        Si esta es tu primera PyLadiesCon, debes unirte a Discord con el enlace que se te enviará una semana antes de la conferencia.
+        </p>
+        <p>
+        Una vez que te registres correctamente, se te asignará el rol de <code class="text-yellow-400">Participante</code>.
+        </p>
+        <h3 class="py-5 pb-2 text-xl font-semibold leading-8">
+            Únete como Patrocinante
+        </h3>
+        <p class="py-2">
+        Si pertenece a una empresa que patrocina la conferencia y participará
+        en las diversas actividades, como mesas redondas, entrevistas rápidas y compartirá información en el
+        canal de su empresa, necesita obtener una entrada con el <b>código de descuento</b> que se le enviará
+        a través de la persona de contacto de su empresa. 
+        </p>
+        <p>
+        Esto es muy importante para que obtenga el rol de <code class="text-yellow-400">Patrocinador</code>. 
+        </p>
+        <h3 class="pt-5 pb-2 text-xl font-semibold leading-8">
+          Únete como Ponente
+        </h3>
+        <p>
+        Si tienes una charla, mesa redonda o ponencia confirmada, debes obtener tu entrada utilizando el código de descuento que te enviaremos por correo electrónico. El motivo es para asignarte automáticamente el rol de <code class="text-yellow-400">Ponente</code>.
+        </p>
+        <h3 class="pt-5 pb-2 text-xl font-semibold leading-8">
+            Únete al Voluntariado
+        </h3>
+        <p>
+        Si eres voluntario de la conferencia, es muy probable que ya estés dentro del servidor,
+        pero <span class="text-red-500">no tendrás</span> acceso a los canales de la conferencia a menos que
+        obtengas una entrada para la conferencia y completes el proceso de registro descrito al
+        principio de esta página. 
+        </p>
+        <p class="py-2">
+        Si por alguna razón no se te ha asignado el rol de <code class="text-yellow-400">Voluntario</code>,
+        contacta con la organización en el canal <code class="text-blue-400">#volunteers-general</code>. 
+        </p>
+      </div>
+      <h2 class="text-3xl mt-4 py-10" id="server-structure">
+         La estructura del servidor
+      </h2>
+      <div class="pl-5">
+      <p>
+      Una vez que te unas al servidor, verás dos categorías, una llamada <b>Información de la Conferencia</b> con dos canales:
+      </p>
+      <ul class="list-disc pl-10 py-1">
+      <li>un canal de texto llamado <code class="text-blue-400">#rules</code>, con las reglas del
+      servidor, y</li>
+      <li>un canal de texto llamado <code class="text-blue-400">#code-of-conduct</code>, con las
+      directrices para participar en el evento.</li>
+      </ul>
+      <p class="py-2">
+      Otra categoría llamada <b>Registro</b> con dos canales:
+      </p>
+        <ul class="list-disc pl-10 py-1">
+          <li>un canal de texto llamado <code class="text-blue-400">#registration-form</code> donde
+          puedes ver el botón para registrarte, y</li>
+          <li>un canal de foro llamado <code class="text-blue-400"><span set:html={chatSvg} />registration-help</code>,
+          donde puedes hacer cualquier pregunta sobre el proceso de registro.</li>
+        </ul>
+        <p class="py-2">
+          Si tiene alguna pregunta después de registrarse, puede dejarla en el foro de
+          <code class="text-blue-400"><span set:html={chatSvg} />ayuda</code>.
+        </p>
+        <h3 class="pt-5 pb-2 text-xl font-semibold leading-8">
+            Obtén las últimas actualizaciones
+        </h3>
+        <p>
+        Una vez registrado, la sección de <b>Información de la Conferencia</b> contendrá más canales:
+        </p>
+        <ul class="list-disc pl-10 py-1">
+          <li><code class="text-blue-400">#announcements</code>, para recibir los anuncios generales de la conferencia,</li>
+          <li><code class="text-blue-400">#outreach-social-media</code>, para obtener las publicaciones de la conferencia en las redes sociales y poder compartirlas,</li>
+          <li><code class="text-blue-400">#donations</code>, para realizar un seguimiento de las donaciones a través de <a href="https://pretix.eu/pyladiescon/2025">Pretix</a> durante la conferencia,</li>
+          <li><code class="text-blue-400">#session-notifications</code>, para conocer las próximas charlas y eventos,</li>
+          <li><code class="text-blue-400">#global-events</code>, para descubrir eventos que se celebran en el resto del mundo.</li>
+        </ul>
+        <h3 class="pt-5 pb-2 text-xl font-semibold leading-8">
+            Interactuar con otras personas
+        </h3>
+        <p>
+          La categoría <b>Conferencia</b> será visible una vez que te registres y contendrá los siguientes canales:        
+        </p>
+        <ul class="list-disc pl-10 py-1">
+          <li><code class="text-blue-400">#welcome</code>, para presentarte y saludar a los demás,</li>
+          <li><code class="text-blue-400">#general</code>, para una discusión general sobre la conferencia,</li>
+          <li><code class="text-blue-400">#networking</code>, para que puedas compartir tus redes sociales y conectar con otros,</li>
+          <li><code class="text-blue-400">#random</code>, para cualquier discusión no relacionada con la conferencia,</li>
+          <li><code class="text-blue-400">#job-board</code>, por si buscas ofertas de trabajo,</li>
+          <li><code class="text-blue-400">#resources</code>, para compartir recursos relacionados con Python,</li>
+          <li><code class="text-blue-400">#news-discussion</code>, para interactuar con las últimas publicaciones del blog de Python/PyLadies,</li>
+          <li><code class="text-blue-400">#help</code>, por si necesitas ayuda con algo,</li>
+          <li><code class="text-blue-400">#ask-core-devs</code>, para que conozcas y preguntes a los desarrolladores principales de Python que estarán presentes,</li>
+          <li><code class="text-blue-400">#game</code>, para un pequeño juego que hemos preparado para ti,</li>
+          <li><code class="text-blue-400">#game-ranking</code>, ¡para ver la clasificación del juego!</li>
+        </ul>
+        <p>
+          Y lo que es más importante, también dispondrás de canales relacionados con los temas de la conferencia:        
+        </p>
+        <ul class="list-disc pl-10 py-1">
+          <li><code class="text-blue-400">#main-stream</code>, para la sección principal de la conferencia,</li>
+          <li><code class="text-blue-400">#activities-open-spaces</code>, para la sección de actividades, talleres y espacios abiertos,</li>        </ul>
+      </div>
+    </div>
+  </Container>
+</Layout>
