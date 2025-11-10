@@ -1,0 +1,288 @@
+---
+import ISO6391 from 'iso-639-1';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+
+const { allTracks = [], allTypes = [], allLevels = [], allLanguages = [], lang } = Astro.props;
+
+const currentLang = lang || getLangFromUrl(Astro.url);
+const t = useTranslations(currentLang);
+
+const getLanguageName = (code: string): string => {
+  const name = ISO6391.getName(code);
+  return name || code; // fallback to language code if not found
+};
+---
+
+<form class="mb-8 filter-sessions bg-gray-50 dark:bg-gray-800 p-6 rounded-lg border-2 border-gray-200 dark:border-gray-700">
+  <div class="w-full mb-6">
+    <label for="sessionSearch" class="block text-base font-semibold mb-2 text-gray-700 dark:text-gray-200">
+      🔍 {t('sessions.filter_search')}
+    </label>
+    <input
+      type="text"
+      id="sessionSearch"
+      name="search"
+      class="block w-full bg-white dark:bg-gray-900 text-base h-12 py-2 px-4 border-2 border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-pinkpyladies focus:border-transparent dark:text-white transition-all duration-200"
+      placeholder={t('sessions.filter_search_placeholder')}
+    />
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+    {allTracks.length > 0 && (
+      <div>
+        <label for="track" class="block text-base font-semibold mb-2 text-gray-700 dark:text-gray-200">
+          {t('sessions.filter_track')}
+        </label>
+        <select
+          id="track"
+          name="track"
+          class="block w-full bg-white dark:bg-gray-900 text-base h-12 py-2 px-4 pr-10 border-2 border-gray-300 dark:border-gray-600 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-pinkpyladies focus:border-transparent dark:text-white transition-all duration-200 cursor-pointer"
+        >
+          <option value="">{t('sessions.filter_track_all')}</option>
+          {allTracks.map((track: string) => (
+            <option value={track}>{track}</option>
+          ))}
+        </select>
+      </div>
+    )}
+
+    {allTypes.length > 0 && (
+      <div>
+        <label for="type" class="block text-base font-semibold mb-2 text-gray-700 dark:text-gray-200">
+          {t('sessions.filter_type')}
+        </label>
+        <select
+          id="type"
+          name="type"
+          class="block w-full bg-white dark:bg-gray-900 text-base h-12 py-2 px-4 pr-10 border-2 border-gray-300 dark:border-gray-600 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-pinkpyladies focus:border-transparent dark:text-white transition-all duration-200 cursor-pointer"
+        >
+          <option value="">{t('sessions.filter_type_all')}</option>
+          {allTypes.map((type: string) => (
+            <option value={type}>{type}</option>
+          ))}
+        </select>
+      </div>
+    )}
+
+    {allLevels.length > 0 && (
+      <div>
+        <label for="level" class="block text-base font-semibold mb-2 text-gray-700 dark:text-gray-200">
+          {t('sessions.filter_level')}
+        </label>
+        <select
+          id="level"
+          name="level"
+          class="block w-full bg-white dark:bg-gray-900 text-base h-12 py-2 px-4 pr-10 border-2 border-gray-300 dark:border-gray-600 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-pinkpyladies focus:border-transparent dark:text-white transition-all duration-200 cursor-pointer"
+        >
+          <option value="">{t('sessions.filter_level_all')}</option>
+          {allLevels.map((level: string) => (
+            <option value={level}>{level}</option>
+          ))}
+        </select>
+      </div>
+    )}
+
+    {allLanguages.length > 0 && (
+      <div>
+        <label for="language" class="block text-base font-semibold mb-2 text-gray-700 dark:text-gray-200">
+          {t('sessions.filter_language')}
+        </label>
+        <select
+          id="language"
+          name="language"
+          class="block w-full bg-white dark:bg-gray-900 text-base h-12 py-2 px-4 pr-10 border-2 border-gray-300 dark:border-gray-600 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-pinkpyladies focus:border-transparent dark:text-white transition-all duration-200 cursor-pointer"
+        >
+          <option value="">{t('sessions.filter_language_all')}</option>
+          {allLanguages.map((language: string) => (
+            <option value={language}>{getLanguageName(language)}</option>
+          ))}
+        </select>
+      </div>
+    )}
+  </div>
+
+  <button
+    type="button"
+    id="reset-filters"
+    class="inline-flex items-center px-4 py-2 text-sm font-semibold text-pinkpyladies hover:text-white hover:bg-pinkpyladies border-2 border-pinkpyladies rounded-lg transition-all duration-200"
+  >
+    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+    </svg>
+    {t('sessions.filter_reset')}
+  </button>
+</form>
+
+<!-- Results info -->
+<div 
+  id="results-info" 
+  class="mb-6 text-base font-semibold text-gray-700 dark:text-gray-300 px-2"
+  data-text-result={t('sessions.results_count')}
+  data-text-no-results={t('sessions.results_none')}
+></div>
+
+<script>
+  interface FilterParams {
+    track: string;
+    type: string;
+    level: string;
+    language: string;
+    search: string;
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const forms = document.querySelectorAll<HTMLFormElement>("form.filter-sessions");
+    const resultsInfo = document.getElementById("results-info");
+
+    function getUrlParams(): FilterParams {
+      const params = new URLSearchParams(window.location.search);
+      return {
+        track: params.get("track") || "",
+        type: params.get("type") || "",
+        level: params.get("level") || "",
+        language: params.get("language") || "",
+        search: params.get("search") || "",
+      };
+    }
+
+    function setSelectValues(): void {
+      const { track, type, level, language, search } = getUrlParams();
+
+      forms.forEach((form) => {
+        const trackSelect = form.querySelector<HTMLSelectElement>("#track");
+        const typeSelect = form.querySelector<HTMLSelectElement>("#type");
+        const levelSelect = form.querySelector<HTMLSelectElement>("#level");
+        const languageSelect = form.querySelector<HTMLSelectElement>("#language");
+        const searchInput = form.querySelector<HTMLInputElement>("#sessionSearch");
+
+        if (trackSelect) trackSelect.value = track;
+        if (typeSelect) typeSelect.value = type;
+        if (levelSelect) levelSelect.value = level;
+        if (languageSelect) languageSelect.value = language;
+        if (searchInput) searchInput.value = search;
+      });
+    }
+
+    function updateUrlParams(track: string, type: string, level: string, language: string, search: string): void {
+      const params = new URLSearchParams();
+
+      if (track) params.set("track", track);
+      if (type) params.set("type", type);
+      if (level) params.set("level", level);
+      if (language) params.set("language", language);
+      if (search) params.set("search", search);
+
+      const queryString = params.toString();
+      const newUrl = queryString
+        ? `${window.location.pathname}?${queryString}`
+        : window.location.pathname;
+      window.history.pushState({}, "", newUrl);
+    }
+
+    function filterSessions(): void {
+      const form = forms[0];
+      if (!form) return;
+      
+      const trackSelect = form.querySelector<HTMLSelectElement>("#track");
+      const typeSelect = form.querySelector<HTMLSelectElement>("#type");
+      const levelSelect = form.querySelector<HTMLSelectElement>("#level");
+      const languageSelect = form.querySelector<HTMLSelectElement>("#language");
+      const searchInput = form.querySelector<HTMLInputElement>("#sessionSearch");
+
+      const track = trackSelect?.value || "";
+      const type = typeSelect?.value || "";
+      const level = levelSelect?.value || "";
+      const language = languageSelect?.value || "";
+      const search = searchInput?.value.trim().toLowerCase() || "";
+
+      updateUrlParams(track, type, level, language, search);
+
+      const sessionItems = document.querySelectorAll<HTMLLIElement>("ol.sessions > li.session-item");
+
+      let visibleCount = 0;
+      sessionItems.forEach((session) => {
+        const sessionTrack = session.getAttribute("data-track") || "";
+        const sessionType = session.getAttribute("data-type") || "";
+        const sessionLevel = session.getAttribute("data-level") || "";
+        const sessionLanguage = session.getAttribute("data-language") || "";
+        const sessionText = session.textContent?.toLowerCase() || "";
+
+        const trackMatch = track === "" || sessionTrack === track;
+        const typeMatch = type === "" || sessionType === type;
+        const levelMatch = level === "" || sessionLevel === level;
+        const languageMatch = language === "" || sessionLanguage === language;
+        const searchMatch = search === "" || sessionText.includes(search);
+
+        const isVisible = trackMatch && typeMatch && levelMatch && languageMatch && searchMatch;
+        session.style.display = isVisible ? "block" : "none";
+        
+        if (isVisible) visibleCount++;
+      });
+
+      console.log('Visible sessions:', visibleCount);
+
+      if (resultsInfo) {
+        const resultText = resultsInfo.getAttribute('data-text-result') || '{count} result{plural} found.';
+        const noResultsText = resultsInfo.getAttribute('data-text-no-results') || 'No results found.';
+        
+        if (visibleCount > 0) {
+          const plural = visibleCount === 1 ? '' : 's';
+          // replace all {plural} and {count}
+          resultsInfo.textContent = resultText
+            .replace('{count}', visibleCount.toString())
+            .replace(/{plural}/g, plural);
+        } else {
+          resultsInfo.textContent = noResultsText;
+        }
+      }
+    }
+
+    function applyFiltersFromUrl(): void {
+      setSelectValues();
+      filterSessions();
+    }
+
+    forms.forEach((form) => {
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+      });
+
+      const selectElements = form.querySelectorAll<HTMLSelectElement>("select");
+
+      selectElements.forEach((select) => {
+        select.addEventListener("change", () => {
+          filterSessions();
+        });
+      });
+
+      const searchInput = form.querySelector<HTMLInputElement>("#sessionSearch");
+      if (searchInput) {
+        searchInput.addEventListener("input", () => {
+          filterSessions();
+        });
+        
+        searchInput.addEventListener("keydown", (e) => {
+          if (e.key === "Enter") {
+            e.preventDefault();
+            filterSessions();
+          }
+        });
+      }
+
+      const resetButton = form.querySelector<HTMLButtonElement>("#reset-filters");
+      if (resetButton) {
+        resetButton.addEventListener("click", () => {
+          selectElements.forEach((select) => {
+            select.value = "";
+          });
+
+          if (searchInput) searchInput.value = "";
+          filterSessions();
+        });
+      }
+    });
+
+    applyFiltersFromUrl();
+  });
+</script>
