@@ -25,13 +25,15 @@ const { align = "center" } = Astro.props;
     </Sectionhead>
 
     <div class="grid md:grid-cols-1 gap-10 mx-auto max-w-5xl mt-10">
-        <div class="py-5">
-            <p class="dark:text-white text-center">
-            The schedule will be published soon!
-            </p>
-        </div>
-      </div>
-      ))}
+        <pretalx-schedule event-url="https://pretalx.com/pyladiescon-2025/" locale="en" style="--pretalx-clr-primary: #3aa57c"></pretalx-schedule>
+        <noscript>
+           <div class="pretalx-widget">
+                <div class="pretalx-widget-info-message">
+                    JavaScript is disabled in your browser. To access our schedule without JavaScript,
+                    please <a target="_blank" href="https://pretalx.com/pyladiescon-2025/schedule/">click here</a>.
+                </div>
+            </div>
+        </noscript>
     </div>
   </Container>
 </Layout>
