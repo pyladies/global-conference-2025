@@ -1,0 +1,108 @@
+---
+import ISO6391 from 'iso-639-1';
+
+const { sessions, lang, speakersData } = Astro.props;
+
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+
+const currentLang = lang || getLangFromUrl(Astro.url);
+const t = useTranslations(currentLang);
+
+type Session = {
+  id: string;
+  title: string;
+  speakers: string[];
+  session_type: string;
+  track: string;
+  level: string;
+  language: string;
+  slug: string;
+};
+
+const speakerNames: Record<string, string> = speakersData 
+  ? Object.fromEntries(
+      Object.entries(speakersData).map(([id, speaker]: [string, any]) => [
+        id,
+        speaker.name
+      ])
+    )
+  : {};
+
+const getLanguageName = (code: string): string => {
+  const name = ISO6391.getName(code);
+  return name || code; // fallback to language code if not found
+};
+---
+
+<ol class="sessions space-y-6">
+  {
+    sessions.map(([key, session]: [string, Session]) => (
+      <li
+        class="session-item p-6 rounded-lg border-2 border-gray-200 dark:border-gray-700 hover:border-pinkpyladies dark:hover:border-pinkpyladies transition-all duration-200 bg-white dark:bg-gray-800 shadow-sm hover:shadow-md"
+        data-track={session.track || ""}
+        data-type={session.session_type || ""}
+        data-level={session.level || ""}
+        data-language={session.language || ""}
+      >
+        <div class="mb-4">
+          <h3 class="text-2xl font-bold mb-3">
+            <a 
+              href={`/${currentLang}/session/${session.slug}`} 
+              class="text-pinkpyladies hover:text-black dark:hover:text-white transition-colors duration-200 hover:underline decoration-2 underline-offset-4"
+            >
+              {session.title}
+            </a>
+          </h3>
+          {session.speakers && session.speakers.length > 0 && (
+            <div class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+              <svg class="w-5 h-5 text-pinkpyladies" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" />
+              </svg>
+              <span class="sr-only">{t('sessions.speakers_label')}</span>
+              <div class="flex flex-wrap gap-1">
+                {session.speakers.map((speakerId: string, index: number) => (
+                  <>
+                    <a 
+                      href={`/${currentLang}/speaker/${speakersData[speakerId]?.slug || speakerId}`} 
+                      class="font-medium hover:text-pinkpyladies transition-colors duration-200 hover:underline"
+                    >
+                      {speakerNames[speakerId] || speakerId}
+                    </a>
+                    {index < session.speakers.length - 1 && <span class="text-gray-400">,</span>}
+                  </>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+          {session.session_type && (
+            <span class="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-semibold bg-pinkpyladies text-white capitalize">
+              <span class="sr-only">Type:</span>
+              {session.session_type}
+            </span>
+          )}
+          {session.track && (
+            <span class="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-semibold bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200 capitalize">
+              <span class="sr-only">Track:</span>
+              {session.track}
+            </span>
+          )}
+          {session.level && (
+            <span class="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 capitalize">
+              <span class="sr-only">Level:</span>
+              {session.level}
+            </span>
+          )}
+          {session.language && (
+            <span class="inline-flex items-center px-3 py-1.5 rounded-full text-sm font-semibold bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">
+              <span class="sr-only">Language:</span>
+              {getLanguageName(session.language)}
+            </span>
+          )}
+        </div>
+      </li>
+    ))
+  }
+</ol>

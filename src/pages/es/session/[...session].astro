@@ -4,6 +4,7 @@ import SpeakerData from "../../../data/speakers.json";
 import Submissions from "../../../data/sessions.json";
 import Layout from "@layouts/Layout.astro";
 import SpeakersComponent from "@components/speakers.astro";
+import ISO6391 from 'iso-639-1';
 
 import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
 
@@ -12,6 +13,11 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const speakers = Object.entries(SpeakerData);
 const submissions = Object.entries(Submissions);
+
+const getLanguageName = (code: string) => {
+  return ISO6391.getName(code) || code;
+};
+
 
 
 export async function getStaticPaths() {
@@ -29,7 +35,7 @@ export async function getStaticPaths() {
         .filter(([key, value]) => value.slug === session)
         .map(([key, value]) => (
           <div class="my-12">
-            <h1 class="text-4xl font-bold mb-4 text-pinkpyladies text-center">{value.title}</h1>
+            <h1 class="text-4xl font-bold mb-4 text-pinkpyladies text-left">{value.title}</h1>
             
             <!-- Session details section -->
             <div class="mt-16">
@@ -50,6 +56,12 @@ export async function getStaticPaths() {
                 ( 
                 <p class="text-black dark:text-white font-bold">{t("session.level")}</p>
                 <p class="text-black dark:text-white  break-normal whitespace-pre-wrap">{value.level}</p>)
+              
+              }
+              { value.language &&
+                ( 
+                <p class="text-black dark:text-white font-bold">{t("session.language")}</p>
+                <p class="text-black dark:text-white  break-normal whitespace-pre-wrap">{getLanguageName(value.language)}</p>)
               
               }
                 { value.room &&

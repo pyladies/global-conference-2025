@@ -24,10 +24,13 @@ export const menuitems = [
    title: "header.blog",
    path: "",
    url: "https://conference.pyladies.com/blog/",
-  },  
+  },
   {
-   title: "header.speakers",
-   path: "/speakers"
+    title: "header.program",
+    children: [
+      { title: "header.program_sessions", path: "/sessions" },
+      { title: "header.program_speakers", path: "/speakers" },
+    ],
   },
   {
     title: "header.sponsors",
