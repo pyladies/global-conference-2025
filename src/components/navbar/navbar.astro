@@ -118,8 +118,8 @@ export const menuitems = [
                 x-transition:leave="transition ease-in duration-75"
                 x-transition:leave-start="transform opacity-100 scale-100"
                 x-transition:leave-end="transform opacity-0 scale-95"
-                class="absolute mt-2 bg-white right-0 w-full origin-top-right rounded-md md:w-48 outline-2 border border-gray-300">
-                <div class="px-2 py-2 rounded-md shadow dark:bg-gray-800">
+                class="md:absolute mt-2 bg-white right-0 w-full origin-top-right rounded-md md:w-48 outline-2 border shadow border-gray-300">
+                <div class="px-2 py-2 rounded-md dark:bg-gray-800">
                   {item.children.map((subitem) => (
                     <Link
                       href={subitem.url || translatePath(subitem.path)}
