@@ -1,0 +1,206 @@
+tiers:
+  - name: "Champion"
+    price: "$10,000"
+    slots: 1
+    popular: false
+    soldout: true
+    features:
+      - '<a href="#faq_keynoteintro">Keynote Intro</a>'
+      - '<a href="#faq_technicaltalk">Technical Talk Slot</a>'
+      - '<a href="#faq_paneldiscussion">Panel Discussion</a>'
+      - "Brand visibility during talks breaks"
+      - "Shoutout in opening and closing sessions"
+      - "Dedicated Discord channel"
+      - "Inclusion in Email blast"
+      - "Custom Discord Role"
+      - "Logo on the website"
+      - "Name visibility on the website"
+      - '<a href="#faq_mentionsocialmedia">Mentions on Social media</a>'
+      - "Blog posts write-up"
+      - "LinkedIn posts (6)"
+      - "Job Listing on the website"
+      - '<a href="#faq_speedjobinterview">Speed Job Interviews</a>'
+    button:
+      text: "Contact us"
+      link: "mailto:sponsors@pyladies.com"
+  
+  - name: "Supporter"
+    price: "$6,000"
+    popular: false
+    soldout: true
+    slots: 4
+    features:
+      - '<a href="#faq_technicaltalk">Technical Talk Slot</a>'
+      - '<a href="#faq_paneldiscussion">Panel Discussion</a>'
+      - "Brand visibility during talks breaks"
+      - "Shoutout in opening and closing sessions"
+      - "Dedicated Discord channel"
+      - "Custom Discord Role"
+      - "Logo on the website"
+      - "Name visibility on the website"
+      - '<a href="#faq_mentionsocialmedia">Mentions on Social media</a>'
+      - "Blog posts write-up"
+      - "LinkedIn posts (4)"
+      - "Job Listing on the website"
+      - '<a href="#faq_speedjobinterview">Speed Job Interviews</a>'
+    button:
+      text: "Contact us"
+      link: "mailto:sponsors@pyladies.com"
+  
+  - name: "Connector"
+    price: "$3,000"
+    popular: false
+    soldout: false
+    slots: 10
+    features:
+      - "Shoutout in opening and closing"
+      - "Dedicated Discord channel"
+      - "Custom Discord Role"
+      - "Logo on the website"
+      - "Name visibility on the website"
+      - '<a href="#faq_mentionsocialmedia">Mentions on Social media</a>'
+      - "Blog posts write-up"
+      - "LinkedIn posts (2)"
+      - "Job Listing on the website"
+      - '<a href="#faq_speedjobinterview">Speed Job Interviews</a>'
+    button:
+      text: "Contact us"
+      link: "mailto:sponsors@pyladies.com"
+  
+  - name: "Booster"
+    price: "$1,500"
+    popular: true
+    soldout: false
+    slots: "-"
+    features:
+      - "Dedicated Discord channel"
+      - "Custom Discord Role"
+      - "Logo on the website"
+      - "Name visibility on the website"
+      - '<a href="#faq_mentionsocialmedia">Mentions on Social media</a>'
+      - "LinkedIn post (1)"
+      - "Job Listing on the website"
+      - '<a href="#faq_speedjobinterview">Speed Job Interviews</a> (+ $100)'
+    button:
+      text: "Contact us"
+      link: "mailto:sponsors@pyladies.com"
+  
+  - name: "Partner"
+    price: "$750"
+    popular: false
+    soldout: false
+    slots: "-"
+    features:
+      - "Custom Discord Role"
+      - "Logo on the website"
+      - "Name visibility on the website"
+      - '<a href="#faq_mentionsocialmedia">Mentions on Social media</a>'
+      - "LinkedIn post (1)"
+      - "Job Listing on the website"
+      - '<a href="#faq_speedjobinterview">Speed Job Interviews</a> (+ $100)'
+    button:
+      text: "Register"
+      link: "mailto:sponsors@pyladies.com"
+  
+  - name: "Individual"
+    price: "$50 +"
+    popular: false
+    soldout: false
+    slots: "-"
+    features:
+      - "Custom Discord Role"
+      - "Name visibility on the website"
+      - '<a href="#faq_mentionsocialmedia">Mentions on Social media</a>'
+      - '<a href="#faq_speedjobinterview">Speed Job Interviews</a> (+ $100)'
+    button:
+      text: "Register"
+      link: "mailto:sponsors@pyladies.com"
+
+attendees:
+  - position: "Engineer"
+    count: "249"
+    percentage: "29.9%"
+  - position: "Student/Intern"
+    count: "188"
+    percentage: "22.5%"
+  - position: "Other"
+    count: "120"
+    percentage: "14.4%"
+  - position: "No answer"
+    count: "100"
+    percentage: "12.0%"
+  - position: "Scientist"
+    count: "77"
+    percentage: "9.2%"
+  - position: "Hobbyist"
+    count: "38"
+    percentage: "4.6%"
+  - position: "Product Owner/Manager"
+    count: "32"
+    percentage: "3.8%"
+  - position: "Engineering/Scienstis Manager"
+    count: "27"
+    percentage: "3.2%"
+  - position: "I'm currently retired"
+    count: "3"
+    percentage: "0.4%"
+
+description: |
+  Support PyLadies as we work to improve diversity by bringing fresh
+  talent into the Python community and to support both seasoned and
+  budding developers through workshops, community activities, and local
+  advocacy.<br><br>
+
+  Your support will help PyLadies provide financial
+  support to help more women around the world with training, mentorship,
+  and aid to attend conferences and community events.<br><br>
+
+  To learn more and to join us as a sponsor, please contact us, and
+  a member of our sponsorship team will get back to you soon. Please get
+  in touch by writing to <a href="mailto:sponsors@pyladies.com">sponsors@pyladies.com</a>
+  <span class="pl-1 text-black dark:text-white" aria-hidden="true">
+    →
+  </span>
+
+downloadButton: "Download Sponsorship Prospectus"
+customSponsorshipTitle: "Custom Sponsorship"
+customSponsorshipBadge: "Most requested"
+customSponsorshipDesc: "We are also happy to customize a sponsorship package to give you the freedomn to choose what you think works best in order to meet your event participation goals."
+otherOptionsTitle: "Other Sponsorship Options"
+
+chapterSponsorTitle: "PyLadies Chapter Sponsor"
+chapterSponsorPrice: "$600 | Unlimited"
+chapterSponsorDesc: "Every year we have special short videos featuring different PyLadies Chapters around the world. The PyLadies Chapter Sponsor get to have the exclusive branding visibility on these videos during the intro and outro videcard. These videos will also remain on our official Youtube channel which means you will enjoy an evergreen branding visibility."
+chapterSponsorFeatures:
+  - "Prominent placement of logo and link on the website (all year round)"
+  - "Social media mentions"
+  - "Logo visibility on opening and closing of every PyLadies Chapter"
+  - "Custom Discord Role"
+
+discussionSponsorTitle: "PyLadies Discussion Sponsor"
+discussionSponsorPrice: "$600 | 6 slots"
+discussionSponsorDesc: "PyLadiesCon has 6 different panel discussion each year streaming live from different regions around the world. These panels are usually one of the most popular talks. Panel discussion sponsors"
+discussionSponsorFeatures:
+  - "Prominent placement of logo and link on the website (all year round)"
+  - "Social media mentions"
+  - "Logo visibility on opening and closing of every PyLadies Panel Discussions"
+  - "Custom Discord Role"
+
+attendeesTitle: "The Attendees"
+attendeesDesc: "The attendees of last year's conference represented companies and organizations from all sectors, and held the types of position on the right table."
+quickStatsTitle: "Quick stats"
+quickStats:
+  - "In 2023, we had more than 600 attendees,"
+  - "In 2024, we had 732 attendees"
+benefitsTitle: "Benefits of Sponsorship"
+benefits:
+  - title: "Targeted Audience"
+    text: "Reach out to a targeted market with those who could potentially become your employees. Find passionate Pythonistas to hire."
+  - title: "Branding"
+    text: "Increasing your brand exposure and elevating your corporate identity within the community."
+  - title: "Community Contribution"
+    text: "Contribute, support and sustain the underrepresented Python community."
+tableHeaders:
+  position: "Current Position"
+  count: "Count"
+  percentage: "Percentage"

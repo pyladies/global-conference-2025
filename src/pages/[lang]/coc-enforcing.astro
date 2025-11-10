@@ -1,0 +1,47 @@
+---
+import { getLocaleStaticPaths } from "../../i18n/locales";
+export const getStaticPaths = getLocaleStaticPaths;
+
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Button from "@components/ui/button.astro";
+import Prose from "@components/Prose.astro";
+import Layout from "@layouts/Layout.astro";
+import { getEntry } from 'astro:content';
+import { useTranslations } from '../../i18n/utils';
+
+const { lang } = Astro.params;
+const t = useTranslations(lang as any);
+
+let enforcingEntry = await getEntry('coc', `${lang}/coc-enforcing-content`);
+if (!enforcingEntry) {
+  console.warn(`CoC enforcing content not found for language: ${lang}, falling back to English`);
+  enforcingEntry = await getEntry('coc', 'en/coc-enforcing-content');
+  if (!enforcingEntry) {
+    throw new Error('CoC enforcing content not found for English fallback');
+  }
+}
+
+const { Content: Reporting } = await enforcingEntry.render();
+---
+
+<Layout title={t("coc.enforcing_title")} lang={lang}>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{t("coc.enforcing_title")}</Fragment>
+      <Fragment slot="subtitle">{t("coc.enforcing_subtitle")}</Fragment>
+      <Fragment slot="description">
+      {t("coc.enforcing_description")}
+      </Fragment>
+    </Sectionhead>
+
+    <div class="mx-auto max-w-2xl px-4 py-10 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div class="flex flex-col items-center gap-8 sm:gap-10 lg:col-span-2">
+        <Prose>
+          <Reporting />
+        </Prose>
+      </div>
+    </div>
+
+  </Container>
+</Layout>

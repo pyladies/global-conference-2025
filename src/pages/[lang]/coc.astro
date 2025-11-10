@@ -1,0 +1,225 @@
+---
+import { getLocaleStaticPaths } from "../../i18n/locales";
+export const getStaticPaths = getLocaleStaticPaths;
+
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Button from "@components/ui/button.astro";
+import Prose from "@components/Prose.astro";
+import Layout from "@layouts/Layout.astro";
+import { getEntry } from 'astro:content';
+import { useTranslations } from '../../i18n/utils';
+
+const { lang } = Astro.params;
+const t = useTranslations(lang as any);
+
+// Helper function to get CoC entry with fallback to English
+async function getCoCEntry(slug: string, language: string) {
+  let entry = await getEntry('coc', `${language}/${slug}`);
+  if (!entry) {
+    console.warn(`CoC content '${slug}' not found for language: ${language}, falling back to English`);
+    entry = await getEntry('coc', `en/${slug}`);
+    if (!entry) {
+      throw new Error(`CoC content '${slug}' not found for English fallback`);
+    }
+  }
+  return entry;
+}
+
+const communityValues = await getCoCEntry('coc-community-values', lang);
+const standardsIntro = await getCoCEntry('coc-standards-intro', lang);
+const inappropriateBehavior = await getCoCEntry('coc-inappropiate-behavior', lang);
+const consequences = await getCoCEntry('coc-consequences', lang);
+const scope = await getCoCEntry('coc-scope', lang);
+const reportingAnIncident = await getCoCEntry('coc-reporting-an-incident', lang);
+const procedureHandlingIncidents = await getCoCEntry('coc-procedure-handling-incidents', lang);
+const license = await getCoCEntry('coc-license', lang);
+const attribution = await getCoCEntry('coc-attribution', lang);
+
+const { Content: CommunityValues } = await communityValues.render();
+const { Content: StandardsIntro } = await standardsIntro.render();
+const { Content: InappropriateBehavior } = await inappropriateBehavior.render();
+const { Content: Consequences } = await consequences.render();
+const { Content: Scope } = await scope.render();
+const { Content: ReportingAnIncident } = await reportingAnIncident.render();
+const { Content: ProcedureHandlingIncidents } = await procedureHandlingIncidents.render();
+const { Content: License } = await license.render();
+const { Content: Attribution } = await attribution.render();
+---
+
+<Layout title={t("coc.title")} lang={lang}>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{t("coc.title")}</Fragment>
+      <Fragment slot="subtitle">{t("coc.subtitle")}</Fragment>
+      <Fragment slot="description">
+        {t("coc.description")}
+      </Fragment>
+    </Sectionhead>
+
+    <div class="py-24 sm:py-16">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
+            <div class="rounded-2xl lg:col-span-1 bg-gray-50 p-5 dark:bg-stone-900">
+              <h2 class="text-3xl font-bold tracking-tight text-pink">1.</h2>
+              <p class="mt-4 leading-7 text-gray-600 dark:text-gray-200">
+                {t("coc.intro1")}
+              </p>
+            </div>
+            <div class="rounded-2xl lg:col-span-1 bg-gray-50 p-5 dark:bg-stone-900">
+              <h2 class="text-3xl font-bold tracking-tight text-pink">2.</h2>
+              <p class="mt-4 leading-7 text-gray-600 dark:text-gray-200">
+                {t("coc.intro2")}
+              </p>
+            </div>
+            <div class="rounded-2xl lg:col-span-1 bg-gray-50 p-5 dark:bg-stone-900">
+              <h2 class="text-3xl font-bold tracking-tight text-pink">3.</h2>
+              <p class="mt-4 leading-7 text-gray-600 dark:text-gray-200">
+                {t("coc.intro3")}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Community -->
+    <div class="py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
+            <div class="lg:col-span-1">
+              <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">{t("coc.community_title")}</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-1 lg:col-span-3 lg:gap-8">
+              <div class="rounded-2xl bg-gray-50 dark:bg-stone-900 p-10">
+                <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600 dark:text-white">
+                  <div>
+                    <Prose>
+                      <CommunityValues />
+                    </Prose>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Standards -->
+    <div class="py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
+            <div class="lg:col-span-1">
+              <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">{t("coc.standards_title")}</h2>
+              <div class="mt-4 leading-7 text-gray-600 dark:text-gray-200">
+                <Prose>
+                  <StandardsIntro />
+                </Prose>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-1 lg:col-span-3 lg:gap-8">
+              <div class="rounded-2xl bg-gray-50 dark:bg-stone-900 p-10">
+                <h3 class="text-base font-semibold leading-7 text-gray-900 dark:text-white">{t("coc.inappropriate_behavior")}</h3>
+                <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600 dark:text-white">
+                  <div>
+                    <Prose>
+                      <InappropriateBehavior/>
+                    </Prose>
+                  </div>
+                </dl>
+              </div>
+
+              <div class="rounded-2xl bg-gray-50 dark:bg-stone-900 p-10">
+                <h3 class="text-base font-semibold leading-7 text-gray-900 dark:text-white">{t("coc.consequences")}</h3>
+                <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600 dark:text-white">
+                  <div>
+                    <Prose>
+                      <Consequences/>
+                    </Prose>
+                  </div>
+                </dl>
+              </div>
+
+              <div class="rounded-2xl bg-gray-50 dark:bg-stone-900 p-10">
+                <h3 class="text-base font-semibold leading-7 text-gray-900 dark:text-white">{t("coc.scope")}</h3>
+                <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600 dark:text-white">
+                  <div>
+                    <Prose>
+                      <Scope/>
+                    </Prose>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Process -->
+    <div class="py-24 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
+            <div class="lg:col-span-1">
+              <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">{t("coc.process_title")}</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-1 lg:col-span-3 lg:gap-8">
+
+                  <div class="rounded-2xl bg-gray-50 dark:bg-stone-900 p-10">
+                    <h3 class="text-base font-semibold leading-7 text-gray-900 dark:text-white">{t("coc.reporting_incident")}</h3>
+                    <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600 dark:text-white">
+                      <div>
+                        <Prose>
+                          <ReportingAnIncident/>
+                        </Prose>
+                      </div>
+                    </dl>
+                  </div>
+
+                  <div class="rounded-2xl bg-gray-50 dark:bg-stone-900 p-10">
+                    <h3 class="text-base font-semibold leading-7 text-gray-900 dark:text-white">{t("coc.procedure")}</h3>
+                    <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600 dark:text-white">
+                      <div>
+                        <Prose>
+                          <ProcedureHandlingIncidents/>
+                        </Prose>
+                      </div>
+                    </dl>
+                  </div>
+
+                  <div class="rounded-2xl bg-gray-50 dark:bg-stone-900 p-10">
+                    <h3 class="text-base font-semibold leading-7 text-gray-900 dark:text-white">{t("coc.license")}</h3>
+                    <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600 dark:text-white">
+                      <div>
+                        <Prose>
+                          <License/>
+                        </Prose>
+                      </div>
+                    </dl>
+                  </div>
+
+                  <div class="rounded-2xl bg-gray-50 dark:bg-stone-900 p-10">
+                    <h3 class="text-base font-semibold leading-7 text-gray-900 dark:text-white">{t("coc.attribution")}</h3>
+                    <dl class="mt-3 space-y-1 text-sm leading-6 text-gray-600 dark:text-white">
+                      <div>
+                        <Prose>
+                          <Attribution/>
+                        </Prose>
+                      </div>
+                    </dl>
+                  </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </Container>
+</Layout>

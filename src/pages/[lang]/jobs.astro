@@ -1,0 +1,66 @@
+---
+import { getLocaleStaticPaths } from "../../i18n/locales";
+export const getStaticPaths = getLocaleStaticPaths;
+
+import Container from "@components/container.astro";
+import Link from "@components/ui/link.astro";
+import Logos from "@components/logos.astro";
+import JobsBoard from "@components/jobsboard.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { getCollection } from 'astro:content';
+
+const { lang } = Astro.params;
+const t = useTranslations(lang as any);
+
+const { align = "center" } = Astro.props;
+
+// try to get jobs for the current language, fallback to English if no jobs
+let allJobs = await getCollection('jobs', ({ id }) => {
+  return id.startsWith(`${lang}/`);
+});
+
+if (allJobs.length === 0) {
+  console.warn(`No jobs found for language: ${lang}, falling back to English`);
+  allJobs = await getCollection('jobs', ({ id }) => {
+    return id.startsWith('en/');
+  });
+}
+
+const jobs = await Promise.all(
+  allJobs.map(async (job) => {
+    const { body } = job;
+    return {
+      title: job.data.title,
+      company: job.data.company,
+      companyurl: job.data.companyurl,
+      salary: job.data.salary,
+      joburl: job.data.joburl,
+      email: job.data.email,
+      keywords: job.data.keywords || [],
+      description: body,
+    };
+  })
+);
+---
+
+<Layout title={t("jobs.title")} lang={lang}>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{t("jobs.title")}</Fragment>
+      <Fragment slot="subtitle">{t("jobs.subtitle")}</Fragment>
+      <Fragment slot="description">
+      </Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-1 gap-10 mx-auto max-w-5xl mt-5">
+      {jobs.length === 0 && <div class="my-10 text-center dark:text-white"><h3>{t("jobs.empty")}</h3></div>}
+      {
+        jobs.map((job) => <JobsBoard details={job} />)
+      }
+    </div>
+
+  </Container>
+</Layout>

@@ -1,0 +1,23 @@
+---
+import LocaleRedirect from "../components/ui/localeredirect.astro";
+
+export function getStaticPaths() {
+  // redirects like /coc/ to /{lang}/coc/, lang being current locale
+  const topLevel = [
+    "animated",
+    "coc",
+    "coc-reporting",
+    "coc-enforcing",
+    "jobs",
+    "sponsors",
+    "sprints",
+  ];
+
+  return topLevel.map((p) => ({ params: { redirect: p } }));
+}
+
+const { redirect } = Astro.params;
+const pathTemplate = `/{lang}/${redirect}`;
+---
+
+<LocaleRedirect pathTemplate={pathTemplate} />

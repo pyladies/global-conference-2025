@@ -1,0 +1,177 @@
+---
+import { getLocaleStaticPaths } from "../../i18n/locales";
+export const getStaticPaths = getLocaleStaticPaths;
+
+import { getEntry } from 'astro:content';
+import Container from "@components/container.astro";
+import Faq from "@components/sponsorship_faq.astro";
+import Link from "@components/ui/link.astro";
+import SponsorCard from "@components/sponsors.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import SponsorsGallery from "@components/sponsors_gallery.astro";
+import { Icon } from "astro-icon/components";
+import { useTranslations } from '../../i18n/utils';
+
+const { lang } = Astro.params;
+const t = useTranslations(lang as any);
+
+const { align = "center" } = Astro.props;
+
+// Load sponsorship data from content collection with fallback to English
+let sponsorshipEntry = await getEntry('sponsorship', lang);
+if (!sponsorshipEntry) {
+  console.warn(`Sponsorship data not found for language: ${lang}, falling back to English`);
+  sponsorshipEntry = await getEntry('sponsorship', 'en');
+  if (!sponsorshipEntry) {
+    throw new Error('Sponsorship data not found for English fallback');
+  }
+}
+const content = sponsorshipEntry.data;
+const pricingData = content.tiers;
+const attendeesPositions = content.attendees;
+---
+
+<Layout title="Sponsors" lang={lang}>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="subtitle">{t("header.sponsors_subtitle")}</Fragment>
+      <Fragment slot="title">Sponsors</Fragment>
+      <Fragment slot="description" set:html={content.description}>
+      </Fragment>
+    </Sectionhead>
+
+    <div class="rounded-md xl:-8 dark:bg-stone-950 grid md:grid-cols-1 gap-10 mx-auto max-w-xl mt-5">
+      <Link class="bg-pinkpyladies text-white dark:hover:bg-black"
+          href="/PyLadiesCon2025_sponsorship.pdf">
+        <Icon name="bx:chevrons-down" class="inline-icon"/> {content.downloadButton}
+      </Link>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-5xl mt-20">
+      {pricingData.map((item) => <SponsorCard plan={item} />)}
+    </div>
+
+    <div class="rounded-md p-5 xl:-8 ring-1 ring-gray-200 dark:bg-stone-950 dark:ring-gray-700 grid md:grid-cols-1 gap-10 mx-auto max-w-5xl mt-20">
+      <div class="flex items-center justify-between gap-x-4">
+        <h3 id="tier-enterprise" class="text-xl font-semibold leading-8 text-gray-900 dark:text-white">{content.customSponsorshipTitle}</h3>
+        <span class="text-pinkpyladies flex align-center"><Icon name="bx:heart" class="inline-icon mt-1"/>{content.customSponsorshipBadge}</span></h3>
+      </div>
+      <p class="text-black dark:text-white">
+      {content.customSponsorshipDesc}
+      </p>
+      <Link href="mailto:sponsors@pyladies.com" aria-describedby="tier-enterprise" style="outline" class="block w-full">
+        Contact us
+      </Link>
+    </div>
+
+  </Container>
+
+  <!-- Other Options -->
+  <Container>
+    <div class:list={["mt-8", "md:mt-16", align === "center" && "text-center"]}>
+      <h2 class="text-3xl mt-4 text-slate-800 pb-10 dark:text-white">
+        {content.otherOptionsTitle}
+      </h2>
+      <div class="grid md:grid-cols-2 gap-10 mx-auto dark:text-white">
+        <div class="rounded-md p-8 xl:p-10 ring-1 ring-gray-200 dark:bg-stone-950 dark:ring-gray-700 text-start">
+          <h3 class="text-2xl font-bold py-2">{content.chapterSponsorTitle}</h3>
+          <h4 class="text-xl">{content.chapterSponsorPrice}</h4>
+          <p class="py-5">
+            {content.chapterSponsorDesc}
+          </p>
+          <ul class="list-inside pt-5">
+            {content.chapterSponsorFeatures.map((feature) => (
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              {feature}</li>
+            ))}
+          </ul>
+        </div>
+        <div class="rounded-md p-8 xl:p-10 ring-1 ring-gray-200 dark:bg-stone-950 dark:ring-gray-700 text-start">
+          <h3 class="text-2xl font-bold py-2">{content.discussionSponsorTitle}</h3>
+          <h4 class="text-xl">{content.discussionSponsorPrice}</h4>
+          <p class="py-10">
+            {content.discussionSponsorDesc}
+          </p>
+          <ul class="list-inside pt-5">
+            {content.discussionSponsorFeatures.map((feature) => (
+            <li class="flex gap-x-3">
+              <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+              {feature}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </Container>
+
+  <!-- The attendees -->
+  <Container>
+    <div class:list={["mt-8", "md:mt-16", align === "center" && "text-center"]}>
+      <h2 class="text-3xl mt-4 text-slate-800 dark:text-white">
+        {content.attendeesTitle}
+      </h2>
+      <div class="grid md:grid-cols-2 gap-10 mx-auto dark:text-white">
+        <div>
+          <p class="text-lg mt-4 dark:text-white text-start px-10 pt-10">
+            {content.attendeesDesc}
+          </p>
+          <h2 class="text-start pl-10 text-lg pt-10">{content.quickStatsTitle}</h2>
+          <ul class="list-disc list-inside pl-10 pt-5 text-start">
+            {content.quickStats.map((stat) => <li>{stat}</li>)}
+          </ul>
+          <h2 class="text-start pl-10 text-lg pt-10">{content.benefitsTitle}</h2>
+          <ul class="list-disc list-inside pl-10 pt-5 text-start">
+            {content.benefits.map((benefit) => (
+            <li>
+              <strong>{benefit.title}</strong>: {benefit.text}
+            </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <table class="mx-auto w-50 mt-10 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+              <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-300 dark:text-gray-800">
+                  <tr>
+                      <th scope="col" class="px-6 py-3">
+                          {content.tableHeaders.position}
+                      </th>
+                      <th scope="col" class="px-6 py-3">
+                          {content.tableHeaders.count}
+                      </th>
+                      <th scope="col" class="px-6 py-3">
+                          {content.tableHeaders.percentage}
+                      </th>
+                  </tr>
+              </thead>
+              <tbody>
+                {
+                  attendeesPositions.map((item) =>
+                  <tr class="bg-white border-b dark:bg-gray-700 dark:border-gray-700 border-gray-200">
+                      <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                          { item.position }
+                      </th>
+                      <td class="px-6 py-4 text-end dark:text-white">
+                          { item.count }
+                      </td>
+                      <td class="px-6 py-4 text-end dark:text-white">
+                          { item.percentage }
+                      </td>
+                  </tr>
+                 )
+                }
+              </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </Container>
+  <Faq/>
+  <SponsorsGallery/>
+</Layout>
