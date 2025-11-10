@@ -1,6 +1,7 @@
 ---
 import Button from "@components/ui/button.astro";
 import Link from "@components/ui/link.astro";
+import TicketButton from "@components/ui/ticketbutton.astro";
 import ThemeSelector from "@components/themeselector.astro";
 import LanguageSelector from "@components/languageselector.astro";
 import { Icon } from "astro-icon/components";
@@ -174,17 +175,6 @@ export const menuitems = [
 		class="appearance-none py-1 px-2 rounded bg-slate-100 dark:bg-stone-950"
 	/>
 	<ThemeSelector />
-    <div class="mt-4 md:mt-0 flex flex-col md:flex-row gap-4">
-    <div class="relative inline-flex group">
-      <div
-          class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
-      </div>
-      <a href="https://pretix.eu/pyladiescon/2025/" title="Get quote now"
-          class="relative inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 w-full"
-          role="button">
-      {t("header.tickets")}
-      </a>
-    </div>
-    </div>
+    <TicketButton class="mt-4 md:mt-0" />
   </nav>
 </div>
