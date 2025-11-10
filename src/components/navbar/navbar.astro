@@ -1,6 +1,7 @@
 ---
 import Button from "@components/ui/button.astro";
 import Link from "@components/ui/link.astro";
+import TicketButton from "@components/ui/ticketbutton.astro";
 import ThemeSelector from "@components/themeselector.astro";
 import LanguageSelector from "@components/languageselector.astro";
 import { Icon } from "astro-icon/components";
@@ -15,9 +16,9 @@ export const menuitems = [
   {
     title: "header.about",
     children: [
-      { title: "header.about_conference", path: "#event" },
-      { title: "header.about_faq", path: "#faq" },
-      { title: "header.about_organization", path: "#organization" },
+      { title: "header.about_conference", path: "/#event" },
+      { title: "header.about_faq", path: "/#faq" },
+      { title: "header.about_organization", path: "/#organization" },
     ],
   },
   {
@@ -26,12 +27,20 @@ export const menuitems = [
    url: "https://conference.pyladies.com/blog/",
   },  
   {
-   title: "header.speakers",
-   path: "/speakers"
+    title: "header.program",
+    "children": [
+      { title: "header.schedule", path: "/schedule" },
+      { title: "header.sprints", path: "/sprints" },
+      { title: "header.speakers", path: "/spekers" },
+      { title: "header.attending_menu", path: "/attending" },
+    ],
   },
   {
     title: "header.sponsors",
-    path: "/sponsors",
+    children: [
+      { title: "header.sponsorsplan", path: "/sponsors" },
+      { title: "header.jobs", path: "/jobs" },
+    ],
   },
   {
     title: "header.coc",
@@ -52,7 +61,7 @@ export const menuitems = [
       href={translatePath("/")}
       class="flex gap-3 items-center text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark:text-white focus:outline-none focus:shadow-outline">
       <Icon name="logo" width="30" alt="Logo" />
-      PyLadiesCon
+      <span class="hidden lg:block">PyLadiesCon</span>
     </a>
     <button class="md:hidden text-gray-500 w-10 h-10 relative focus:outline-none" @click="open = !open">
       <span class="sr-only">Open main menu</span>
@@ -112,8 +121,8 @@ export const menuitems = [
                 x-transition:leave="transition ease-in duration-75"
                 x-transition:leave-start="transform opacity-100 scale-100"
                 x-transition:leave-end="transform opacity-0 scale-95"
-                class="absolute mt-2 bg-white right-0 w-full origin-top-right rounded-md md:w-48 outline-2 border border-gray-300">
-                <div class="px-2 py-2 rounded-md shadow dark:bg-gray-800">
+                class="md:absolute mt-2 bg-white right-0 w-full origin-top-right rounded-md md:w-48 outline-2 border shadow border-gray-300">
+                <div class="px-2 py-2 rounded-md dark:bg-gray-800">
                   {item.children.map((subitem) => (
                     <Link
                       href={subitem.url || translatePath(subitem.path)}
@@ -166,14 +175,10 @@ export const menuitems = [
     </div>
 	<LanguageSelector
 		showFlag={false}
-		languageMapping={{ en: "English", es: "Español" }}
+		languageMapping={{ en: "EN", es: "ES" }}
 		class="appearance-none py-1 px-2 rounded bg-slate-100 dark:bg-stone-950"
 	/>
 	<ThemeSelector />
-    <div class="mt-4 md:mt-0 flex flex-col md:flex-row gap-4">
-      <Link href="https://psfmember.org/civicrm/contribute/transact/?reset=1&id=53" class="md:px-3 md:py-2 leading-6">
-        {t("header.primary_button_text")}
-      </Link>
-    </div>
+    <TicketButton class="mt-4 md:mt-0 hidden md:block" />
   </nav>
 </div>
