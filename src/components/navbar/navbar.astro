@@ -1,6 +1,7 @@
 ---
 import Button from "@components/ui/button.astro";
 import Link from "@components/ui/link.astro";
+import TicketButton from "@components/ui/ticketbutton.astro";
 import ThemeSelector from "@components/themeselector.astro";
 import LanguageSelector from "@components/languageselector.astro";
 import { Icon } from "astro-icon/components";
@@ -23,7 +24,6 @@ export const menuitems = [
   {
    title: "header.blog",
    path: "",
-   url: "https://conference.pyladies.com/blog/",
   },
   {
     title: "header.program",
@@ -59,7 +59,7 @@ export const menuitems = [
       href={translatePath("/")}
       class="flex gap-3 items-center text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark:text-white focus:outline-none focus:shadow-outline">
       <Icon name="logo" width="30" alt="Logo" />
-      PyLadiesCon
+      <span class="hidden lg:block">PyLadiesCon</span>
     </a>
     <button class="md:hidden text-gray-500 w-10 h-10 relative focus:outline-none" @click="open = !open">
       <span class="sr-only">Open main menu</span>
@@ -173,14 +173,10 @@ export const menuitems = [
     </div>
 	<LanguageSelector
 		showFlag={false}
-		languageMapping={{ en: "English", es: "Español" }}
+		languageMapping={{ en: "EN", es: "ES" }}
 		class="appearance-none py-1 px-2 rounded bg-slate-100 dark:bg-stone-950"
 	/>
 	<ThemeSelector />
-    <div class="mt-4 md:mt-0 flex flex-col md:flex-row gap-4">
-      <Link href="https://psfmember.org/civicrm/contribute/transact/?reset=1&id=53" class="md:px-3 md:py-2 leading-6">
-        {t("header.primary_button_text")}
-      </Link>
-    </div>
+    <TicketButton class="mt-4 md:mt-0 hidden md:block" />
   </nav>
 </div>
