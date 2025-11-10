@@ -6,6 +6,7 @@ import Layout from "@layouts/Layout.astro";
 import SpeakersComponent from "@components/speakers.astro";
 import ISO6391 from 'iso-639-1';
 
+
 import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
 
 const { session } = Astro.params;
@@ -34,7 +35,7 @@ export async function getStaticPaths() {
         .filter(([key, value]) => value.slug === session)
         .map(([key, value]) => (
           <div class="my-12">
-            <h1 class="text-4xl font-bold mb-4 text-pinkpyladies text-left">{value.title}</h1>
+            <h1 class="text-4xl font-bold mb-4 text-black dark:text-white text-left">{value.title}</h1>
             
             <!-- Session details section -->
             <div class="mt-16">
@@ -106,8 +107,8 @@ export async function getStaticPaths() {
               
             <!--Speakers section -->
             <div class="mt-16">
-  <h2 class="text-3xl font-bold mb-4 text-black dark:text-white">{t("session.speakers")}</h2>
-  <div class="mx-auto mt-2 max-w-2xl sm:mt-1 lg:mt-2 lg:max-w-none justify-center">
+              <h2 class="text-3xl font-bold mb-4 text-black dark:text-white">{t("session.speakers")}</h2>
+              <div class="mx-auto mt-2 max-w-2xl sm:mt-1 lg:mt-2 lg:max-w-none justify-center">
                   <dl class="grid ax-w-none md:grid-cols-3 gap-x-3 gap-y-1 lg:max-w-none lg:grid-cols-5">
                     
                      {

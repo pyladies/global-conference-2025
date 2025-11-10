@@ -9,6 +9,7 @@ const { speakerInfo } = Astro.props;
 ---
 
 <div class="speaker-item flex py-4 flex-col hover:bg-gray-100 dark:hover:bg-gray-900 hover:rounded-xl cursor-pointer transition-all duration-300" 
+<div class="speaker-item flex py-4 flex-col hover:bg-gray-100 dark:hover:bg-gray-900 hover:rounded-xl cursor-pointer transition-all duration-300"
 onclick={`window.location.href='${t("speakers.slug_url")}${speakerInfo.slug}'`}>
   <dt
       class="block mx-auto items-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white"
@@ -24,10 +25,8 @@ onclick={`window.location.href='${t("speakers.slug_url")}${speakerInfo.slug}'`}>
               src={speakerInfo.avatar || "/logo.svg"}
               loading="lazy"
             />
-          
         </div>
       </div>
-      
     </dt>
     <!-- Speaker Links -->
       <div class="font-medium items-center block text-black dark:text-white">
@@ -108,3 +107,4 @@ onclick={`window.location.href='${t("speakers.slug_url")}${speakerInfo.slug}'`}>
     });
   });
 </script>
+

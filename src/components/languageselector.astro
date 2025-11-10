@@ -16,13 +16,13 @@ const { pathname } = Astro.url;
   <Icon name="ion:language" class="w-5 dark:text-white" />
   <label for="language-selector" class="sr-only">Choose a language</label>
 
-  <select onchange="location = this.value;" class="appearance-none cursor-pointer pl-3 pr-2 py-1.5 rounded-md dark:bg-stone-950 dark:text-white focus-visible:outline-none">
+  <select onchange="location = this.value;" class="appearance-none cursor-pointer pl-2 pr-2 py-1.5 rounded-md dark:bg-stone-950 dark:text-white focus-visible:outline-none">
     {
       arrayLangs.map((lang) => {
         let value = localizePath(pathname, lang[0]);
         return (
             <option value={value} selected={lang[0] === currentLanguage}>
-              {lang[1]}
+              {lang[0]}
             </option>
         );
       })

@@ -35,7 +35,7 @@ export async function getStaticPaths() {
         .filter(([key, value]) => value.slug === session)
         .map(([key, value]) => (
           <div class="my-12">
-            <h1 class="text-4xl font-bold mb-4 text-pinkpyladies text-left">{value.title}</h1>
+            <h1 class="text-4xl font-bold mb-4 text-black dark:text-white text-center">{value.title}</h1>
             
             <!-- Session details section -->
             <div class="mt-16">

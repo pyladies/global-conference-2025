@@ -23,16 +23,18 @@ const speakers = Object.entries(speakerData);
         </Sectionhead>
 
         <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none justify-center">
-            <dl class="grid ax-w-none md:grid-cols-3 gap-x-1 gap-y-1 lg:max-w-none lg:grid-cols-5">     
+            <dl class="grid ax-w-none md:grid-cols-3 gap-x-1 gap-y-1 lg:max-w-none lg:grid-cols-5">
                     {
-                        speakers.map(([key, value]) => (
-                            <SpeakersComponent
+                    speakers.map(([key, value]) => {
+                        const submissions =  value.submissions.map((sub) => submissionsData[sub]);
+                        if (submissions[0].session_type != "Keynote") {
+                            return (
+                                <SpeakersComponent
                                 speakerInfo={value}
-                                speakerSubmissions={value.submissions.map(
-                                    (sub) => submissionsData[sub],
-                                )}
-                            />
-                        ))
+                                speakerSubmissions={submissions}
+                                />)
+                        }
+                        })
                     }
             </dl>
         </div>
