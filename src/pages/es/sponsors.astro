@@ -18,9 +18,10 @@ const { align = "center" } = Astro.props;
 const pricingData = [
   {
     name: "Campeón",
-    price: "$12,000",
+    price: "$10,000",
     slots: 1,
     popular: false,
+    soldout: true,
     features: [
       `<a href="#faq_keynoteintro">Introducción en la conferencia principal</a>`,
       `<a href="#faq_technicaltalk">Sesión de charla técnica</a>`,
@@ -47,6 +48,7 @@ const pricingData = [
     name: "Soporte",
     price: "$6,000",
     popular: false,
+    soldout: true,
     slots: 4,
     features: [
       `<a href="#faq_technicaltalk">Sesión de charla técnica</a>`,
@@ -72,6 +74,7 @@ const pricingData = [
     name: "Conector",
     price: "$3,000",
     popular: false,
+    soldout: false,
     slots: 10,
     features: [
       "Mención al inicio y al final",
@@ -94,6 +97,7 @@ const pricingData = [
     name: "Amplificador",
     price: "$1,500",
     popular: true,
+    soldout: false,
     slots: "-",
     features: [
       "Canal de Discord dedicado",
@@ -114,6 +118,7 @@ const pricingData = [
     name: "Asociado",
     price: "$750",
     popular: false,
+    soldout: false,
     slots: "-",
     features: [
       "Rol de Discord personalizado",
@@ -133,6 +138,7 @@ const pricingData = [
     name: "Individual",
     price: "$50 +",
     popular: false,
+    soldout: false,
     slots: "-",
     features: [
       "Rol de Discord personalizado",
