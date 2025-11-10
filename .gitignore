@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # Temporary chapters file
 scripts/chapters.yml
+
+src/data/speakers.json
+src/data/sessions.json

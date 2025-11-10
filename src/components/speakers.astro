@@ -1,0 +1,110 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import SocialsComponent from "./ui/socials.astro";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const { speakerInfo } = Astro.props;
+
+---
+
+<div class="speaker-item flex py-4 flex-col hover:bg-gray-100 dark:hover:bg-gray-900 hover:rounded-xl cursor-pointer transition-all duration-300"
+onclick={`window.location.href='${t("speakers.slug_url")}${speakerInfo.slug}'`}>
+  <dt
+      class="block mx-auto items-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white"
+    >
+      <div
+        class="w-52 h-52 mx-auto rounded-full p-1 hover:p-2 transition-all duration-300"
+      >
+        <div
+          class="w-full h-full rounded-full border-4 border-transparent hover:border-pinkpyladies overflow-hidden"
+        >
+          <img
+              class="w-full h-full object-cover"
+              src={speakerInfo.avatar || "/logo.svg"}
+              loading="lazy"
+            />
+
+        </div>
+      </div>
+
+    </dt>
+    <!-- Speaker Links -->
+      <div class="font-medium items-center block text-black dark:text-white">
+        <div class="text-center text-l">{speakerInfo.name}</div>
+        <div class="text-center font-light italic text-sm">
+          {speakerInfo.affiliation}
+        </div>
+        <div class="flex justify-center mt-4">
+          <div class="flex text-black dark:text-white content-center">
+            {
+              speakerInfo.mastodon_url && (
+                <SocialsComponent
+                  speakersSocialUrl={speakerInfo.mastodon_url}
+                  social="mastodon"
+                />
+              )
+            }
+            {
+              speakerInfo.bluesky_url && (
+                <SocialsComponent
+                  speakersSocialUrl={speakerInfo.bluesky_url}
+                  social="bluesky"
+                />
+              )
+            }
+            {
+              speakerInfo.instagram_url && (
+                <SocialsComponent
+                  speakersSocialUrl={speakerInfo.instagram_url}
+                  social="instagram"
+                />
+              )
+            }
+            {
+              speakerInfo.linkedin_url && (
+                <SocialsComponent
+                  speakersSocialUrl={speakerInfo.linkedin_url}
+                  social="linkedin"
+                />
+              )
+            }
+            {
+              speakerInfo.twitter_url && (
+                <SocialsComponent
+                  speakersSocialUrl={speakerInfo.twitter_url}
+                  social="twitter"
+                />
+              )
+            }
+            {
+              speakerInfo.youtube_url && (
+                <SocialsComponent
+                  speakersSocialUrl={speakerInfo.youtube_url}
+                  social="youtube"
+                />
+              )
+            }
+            {
+              speakerInfo.gitx_url && (
+                <SocialsComponent
+                  speakersSocialUrl={speakerInfo.gitx_url}
+                  social="github"
+                />
+              )
+            }
+          </div>
+        </div>
+      </div>
+</div>
+
+<script>
+  //This click handler prevents nested clickable elements from triggering the card click event
+  document.querySelectorAll(".speaker-item").forEach(card => {
+
+    card.querySelectorAll("a, button, [role='button']").forEach(el => {
+      el.addEventListener("click", (ev) => ev.stopPropagation());
+      el.addEventListener("keydown", (ev) => ev.stopPropagation());
+    });
+  });
+</script>
