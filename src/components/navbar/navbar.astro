@@ -30,6 +30,8 @@ export const menuitems = [
     title: "header.program",
     "children": [
       { title: "header.schedule", path: "/schedule" },
+      { title: "header.sessions", path: "/sessions" },
+      { title: "header.speakers", path: "/speakers" },
       { title: "header.sprints", path: "/sprints" },
       { title: "header.speakers", path: "/speakers" },
       { title: "header.attending_menu", path: "/attending" },
@@ -55,7 +57,7 @@ export const menuitems = [
 
 <div
   x-data="{open: window.innerWidth < 768 ? false : true}"
-  class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 z-10 md:pt-2 relative">
+  class="flex flex-col max-w-screen-2xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 z-10 md:pt-2 relative">
   <div class="p-4 flex flex-row items-center justify-between">
     <a
       href={translatePath("/")}
