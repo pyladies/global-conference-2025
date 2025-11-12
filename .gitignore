@@ -6,6 +6,7 @@ dev-dist/
 
 # dependencies
 node_modules/
+package-lock.json
 
 # logs
 npm-debug.log*
@@ -24,3 +25,6 @@ pnpm-debug.log*
 
 # Temporary chapters file
 scripts/chapters.yml
+
+src/data/speakers.json
+src/data/sessions.json

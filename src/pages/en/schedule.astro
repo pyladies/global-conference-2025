@@ -1,0 +1,40 @@
+---
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const { align = "center" } = Astro.props;
+
+---
+
+<script type="text/javascript" src="https://pretalx.com/democon/schedule/widget/v2.en.js"></script>
+
+<Layout title="Schedule">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="subtitle">{t("schedule.subtitle")}</Fragment>
+      <Fragment slot="title">{t("schedule.title")}</Fragment>
+      <Fragment slot="description">
+          This year’s edition of PyLadiesCon is packed with exciting opportunities for learning and
+          community engagement. By registering, you’ll gain access to: Keynotes, Talks, Interactive
+          Sessions &amp; Panels, Networking, and more!
+      </Fragment>
+    </Sectionhead>
+
+    <div id="pretalx-widget" class="grid md:grid-cols-1 gap-10 mx-auto max-w-5xl mt-10 dark:bg-white">
+        <pretalx-schedule event-url="https://pretalx.com/pyladiescon-2025/" locale="en" style="--pretalx-clr-primary: #3aa57c"></pretalx-schedule>
+        <noscript>
+           <div class="pretalx-widget">
+                <div class="pretalx-widget-info-message">
+                    JavaScript is disabled in your browser. To access our schedule without JavaScript,
+                    please <a target="_blank" href="https://pretalx.com/pyladiescon-2025/schedule/">click here</a>.
+                </div>
+            </div>
+        </noscript>
+    </div>
+  </Container>
+</Layout>
