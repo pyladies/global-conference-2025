@@ -3,12 +3,14 @@ import path from "path";
 
 const urlSpeakers = "https://programapi.conference.pyladies.com/speakers.json";
 const urlSessions = "https://programapi.conference.pyladies.com/sessions.json";
+const urlSchedule = "https://programapi.conference.pyladies.com/schedule.json";
 
 
 const destFolder = "./src/data";
 
 const destSpeakersPath = path.join(destFolder, "speakers.json");
 const destSessionsPath = path.join(destFolder, "sessions.json");
+const destSchedulePath = path.join(destFolder, "schedule.json");
 
 //Creates folder
 fs.mkdirSync(destFolder, { recursive: true });
@@ -42,3 +44,12 @@ const sessions = await sessionsResult.text();
 fs.writeFileSync(destSessionsPath, sessions);
 
 console.log(`Sessions saved in ${destSessionsPath}`);
+
+const scheduleResult = await fetch(urlSchedule);
+if (!scheduleResult.ok) throw new Error(`Error fetching data: ${scheduleResult.status}`);
+
+const schedule = await scheduleResult.text();
+
+fs.writeFileSync(destSchedulePath, schedule);
+
+console.log(`Schedule saved in ${destSchedulePath}`);

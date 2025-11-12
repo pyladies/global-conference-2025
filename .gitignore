@@ -28,3 +28,4 @@ scripts/chapters.yml
 
 src/data/speakers.json
 src/data/sessions.json
+src/data/schedule.json
