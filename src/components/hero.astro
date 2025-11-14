@@ -59,14 +59,14 @@ const t = useTranslations(lang);
         <div class="grid grid-cols-2 lg:grid-cols-4 mt-10 items-stretch justify-center gap-2 md:gap-6 md:gap-2">
           <div class="relative group">
             <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-60 group-hover:opacity-100 transition duration-300"></div>
-            <Link class="relative grid place-items-center bg-white dark:bg-gray-900 text-gray-900 dark:text-white hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:!text-white transition-all duration-300"
+            <Link class="relative grid place-items-center bg-white dark:bg-gray-900 text-gray-900 dark:text-white hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:!text-white transition-[background-color,color] duration-300 ease-in-out"
                 style="outline"
                 href={`/${lang}/schedule`}>{t("hero.main_button_text")}
             </Link>
           </div>
           <div class="relative group">
             <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg blur opacity-60 group-hover:opacity-100 transition duration-300"></div>
-            <Link class="relative grid place-items-center bg-white dark:bg-gray-900 text-gray-900 dark:text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-cyan-600 hover:!text-white transition-all duration-300"
+            <Link class="relative grid place-items-center bg-white dark:bg-gray-900 text-gray-900 dark:text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-cyan-600 hover:!text-white transition-[background-color,color] duration-300 ease-in-out"
                 style="outline"
                 href="https://pretix.eu/pyladiescon/2025/">{t("hero.volunteer_button_text")}
             </Link>
