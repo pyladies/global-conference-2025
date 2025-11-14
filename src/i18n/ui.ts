@@ -246,7 +246,7 @@ export const ui = {
     "sprints.description": "Sprints are informal coding sessions, and knowledge sharing where people gather together to work on Open-Source projects, suggest changes in existing libraries solve problems. A Sprint is an opportunity for learning and self-development while contributing to Open Source projects.",
     "sprints.no_sprints": "-- No sprints added yet --",
     "sprints.level": "Level:",
-    "sprints.language": "Languages:",
+    "sprints.languages": "Languages:",
   },
   es: {
     "conf.experience": "En PyLadiesCon, estamos trayendo el mundo de Python directamente a tu puerta. Asegúrate de marcar tu calendario para el segundo fin de semana de diciembre mientras nos embarcamos en un viaje de dos días que promete ser inolvidable.",
@@ -430,7 +430,7 @@ export const ui = {
     "attending.step_3_subtitle": "Con tu <b>Nombre</b> y <b>Número de entrada</b>",
     "attending.step_4_title": "¡Disfruta la conferencia!",
     "attending.step_4_subtitle": "Mira la estructura del server",
-    "attending.get_ticket_important": "<span class=\"font-bold\">Importante:</span> todas las personas que asisten la conferencia necesitan un <a class=\"underline\" href=\"https://pretix.eu/pyladiescon/2025\">ticket de la conferencia</a> para poder acceder a los canales correctos en el servidor de Discordn; incluyendo Participantes, Voluntarios, y Patrocinantes.",
+    "attending.get_ticket_important": "<span class=\"font-bold\">Importante:</span> todas las personas que asisten la conferencia necesitan un <a class=\"underline\" href=\"https://pretix.eu/pyladiescon/2025\">ticket de la conferencia</a> para poder acceder a los canales correctos en el servidor de Discord; incluyendo Participantes, Voluntarios, y Patrocinantes.",
     "attending.get_ticket_text": "Puedes obtener un ticket de la conference en <a href=\"https://pretix.eu/pyladiescon/2025\">nuestra página en pretix</a>.",
     "attending.join_discord_note": "<span class=\"font-medium\"><b>Nota:</b></span> En caso que ya tengas una cuenta en Discord, no necesitas crear una nueva.",
     "attending.join_discord_text": "Deberías haber recibido un enlace de invitación en tu email, pero en caso que no puedas encontrarlo, usa éste: <a href=\"#\">Not available yet</a>",
