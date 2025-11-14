@@ -59,11 +59,11 @@ const t = useTranslations(lang);
         <div class="grid grid-cols-2 lg:grid-cols-4 mt-10 items-stretch justify-center gap-2 md:gap-6 md:gap-2">
           <Link class="grid place-items-center dark:text-white dark:hover:bg-white"
               style="outline"
-              href="https://pretalx.com/pyladiescon-2025/cfp">{t("hero.main_button_text")}
+              href={`/${lang}/schedule`}>{t("hero.main_button_text")}
           </Link>
           <Link class="grid place-items-center dark:text-white dark:hover:bg-white"
               style="outline"
-              href="https://portal.pyladies.com">{t("hero.volunteer_button_text")}
+              href="https://pretix.eu/pyladiescon/2025/">{t("hero.volunteer_button_text")}
           </Link>
           <Link class="grid place-items-center bg-pinkpyladies text-white dark:hover:bg-black"
               href="https://psfmember.org/civicrm/contribute/transact/?reset=1&id=53">{t("hero.donate_button_text")}
