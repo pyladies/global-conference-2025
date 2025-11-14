@@ -57,14 +57,20 @@ const t = useTranslations(lang);
 
         </p>
         <div class="grid grid-cols-2 lg:grid-cols-4 mt-10 items-stretch justify-center gap-2 md:gap-6 md:gap-2">
-          <Link class="grid place-items-center dark:text-white dark:hover:bg-white"
-              style="outline"
-              href={`/${lang}/schedule`}>{t("hero.main_button_text")}
-          </Link>
-          <Link class="grid place-items-center dark:text-white dark:hover:bg-white"
-              style="outline"
-              href="https://pretix.eu/pyladiescon/2025/">{t("hero.volunteer_button_text")}
-          </Link>
+          <div class="relative group">
+            <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-60 group-hover:opacity-100 transition duration-300"></div>
+            <Link class="relative grid place-items-center bg-white dark:bg-gray-900 text-gray-900 dark:text-white hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:text-white dark:hover:text-white transition-all duration-300"
+                style="outline"
+                href={`/${lang}/schedule`}>{t("hero.main_button_text")}
+            </Link>
+          </div>
+          <div class="relative group">
+            <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-lg blur opacity-60 group-hover:opacity-100 transition duration-300"></div>
+            <Link class="relative grid place-items-center bg-white dark:bg-gray-900 text-gray-900 dark:text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-cyan-600 hover:text-white dark:hover:text-white transition-all duration-300"
+                style="outline"
+                href="https://pretix.eu/pyladiescon/2025/">{t("hero.volunteer_button_text")}
+            </Link>
+          </div>
           <Link class="grid place-items-center bg-pinkpyladies text-white dark:hover:bg-black"
               href="https://psfmember.org/civicrm/contribute/transact/?reset=1&id=53">{t("hero.donate_button_text")}
           </Link>
