@@ -1,0 +1,39 @@
+---
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Button from "@components/ui/button.astro";
+import Prose from "@components/Prose.astro";
+import Layout from "@layouts/Layout.astro";
+import { getLocaleStaticPaths } from "../../i18n/locales";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+
+import {Content as Reporting} from '../../content/coc/coc-enforcing-content.md';
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title="Code of Conduct">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{t("coc.enforcing.title")}</Fragment>
+      <Fragment slot="subtitle">{t("coc.enforcing.subtitle")}</Fragment>
+      <Fragment slot="description">
+        {t("coc.enforcing.description")}
+      </Fragment>
+    </Sectionhead>
+
+    <div class="mx-auto max-w-2xl px-4 py-10 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div class="flex flex-col items-center gap-8 sm:gap-10 lg:col-span-2">
+        <Prose>
+          <Reporting />
+        </Prose>
+      </div>
+    </div>
+
+  </Container>
+</Layout>

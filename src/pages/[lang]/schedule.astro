@@ -1,0 +1,783 @@
+---
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { getLocaleStaticPaths } from "../../i18n/locales";
+import { Icon } from "astro-icon/components";
+import scheduleData from "../../data/schedule.json";
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title="Schedule">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="subtitle">{t("schedule.subtitle")}</Fragment>
+      <Fragment slot="title">{t("schedule.title")}</Fragment>
+      <Fragment slot="description">
+          {t("schedule.description")}
+      </Fragment>
+    </Sectionhead>
+
+    <div class="mt-16">
+      <!-- Timezone Switcher -->
+      <div class="flex justify-center mb-12">
+        <div class="inline-flex items-center bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 p-2">
+          <button
+            id="utc-btn"
+            class="timezone-btn px-4 py-2 rounded-md font-semibold transition-all duration-300 bg-gradient-to-r from-purple-600 to-pink-600 text-white"
+          >
+            <span class="flex items-center gap-2">
+              <Icon name="bx:bx-world" class="w-5 h-5" />
+              UTC
+            </span>
+          </button>
+          <button
+            id="local-btn"
+            class="timezone-btn px-4 py-2 rounded-md font-semibold transition-all duration-300 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+          >
+            <span class="flex items-center gap-2">
+              <Icon name="bx:bx-current-location" class="w-5 h-5" />
+              <span id="local-tz-name">{t("schedule.local_time")}</span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Schedule Content -->
+      <div class="max-w-6xl mx-auto">
+        <div class="space-y-8" id="schedule-container">
+          {/* Schedule dynamically comes here */}
+        </div>
+      </div>      <!-- Legend -->
+      <div class="max-w-6xl mx-auto mt-12 p-6 bg-gray-50 dark:bg-gray-800 rounded-xl">
+        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+          <Icon name="bx:bx-info-circle" class="w-6 h-6" />
+          {t("schedule.session_types")}
+        </h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="px-4 py-2 rounded-full text-sm font-semibold bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200">
+            {t("schedule.keynote")}
+          </span>
+          <span class="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200">
+            {t("schedule.talk")}
+          </span>
+          <span class="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200">
+            {t("schedule.panel")}
+          </span>
+          <span class="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200">
+            {t("schedule.workshop")}
+          </span>
+          <span class="px-4 py-2 rounded-full text-sm font-semibold bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200">
+            {t("schedule.sponsor_talk")}
+          </span>
+        </div>
+        
+        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4 mt-6 flex items-center gap-2">
+          <Icon name="bx:bx-layer" class="w-6 h-6" />
+          {t("schedule.difficulty_levels")}
+        </h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="px-4 py-2 rounded-full text-sm font-semibold bg-green-500 text-white">
+            {t("schedule.difficulty.beginner")}
+          </span>
+          <span class="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-500 text-white">
+            {t("schedule.difficulty.intermediate")}
+          </span>
+          <span class="px-4 py-2 rounded-full text-sm font-semibold bg-red-500 text-white">
+            {t("schedule.difficulty.advanced")}
+          </span>
+        </div>
+      </div>
+    </div>
+  </Container>
+
+  <!-- Scroll to Top Button -->
+  <button
+    id="scroll-to-top"
+    class="fixed bottom-6 right-6 bg-gradient-to-r from-purple-600 to-pink-600 text-white p-4 rounded-full shadow-2xl opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 z-50"
+    aria-label="Scroll to top"
+  >
+    <Icon name="bx:bx-up-arrow-alt" class="w-6 h-6" />
+  </button>
+
+  <!-- Time Scrollbar -->
+  <div id="time-scrollbar" class="fixed right-8 top-1/2 -translate-y-1/2 z-40 hidden lg:block">
+    <div class="relative">
+      <!-- Indicator -->
+      <div id="time-tooltip" class="absolute right-full mr-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-2 rounded-lg shadow-xl opacity-0 pointer-events-none transition-opacity duration-200 whitespace-nowrap">
+        <div class="font-bold text-sm" id="tooltip-time">12:00 PM</div>
+        <div class="text-xs opacity-90" id="tooltip-date">Dec 5</div>
+      </div>
+      
+      <!-- Scrollbar track -->
+      <div class="w-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden relative" style="height: 60vh;">
+        <div id="scroll-indicator" class="absolute top-0 w-full bg-gradient-to-b from-purple-600 to-pink-600 rounded-full transition-all duration-100"></div>
+      </div>
+      
+      <!-- Time markers -->
+      <div id="time-markers" class="absolute left-4 top-0 bottom-0 flex flex-col justify-between pointer-events-none">
+        <!-- Will be populated dynamically -->
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script define:vars={{ scheduleData }}>
+  // Global timezone state
+  let useLocalTime = false;
+  let localTimezoneName = '';
+  
+  // Store all events for reorganization
+  const allEvents = [];
+  
+  // Global array of event times for scrollbar
+  let eventTimes = [];
+  
+  // Collect all events from all days
+  const daysData = Object.entries(scheduleData.days);
+  daysData.forEach(([date, day]) => {
+    day.events.forEach((event) => {
+      allEvents.push(event);
+    });
+  });
+
+  // Format time based on timezone preference
+  function formatTimeByTimezone(dateString, useLocal) {
+    const date = new Date(dateString);
+    return date.toLocaleTimeString('en-US', {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: true,
+      timeZone: useLocal ? undefined : 'UTC'
+    });
+  }
+
+  // Format date based on timezone preference
+  function formatDateByTimezone(dateString, useLocal) {
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      timeZone: useLocal ? undefined : 'UTC'
+    });
+  }
+
+  // Format full date for headers
+  function formatDateHeaderByTimezone(dateString, useLocal) {
+    const date = new Date(dateString);
+    
+    // Get the date parts based on timezone
+    const options = {
+      weekday: 'long',
+      month: 'long',
+      day: 'numeric',
+      year: 'numeric',
+      timeZone: useLocal ? undefined : 'UTC'
+    };
+    
+    return date.toLocaleDateString('en-US', options);
+  }
+
+  function toRelativeUrl(url) {
+    if (!url) return '';
+    try {
+      const urlObj = new URL(url);
+      return urlObj.pathname;
+    } catch (e) {
+      return url;
+    }
+  }
+
+  // Function to update time markers
+  function updateTimeMarkers() {
+    const timeMarkers = document.getElementById('time-markers');
+    const allEventElements = document.querySelectorAll('.event-time');
+    
+    // Update the global eventTimes array
+    eventTimes = [];
+    
+    allEventElements.forEach((el) => {
+      const timeStr = el.getAttribute('data-time');
+      if (timeStr) {
+        eventTimes.push({
+          time: timeStr,
+          element: el.closest('.group')
+        });
+      }
+    });
+    
+    if (!timeMarkers || eventTimes.length === 0) return;
+    
+    timeMarkers.innerHTML = ''; // Clear existing markers
+    
+    const firstTime = new Date(eventTimes[0].time);
+    const lastTime = new Date(eventTimes[eventTimes.length - 1].time);
+    const timeSpan = lastTime.getTime() - firstTime.getTime();
+    
+    // Create markers for key time points
+    const markerCount = 8;
+    for (let i = 0; i < markerCount; i++) {
+      const markerTime = new Date(firstTime.getTime() + (timeSpan * i / (markerCount - 1)));
+      const marker = document.createElement('div');
+      marker.className = 'text-xs text-gray-500 dark:text-gray-400';
+      marker.textContent = markerTime.toLocaleTimeString('en-US', {
+        hour: 'numeric',
+        hour12: true,
+        timeZone: useLocalTime ? undefined : 'UTC'
+      });
+      timeMarkers.appendChild(marker);
+    }
+  }
+
+  // Update all time displays
+  function updateAllTimes() {
+    const timeElements = document.querySelectorAll('.event-time');
+    timeElements.forEach((el) => {
+      const timeStr = el.getAttribute('data-time');
+      if (timeStr) {
+        el.textContent = formatTimeByTimezone(timeStr, useLocalTime);
+      }
+    });
+
+    // Update all date displays
+    const dateElements = document.querySelectorAll('.event-date');
+    dateElements.forEach((el) => {
+      const timeStr = el.getAttribute('data-time');
+      if (timeStr) {
+        el.textContent = formatDateByTimezone(timeStr, useLocalTime);
+      }
+    });
+
+    // Update date headers
+    const dateHeaders = document.querySelectorAll('.date-header');
+    dateHeaders.forEach((el) => {
+      const timeStr = el.getAttribute('data-time');
+      if (timeStr) {
+        el.textContent = formatDateHeaderByTimezone(timeStr, useLocalTime);
+      }
+    });
+
+    // Update time markers
+    updateTimeMarkers();
+  }
+  
+  // Reorganize schedule based on timezone
+  function reorganizeSchedule() {
+    const container = document.getElementById('schedule-container');
+    if (!container) return;
+    
+    // Group events by date in the selected timezone
+    const eventsByDate = new Map();
+    
+    allEvents.forEach((event) => {
+      const date = new Date(event.start);
+      const dateKey = date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        timeZone: useLocalTime ? undefined : 'UTC'
+      });
+      
+      if (!eventsByDate.has(dateKey)) {
+        eventsByDate.set(dateKey, []);
+      }
+      eventsByDate.get(dateKey).push(event);
+    });
+    
+    // Clear container
+    container.innerHTML = '';
+    
+    // Render each date group
+    Array.from(eventsByDate.entries()).forEach(([dateKey, events]) => {
+      const firstEvent = events[0];
+      
+      // Create date header
+      const headerDiv = document.createElement('div');
+      headerDiv.className = 'sticky top-0 z-10 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-xl shadow-xl p-6 mb-6';
+      headerDiv.innerHTML = `
+        <div class="flex items-center gap-3">
+          <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"></path>
+            <path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"></path>
+          </svg>
+          <div>
+            <h2 class="text-2xl font-bold">${formatDateHeaderByTimezone(firstEvent.start, useLocalTime)}</h2>
+            <p class="text-sm text-purple-100 mt-1">Conference Day Schedule</p>
+          </div>
+        </div>
+      `;
+      container.appendChild(headerDiv);
+      
+      // Group events by time
+      const eventsByTime = new Map();
+      events.forEach((event) => {
+        if (!eventsByTime.has(event.start)) {
+          eventsByTime.set(event.start, []);
+        }
+        eventsByTime.get(event.start).push(event);
+      });
+      
+      // Create events section
+      const eventsSection = document.createElement('div');
+      eventsSection.className = 'space-y-4 mb-8';
+      
+      Array.from(eventsByTime.entries()).forEach(([time, timeEvents]) => {
+        const hasMultiple = timeEvents.length > 1;
+        const timeGroupDiv = document.createElement('div');
+        timeGroupDiv.className = hasMultiple ? 'grid md:grid-cols-2 gap-4' : '';
+        
+        timeEvents.forEach((event) => {
+          const isBreak = event.event_type === 'break';
+          const eventDiv = document.createElement('div');
+          eventDiv.className = `group relative overflow-hidden rounded-xl transition-all duration-300 ${
+            isBreak 
+              ? 'bg-gray-50 dark:bg-gray-800 border-2 border-dashed border-gray-300 dark:border-gray-600 p-4 md:col-span-2' 
+              : 'bg-white dark:bg-gray-800 shadow-lg hover:shadow-2xl border border-gray-200 dark:border-gray-700 p-6'
+          }`;
+          
+          const sessionTypeColors = {
+            'Keynote': 'bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200',
+            'Talk': 'bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200',
+            'Panel': 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200',
+            'Workshop': 'bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200',
+            "Sponsors's talk": 'bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200',
+            'Message from Organizers': 'bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200',
+          };
+          
+          const levelColors = {
+            'beginner': 'bg-green-500',
+            'intermediate': 'bg-yellow-500',
+            'advanced': 'bg-red-500',
+          };
+          
+          const sessionTypeColor = sessionTypeColors[event.session_type] || 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300';
+          const levelColor = levelColors[event.level] || 'bg-gray-500';
+          
+          if (isBreak) {
+            eventDiv.innerHTML = `
+              <div class="flex items-center justify-center">
+                <div class="text-center">
+                  <h3 class="text-lg font-semibold text-gray-600 dark:text-gray-400 flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M5 2h2v3H5zm4 0h2v3H9zm4 0h2v3h-2z"></path><path d="M19 3H5v17a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2zm-3 14.5H8V16h8v1.5zm0-3H8V13h8v1.5zm0-3H8V10h8v1.5z"></path></svg>
+                    ${event.title}
+                  </h3>
+                </div>
+              </div>
+            `;
+          } else {
+            const speakersHTML = event.speakers && event.speakers.length > 0 ? `
+              <div class="mt-4">
+                <div class="flex items-center gap-3 flex-wrap">
+                  <svg class="w-5 h-5 text-purple-600 dark:text-purple-400" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>
+                  ${event.speakers.map((speaker) => `
+                    <a href="${toRelativeUrl(speaker.website_url)}" class="flex items-center gap-2 group/speaker">
+                      ${speaker.avatar ? `<img src="${speaker.avatar}" alt="${speaker.name}" class="w-8 h-8 rounded-full border-2 border-purple-500" />` : ''}
+                      <span class="font-medium text-gray-700 dark:text-gray-300 group-hover/speaker:text-purple-600 dark:group-hover/speaker:text-purple-400 transition-colors">${speaker.name}</span>
+                    </a>
+                  `).join('')}
+                </div>
+              </div>
+            ` : '';
+            
+            eventDiv.innerHTML = `
+              <div class="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="flex flex-col md:flex-row gap-6">
+                <div class="md:w-32 flex-shrink-0">
+                  <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-purple-600 dark:text-purple-400" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm3.293 14.707L11 12.414V6h2v5.586l3.707 3.707-1.414 1.414z"></path></svg>
+                    <span class="event-time font-mono text-lg font-semibold text-gray-700 dark:text-gray-300" data-time="${event.start}">
+                      ${formatTimeByTimezone(event.start, useLocalTime)}
+                    </span>
+                  </div>
+                  <div class="hidden md:block mt-2 text-sm text-gray-500 dark:text-gray-400">
+                    ${event.duration} min
+                  </div>
+                  <div class="hidden md:block mt-1 text-xs text-gray-400 dark:text-gray-500">
+                    <span class="event-date" data-time="${event.start}">
+                      ${formatDateByTimezone(event.start, useLocalTime)}
+                    </span>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <div class="mb-3">
+                    <div class="flex flex-wrap items-start gap-2 mb-2">
+                      <span class="px-3 py-1 rounded-full text-xs font-semibold ${sessionTypeColor}">
+                        ${event.session_type}
+                      </span>
+                      ${event.level ? `<span class="px-3 py-1 rounded-full text-xs font-semibold text-white ${levelColor}">${event.level}</span>` : ''}
+                      <span class="md:hidden px-3 py-1 rounded-full text-xs font-semibold bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300">
+                        ${event.duration} min
+                      </span>
+                    </div>
+                    ${event.website_url ? `
+                      <a href="${toRelativeUrl(event.website_url)}" class="group/link">
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover/link:text-purple-600 dark:group-hover/link:text-purple-400 transition-colors">
+                          ${event.title}
+                        </h3>
+                      </a>
+                    ` : `
+                      <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                        ${event.title}
+                      </h3>
+                    `}
+                  </div>
+                  ${event.track ? `
+                    <div class="flex items-center gap-2 mb-3 text-sm text-gray-600 dark:text-gray-400">
+                      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M10 3H4a1 1 0 00-1 1v6a1 1 0 001 1h6a1 1 0 001-1V4a1 1 0 00-1-1zm10 0h-6a1 1 0 00-1 1v6a1 1 0 001 1h6a1 1 0 001-1V4a1 1 0 00-1-1zM10 13H4a1 1 0 00-1 1v6a1 1 0 001 1h6a1 1 0 001-1v-6a1 1 0 00-1-1zm10 0h-6a1 1 0 00-1 1v6a1 1 0 001 1h6a1 1 0 001-1v-6a1 1 0 00-1-1z"></path></svg>
+                      <span>${event.track}</span>
+                    </div>
+                  ` : ''}
+                  ${event.rooms && event.rooms.length > 0 ? `
+                    <div class="flex items-center gap-2 mb-3 text-sm text-gray-600 dark:text-gray-400">
+                      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path></svg>
+                      <span>${event.rooms.join(", ")}</span>
+                    </div>
+                  ` : ''}
+                  ${speakersHTML}
+                </div>
+              </div>
+            `;
+          }
+          
+          timeGroupDiv.appendChild(eventDiv);
+        });
+        
+        eventsSection.appendChild(timeGroupDiv);
+      });
+      
+      container.appendChild(eventsSection);
+    });
+    
+    // Update the scrollbar after reorganizing
+    updateTimeMarkers();
+    updateScrollIndicator();
+    
+    // Update again after DOM settles
+    setTimeout(updateScrollIndicator, 100);
+  }  // Update timezone button styles
+  function updateTimezoneButtons() {
+    const utcBtn = document.getElementById('utc-btn');
+    const localBtn = document.getElementById('local-btn');
+
+    if (utcBtn && localBtn) {
+      if (useLocalTime) {
+        // Local is active
+        utcBtn.classList.remove('bg-gradient-to-r', 'from-purple-600', 'to-pink-600', 'text-white');
+        utcBtn.classList.add('text-gray-700', 'dark:text-gray-300', 'hover:bg-gray-100', 'dark:hover:bg-gray-700');
+        
+        localBtn.classList.remove('text-gray-700', 'dark:text-gray-300', 'hover:bg-gray-100', 'dark:hover:bg-gray-700');
+        localBtn.classList.add('bg-gradient-to-r', 'from-purple-600', 'to-pink-600', 'text-white');
+      } else {
+        // UTC is active
+        localBtn.classList.remove('bg-gradient-to-r', 'from-purple-600', 'to-pink-600', 'text-white');
+        localBtn.classList.add('text-gray-700', 'dark:text-gray-300', 'hover:bg-gray-100', 'dark:hover:bg-gray-700');
+        
+        utcBtn.classList.remove('text-gray-700', 'dark:text-gray-300', 'hover:bg-gray-100', 'dark:hover:bg-gray-700');
+        utcBtn.classList.add('bg-gradient-to-r', 'from-purple-600', 'to-pink-600', 'text-white');
+      }
+    }
+    
+    // Reorganize schedule when timezone changes
+    reorganizeSchedule();
+  }
+
+  function initializeSchedulePage() {
+    // Get local timezone name
+    try {
+      localTimezoneName = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      const localTzNameEl = document.getElementById('local-tz-name');
+      if (localTzNameEl) {
+        localTzNameEl.textContent = `Local Time (${localTimezoneName})`;
+      }
+    } catch (e) {
+      localTimezoneName = 'Local';
+    }
+
+    // Timezone switcher
+    const utcBtn = document.getElementById('utc-btn');
+    const localBtn = document.getElementById('local-btn');
+
+    if (utcBtn) {
+      utcBtn.addEventListener('click', () => {
+        useLocalTime = false;
+        updateTimezoneButtons();
+        updateAllTimes();
+      });
+    }
+
+    if (localBtn) {
+      localBtn.addEventListener('click', () => {
+        useLocalTime = true;
+        updateTimezoneButtons();
+        updateAllTimes();
+      });
+    }
+
+    // Scroll to top button functionality
+    const scrollToTopBtn = document.getElementById('scroll-to-top');
+    
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', () => {
+      if (scrollToTopBtn) {
+        if (window.scrollY > 500) {
+          scrollToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+          scrollToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+        } else {
+          scrollToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+          scrollToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+        }
+      }
+    });
+
+    // Scroll to top when button is clicked
+    if (scrollToTopBtn) {
+      scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+
+    // Custom time scrollbar functionality
+    const scrollbar = document.getElementById('time-scrollbar');
+    const scrollIndicator = document.getElementById('scroll-indicator');
+    const timeTooltip = document.getElementById('time-tooltip');
+    const tooltipTime = document.getElementById('tooltip-time');
+    const tooltipDate = document.getElementById('tooltip-date');
+    const timeMarkers = document.getElementById('time-markers');
+
+    // Build initial eventTimes array
+    updateTimeMarkers();
+
+    // Update scroll indicator position and size
+    function updateScrollIndicator() {
+      if (!scrollIndicator) return;
+      
+      const scrollHeight = document.documentElement.scrollHeight;
+      const viewportHeight = window.innerHeight;
+      const scrollableHeight = scrollHeight - viewportHeight;
+      const scrolled = window.scrollY;
+      
+      // Calculate indicator height as percentage of viewport to total content
+      let indicatorHeight = (viewportHeight / scrollHeight) * 100;
+      
+      // Set a minimum height of 15% so it's never too small
+      const minHeight = 15;
+      indicatorHeight = Math.max(indicatorHeight, minHeight);
+      
+      // Calculate position as percentage of remaining space
+      const maxScroll = 100 - indicatorHeight;
+      const scrollPercent = scrollableHeight > 0 ? (scrolled / scrollableHeight) * maxScroll : 0;
+      
+      scrollIndicator.style.height = `${indicatorHeight}%`;
+      scrollIndicator.style.top = `${scrollPercent}%`;
+    }
+    
+    // Initial update (with a slight delay to let content render)
+    setTimeout(updateScrollIndicator, 100);
+
+    // Find closest event time to current scroll position
+    function findCurrentEventTime() {
+      const scrolled = window.scrollY + window.innerHeight / 2;
+      
+      let closestEvent = eventTimes[0];
+      let closestDistance = Infinity;
+      
+      eventTimes.forEach(({time, element}) => {
+        const elementTop = element.getBoundingClientRect().top + window.scrollY;
+        const distance = Math.abs(elementTop - scrolled);
+        
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestEvent = {time, element};
+        }
+      });
+      
+      return closestEvent?.time || eventTimes[0]?.time;
+    }
+
+    // Update tooltip with current time
+    function updateTimeTooltip() {
+      if (!tooltipTime || !tooltipDate) return;
+      
+      const currentTime = findCurrentEventTime();
+      if (currentTime) {
+        tooltipTime.textContent = formatTimeByTimezone(currentTime, useLocalTime);
+        tooltipDate.textContent = formatDateByTimezone(currentTime, useLocalTime);
+      }
+    }
+
+    // Scroll event listener
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+      updateScrollIndicator();
+      updateTimeTooltip();
+      
+      // Show tooltip while scrolling
+      if (timeTooltip) {
+        timeTooltip.classList.remove('opacity-0');
+        timeTooltip.classList.add('opacity-100');
+        
+        clearTimeout(scrollTimeout);
+        scrollTimeout = window.setTimeout(() => {
+          timeTooltip.classList.remove('opacity-100');
+          timeTooltip.classList.add('opacity-0');
+        }, 1500);
+      }
+    });
+
+    // Click on scrollbar to jump to position
+    if (scrollbar) {
+      const scrollbarTrack = scrollbar.querySelector('.w-2');
+      if (scrollbarTrack) {
+        let isDragging = false;
+
+        function handleScrollbarInteraction(e) {
+          if (!scrollbarTrack) return;
+          const rect = scrollbarTrack.getBoundingClientRect();
+          const clickY = e.clientY - rect.top;
+          const percent = Math.max(0, Math.min(1, clickY / rect.height));
+          
+          const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+          const targetScroll = scrollHeight * percent;
+          
+          window.scrollTo({
+            top: targetScroll,
+            behavior: isDragging ? 'auto' : 'smooth'
+          });
+        }
+
+        scrollbarTrack.addEventListener('mousedown', (e) => {
+          isDragging = true;
+          document.body.classList.add('dragging-scrollbar');
+          handleScrollbarInteraction(e);
+          
+          const handleMouseMove = (e) => {
+            if (isDragging) {
+              handleScrollbarInteraction(e);
+            }
+          };
+
+          const handleMouseUp = () => {
+            isDragging = false;
+            document.body.classList.remove('dragging-scrollbar');
+            document.removeEventListener('mousemove', handleMouseMove);
+            document.removeEventListener('mouseup', handleMouseUp);
+          };
+
+          document.addEventListener('mousemove', handleMouseMove);
+          document.addEventListener('mouseup', handleMouseUp);
+        });
+
+        scrollbarTrack.addEventListener('click', (e) => {
+          if (!isDragging) {
+            handleScrollbarInteraction(e);
+          }
+        });
+      }
+
+      // Show tooltip on hover
+      scrollbar.addEventListener('mouseenter', () => {
+        if (timeTooltip) {
+          timeTooltip.classList.remove('opacity-0');
+          timeTooltip.classList.add('opacity-100');
+        }
+      });
+
+      scrollbar.addEventListener('mouseleave', () => {
+        if (timeTooltip) {
+          timeTooltip.classList.remove('opacity-100');
+          timeTooltip.classList.add('opacity-0');
+        }
+      });
+    }
+
+    // Initial update
+    updateScrollIndicator();
+    updateTimeTooltip();
+    reorganizeSchedule();
+  }
+
+  // Call initialization onboth DOMContentLoaded and Astro page load
+  document.addEventListener('DOMContentLoaded', initializeSchedulePage);
+  document.addEventListener('astro:page-load', initializeSchedulePage);
+</script>
+
+<style>
+  .day-content {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Hide default scrollbar */
+  html {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Also hide on any container that might have a scrollbar */
+  * {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Prevent text selection during drag */
+  #time-scrollbar {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  /* Better cursor for draggable scrollbar */
+  #time-scrollbar .w-2 {
+    cursor: pointer;
+  }
+
+  #time-scrollbar .w-2:active {
+    cursor: grabbing;
+  }
+
+  /* Prevent text selection globally when dragging */
+  body.dragging-scrollbar {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+</style>
