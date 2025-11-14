@@ -1,9 +1,6 @@
-export const languages = {
-  en: "English",
-  es: "Español",
-};
+import { languages, defaultLang } from './locales';
 
-export const defaultLang = "en";
+export { languages, defaultLang };
 export const showDefaultLang = true;
 
 export const ui = {

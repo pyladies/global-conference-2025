@@ -4,6 +4,7 @@ import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import "@fontsource-variable/inter";
 import { SEO } from "astro-seo";
+import { defaultLang } from "i18n/locales";
 
 export interface Props {
 	title?: string;
@@ -25,7 +26,7 @@ const makeTitle = title
 ---
 
 <!doctype html>
-<html lang={lang ?? "en"}>
+<html lang={lang ?? defaultLang}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />

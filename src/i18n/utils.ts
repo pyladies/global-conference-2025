@@ -1,4 +1,5 @@
 import { ui, defaultLang, showDefaultLang } from './ui';
+import { getSupportedLocales } from './locales';
 
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split('/');
@@ -54,7 +55,7 @@ export const localizePath = (
   base: string = import.meta.env.BASE_URL
 ): string => {
   if (!locale) {
-    locale = i18next.language;
+    locale = defaultLang;
   }
 
   let pathSegments = path.split("/").filter((segment) => segment !== "");
@@ -74,9 +75,9 @@ export const localizePath = (
 
   let flatRoutes = {};
   let showDefaultLocale = false;
-  const { defaultLocale } = "en";
-  let locales: string[] = ["en", "es"];
-  const { trailingSlash } = "ignore"
+  const defaultLocale = defaultLang;
+  let locales: string[] = getSupportedLocales();
+  const trailingSlash = "ignore";
 
   //if (!locales.includes(locale)) {
   //  console.warn(
