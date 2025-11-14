@@ -120,7 +120,7 @@ export async function getStaticPaths() {
                   value.submissions.map((submissionId) => (
                     submissions.filter(([subKey, subValue]) => subKey === submissionId).map(([subKey, subValue]) => (
                       <li class="mt-4 text-black dark:text-white">
-                        <a class="text-xl font-semibold" href={t("session.slug_url")+subValue.slug}>{subValue.title}</a>
+                        <a class="text-xl font-semibold" href={`/session/${subValue.slug}`}>{subValue.title}</a>
                       </li>)
                   )))
                 }

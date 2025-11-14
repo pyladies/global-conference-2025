@@ -1,4 +1,4 @@
-If you believe someone has violated the [Code of Conduct](/en/coc/), we encourage
+If you believe someone has violated the [Code of Conduct](/coc/), we encourage
 you to report it. If you are unsure whether the incident is a violation, or
 whether the space where it happened is covered by the Code of Conduct, we
 encourage you to still report it. We are fine with receiving reports where we
@@ -56,7 +56,7 @@ will remain confidential unless those individuals instruct us otherwise.
 
 When you make a report to an incident responder, they will gather information
 about the incident according to the [Procedure For Incident
-Reponse](/en/coc-enforcing/).
+Response](/coc-enforcing).
 
 After an incident responder takes the report, they will immediately consult
 with the CoC team, unless there is a conflict of interest, in which case any
@@ -71,7 +71,7 @@ is not equipped to handle emergency situations.
 If the incident is less urgent, the report will be discussed by the CoC team,
 who will meet to determine an appropriate response. Examples of possible
 incident responses are outlined in the [Procedure For Incident
-Response](/en/coc-enforcing).
+Response](/coc-enforcing).
 
 Before the conference, the CoC team review the outlined procedures. After the
 conference, all CoC team members will attend a debriefing session with the CoC
