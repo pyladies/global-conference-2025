@@ -1,0 +1,15 @@
+---
+import LocaleRedirect from "../../components/ui/localeredirect.astro";
+import SpeakerData from "../../data/speakers.json";
+
+export async function getStaticPaths() {
+  return Object.values(SpeakerData).map(s => ({
+    params: { slug: s.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const pathTemplate = `/{lang}/speaker/${slug}`;
+---
+
+<LocaleRedirect pathTemplate={pathTemplate} />
