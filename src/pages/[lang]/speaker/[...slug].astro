@@ -6,6 +6,7 @@ import Submissions from "../../../data/sessions.json";
 import Layout from "@layouts/Layout.astro";
 
 import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
+import { getSupportedLocales } from "../../../i18n/locales";
 
 const { slug } = Astro.params;
 const lang = getLangFromUrl(Astro.url);
@@ -15,9 +16,18 @@ const submissions = Object.entries(Submissions);
 
 
 export async function getStaticPaths() {
-  return Object.values(SpeakerData).map(s => ({
-    params: { slug: s.slug },
-  }));
+  const locales = getSupportedLocales();
+  const paths = [];
+  
+  for (const locale of locales) {
+    for (const speaker of Object.values(SpeakerData)) {
+      paths.push({
+        params: { lang: locale, slug: speaker.slug },
+      });
+    }
+  }
+  
+  return paths;
 }
 
 ---

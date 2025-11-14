@@ -3,6 +3,11 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
 import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { getLocaleStaticPaths } from "../../i18n/locales";
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -28,15 +33,12 @@ const sprintsData = [
       <Fragment slot="subtitle">{t("header.sprints_subtitle")}</Fragment>
       <Fragment slot="title">Sprints</Fragment>
       <Fragment slot="description">
-      Sprint are informal coding sessions, and knoweldge sharing where people
-      gather together to work on Open-Source projects, suggest changes in
-      existing libraries solve problems.  A Sprint is an opportunity for
-      learning and self-development while contributing to Open Source projects.
+      {t("sprints.description")}
       </Fragment>
     </Sectionhead>
 
     <div class="grid md:grid-cols-1 gap-10 mx-auto max-w-5xl mt-10">
-        {sprintsData.length === 0 && <div class="text-center dark:text-white"><h3>-- No sprints were added so far --</h3></div>}
+        {sprintsData.length === 0 && <div class="text-center dark:text-white"><h3>{t("sprints.no_sprints")}</h3></div>}
       {sprintsData.map((sprint) => (
       <div class="rounded-md p-5 xl:p-8 ring-1 ring-gray-200 dark:bg-stone-950 dark:ring-gray-700">
         <a class="flex items-center" href={sprint.project_url}>
@@ -111,8 +113,8 @@ const sprintsData = [
             </g>
           </svg>
         </a>
-        <p class="dark:text-white"><b>Level:</b> {sprint.level}</p>
-        <p class="dark:text-white"><b>Languages:</b> {sprint.languages}</p>
+        <p class="dark:text-white"><b>{t("sprints.level")}</b> {sprint.level}</p>
+        <p class="dark:text-white"><b>{t("sprints.languages")}</b> {sprint.languages}</p>
         <div class="py-5">
         <p class="dark:text-white" set:html={sprint.description} />
         </div>

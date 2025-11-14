@@ -4,18 +4,26 @@ import Sectionhead from "@components/sectionhead.astro";
 import Button from "@components/ui/button.astro";
 import Prose from "@components/Prose.astro";
 import Layout from "@layouts/Layout.astro";
+import { getLocaleStaticPaths } from "../../i18n/locales";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 
-import {Content as Reporting} from './content/coc-enforcing-content.md';
+import {Content as Reporting} from '../../content/coc/coc-reporting-content.md';
 
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <Layout title="Code of Conduct">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Code of Conduct</Fragment>
-      <Fragment slot="subtitle">General Enforcing Procedure</Fragment>
+      <Fragment slot="title">{t("coc.reporting.title")}</Fragment>
+      <Fragment slot="subtitle">{t("coc.reporting.subtitle")}</Fragment>
       <Fragment slot="description">
-      This document summarizes the procedures the PyLadiesCon CoC team uses to enforce the Code of Conduct.
+        {t("coc.reporting.description")}
       </Fragment>
     </Sectionhead>
 

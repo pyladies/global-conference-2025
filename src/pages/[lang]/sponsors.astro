@@ -9,6 +9,11 @@ import Layout from "@layouts/Layout.astro";
 import SponsorsGallery from "@components/sponsors_gallery.astro";
 import { Icon } from "astro-icon/components";
 import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { getLocaleStaticPaths } from "../../i18n/locales";
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

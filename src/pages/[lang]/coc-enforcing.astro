@@ -4,18 +4,26 @@ import Sectionhead from "@components/sectionhead.astro";
 import Button from "@components/ui/button.astro";
 import Prose from "@components/Prose.astro";
 import Layout from "@layouts/Layout.astro";
+import { getLocaleStaticPaths } from "../../i18n/locales";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 
-import {Content as Reporting} from './content/coc-reporting-content.md';
+import {Content as Reporting} from '../../content/coc/coc-enforcing-content.md';
 
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <Layout title="Code of Conduct">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Código de Conducta</Fragment>
-      <Fragment slot="subtitle">Procedimiento general de reporte</Fragment>
+      <Fragment slot="title">{t("coc.enforcing.title")}</Fragment>
+      <Fragment slot="subtitle">{t("coc.enforcing.subtitle")}</Fragment>
       <Fragment slot="description">
-      Pasos para realizar un informe adecuado de un evento ocurrido en la conferencia
+        {t("coc.enforcing.description")}
       </Fragment>
     </Sectionhead>
 

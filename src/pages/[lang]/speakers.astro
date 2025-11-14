@@ -7,6 +7,11 @@ import submissionsData from "../../data/sessions.json";
 import Layout from "@layouts/Layout.astro";
 
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import { getLocaleStaticPaths } from "../../i18n/locales";
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

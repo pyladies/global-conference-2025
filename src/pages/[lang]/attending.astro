@@ -1,0 +1,196 @@
+---
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { getLocaleStaticPaths } from "../../i18n/locales";
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const { align = "center" } = Astro.props;
+const chatSvg = `<svg class="inline w-5 fill-blue-400" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WeChat</title><path d="M 8.691,2.188 C 3.891,2.188 0,5.476 0,9.53 c 0,2.212 1.17,4.203 3.002,5.55 0.2086337,0.151345 0.2948774,0.420604 0.213,0.665 l -0.39,1.48 c -0.019,0.07 -0.048,0.141 -0.048,0.213 0,0.163 0.13,0.295 0.29,0.295 0.059556,-0.0024 0.1173167,-0.02107 0.167,-0.054 l 1.903,-1.114 c 0.2131475,-0.136005 0.4751737,-0.171819 0.717,-0.098 0.9218794,0.267684 1.8770435,0.403367 2.837,0.403 0.276,0 0.543,-0.027 0.811,-0.05 -0.857,-2.578 0.157,-4.972 1.932,-6.446 1.703,-1.415 3.882,-1.98 5.853,-1.838 C 16.711,4.953 13.091,2.188 8.691,2.188 Z m 8.247,6.67 c -1.797,-0.052 -3.746,0.512 -5.28,1.786 -1.72,1.428 -2.687,3.72 -1.78,6.22 0.942,2.453 3.666,4.229 6.884,4.229 0.826,0 1.622,-0.12 2.361,-0.336 0.201744,-0.0613 0.420203,-0.03134 0.598,0.082 l 1.584,0.926 c 0.04144,0.02828 0.08989,0.04454 0.14,0.047 0.134,0 0.24,-0.111 0.24,-0.247 0,-0.06 -0.023,-0.12 -0.038,-0.177 L 21.32,20.155 c -0.01471,-0.05072 -0.02245,-0.103197 -0.023,-0.156 -7.37e-4,-0.157232 0.07402,-0.305266 0.201,-0.398 C 23.024,18.48 24,16.82 24,14.98 24,11.77 21.069,9.143 17.344,8.892 V 8.89 C 17.209,8.88 17.074,8.863 16.937,8.86 Z"</svg>`;
+const discordSvg = `<svg class="inline w-10 fill-indigo-500" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Discord</title><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>`;
+
+const steps = [
+    {
+        number: 1,
+        title: t("attending.step_1_title"),
+        subtitle: t("attending.step_1_subtitle"),
+        url: "#get-ticket",
+    },
+    {
+        number: 2,
+        title: t("attending.step_2_title"),
+        subtitle: t("attending.step_2_subtitle"),
+        url: "#join-discord",
+    },
+    {
+        number: 3,
+        title: t("attending.step_3_title"),
+        subtitle: t("attending.step_3_subtitle"),
+        url: "#register-discord",
+    },
+    {
+        number: 4,
+        title: t("attending.step_4_title"),
+        subtitle: t("attending.step_4_subtitle"),
+        url: "#server-structure",
+    },
+];
+---
+<Layout title="Discord">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="subtitle">{t("header.attending_subtitle")}</Fragment>
+          <Fragment slot="title">{t("header.attending")} <span class="pl-2" set:html={discordSvg}/></Fragment>
+      <Fragment slot="description">
+        {t("attending.description")}<br>
+        {t("attending.follow_steps")}
+      </Fragment>
+    </Sectionhead>
+
+    <div class="mx-auto max-w-5xl mt-10 text-black dark:text-white">
+      <div class="flex items-center p-4 mb-4 text-sm text-yellow-800 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300" role="alert">
+        <svg class="shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+        </svg>
+        <span class="sr-only">Info</span>
+        <div>
+          <span class="font-bold">{t("attending.attention")}</span> {t("attending.discord_unavailable")}
+        </div>
+      </div>
+    </div>
+
+    <!-- Steps -->
+    <div class="flex items-center pb-2 mb-4 text-sm">
+        <div class="mx-auto max-w-5xl mt-10 text-black dark:text-white">
+            <ol class="items-center w-full space-y-4 sm:flex sm:space-x-8 sm:space-y-0 rtl:space-x-reverse">
+                {
+                steps.map((step) =>
+                <li class="flex items-center space-x-2.5 rtl:space-x-reverse">
+                    <span class="flex items-center justify-center w-8 h-8 border border-black dark:border-white rounded-full shrink-0">
+                        {step.number}
+                    </span>
+                    <span>
+                        <a href={step.url}><h3 class="text-lg font-medium leading-tight no-underline pb-1">{step.title}</h3></a>
+                        <p class="text-sm" set:html={step.subtitle} />
+                    </span>
+                </li>
+                )}
+            </ol>
+        </div>
+    </div>
+
+
+    <!-- Long explanation of the server -->
+    <div class="mx-auto max-w-5xl mt-10 text-black dark:text-white">
+      <h2 class="text-3xl mt-4 py-10" id="get-ticket">
+        {t("attending.step_1_title")}
+      </h2>
+      <div class="pl-5">
+        <div class="flex items-center p-4 mb-4 text-sm text-yellow-800 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300" role="alert">
+          <svg class="shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+          </svg>
+          <span class="sr-only">Info</span>
+          <div set:html={t("attending.get_ticket_important")} />
+        </div>
+        <p class="py-2" set:html={t("attending.get_ticket_text")} />
+      </div>
+      <h2 class="text-3xl mt-4 py-10" id="join-discord">
+        {t("attending.step_2_title")}
+      </h2>
+      <div class="pl-5">
+        <div class="flex items-center p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
+          <svg class="shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+          </svg>
+          <span class="sr-only">Info</span>
+          <div set:html={t("attending.join_discord_note")} />
+        </div>
+        <p class="py-2" set:html={t("attending.join_discord_text")} />
+      </div>
+      <h2 class="text-3xl mt-4 py-10" id="register-discord">
+        {t("attending.step_3_title")}
+      </h2>
+      <div class="pl-5">
+        <p class="py-2" set:html={t("attending.register_text_1")} />
+        <p class="py-2" set:html={t("attending.register_text_2")} />
+        <h3 class="pt-5 pb-2 text-xl font-semibold leading-8">
+          {t("attending.participant_title")}
+        </h3>
+        <p set:html={t("attending.participant_text_1")} />
+        <p set:html={t("attending.participant_text_2")} />
+        <h3 class="py-5 pb-2 text-xl font-semibold leading-8">
+          {t("attending.sponsor_title")}
+        </h3>
+        <p class="py-2" set:html={t("attending.sponsor_text_1")} />
+        <p set:html={t("attending.sponsor_text_2")} />
+        <h3 class="pt-5 pb-2 text-xl font-semibold leading-8">
+          {t("attending.speaker_title")}
+        </h3>
+        <p set:html={t("attending.speaker_text")} />
+        <h3 class="pt-5 pb-2 text-xl font-semibold leading-8">
+          {t("attending.volunteer_title")}
+        </h3>
+        <p set:html={t("attending.volunteer_text_1")} />
+        <p class="py-2" set:html={t("attending.volunteer_text_2")} />
+      </div>
+      <h2 class="text-3xl mt-4 py-10" id="server-structure">
+        {t("attending.server_structure_title")}
+      </h2>
+      <div class="pl-5">
+        <p set:html={t("attending.server_structure_text_1")} />
+        <ul class="list-disc pl-10 py-1">
+            <li set:html={t("attending.server_structure_rules")} />
+            <li set:html={t("attending.server_structure_coc")} />
+        </ul>
+        </p>
+        <p class="py-2" set:html={t("attending.server_structure_text_2")} />
+        <ul class="list-disc pl-10 py-1">
+          <li set:html={t("attending.server_structure_reg_form")} />
+          <li><span set:html={t("attending.server_structure_reg_help")} /></li>
+        </ul>
+        <p class="py-2"><span set:html={t("attending.server_structure_text_3")} /></p>
+        <h3 class="pt-5 pb-2 text-xl font-semibold leading-8">
+            {t("attending.updates_title")}
+        </h3>
+        <p set:html={t("attending.updates_text")} />
+        <ul class="list-disc pl-10 py-1">
+            <li set:html={t("attending.updates_announcements")} />
+            <li set:html={t("attending.updates_social")} />
+            <li set:html={t("attending.updates_donations")} />
+            <li set:html={t("attending.updates_notifications")} />
+            <li set:html={t("attending.updates_events")} />
+        </ul>
+        <h3 class="pt-5 pb-2 text-xl font-semibold leading-8">
+            {t("attending.interact_title")}
+        </h3>
+        <p set:html={t("attending.interact_text")} />
+        <ul class="list-disc pl-10 py-1">
+            <li set:html={t("attending.interact_welcome")} />
+            <li set:html={t("attending.interact_general")} />
+            <li set:html={t("attending.interact_networking")} />
+            <li set:html={t("attending.interact_random")} />
+            <li set:html={t("attending.interact_jobs")} />
+            <li set:html={t("attending.interact_resources")} />
+            <li set:html={t("attending.interact_news")} />
+            <li set:html={t("attending.interact_help")} />
+            <li set:html={t("attending.interact_core_devs")} />
+            <li set:html={t("attending.interact_game")} />
+            <li set:html={t("attending.interact_ranking")} />
+        </ul>
+        <p set:html={t("attending.tracks_text")} />
+        <ul class="list-disc pl-10 py-1">
+            <li set:html={t("attending.tracks_main")} />
+            <li set:html={t("attending.tracks_activities")} />
+        </ul>
+      </div>
+    </div>
+  </Container>
+</Layout>

@@ -6,6 +6,11 @@ import Filter from "@components/sessions/filter.astro";
 import ListSessions from "@components/sessions/list-sessions.astro";
 
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import { getLocaleStaticPaths } from "../../i18n/locales";
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

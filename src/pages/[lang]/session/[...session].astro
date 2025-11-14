@@ -8,6 +8,7 @@ import ISO6391 from 'iso-639-1';
 
 
 import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
+import { getSupportedLocales } from "../../../i18n/locales";
 
 const { session } = Astro.params;
 const lang = getLangFromUrl(Astro.url);
@@ -21,9 +22,18 @@ const getLanguageName = (code: string): string => {
 };
 
 export async function getStaticPaths() {
-  return Object.values(Submissions).map(s => ({
-    params: { session: s.slug },
-  }));
+  const locales = getSupportedLocales();
+  const paths = [];
+  
+  for (const locale of locales) {
+    for (const submission of Object.values(Submissions)) {
+      paths.push({
+        params: { lang: locale, session: submission.slug },
+      });
+    }
+  }
+  
+  return paths;
 }
 
 ---

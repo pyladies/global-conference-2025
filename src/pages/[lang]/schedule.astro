@@ -3,8 +3,13 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
 import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { getLocaleStaticPaths } from "../../i18n/locales";
 import { Icon } from "astro-icon/components";
 import scheduleData from "../../data/schedule.json";
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -16,10 +21,7 @@ const t = useTranslations(lang);
       <Fragment slot="subtitle">{t("schedule.subtitle")}</Fragment>
       <Fragment slot="title">{t("schedule.title")}</Fragment>
       <Fragment slot="description">
-          La edición de este año de PyLadiesCon está repleta de interesantes oportunidades de
-          aprendizaje y participación en la comunidad. Al registrarte, tendrás acceso a: ponencias
-          principales, charlas, sesiones interactivas y paneles, oportunidades para establecer
-          contactos y mucho más.
+          {t("schedule.description")}
       </Fragment>
     </Sectionhead>
 
@@ -42,7 +44,7 @@ const t = useTranslations(lang);
           >
             <span class="flex items-center gap-2">
               <Icon name="bx:bx-current-location" class="w-5 h-5" />
-              <span id="local-tz-name">Local Time</span>
+              <span id="local-tz-name">{t("schedule.local_time")}</span>
             </span>
           </button>
         </div>
@@ -57,39 +59,39 @@ const t = useTranslations(lang);
       <div class="max-w-6xl mx-auto mt-12 p-6 bg-gray-50 dark:bg-gray-800 rounded-xl">
         <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
           <Icon name="bx:bx-info-circle" class="w-6 h-6" />
-          Session Types
+          {t("schedule.session_types")}
         </h3>
         <div class="flex flex-wrap gap-3">
           <span class="px-4 py-2 rounded-full text-sm font-semibold bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200">
-            Keynote
+            {t("schedule.keynote")}
           </span>
           <span class="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200">
-            Talk
+            {t("schedule.talk")}
           </span>
           <span class="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200">
-            Panel
+            {t("schedule.panel")}
           </span>
           <span class="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200">
-            Workshop
+            {t("schedule.workshop")}
           </span>
           <span class="px-4 py-2 rounded-full text-sm font-semibold bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200">
-            Sponsor Talk
+            {t("schedule.sponsor_talk")}
           </span>
         </div>
         
         <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4 mt-6 flex items-center gap-2">
           <Icon name="bx:bx-layer" class="w-6 h-6" />
-          Difficulty Levels
+          {t("schedule.difficulty_levels")}
         </h3>
         <div class="flex flex-wrap gap-3">
           <span class="px-4 py-2 rounded-full text-sm font-semibold bg-green-500 text-white">
-            Beginner
+            {t("schedule.difficulty.beginner")}
           </span>
           <span class="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-500 text-white">
-            Intermediate
+            {t("schedule.difficulty.intermediate")}
           </span>
           <span class="px-4 py-2 rounded-full text-sm font-semibold bg-red-500 text-white">
-            Advanced
+            {t("schedule.difficulty.advanced")}
           </span>
         </div>
       </div>
@@ -375,7 +377,7 @@ const t = useTranslations(lang);
                 <div class="flex items-center gap-3 flex-wrap">
                   <svg class="w-5 h-5 text-purple-600 dark:text-purple-400" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>
                   ${event.speakers.map((speaker) => `
-                    <a href="/es${toRelativeUrl(speaker.website_url)}" class="flex items-center gap-2 group/speaker">
+                    <a href="/en${toRelativeUrl(speaker.website_url)}" class="flex items-center gap-2 group/speaker">
                       ${speaker.avatar ? `<img src="${speaker.avatar}" alt="${speaker.name}" class="w-8 h-8 rounded-full border-2 border-purple-500" />` : ''}
                       <span class="font-medium text-gray-700 dark:text-gray-300 group-hover/speaker:text-purple-600 dark:group-hover/speaker:text-purple-400 transition-colors">${speaker.name}</span>
                     </a>
@@ -415,7 +417,7 @@ const t = useTranslations(lang);
                       </span>
                     </div>
                     ${event.website_url ? `
-                      <a href="/es${toRelativeUrl(event.website_url)}" class="group/link">
+                      <a href="/en${toRelativeUrl(event.website_url)}" class="group/link">
                         <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover/link:text-purple-600 dark:group-hover/link:text-purple-400 transition-colors">
                           ${event.title}
                         </h3>

@@ -7,6 +7,11 @@ import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
 import { Icon } from "astro-icon/components";
 import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+import { getLocaleStaticPaths } from "../../i18n/locales";
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -41,14 +46,14 @@ const jobs = [
 <Layout title="Job Board">
   <Container>
     <Sectionhead>
-      <Fragment slot="subtitle">Encuentra oportunidades de nuestro patrocinadores</Fragment>
-      <Fragment slot="title">Bolsa de trabajo</Fragment>
+      <Fragment slot="subtitle">{t("jobs.subtitle")}</Fragment>
+      <Fragment slot="title">{t("jobs.title")}</Fragment>
       <Fragment slot="description">
       </Fragment>
     </Sectionhead>
 
     <div class="grid md:grid-cols-1 gap-10 mx-auto max-w-5xl mt-5">
-      {jobs.length === 0 && <div class="my-10 text-center dark:text-white"><h3>-- No Jobs were added so far --</h3></div>}
+      {jobs.length === 0 && <div class="my-10 text-center dark:text-white"><h3>{t("jobs.no_jobs")}</h3></div>}
       {
         jobs.map((job) => <JobsBoard details={job} />)
       }

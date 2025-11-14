@@ -2,7 +2,7 @@
 import LocaleRedirect from "../components/ui/localeredirect.astro";
 
 export async function getStaticPaths() {
-  const pages = import.meta.glob('./en/**/*.astro', { eager: true });
+  const pages = import.meta.glob('./[lang]/**/*.astro', { eager: true });
   const topLevel = Object.keys(pages)
     .map(path => path.split('/').pop()?.replace('.astro', ''))
     .filter(Boolean);
