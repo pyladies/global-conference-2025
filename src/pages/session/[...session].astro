@@ -1,0 +1,15 @@
+---
+import LocaleRedirect from "../../components/ui/localeredirect.astro";
+import Submissions from "../../data/sessions.json";
+
+export async function getStaticPaths() {
+  return Object.values(Submissions).map(s => ({
+    params: { session: s.slug },
+  }));
+}
+
+const { session } = Astro.params;
+const pathTemplate = `/{lang}/session/${session}`;
+---
+
+<LocaleRedirect pathTemplate={pathTemplate} />

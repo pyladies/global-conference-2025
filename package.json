@@ -4,10 +4,10 @@
 	"version": "1.0.1",
 	"private": true,
 	"scripts": {
-		"predev": "node scripts/fetch_speakers_sessions_json.js",
+		"predev": "node scripts/fetch_program.js",
 		"dev": "astro dev --host",
 		"start": "astro dev",
-		"prebuild": "node scripts/fetch_speakers_sessions_json.js",
+		"prebuild": "node scripts/fetch_program.js",
 		"build": "astro build",
 		"build:localized": "pnpm run build",
 		"preview": "astro preview",

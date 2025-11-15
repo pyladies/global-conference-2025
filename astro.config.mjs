@@ -6,6 +6,7 @@ import { autolinkConfig } from "./plugins/rehype-autolink-config";
 import rehypeSlug from "rehype-slug";
 import alpinejs from "@astrojs/alpinejs";
 import icon from "astro-icon";
+import { getSupportedLocales, defaultLang } from "./src/i18n/locales";
 
 // https://astro.build/config
 export default defineConfig({
@@ -29,10 +30,11 @@ export default defineConfig({
 		],
 	},
 	i18n: {
-		locales: ["en", "es"],
-		defaultLocale: "en",
+		locales: getSupportedLocales(),
+		defaultLocale: defaultLang,
 		routing: {
 			prefixDefaultLocale: true,
+			redirectToDefaultLocale: false,
 		},
 	}
 });

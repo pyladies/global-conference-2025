@@ -1,0 +1,154 @@
+---
+import Container from "@components/container.astro";
+import SpeakerData from "../../../data/speakers.json";
+import Submissions from "../../../data/sessions.json";
+import Layout from "@layouts/Layout.astro";
+import SpeakersComponent from "@components/speakers.astro";
+import ISO6391 from 'iso-639-1';
+
+
+import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
+import { getSupportedLocales } from "../../../i18n/locales";
+
+const { session } = Astro.params;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const speakers = Object.entries(SpeakerData);
+const submissions = Object.entries(Submissions);
+
+const getLanguageName = (code: string): string => {
+  const name = ISO6391.getName(code);
+  return name || code;
+};
+
+export async function getStaticPaths() {
+  const locales = getSupportedLocales();
+  const paths = [];
+  
+  for (const locale of locales) {
+    for (const submission of Object.values(Submissions)) {
+      paths.push({
+        params: { lang: locale, session: submission.slug },
+      });
+    }
+  }
+  
+  return paths;
+}
+
+---
+
+<Layout title="Sessions">
+  <Container>
+    {
+      submissions
+        .filter(([key, value]) => value.slug === session)
+        .map(([key, value]) => (
+          <div class="my-12">
+            <h1 class="text-4xl font-bold mb-4 text-black dark:text-white text-left">{value.title}</h1>
+            
+            <!-- Session details section -->
+            <div class="mt-16">
+              <div class="max-w-md xs:text-center">
+                <div class="grid grid-cols-1 md:grid-cols-2 mt-6 gap-2 text-center md:text-left lg:text-left">
+                { value.track &&
+                ( 
+                <p class="text-black dark:text-white font-bold">{t("session.track")}</p>
+                <p class="text-black dark:text-white  break-normal whitespace-pre-wrap">{value.track}</p>)
+
+              }
+              { value.session_type &&
+                ( <p class="text-black dark:text-white font-bold ">{t("session.type")}</p>
+                <p class="text-black dark:text-white  break-normal whitespace-pre-wrap">{value.session_type}</p>)
+              
+              }
+              { value.level &&
+                ( 
+                <p class="text-black dark:text-white font-bold">{t("session.level")}</p>
+                <p class="text-black dark:text-white  break-normal whitespace-pre-wrap">{value.level}</p>)
+              
+              }
+              { value.language &&
+                ( 
+                <p class="text-black dark:text-white font-bold">{t("session.language")}</p>
+                <p class="text-black dark:text-white  break-normal whitespace-pre-wrap">{getLanguageName(value.language)}</p>)
+              
+              }
+                { value.room &&
+                ( 
+                <p class="text-black dark:text-white font-bold">{t("session.room")}</p>
+                <p class="text-black dark:text-white  break-normal whitespace-pre-wrap">{value.room}</p>)
+              
+              }
+              
+                { value.start &&
+                ( 
+                <p class="text-black dark:text-white font-bold">{t("session.start")}</p>
+                <p class="text-black dark:text-white  break-normal whitespace-pre-wrap">{value.start}</p>)
+              
+              }
+              
+                { value.end &&
+                ( 
+                <p class="text-black dark:text-white font-bold">{t("session.end")}</p>
+                <p class="text-black dark:text-white  break-normal whitespace-pre-wrap">{value.end}</p>)
+              
+              }
+                { value.duration &&
+                ( 
+                <p class="text-black dark:text-white font-bold">{t("session.duration")}</p>
+                <p class="text-black dark:text-white  break-normal whitespace-pre-wrap">{value.duration} {t("session.minutes")}</p>)
+              
+              }
+              </div>
+              
+              </div>
+              
+            </div>
+
+
+            <!--Abstract section -->
+            <div class="mt-20">
+              <h2 class="text-3xl font-bold text-black dark:text-white">{t("session.abstract")}</h3>
+            <p class="mt-4 text-lg leading-relaxed dark:text-white mb-6">
+              {value.abstract}
+            </p>
+            </div>
+              
+            <!--Speakers section -->
+            <div class="mt-16">
+              <h2 class="text-3xl font-bold mb-4 text-black dark:text-white">{t("session.speakers")}</h2>
+              <div class="mx-auto mt-2 max-w-2xl sm:mt-1 lg:mt-2 lg:max-w-none justify-center">
+                  <dl class="grid ax-w-none md:grid-cols-3 gap-x-3 gap-y-1 lg:max-w-none lg:grid-cols-5">
+                    
+                     {
+                  
+                  value.speakers.map((speakerId) => (
+                    speakers.filter(([spkKey, spkValue]) => spkKey === speakerId).map(([spkKey, spkValue]) => (
+                     
+                    <div>
+                      <SpeakersComponent
+                              speakerInfo={spkValue}
+                              speakerSubmissions={spkValue.submissions.map(
+                                  (sub) => Submissions[sub],
+                              )}
+                          />
+                        
+                    </div>
+                )
+                  )))
+                }
+                  </dl>
+                </div>
+             
+            </div>
+            
+
+            <!-- Other sessions -->
+
+            
+          </div>
+        ))
+    }
+  </Container>
+</Layout>

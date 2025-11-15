@@ -1,0 +1,134 @@
+---
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import SpeakerData from "../../../data/speakers.json";
+import Submissions from "../../../data/sessions.json";
+import Layout from "@layouts/Layout.astro";
+
+import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
+import { getSupportedLocales } from "../../../i18n/locales";
+
+const { slug } = Astro.params;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const speakers = Object.entries(SpeakerData);
+const submissions = Object.entries(Submissions);
+
+
+export async function getStaticPaths() {
+  const locales = getSupportedLocales();
+  const paths = [];
+  
+  for (const locale of locales) {
+    for (const speaker of Object.values(SpeakerData)) {
+      paths.push({
+        params: { lang: locale, slug: speaker.slug },
+      });
+    }
+  }
+  
+  return paths;
+}
+
+---
+
+<Layout title="Speakers">
+  <Container>
+    {
+      speakers
+        .filter(([key, value]) => value.slug === slug)
+        .map(([key, value]) => (
+          <div class="flex flex-col md:flex-row items-center md:items-start gap-10 my-12">
+            
+            <div class="flex-shrink-0 w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg">
+              <img
+                class="w-full h-full object-cover"
+                src={value.avatar || "/logo.svg"}
+                alt={value.name}
+              />
+            </div>
+
+            <div class="text-center md:text-left max-w-2xl">
+              <h1 class="text-4xl font-bold mb-4 text-pinkpyladies">{value.name}</h1>
+              {value.affiliation && (
+                <h2 class="text-xl font-thin italic text-black dark:text-white mb-4">{value.affiliation}</h2>
+              )}
+              <p class="text-lg leading-relaxed dark:text-white">
+                {value.biography}
+              </p>
+            </div>
+          </div>
+          
+            <div class="mt-16">
+              <h2 class="text-3xl font-bold text-black dark:text-white">{t("speakers.more_about")}</h3>
+              <div class="max-w-md">
+                <div class="grid grid-cols-1 md:grid-cols-2 mt-6 ">
+                { value.homepage &&
+                ( 
+                <p class="text-black dark:text-white font-bold">Homepage</p>
+                <a class="text-black dark:text-white underline break-all whitespace-pre-wrap" href={value.homepage.startsWith('http') ? value.homepage : `https://${value.homepage}`}>{value.homepage}</a>)
+
+              }
+              { value.linkedin_url &&
+                ( 
+                <p class="text-black dark:text-white font-bold ">LinkedIn</p>
+                <a class="text-black dark:text-white underline break-all whitespace-pre-wrap" href={value.linkedin_url}>{value.linkedin_url}</a>)
+              
+              }
+              { value.mastodon_url &&
+                ( 
+                <p class="text-black dark:text-white font-bold">Mastodon</p>
+                <a class="text-black dark:text-white underline break-all whitespace-pre-wrap" href={value.mastodon_url}>{value.mastodon_url}</a>)
+              
+              }
+                { value.bluesky_url &&
+                ( 
+                <p class="text-black dark:text-white font-bold">Bluesky</p>
+                <a class="text-black dark:text-white underline break-all whitespace-pre-wrap" href={value.bluesky_url}>{value.bluesky_url}</a>)
+              
+              }
+              
+                { value.instagram_url &&
+                ( 
+                <p class="text-black dark:text-white font-bold">Instagram</p>
+                <a class="text-black dark:text-white underline break-all whitespace-pre-wrap" href={value.instagram_url}>{value.instagram_url}</a>)
+              
+              }
+              
+                { value.gitx_url &&
+                ( 
+                <p class="text-black dark:text-white font-bold">Git</p>
+                <a class="text-black dark:text-white underline break-all whitespace-pre-wrap" href={value.gitx_url}>{value.gitx_url}</a>)
+              
+              }
+                { value.twitter_url &&
+                ( 
+                <p class="text-black dark:text-white font-bold">X (Twitter)</p>
+                <a class="text-black dark:text-white underline break-all whitespace-pre-wrap" href={value.twitter_url}>{value.twitter_url}</a>)
+              
+              }
+              </div>
+              
+              </div>
+              
+            </div>
+            
+            <div class="mt-16">
+              <h2 class="text-3xl font-bold text-black dark:text-white">{t("speakers.sessions_by")} {value.name}</h3>
+              <ol class="list-decimal list-inside">
+                {
+                  value.submissions.map((submissionId) => (
+                    submissions.filter(([subKey, subValue]) => subKey === submissionId).map(([subKey, subValue]) => (
+                      <li class="mt-4 text-black dark:text-white">
+                        <a class="text-xl font-semibold" href={`/session/${subValue.slug}`}>{subValue.title}</a>
+                      </li>)
+                  )))
+                }
+              </ol>
+
+            </div>
+
+        ))
+    }
+  </Container>
+</Layout>

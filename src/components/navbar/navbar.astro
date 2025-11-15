@@ -33,7 +33,6 @@ export const menuitems = [
       { title: "header.sessions", path: "/sessions" },
       { title: "header.speakers", path: "/speakers" },
       { title: "header.sprints", path: "/sprints" },
-      { title: "header.speakers", path: "/speakers" },
       { title: "header.attending_menu", path: "/attending" },
     ],
   },
@@ -175,11 +174,7 @@ export const menuitems = [
         )
       }
     </div>
-	<LanguageSelector
-		showFlag={false}
-		languageMapping={{ en: "EN", es: "ES" }}
-		class="appearance-none py-1 px-2 rounded bg-slate-100 dark:bg-stone-950"
-	/>
+	<LanguageSelector />
 	<ThemeSelector />
     <TicketButton class="mt-4 md:mt-0 hidden md:block" />
   </nav>

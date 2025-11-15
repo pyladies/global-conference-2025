@@ -1,0 +1,25 @@
+---
+import Container from "@components/container.astro";
+import Faq from "@components/faq.astro";
+import EventDetails from "@components/event.astro";
+import Hero from "@components/hero.astro";
+import Organization from "@components/organization.astro";
+import Sponsors from "@components/sponsors_gallery.astro";
+import Layout from "@layouts/Layout.astro";
+import Keynotes from "@components/keynotes.astro";
+import { getLocaleStaticPaths } from "../../i18n/locales";
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
+---
+<Layout>
+  <Container>
+    <Hero />
+    <EventDetails />
+    <Keynotes />
+    <Faq />
+    <Organization />
+    <Sponsors />
+  </Container>
+</Layout>

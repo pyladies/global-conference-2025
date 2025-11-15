@@ -1,0 +1,28 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { getLocaleStaticPaths } from "../i18n/locales";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title={t("404.title")}>
+	<section class="flex items-center h-full p-16">
+		<div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
+			<div class="max-w-md text-center">
+				<h2 class="mb-8 font-bold text-9xl">
+					<span class="sr-only">Error</span>
+					<span class="text-primary">404</span>
+				</h2>
+				<p class="text-3xl font-semibold md:text-3xl">{t("404.not_found")}</p>
+				<p class="mt-4 mb-8 text-lg text-muted dark:text-slate-400">{t("404.message")}</p>
+				<a rel="noopener noreferrer" href={"/"} class="btn text-3xl">{t("404.back_home")}</a>
+			</div>
+		</div>
+	</section>
+</Layout>

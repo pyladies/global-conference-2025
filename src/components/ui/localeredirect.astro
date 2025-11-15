@@ -1,0 +1,21 @@
+---
+import { getSupportedLocales, defaultLang } from "../../i18n/locales";
+
+export interface Props {
+  // template path with a {lang} token "/{lang}/speakers"
+  pathTemplate: string;
+}
+
+const { pathTemplate } = Astro.props as Props;
+const supported = getSupportedLocales().join(",");
+const fallback = pathTemplate.replace("{lang}", defaultLang);
+---
+
+<!-- script picks best supported lang, noscript falls back to default locale -->
+<script src="/js/locale-redirect.js" data-path-template={pathTemplate} data-supported={supported} data-default={defaultLang}></script>
+<noscript>
+  <meta http-equiv="refresh" content={`0;url=${fallback}`}/>
+  <link rel="canonical" href={fallback} />
+  <meta name="robots" content="noindex" />
+  <p><a href={fallback}>Continue</a></p>
+</noscript>

@@ -9,7 +9,7 @@ const { speakerInfo } = Astro.props;
 ---
 
 <div class="speaker-item flex py-4 flex-col hover:bg-gray-100 dark:hover:bg-gray-900 hover:rounded-xl cursor-pointer transition-all duration-300"
-onclick={`window.location.href='${t("speakers.slug_url")}${speakerInfo.slug}'`}>
+onclick={`window.location.href='/speaker/${speakerInfo.slug}'`}>
   <dt
       class="block mx-auto items-center gap-x-3 text-base font-semibold leading-7 text-black dark:text-white"
     >
