@@ -17,14 +17,14 @@ const getLanguageName = (code: string): string => {
 <form class="mb-8 filter-sessions bg-gray-50 dark:bg-gray-800 p-6 rounded-lg border-2 border-gray-200 dark:border-gray-700">
   <div class="w-full mb-6">
     <label for="sessionSearch" class="block text-base font-semibold mb-2 text-gray-700 dark:text-gray-200">
-      🔍 {t('sessions.filter_search')}
+      🔍 {t('Search')}
     </label>
     <input
       type="text"
       id="sessionSearch"
       name="search"
       class="block w-full bg-white dark:bg-gray-900 text-base h-12 py-2 px-4 border-2 border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-pinkpyladies focus:border-transparent dark:text-white transition-all duration-200"
-      placeholder={t('sessions.filter_search_placeholder')}
+      placeholder={t('Search by title, speaker, or description...')}
     />
   </div>
 
@@ -32,14 +32,14 @@ const getLanguageName = (code: string): string => {
     {allTracks.length > 0 && (
       <div>
         <label for="track" class="block text-base font-semibold mb-2 text-gray-700 dark:text-gray-200">
-          {t('sessions.filter_track')}
+          {t('Track')}
         </label>
         <select
           id="track"
           name="track"
           class="block w-full bg-white dark:bg-gray-900 text-base h-12 py-2 px-4 pr-10 border-2 border-gray-300 dark:border-gray-600 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-pinkpyladies focus:border-transparent dark:text-white transition-all duration-200 cursor-pointer"
         >
-          <option value="">{t('sessions.filter_track_all')}</option>
+          <option value="">{t('All Tracks')}</option>
           {allTracks.map((track: string) => (
             <option value={track}>{track}</option>
           ))}
@@ -50,14 +50,14 @@ const getLanguageName = (code: string): string => {
     {allTypes.length > 0 && (
       <div>
         <label for="type" class="block text-base font-semibold mb-2 text-gray-700 dark:text-gray-200">
-          {t('sessions.filter_type')}
+          {t('Session Type')}
         </label>
         <select
           id="type"
           name="type"
           class="block w-full bg-white dark:bg-gray-900 text-base h-12 py-2 px-4 pr-10 border-2 border-gray-300 dark:border-gray-600 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-pinkpyladies focus:border-transparent dark:text-white transition-all duration-200 cursor-pointer"
         >
-          <option value="">{t('sessions.filter_type_all')}</option>
+          <option value="">{t('All Types')}</option>
           {allTypes.map((type: string) => (
             <option value={type}>{type}</option>
           ))}
@@ -68,14 +68,14 @@ const getLanguageName = (code: string): string => {
     {allLevels.length > 0 && (
       <div>
         <label for="level" class="block text-base font-semibold mb-2 text-gray-700 dark:text-gray-200">
-          {t('sessions.filter_level')}
+          {t('Level')}
         </label>
         <select
           id="level"
           name="level"
           class="block w-full bg-white dark:bg-gray-900 text-base h-12 py-2 px-4 pr-10 border-2 border-gray-300 dark:border-gray-600 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-pinkpyladies focus:border-transparent dark:text-white transition-all duration-200 cursor-pointer"
         >
-          <option value="">{t('sessions.filter_level_all')}</option>
+          <option value="">{t('All Levels')}</option>
           {allLevels.map((level: string) => (
             <option value={level}>{level}</option>
           ))}
@@ -86,14 +86,14 @@ const getLanguageName = (code: string): string => {
     {allLanguages.length > 0 && (
       <div>
         <label for="language" class="block text-base font-semibold mb-2 text-gray-700 dark:text-gray-200">
-          {t('sessions.filter_language')}
+          {t('Language')}
         </label>
         <select
           id="language"
           name="language"
           class="block w-full bg-white dark:bg-gray-900 text-base h-12 py-2 px-4 pr-10 border-2 border-gray-300 dark:border-gray-600 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-pinkpyladies focus:border-transparent dark:text-white transition-all duration-200 cursor-pointer"
         >
-          <option value="">{t('sessions.filter_language_all')}</option>
+          <option value="">{t('All Languages')}</option>
           {allLanguages.map((language: string) => (
             <option value={language}>{getLanguageName(language)}</option>
           ))}
@@ -110,7 +110,7 @@ const getLanguageName = (code: string): string => {
     <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
     </svg>
-    {t('sessions.filter_reset')}
+    {t('Reset Filters')}
   </button>
 </form>
 
@@ -118,8 +118,8 @@ const getLanguageName = (code: string): string => {
 <div 
   id="results-info" 
   class="mb-6 text-base font-semibold text-gray-700 dark:text-gray-300 px-2"
-  data-text-result={t('sessions.results_count')}
-  data-text-no-results={t('sessions.results_none')}
+  data-text-result={t('{count} result{plural} found.')}
+  data-text-no-results={t('No results found.')}
 ></div>
 
 <script>

@@ -7,51 +7,13 @@ import LanguageSelector from "@components/languageselector.astro";
 import { Icon } from "astro-icon/components";
 
 import { getLangFromUrl, useTranslations, useTranslatedPath } from '../../i18n/utils';
+import { getMenuItems } from '../../data/menuItems';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 
-export const menuitems = [
-  {
-    title: "header.about",
-    children: [
-      { title: "header.about_conference", path: "/#event" },
-      { title: "header.about_faq", path: "/#faq" },
-      { title: "header.about_organization", path: "/#organization" },
-    ],
-  },
-  {
-   title: "header.blog",
-   path: "",
-   url: "https://conference.pyladies.com/blog/",
-  },
-  {
-    title: "header.program",
-    "children": [
-      { title: "header.schedule", path: "/schedule" },
-      { title: "header.sessions", path: "/sessions" },
-      { title: "header.speakers", path: "/speakers" },
-      { title: "header.sprints", path: "/sprints" },
-      { title: "header.attending_menu", path: "/attending" },
-    ],
-  },
-  {
-    title: "header.sponsors",
-    children: [
-      { title: "header.sponsorsplan", path: "/sponsors" },
-      { title: "header.jobs", path: "/jobs" },
-    ],
-  },
-  {
-    title: "header.coc",
-    children: [
-      { title: "header.coc_read", path: "/coc" },
-      { title: "header.coc_reporting", path: "/coc-reporting" },
-      { title: "header.coc_enforcing", path: "/coc-enforcing" },
-    ],
-  },
-];
+const menuitems = getMenuItems(t);
 ---
 
 <div
@@ -101,7 +63,7 @@ export const menuitems = [
           item.children && item.children.length ? (
             <div x-on:click.away="open = false" class="relative" x-data="{ open: false }">
               <Button x-on:click="open = !open" style="link" size="sm" class="mt-[2px]">
-                {t(item.title)}
+                {item.title}
                 <svg
                   fill="currentColor"
                   viewBox="0 0 20 20"
@@ -143,7 +105,7 @@ export const menuitems = [
                         document.addEventListener('astro:page-load', checkSubPath);
                       }`}
                       x-bind:class="{ 'bg-gray-200 dark:bg-gray-600': isActive }">
-                      {t(subitem.title)}
+                      {subitem.title}
                     </Link>
                   ))}
                 </div>
@@ -168,7 +130,7 @@ export const menuitems = [
               }`}
               x-bind:class="{ 'bg-gray-200 dark:bg-gray-600': isActive }"
               data-path={translatePath(item.path)}>
-              {t(item.title)}
+              {item.title}
             </Link>
           ),
         )

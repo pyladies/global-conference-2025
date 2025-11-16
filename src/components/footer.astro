@@ -1,13 +1,15 @@
 ---
 import LanguageSelector from "@components/languageselector.astro";
-import { menuitems } from "@components/navbar/navbar.astro";
 import ThemeSelector from "@components/themeselector.astro";
 import logo from "assets/logo.svg";
 import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+import { getMenuItems } from '../data/menuItems';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
+
+const menuitems = getMenuItems(t);
 
 export const socials = [
   {
@@ -67,11 +69,11 @@ export const socials = [
         menuitems.map((item) =>
           item.children && item.children.length ? (
               <div>
-                <b>{t(item.title)}</b>
+                <b>{item.title}</b>
                   {item.children.map((subitem) => (
                     <li role="listitem">
                       <a href={subitem.url || translatePath(subitem.path)} class="duration-300">
-                        {t(subitem.title)}
+                        {subitem.title}
                       </a>
                     </li>
                   ))}
@@ -79,7 +81,7 @@ export const socials = [
           ) : (
               <li role="listitem">
                 <a href={item.url || translatePath(item.path)} class="duration-300">
-                  {t(item.title)}
+                  {item.title}
                 </a>
               </li>
           )

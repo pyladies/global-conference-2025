@@ -19,26 +19,26 @@ const discordSvg = `<svg class="inline w-10 fill-indigo-500" role="img" viewBox=
 const steps = [
     {
         number: 1,
-        title: t("attending.step_1_title"),
-        subtitle: t("attending.step_1_subtitle"),
+        title: t("Get your ticket"),
+        subtitle: t("Visit pretix to get one."),
         url: "#get-ticket",
     },
     {
         number: 2,
-        title: t("attending.step_2_title"),
-        subtitle: t("attending.step_2_subtitle"),
+        title: t("Join Discord"),
+        subtitle: t("Using the invite link"),
         url: "#join-discord",
     },
     {
         number: 3,
-        title: t("attending.step_3_title"),
-        subtitle: t("attending.step_3_subtitle"),
+        title: t("Register in Discord"),
+        subtitle: t("With your <b>Name</b> and <b>Order number</b>"),
         url: "#register-discord",
     },
     {
         number: 4,
-        title: t("attending.step_4_title"),
-        subtitle: t("attending.step_4_subtitle"),
+        title: t("Enjoy the conference!"),
+        subtitle: t("Check the server structure"),
         url: "#server-structure",
     },
 ];
@@ -46,11 +46,11 @@ const steps = [
 <Layout title="Discord">
   <Container>
     <Sectionhead>
-      <Fragment slot="subtitle">{t("header.attending_subtitle")}</Fragment>
-          <Fragment slot="title">{t("header.attending")} <span class="pl-2" set:html={discordSvg}/></Fragment>
+      <Fragment slot="subtitle">{t("The online venue of the conference")}</Fragment>
+          <Fragment slot="title">{t("Attending PyLadiesCon")} <span class="pl-2" set:html={discordSvg}/></Fragment>
       <Fragment slot="description">
-        {t("attending.description")}<br>
-        {t("attending.follow_steps")}
+        {t("Join the conference Discord server to meet every participant, including Speakers, Sponsors, Keynotes, Volunteers and Organizers. Enjoy talks, workshops, open spaces, get stream links, and many more activities!")}<br>
+        {t("Follow the next steps to enjoy the conference:")}
       </Fragment>
     </Sectionhead>
 
@@ -61,7 +61,7 @@ const steps = [
         </svg>
         <span class="sr-only">Info</span>
         <div>
-          <span class="font-bold">{t("attending.attention")}</span> {t("attending.discord_unavailable")}
+          <span class="font-bold">{t("Attention!")}</span> {t("The discord server is still not available. We will keep you posted.")}
         </div>
       </div>
     </div>
@@ -90,7 +90,7 @@ const steps = [
     <!-- Long explanation of the server -->
     <div class="mx-auto max-w-5xl mt-10 text-black dark:text-white">
       <h2 class="text-3xl mt-4 py-10" id="get-ticket">
-        {t("attending.step_1_title")}
+        {t("Get your ticket")}
       </h2>
       <div class="pl-5">
         <div class="flex items-center p-4 mb-4 text-sm text-yellow-800 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300" role="alert">
@@ -98,12 +98,12 @@ const steps = [
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
           </svg>
           <span class="sr-only">Info</span>
-          <div set:html={t("attending.get_ticket_important")} />
+          <div set:html={t("<span class=\"font-bold\">Important:</span> every participant needs a <a class=\"underline\" href=\"https://pretix.eu/pyladiescon/2025\">conference ticket</a> in order to access the right channels in the Discord server; including Participants, Volunteers, and Sponsors.")} />
         </div>
-        <p class="py-2" set:html={t("attending.get_ticket_text")} />
+        <p class="py-2" set:html={t("You can get a conference ticket on <a href=\"https://pretix.eu/pyladiescon/2025\">our pretix page</a>.")} />
       </div>
       <h2 class="text-3xl mt-4 py-10" id="join-discord">
-        {t("attending.step_2_title")}
+        {t("Join Discord")}
       </h2>
       <div class="pl-5">
         <div class="flex items-center p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
@@ -111,84 +111,84 @@ const steps = [
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
           </svg>
           <span class="sr-only">Info</span>
-          <div set:html={t("attending.join_discord_note")} />
+          <div set:html={t("<span class=\"font-medium\"><b>Note:</b></span> In case you already have a Discord account, you don't need to create a new one.")} />
         </div>
-        <p class="py-2" set:html={t("attending.join_discord_text")} />
+        <p class="py-2" set:html={t("You should have received an invite link via email, but in case you cannot find it, use this one: <a href=\"#\">Not available yet</a>")} />
       </div>
       <h2 class="text-3xl mt-4 py-10" id="register-discord">
-        {t("attending.step_3_title")}
+        {t("Register in Discord")}
       </h2>
       <div class="pl-5">
-        <p class="py-2" set:html={t("attending.register_text_1")} />
-        <p class="py-2" set:html={t("attending.register_text_2")} />
+        <p class="py-2" set:html={t("Once inside the server, head to the <code class=\"text-blue-400\">#registration-form</code> channel, click on the <button type=\"button\" class=\"focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-3 py-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800\">Register here 👈</button> button and a modal window will open, where you will need to enter your <b>Name</b> and <b>Ticket number</b>.")} />
+        <p class="py-2" set:html={t("You need to enter <b>the exact</b> information from your conference ticket, that you received via email with a subject:<br><code class=\"text-gray-300\">[PyLadiesCon 2025] Your order: XXXXX</code>, when you acquired the ticket.")} />
         <h3 class="pt-5 pb-2 text-xl font-semibold leading-8">
-          {t("attending.participant_title")}
+          {t("Joining as an Participant")}
         </h3>
-        <p set:html={t("attending.participant_text_1")} />
-        <p set:html={t("attending.participant_text_2")} />
+        <p set:html={t("If this is your first PyLadiesCon, you should join Discord with the link that it will be sent to you a week before the conference.")} />
+        <p set:html={t("Once you register successfully, you will get assigned the <code class=\"text-yellow-400\">Participant</code> role.")} />
         <h3 class="py-5 pb-2 text-xl font-semibold leading-8">
-          {t("attending.sponsor_title")}
+          {t("Joining as a Sponsor")}
         </h3>
-        <p class="py-2" set:html={t("attending.sponsor_text_1")} />
-        <p set:html={t("attending.sponsor_text_2")} />
+        <p class="py-2" set:html={t("If you are from a company that is <b>sponsoring the conference</b>, and you will participate in the many activities like Panel Discussion, Speed Interview, sharing information in your company's channel, you need to get a ticket with the <b>Voucher</b> that it will be sent to you, through the contact person at your company.")} />
+        <p set:html={t("This is very important for you to get the <code class=\"text-yellow-400\">Sponsor</code> role.")} />
         <h3 class="pt-5 pb-2 text-xl font-semibold leading-8">
-          {t("attending.speaker_title")}
+          {t("Joining as a Speaker")}
         </h3>
-        <p set:html={t("attending.speaker_text")} />
+        <p set:html={t("If you have a confirmed Talk, Panel, or Keynote you should get a ticket using the Voucher that we will send you via email. The reason behind this is to automatically assign you the <code class=\"text-yellow-400\">Speaker</code> role.")} />
         <h3 class="pt-5 pb-2 text-xl font-semibold leading-8">
-          {t("attending.volunteer_title")}
+          {t("Joining as a Volunteer")}
         </h3>
-        <p set:html={t("attending.volunteer_text_1")} />
-        <p class="py-2" set:html={t("attending.volunteer_text_2")} />
+        <p set:html={t("If you are a conference Volunteer, it's highly probable you are already inside the server, but you <span class=\"text-red-500\">will not</span> have access to the conference channels as long as you don't get a conference ticket, and do the registration process described at the top of this page.")} />
+        <p class="py-2" set:html={t("If by some reason you haven't been assigned the <code class=\"text-yellow-400\">Volunteer</code> contact the organization in the <code class=\"text-blue-400\">#volunteers-general</code> channel.")} />
       </div>
       <h2 class="text-3xl mt-4 py-10" id="server-structure">
-        {t("attending.server_structure_title")}
+        {t("The server structure")}
       </h2>
       <div class="pl-5">
-        <p set:html={t("attending.server_structure_text_1")} />
+        <p set:html={t("Once you join the server, you will see two categories, one called <b>Conference Information</b> with two channels:")} />
         <ul class="list-disc pl-10 py-1">
-            <li set:html={t("attending.server_structure_rules")} />
-            <li set:html={t("attending.server_structure_coc")} />
+            <li set:html={t("a text channel called <code class=\"text-blue-400\">#rules</code>, with the rules of the server, and")} />
+            <li set:html={t("a text channel called <code class=\"text-blue-400\">#code-of-conduct</code>, with the guidelines to participate in the event")} />
         </ul>
         </p>
-        <p class="py-2" set:html={t("attending.server_structure_text_2")} />
+        <p class="py-2" set:html={t("Another category called <b>Registration</b> with two channels:")} />
         <ul class="list-disc pl-10 py-1">
-          <li set:html={t("attending.server_structure_reg_form")} />
-          <li><span set:html={t("attending.server_structure_reg_help")} /></li>
+          <li set:html={t("a text channel called <code class=\"text-blue-400\">#registration-form</code> where you can see the button to register, and")} />
+          <li><span set:html={t("a forum channel called <code class=\"text-blue-400\">💬registration-help</code>, where you can ask any question regarding the registration process.")} /></li>
         </ul>
-        <p class="py-2"><span set:html={t("attending.server_structure_text_3")} /></p>
+        <p class="py-2"><span set:html={t("If you have any question after you registered, you can leave your question in the <code class=\"text-blue-400\">💬help</code> forum.")} /></p>
         <h3 class="pt-5 pb-2 text-xl font-semibold leading-8">
-            {t("attending.updates_title")}
+            {t("Get the latest updates")}
         </h3>
-        <p set:html={t("attending.updates_text")} />
+        <p set:html={t("Once registered, the <b>Conference Information</b> will contains more channels:")} />
         <ul class="list-disc pl-10 py-1">
-            <li set:html={t("attending.updates_announcements")} />
-            <li set:html={t("attending.updates_social")} />
-            <li set:html={t("attending.updates_donations")} />
-            <li set:html={t("attending.updates_notifications")} />
-            <li set:html={t("attending.updates_events")} />
+            <li set:html={t("<code class=\"text-blue-400\">#announcements</code>, to get the general conference announcements,")} />
+            <li set:html={t("<code class=\"text-blue-400\">#outreach-social-media</code>, to get the conference posts on social media, so you can share them,")} />
+            <li set:html={t("<code class=\"text-blue-400\">#donations</code>, to track the donations through <a href=\"https://pretix.eu/pyladiescon/2025\">Pretix</a> during the conference,")} />
+            <li set:html={t("<code class=\"text-blue-400\">#session-notifications</code>, to know the upcoming talks and events,")} />
+            <li set:html={t("<code class=\"text-blue-400\">#global-events</code>, to discover events happening in the rest of the world.")} />
         </ul>
         <h3 class="pt-5 pb-2 text-xl font-semibold leading-8">
-            {t("attending.interact_title")}
+            {t("Interact with others")}
         </h3>
-        <p set:html={t("attending.interact_text")} />
+        <p set:html={t("The <b>Conference</b> category will be visible once you register, and will contain the following channels:")} />
         <ul class="list-disc pl-10 py-1">
-            <li set:html={t("attending.interact_welcome")} />
-            <li set:html={t("attending.interact_general")} />
-            <li set:html={t("attending.interact_networking")} />
-            <li set:html={t("attending.interact_random")} />
-            <li set:html={t("attending.interact_jobs")} />
-            <li set:html={t("attending.interact_resources")} />
-            <li set:html={t("attending.interact_news")} />
-            <li set:html={t("attending.interact_help")} />
-            <li set:html={t("attending.interact_core_devs")} />
-            <li set:html={t("attending.interact_game")} />
-            <li set:html={t("attending.interact_ranking")} />
+            <li set:html={t("<code class=\"text-blue-400\">#welcome</code>, for you to introduce yourself and say hi to others,")} />
+            <li set:html={t("<code class=\"text-blue-400\">#general</code>, for a general conference discussion,")} />
+            <li set:html={t("<code class=\"text-blue-400\">#networking</code>, so you can share your social media to connect with others,")} />
+            <li set:html={t("<code class=\"text-blue-400\">#random</code>, for any discussion not related to the conference,")} />
+            <li set:html={t("<code class=\"text-blue-400\">#job-board</code>, in case you are looking for job offers,")} />
+            <li set:html={t("<code class=\"text-blue-400\">#resources</code>, for sharing python-related resources,")} />
+            <li set:html={t("<code class=\"text-blue-400\">#news-discussion</code>, to interact with the latest Python/PyLadies blog posts,")} />
+            <li set:html={t("<code class=\"text-blue-400\">#help</code>, in case you need help with something,")} />
+            <li set:html={t("<code class=\"text-blue-400\">#ask-core-devs</code>, for you to meet and ask the many Python Core developers that will be around,")} />
+            <li set:html={t("<code class=\"text-blue-400\">#game</code>, for a little game we have prepared for you,")} />
+            <li set:html={t("<code class=\"text-blue-400\">#game-ranking</code>, to see the ranking of the game!,")} />
         </ul>
-        <p set:html={t("attending.tracks_text")} />
+        <p set:html={t("And more importantly, you also will have channels related to the tracks of the conference:")} />
         <ul class="list-disc pl-10 py-1">
-            <li set:html={t("attending.tracks_main")} />
-            <li set:html={t("attending.tracks_activities")} />
+            <li set:html={t("<code class=\"text-blue-400\">#main-stream</code>, for the main conference track,")} />
+            <li set:html={t("<code class=\"text-blue-400\">#activities-open-spaces</code>, for the track for Activities, Workshops, and Open Spaces,")} />
         </ul>
       </div>
     </div>
