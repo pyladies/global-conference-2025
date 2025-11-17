@@ -46,14 +46,14 @@ const jobs = [
 <Layout title="Job Board">
   <Container>
     <Sectionhead>
-      <Fragment slot="subtitle">{t("jobs.subtitle")}</Fragment>
-      <Fragment slot="title">{t("jobs.title")}</Fragment>
+      <Fragment slot="subtitle">{t("Find opportunities from our sponsors")}</Fragment>
+      <Fragment slot="title">{t("Job Board")}</Fragment>
       <Fragment slot="description">
       </Fragment>
     </Sectionhead>
 
     <div class="grid md:grid-cols-1 gap-10 mx-auto max-w-5xl mt-5">
-      {jobs.length === 0 && <div class="my-10 text-center dark:text-white"><h3>{t("jobs.no_jobs")}</h3></div>}
+      {jobs.length === 0 && <div class="my-10 text-center dark:text-white"><h3>{t("-- No Jobs were added so far --")}</h3></div>}
       {
         jobs.map((job) => <JobsBoard details={job} />)
       }

@@ -67,26 +67,26 @@ const allLanguages = Array.from(
 ).sort();
 ---
 
-<Layout title={t('sessions.title')} lang="en">
+<Layout title={t('Sessions')} lang="en">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">{t('sessions.list_title')}</Fragment>
+      <Fragment slot="title">{t('List of Sessions')}</Fragment>
       <Fragment slot="subtitle"></Fragment>
       <Fragment slot="description">
-        {t('sessions.description')}
+        {t('Here you can find a list of all the sessions at the conference. You can filter the sessions by track, type, and level.')}
       </Fragment>
     </Sectionhead>
 
     <div class="mt-12">
-      <h2 class="text-2xl font-bold mb-6 text-black dark:text-white">{t('sessions.filters_title')}</h2>
+      <h2 class="text-2xl font-bold mb-6 text-black dark:text-white">{t('Filters')}</h2>
       
       <Filter allTracks={allTracks} allTypes={allTypes} allLevels={allLevels} allLanguages={allLanguages} lang={lang} />
 
-      <h2 class="text-2xl font-bold mb-6 mt-12 text-black dark:text-white">{t('sessions.results_title')}</h2>
+      <h2 class="text-2xl font-bold mb-6 mt-12 text-black dark:text-white">{t('Search results')}</h2>
 
       {sessions.length === 0 ? (
         <div class="text-center py-12">
-          <p class="text-lg text-black dark:text-white">{t('sessions.no_sessions')}</p>
+          <p class="text-lg text-black dark:text-white">{t('No sessions available yet. Please check back later!')}</p>
         </div>
       ) : (
         <ListSessions sessions={sessions} lang={lang} speakersData={speakersData} />

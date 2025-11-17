@@ -9,56 +9,56 @@ const t = useTranslations(lang);
 
 const features = [
   {
-    title: "conf.experience_title",
-    description: "conf.experience",
+    title: t("Experience"),
+    description: t("At PyLadiesCon, we’re bringing the Python world right to your screen. Make sure to mark your calendars for the first weekend of December as we embark on a two-day journey that promises to be unforgettable."),
     icon: "bx:bxs-chart",
     url: "#",
   },
   {
-    title: "conf.goal_title",
-    description: "conf.goal",
+    title: t("The Goal"),
+    description: t("This conference is designed to promote diversity, learning, and empowerment within the Python community. We enthusiastically welcome presenters from members and supporters of the PyLadies Community. Prior experience is not required. Everyone is welcome to share your insights and expertise."),
     icon: "bx:bxs-rocket",
     url: "#",
   },
   {
-    title: "conf.languages_title",
-    description: "conf.languages",
+    title: t("The Languages"),
+    description: t("Given that we are a global community, we warmly invite talks in the following languages: English, Español, Português, Deutsch, 日本語 and 中文."),
     icon: "bx:bx-body",
     url: "#",
   },
   {
-    title: "conf.talks_title",
-    description: "conf.talks",
+    title: t("Insightful Talks"),
+    description: t("Dive deep into Python's latest trends, best practices, and cutting-edge technologies with our inspiring speakers."),
     icon: "bx:bxs-edit-alt",
     url: "#",
   },
   {
-    title: "conf.panels_title",
-    description: "conf.panels",
+    title: t("Engaging Panels"),
+    description: t("Join thought-provoking discussions on topics ranging from Python development to career growth and beyond."),
     icon: "bx:bxs-chat",
     url: "#",
   },
   {
-    title: "conf.sprints_title",
-    description: "conf.sprints",
+    title: t("Sprints and Workshop"),
+    description: t("Learning hands-on or contributing to a project, you decide! Join the sprints and workshops."),
     icon: "bx:bxs-cog",
     url: "#",
   },
   {
-    title: "conf.openspaces_title",
-    description: "conf.openspaces",
+    title: t("Open Spaces"),
+    description: t("Motivated during the event? Organize an open space for people to gather and discuss any topic!"),
     icon: "bx:bxs-book-reader",
     url: "#",
   },
   {
-    title: "conf.networking_title",
-    description: "conf.networking",
+    title: t("Collaborative Networking"),
+    description: t("Connect with fellow Python enthusiasts, expand your professional network, and forge new friendships."),
     icon: "bx:bxs-network-chart",
     url: "#",
   },
   {
-    title: "conf.volunteers_title",
-    description: "conf.volunteers",
+    title: t("Volunteer"),
+    description: t("We would not be able to run this conference without help from our volunteers. Please check the Volunteer guide for more details on how to volunteer!"),
     icon: "bx:bxs-heart",
     url: "#",
   },
@@ -67,10 +67,10 @@ const features = [
 
 <div class="relative mx-auto max-w-5xl px-6 lg:px-8" id="event">
   <div class="mx-auto max-w-2xl lg:text-center">
-    <h2 class="text-base font-semibold leading-7 text-pink">{t("event.title")}</h2>
-    <p class="mt-2 text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">{t("event.subtitle")}</p>
+    <h2 class="text-base font-semibold leading-7 text-pink">{t("Conference Details")}</h2>
+    <p class="mt-2 text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">{t("The Event")}</p>
     <p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-100">
-      {t("event.description")}
+      {t("PyLadies Conference (PyLadiesCon) is the third PyLadies conference held– an exciting online and FREE event dedicated to empowerment, learning, and diversity within the Python community! 🎉")}
     </p>
   </div>
   <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -82,13 +82,13 @@ const features = [
               <div class="h-5 w-5 flex-none text-black dark:text-white">
                 <Icon name={item.icon} />
               </div>
-              {t(item.title)}
+              {item.title}
             </dt>
             <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-900 dark:text-gray-100">
-              <p class="flex-auto">{t(item.description)}</p>
+              <p class="flex-auto">{item.description}</p>
               <p class="mt-6">
                 {item.url != "#" && <Link href={item.url} style="muted" size="xs" class="leading-6 text-left text-black dark:text-white">
-                  {t("event.learn_more")}{" "}
+                  {t("Learn more")}{" "}
                   <span class="pl-1 text-black dark:text-white" aria-hidden="true">
                     →
                   </span>

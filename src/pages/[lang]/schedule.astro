@@ -18,10 +18,10 @@ const t = useTranslations(lang);
 <Layout title="Schedule">
   <Container>
     <Sectionhead>
-      <Fragment slot="subtitle">{t("schedule.subtitle")}</Fragment>
-      <Fragment slot="title">{t("schedule.title")}</Fragment>
+      <Fragment slot="subtitle">{t("What Awaits You at PyLadiesCon")}</Fragment>
+      <Fragment slot="title">{t("Schedule")}</Fragment>
       <Fragment slot="description">
-          {t("schedule.description")}
+          {t("This year's edition of PyLadiesCon is packed with exciting opportunities for learning and community engagement. By registering, you'll gain access to: Keynotes, Talks, Interactive Sessions & Panels, Networking, and more!")}
       </Fragment>
     </Sectionhead>
 
@@ -44,7 +44,7 @@ const t = useTranslations(lang);
           >
             <span class="flex items-center gap-2">
               <Icon name="bx:bx-current-location" class="w-5 h-5" />
-              <span id="local-tz-name">{t("schedule.local_time")}</span>
+              <span id="local-tz-name">{t("Local Time")}</span>
             </span>
           </button>
         </div>
@@ -59,39 +59,39 @@ const t = useTranslations(lang);
       <div class="max-w-6xl mx-auto mt-12 p-6 bg-gray-50 dark:bg-gray-800 rounded-xl">
         <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
           <Icon name="bx:bx-info-circle" class="w-6 h-6" />
-          {t("schedule.session_types")}
+          {t("Session Types")}
         </h3>
         <div class="flex flex-wrap gap-3">
           <span class="px-4 py-2 rounded-full text-sm font-semibold bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200">
-            {t("schedule.keynote")}
+            {t("Keynote")}
           </span>
           <span class="px-4 py-2 rounded-full text-sm font-semibold bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200">
-            {t("schedule.talk")}
+            {t("Talk")}
           </span>
           <span class="px-4 py-2 rounded-full text-sm font-semibold bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200">
-            {t("schedule.panel")}
+            {t("Panel")}
           </span>
           <span class="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200">
-            {t("schedule.workshop")}
+            {t("Workshop")}
           </span>
           <span class="px-4 py-2 rounded-full text-sm font-semibold bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200">
-            {t("schedule.sponsor_talk")}
+            {t("Sponsor Talk")}
           </span>
         </div>
         
         <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4 mt-6 flex items-center gap-2">
           <Icon name="bx:bx-layer" class="w-6 h-6" />
-          {t("schedule.difficulty_levels")}
+          {t("Difficulty Levels")}
         </h3>
         <div class="flex flex-wrap gap-3">
           <span class="px-4 py-2 rounded-full text-sm font-semibold bg-green-500 text-white">
-            {t("schedule.difficulty.beginner")}
+            {t("Beginner")}
           </span>
           <span class="px-4 py-2 rounded-full text-sm font-semibold bg-yellow-500 text-white">
-            {t("schedule.difficulty.intermediate")}
+            {t("Intermediate")}
           </span>
           <span class="px-4 py-2 rounded-full text-sm font-semibold bg-red-500 text-white">
-            {t("schedule.difficulty.advanced")}
+            {t("Advanced")}
           </span>
         </div>
       </div>
