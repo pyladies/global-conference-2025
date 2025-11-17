@@ -1,6 +1,7 @@
 export const languages = {
   en: "English",
   es: "Español",
+  tr: "Türkçe",
 };
 
 export const defaultLang = "en";
@@ -19,4 +20,8 @@ export function getLocaleStaticPaths() {
 
 export function isValidLocale(locale: string): boolean {
   return getSupportedLocales().includes(locale);
+}
+
+export function getTranslatableLanguages(): string[] {
+  return getSupportedLocales().filter(lang => lang !== defaultLang);
 }

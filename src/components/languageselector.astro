@@ -1,7 +1,6 @@
 ---
-import { getRelativeLocaleUrl } from 'astro:i18n';
 import { Icon } from "astro-icon/components";
-import { languages } from "../i18n/ui.ts";
+import { languages } from "../i18n/locales.ts";
 import { getLangFromUrl, localizePath } from '../i18n/utils';
 
 const currentLanguage = getLangFromUrl(Astro.url);

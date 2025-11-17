@@ -7,35 +7,35 @@ const { plan } = Astro.props;
 
 const faqs = [
   {
-    title: "faq.q_online",
-    description: "faq.a_online",
+    title: t("Why an online event?"),
+    description: t("We would love to have PyLadiesCon as a physical event, but that limits the amount of participants we can get around the world. We aim to reduce barriers in participating and create an inclusive environment for our community."),
   },
   {
-    title: "faq.q_discord",
-    description: "faq.a_discord",
+    title: t("Why do you use Discord?"),
+    description: t("Having tried various other online event platforms, we are happy with Discord because not only that is affordable, but also offers enough capabilities for the conference to work."),
   },
   {
-    title: "faq.q_nochapter",
-    description: "faq.a_nochapter",
+    title: t("There are no PyLadies groups in my city, can I still attend?"),
+    description: t("Yes, everyone is welcome, independently if you belong to a chapter or no"),
   },
   {
-    title: "faq.q_addlang",
-    description: "faq.a_addlang",
+    title: t("My language is not within the conference languages, how can I include it?"),
+    description: t("We would be happy to include your language, as long as there is a group of volunteers that can take care of reviewing proposals, generating and verifying subtitles, host talks, and translate the content in our platforms."),
   },
   {
-    title: "faq.q_nopython",
-    description: "faq.a_nopython",
+    title: t("I don't know Python, but I'm interested into learning, should I join?"),
+    description: t("Some topics might be difficult to understand, but we aim to have talks from many levels, including beginner topics, and also some activities for people to learn."),
   },
   {
-    title: "faq.q_volunteer",
-    description: "faq.a_volunteer",
+    title: t("Do you need help with the conference?"),
+    description: t("Yes!, we are usually looking for volunteers that can help us in tasks like reviewing proposals, generate and check subtitles, moderate sprints/workshops/panels, moderate discord, help us with the website, and many other things."),
   },
 ];
 ---
 
 <div class="mx-auto max-w-5xl px-6 py-24 sm:py-36 lg:px-8 lg:py-52 dark:bg-stone-950" id="faq">
   <div class="mx-auto divide-y divide-gray-900/10 dark:divide-gray-100/10">
-    <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900 dark:text-white">{t("faq.title")}</h2>
+    <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900 dark:text-white">{t("Frequently Asked Questions")}</h2>
     <dl class="mt-10 space-y-6 divide-y divide-gray-900/10 dark:divide-gray-100/10">
       {
         faqs.map((faq) => (
@@ -46,7 +46,7 @@ const faqs = [
                 class="flex w-full items-start justify-between text-left text-gray-900 dark:text-white"
                 @click="open = !open"
                 :x-bind:aria-expanded="open.toString()">
-                <span class="text-base font-semibold leading-7">{t(faq.title)}</span>
+                <span class="text-base font-semibold leading-7">{faq.title}</span>
                 <span class="ml-6 flex h-7 items-center">
                   <svg
                     class="h-6 w-6"
@@ -82,7 +82,7 @@ const faqs = [
               id="faq-0"
               x-show="open">
               <span class="text-base leading-7 text-gray-600 dark:text-gray-100">
-                <span set:html={t(faq.description)}></span>
+                <span set:html={faq.description}></span>
               </span>
             </dd>
           </div>

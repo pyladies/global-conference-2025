@@ -11,56 +11,56 @@ const features = [
   {
     name: "Mariatta",
     role: "Conference Co-Chair",
-    bio: "org.mariatta",
+    bio: t("Mariatta is a Python core developer where she focuses on improving the workflow and documentation. She is active in the Python community as an advisor for the Global PyLadies, and PyCon US Chair."),
     photo: "/images/org/mariatta.jpg",
     url: "https://mariatta.ca",
   },
   {
     name: "Maria José",
     role: "Conference Co-Chair",
-    bio: "org.mariajose",
+    bio: t("I am a passionate biotechnologist, working as a Sr. Data Scientist in Berlin. In my spare time, I love to develop projects that can help people around our own planet, help to organize workshops and give talks in many python communities."),
     photo: "/images/org/mariajose.jpg",
     url: "https://mjmolina.xyz",
   },
   {
     name: "Denny Pérez",
     role: "Sponsorship and Communications Lead",
-    bio: "org.denny",
+    bio: t("Software QA Analyst. Python community manager. Python Software Foundation (PSF) Fellow & Director. Advocates diversity and inclusion within tech communities. PyLadies chapters organizer."),
     photo: "/images/org/denny.jpg",
     url: "https://linktr.ee/Dennyperez18",
   },
   {
     name: "Georgi Ker",
     role: "Design & Media Lead",
-    bio: "org.georgi",
+    bio: t("Mother of 2 adults | Director @PSF | Fellow Member | 2020 PSF community service award | PSF D&I Workgroup Chair | PyCon US Design Lead since 2022"),
     photo: "/images/org/georgi.jpg",
     url: "https://georgiker.com",
   },
   {
     name: "Abigail",
     role: "Program Lead",
-    bio: "org.abigail",
+    bio: t("Contributor and community member in the African Python Software Community and has served as an organizer for local and international community events. She is a Fellow and a Community Service award winner at the PSF."),
     photo: "/images/org/abigail.jpg",
     url: "https://www.linkedin.com/in/abigail-mesrenyame-dogbe-83a1a5161",
   },
   {
     name: "Cristián",
     role: "Infrastructure Lead",
-    bio: "org.cristian",
+    bio: t("Python community and conference serial organizer, contributing to many Open Source initiatives. He is a PSF Board Director and Fellow. He is currently working at The Qt Company."),
     photo: "/images/org/cristian.jpg",
     url: "https://maureira.xyz",
   },
   {
     name: "Vicky Twomey-Lee",
     role: "CoC Team Lead",
-    bio: "org.vicky-twomey-lee",
+    bio: t("An Irish Pythonista advocating diversity in tech, and runs regular PyLadies Dublin events. It was through Python that she got involved with the Irish tech community in 2005. She is a EuroPython Society Fellow, PSF Fellow and Community Service awardee."),
     photo: "/images/org/vicky.jpg",
     url: "https://www.linkedin.com/in/vickyleeire",
   },
   {
   name: "Naa Ashiorkor Nortey",
   role: "Program Co-Lead",
-  bio: "org.naa-ashiorkor-nortey",
+  bio: t("Naa Ashiorkor Nortey is a data scientist and tech community builder. Naa is deeply involved in the Python community, serving in organizing at conferences such as EuroPython. Currently, she is one of the organizers of PyLadies Tampere."),
   photo: "/images/org/naa.jpg",
   url: "https://fi.linkedin.com/in/naa-ashiorkor-nortey-408240120",
 },
@@ -69,14 +69,14 @@ const features = [
 
 <div class="relative mx-auto max-w-5xl px-6 lg:px-8" id="organization">
   <div class="mx-auto max-w-2xl lg:text-center">
-    <h2 class="text-base font-semibold leading-7 text-pink">{t("org.title")}</h2>
-    <p class="mt-2 text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">{t("org.subtitle")}</p>
+    <h2 class="text-base font-semibold leading-7 text-pink">{t("PyLadies Conference")}</h2>
+    <p class="mt-2 text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">{t("The Organizers")}</p>
     <p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-100">
-      {t("org.description")}
+      {t("PyLadies is an international mentorship group with a focus on helping more women become active participants and leaders in the Python open-source community. Our mission is to promote, educate and advance a diverse Python community through outreach, education, conferences, events and social gatherings.")}
     </p>
     <p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-100">
       <Link href="https://pyladies.com" style="muted" size="xs" class="leading-6 text-left text-black dark:text-white">
-        {t("org.description_link")}{" "}
+        {t("To learn more, visit the PyLadies website")}{" "}
         <span class="pl-1 text-black dark:text-white" aria-hidden="true">
           →
         </span>
@@ -96,10 +96,10 @@ const features = [
               </div>
             </dt>
             <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-900 dark:text-gray-100">
-              <p class="flex-auto">{t(item.bio)}</p>
+              <p class="flex-auto">{item.bio}</p>
               <p class="mt-6">
                 <Link href={item.url} style="muted" size="xs" class="leading-6 text-left text-black dark:text-white">
-                  {t("event.learn_more")}{" "}
+                  {t("Learn more")}{" "}
                   <span class="pl-1 text-black dark:text-white" aria-hidden="true">
                     →
                   </span>

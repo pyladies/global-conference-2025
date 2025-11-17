@@ -7,28 +7,28 @@ const { plan } = Astro.props;
 
 const faqs = [
   {
-    title: "sponsorship_faq.q_keynoteintro",
-    description: "sponsorship_faq.a_keynoteintro",
+    title: t("What is the «Keynote Intro»?"),
+    description: t("We will play a short 2-5 minutes video from our Champion sponsor before each of the keynote session."),
     id: "faq_keynoteintro",
   },
   {
-    title: "sponsorship_faq.q_technicaltalk",
-    description: "sponsorship_faq.a_technicaltalk",
+    title: t("What is the «Technical Talk Slot»?"),
+    description: t("Sponsors on the Champion and Supporter tier will have an accepted talk in the conference. Talks at PyLadiesCon last 15 minutes + 5 minutes Q&A, and the slot will be assigned once the schedule is announced."),
     id: "faq_technicaltalk",
   },
   {
-    title: "sponsorship_faq.q_paneldiscussion",
-    description: "sponsorship_faq.a_paneldiscussion",
+    title: t("What is the «Panel Discussion»?"),
+    description: t("Participate in a panel discussion formed by Sponsors (topic of choice) with all participants. Share your perspective and clarify participant's questions about the tech industry and the job market. These are the most popular sessions of the conference. It lasts around 35 minutes and is usually allocated on the timezone with higher demand."),
     id: "faq_paneldiscussion",
   },
   {
-    title: "sponsorship_faq.q_mentionsocialmedia",
-    description: "sponsorship_faq.a_mentionsocialmedia",
+    title: t("What does the «Mentions in social media» includes?"),
+    description: t("We will create a series of posts for all our sponsors in order to thank them by their support and post in our social media."),
     id: "faq_mentionsocialmedia",
   },
   {
-    title: "sponsorship_faq.q_speedjobinterview",
-    description: "sponsorship_faq.a_speedjobinterview",
+    title: t("How does the «Speed job interviews» work?"),
+    description: t("A fast-paced online networking event where employers and job seekers get 5 minutes to introduce themselves and ask crucial questions. If both parties are interested, they connect for a formal interview afterwards. Participants should be able to check the job description beforehand."),
     id: "faq_speedjobinterview",
   },
 ];
@@ -36,7 +36,7 @@ const faqs = [
 
 <div class="mx-auto max-w-5xl px-6 py-24 sm:py-36 lg:px-8 lg:py-52 dark:bg-stone-950" id="faq">
   <div class="mx-auto divide-y divide-gray-900/10 dark:divide-gray-100/10">
-    <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900 dark:text-white">{t("sponsorship_faq.title")}</h2>
+    <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900 dark:text-white">{t("Sponsorship Frequently Asked Questions")}</h2>
     <dl class="mt-10 space-y-6 divide-y divide-gray-900/10 dark:divide-gray-100/10">
       {
         faqs.map((faq) => (
@@ -47,7 +47,7 @@ const faqs = [
                 class="flex w-full items-start justify-between text-left text-gray-900 dark:text-white"
                 @click="open = !open"
                 :x-bind:aria-expanded="open.toString()">
-                <span class="text-base font-semibold leading-7">{t(faq.title)}</span>
+                <span class="text-base font-semibold leading-7">{faq.title}</span>
                 <span class="ml-6 flex h-7 items-center">
                   <svg
                     class="h-6 w-6"
@@ -83,7 +83,7 @@ const faqs = [
               id="faq-0"
               x-show="open">
               <span class="text-base leading-7 text-gray-600 dark:text-gray-100">
-                <span set:html={t(faq.description)}></span>
+                <span set:html={faq.description}></span>
               </span>
             </dd>
           </div>
