@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyLadiesCon 2025\n"
 "Report-Msgid-Bugs-To: Open a PR 🤗\n"
-"POT-Creation-Date: 2025-11-16T09:43:12.766Z\n"
+"POT-Creation-Date: 2025-11-17T17:01:51.452Z\n"
 "PO-Revision-Date: 2025-11-16T05:30:10.835Z\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -255,7 +255,7 @@ msgstr "PyLadiesCon 2025"
 msgid "5th-7th December | Multi-language | Multi-timezone"
 msgstr "Diciembre 5-7 | Multi-idioma | Multi-zona horaria"
 
-#: src/components/hero.astro:65 src/data/menuItems.ts:18
+#: src/components/hero.astro:65 src/data/menuItems.ts:20
 #: src/pages/[lang]/schedule.astro:22
 msgid "Schedule"
 msgstr "Programa"
@@ -276,6 +276,14 @@ msgstr "Ir a la versión base"
 msgid "The online conference of the PyLadies communities around the globe."
 msgstr ""
 "La conferencia en línea de las comunidades de PyLadies en todo el mundo."
+
+#: src/components/keynotes_index.astro:21
+msgid "Meet Our Keynotes"
+msgstr "Conoce nuestras ponencias principales"
+
+#: src/components/keynotes_index.astro:22 src/data/menuItems.ts:6
+msgid "Keynotes"
+msgstr "Ponencias Principales"
 
 #: src/components/organization.astro:14
 msgid ""
@@ -444,7 +452,7 @@ msgstr "Ponentes:"
 msgid "Meet the sponsors of our conference."
 msgstr "Conoce a los patrocinadores de nuestra conferencia."
 
-#: src/components/sponsors_gallery.astro:118
+#: src/components/sponsors_gallery.astro:118 src/data/menuItems.ts:9
 msgid "Our Sponsors"
 msgstr "Nuestros Patrocinadores"
 
@@ -539,65 +547,65 @@ msgstr "Acerca de"
 msgid "The event"
 msgstr "El evento"
 
-#: src/data/menuItems.ts:6
+#: src/data/menuItems.ts:7
 msgid "FAQ"
 msgstr "Preguntas frecuentes"
 
-#: src/data/menuItems.ts:7
+#: src/data/menuItems.ts:8
 msgid "The organizers"
 msgstr "La organización"
 
-#: src/data/menuItems.ts:11
+#: src/data/menuItems.ts:13
 msgid "Blog"
 msgstr "Blog"
 
-#: src/data/menuItems.ts:16
+#: src/data/menuItems.ts:18
 msgid "Conference"
 msgstr "Conferencia"
 
-#: src/data/menuItems.ts:19 src/pages/[lang]/sessions.astro:70
+#: src/data/menuItems.ts:21 src/pages/[lang]/sessions.astro:70
 msgid "Sessions"
 msgstr "Sesiones"
 
-#: src/data/menuItems.ts:20 src/pages/[lang]/session/[...session].astro:120
+#: src/data/menuItems.ts:22 src/pages/[lang]/session/[...session].astro:120
 msgid "Speakers"
 msgstr "Ponentes"
 
-#: src/data/menuItems.ts:21
+#: src/data/menuItems.ts:23
 msgid "Sprints"
 msgstr "Sprints"
 
-#: src/data/menuItems.ts:22
+#: src/data/menuItems.ts:24
 msgid "How to Join"
 msgstr "Cómo unirse"
 
-#: src/data/menuItems.ts:26
+#: src/data/menuItems.ts:28
 msgid "Sponsors"
 msgstr "Patrocinadores"
 
-#: src/data/menuItems.ts:28
+#: src/data/menuItems.ts:30
 msgid "Sponsorship Plans"
 msgstr "Planes de Patrocinio"
 
-#: src/data/menuItems.ts:29
+#: src/data/menuItems.ts:31
 msgid "Jobs Board"
 msgstr "Bolsa de Trabajo"
 
-#: src/data/menuItems.ts:33 src/pages/[lang]/coc-enforcing.astro:23
+#: src/data/menuItems.ts:35 src/pages/[lang]/coc-enforcing.astro:23
 #: src/pages/[lang]/coc-reporting.astro:23 src/pages/[lang]/coc.astro:28
 #: src/pages/[lang]/coc.astro:31
 msgid "Code of Conduct"
 msgstr "Código de Conducta"
 
-#: src/data/menuItems.ts:35
+#: src/data/menuItems.ts:37
 msgid "Read the CoC"
 msgstr "Lee el CdC"
 
-#: src/data/menuItems.ts:36
+#: src/data/menuItems.ts:38
 msgid "Reporting process"
 msgstr "Proceso de reportes"
 
-#: src/data/menuItems.ts:37
+#: src/data/menuItems.ts:39
 msgid "Enforcement process"
 msgstr "Proceso de ejecución"
 
@@ -1245,14 +1253,26 @@ msgstr "Más Sobre El Ponente"
 msgid "Sessions by"
 msgstr "Charlas de"
 
-#: src/pages/[lang]/speakers.astro:25
+#: src/pages/[lang]/speakers.astro:26
 msgid ""
 "We are excited to have an amazing lineup of speakers from around the world."
 msgstr "Nos emociona tener una increíble lista de ponentes de todo el mundo."
 
-#: src/pages/[lang]/speakers.astro:26
+#: src/pages/[lang]/speakers.astro:27 src/pages/[lang]/speakers.astro:65
 msgid "Our Speakers"
 msgstr "Nuestros Ponentes"
+
+#: src/pages/[lang]/speakers.astro:33
+msgid "Our Keynotes"
+msgstr "Ponencias Principales"
+
+#: src/pages/[lang]/speakers.astro:34
+msgid "Meet our Keynote speakers"
+msgstr "Conoce nuestras ponentes principales"
+
+#: src/pages/[lang]/speakers.astro:60
+msgid "Meet our Speakers"
+msgstr "Conopce nuestras speakers"
 
 #: src/pages/[lang]/sponsors.astro:216
 msgid "Prospectus for the global PyLadies Conference."

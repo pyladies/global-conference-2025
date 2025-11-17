@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyLadiesCon 2025\n"
 "Report-Msgid-Bugs-To: Open a PR 🤗\n"
-"POT-Creation-Date: 2025-11-16T09:43:12.766Z\n"
+"POT-Creation-Date: 2025-11-17T17:01:51.452Z\n"
 "PO-Revision-Date: 2025-11-16T07:27:15.297Z\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -204,7 +204,7 @@ msgstr ""
 msgid "5th-7th December | Multi-language | Multi-timezone"
 msgstr ""
 
-#: src/components/hero.astro:65 src/data/menuItems.ts:18
+#: src/components/hero.astro:65 src/data/menuItems.ts:20
 #: src/pages/[lang]/schedule.astro:22
 msgid "Schedule"
 msgstr ""
@@ -223,6 +223,14 @@ msgstr ""
 
 #: src/components/hero.astro:93
 msgid "The online conference of the PyLadies communities around the globe."
+msgstr ""
+
+#: src/components/keynotes_index.astro:21
+msgid "Meet Our Keynotes"
+msgstr ""
+
+#: src/components/keynotes_index.astro:22 src/data/menuItems.ts:6
+msgid "Keynotes"
 msgstr ""
 
 #: src/components/organization.astro:14
@@ -367,7 +375,7 @@ msgstr ""
 msgid "Meet the sponsors of our conference."
 msgstr ""
 
-#: src/components/sponsors_gallery.astro:118
+#: src/components/sponsors_gallery.astro:118 src/data/menuItems.ts:9
 msgid "Our Sponsors"
 msgstr ""
 
@@ -443,65 +451,65 @@ msgstr ""
 msgid "The event"
 msgstr ""
 
-#: src/data/menuItems.ts:6
+#: src/data/menuItems.ts:7
 msgid "FAQ"
 msgstr ""
 
-#: src/data/menuItems.ts:7
+#: src/data/menuItems.ts:8
 msgid "The organizers"
 msgstr ""
 
-#: src/data/menuItems.ts:11
+#: src/data/menuItems.ts:13
 msgid "Blog"
 msgstr ""
 
-#: src/data/menuItems.ts:16
+#: src/data/menuItems.ts:18
 msgid "Conference"
 msgstr ""
 
-#: src/data/menuItems.ts:19 src/pages/[lang]/sessions.astro:70
+#: src/data/menuItems.ts:21 src/pages/[lang]/sessions.astro:70
 msgid "Sessions"
 msgstr ""
 
-#: src/data/menuItems.ts:20 src/pages/[lang]/session/[...session].astro:120
+#: src/data/menuItems.ts:22 src/pages/[lang]/session/[...session].astro:120
 msgid "Speakers"
 msgstr ""
 
-#: src/data/menuItems.ts:21
+#: src/data/menuItems.ts:23
 msgid "Sprints"
 msgstr ""
 
-#: src/data/menuItems.ts:22
+#: src/data/menuItems.ts:24
 msgid "How to Join"
 msgstr ""
 
-#: src/data/menuItems.ts:26
+#: src/data/menuItems.ts:28
 msgid "Sponsors"
 msgstr ""
 
-#: src/data/menuItems.ts:28
+#: src/data/menuItems.ts:30
 msgid "Sponsorship Plans"
 msgstr ""
 
-#: src/data/menuItems.ts:29
+#: src/data/menuItems.ts:31
 msgid "Jobs Board"
 msgstr ""
 
-#: src/data/menuItems.ts:33 src/pages/[lang]/coc-enforcing.astro:23
+#: src/data/menuItems.ts:35 src/pages/[lang]/coc-enforcing.astro:23
 #: src/pages/[lang]/coc-reporting.astro:23 src/pages/[lang]/coc.astro:28
 #: src/pages/[lang]/coc.astro:31
 msgid "Code of Conduct"
 msgstr ""
 
-#: src/data/menuItems.ts:35
+#: src/data/menuItems.ts:37
 msgid "Read the CoC"
 msgstr ""
 
-#: src/data/menuItems.ts:36
+#: src/data/menuItems.ts:38
 msgid "Reporting process"
 msgstr ""
 
-#: src/data/menuItems.ts:37
+#: src/data/menuItems.ts:39
 msgid "Enforcement process"
 msgstr ""
 
@@ -1032,13 +1040,25 @@ msgstr ""
 msgid "Sessions by"
 msgstr ""
 
-#: src/pages/[lang]/speakers.astro:25
+#: src/pages/[lang]/speakers.astro:26
 msgid ""
 "We are excited to have an amazing lineup of speakers from around the world."
 msgstr ""
 
-#: src/pages/[lang]/speakers.astro:26
+#: src/pages/[lang]/speakers.astro:27 src/pages/[lang]/speakers.astro:65
 msgid "Our Speakers"
+msgstr ""
+
+#: src/pages/[lang]/speakers.astro:33
+msgid "Our Keynotes"
+msgstr ""
+
+#: src/pages/[lang]/speakers.astro:34
+msgid "Meet our Keynote speakers"
+msgstr ""
+
+#: src/pages/[lang]/speakers.astro:60
+msgid "Meet our Speakers"
 msgstr ""
 
 #: src/pages/[lang]/sponsors.astro:216

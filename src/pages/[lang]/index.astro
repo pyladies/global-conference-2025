@@ -6,6 +6,7 @@ import Hero from "@components/hero.astro";
 import Organization from "@components/organization.astro";
 import Sponsors from "@components/sponsors_gallery.astro";
 import Layout from "@layouts/Layout.astro";
+import Keynotes from "@components/keynotes_index.astro";
 import { getLocaleStaticPaths } from "../../i18n/locales";
 
 export function getStaticPaths() {
@@ -16,6 +17,7 @@ export function getStaticPaths() {
   <Container>
     <Hero />
     <EventDetails />
+    <Keynotes />
     <Faq />
     <Organization />
     <Sponsors />

@@ -1,0 +1,50 @@
+---
+import speakerData from "../data/speakers.json";
+import submissionsData from "../data/sessions.json";
+
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import { getLocaleStaticPaths } from "../i18n/locales";
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const speakers = Object.entries(speakerData);
+
+---
+
+
+<div class="relative mx-auto max-w-5xl px-6 lg:px-8" id="keynotes">
+    <div class="mx-auto max-w-2xl lg:text-center">
+        <h2 class="text-base font-semibold leading-7 text-pink">{t("Meet Our Keynotes")}</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-black dark:text-white sm:text-4xl">{t("Keynotes")}</p>
+    </div>
+
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+        <dl class="grid max-w-xl sm:grid-cols-1 gap-x-8 gap-y-16 place-items-center lg:max-w-none lg:grid-cols-3 dark:text-white md:grid-cols-2">
+        {
+            speakers.map(([key, value]) => {
+                const submissions = value.submissions.map(
+                    (sub) => submissionsData[sub],
+                );
+                if (submissions[0].session_type == "Keynote") {
+                    return (
+                    <a href=`/speaker/${value.slug}` class="p-5 hover:bg-gray-100 hover:dark:bg-gray-900">
+                        <div class="grid grid-columns-2 place-items-center">
+                            <img class="size-64 object-cover rounded-2xl" src={value.avatar || "/logo.svg" } />
+                            <h1 class="mt-2 text-lg font-bold">{value.name}</h2>
+                            <div class="h-20">
+                            <p class="mt-2 text-md text-gray-600 dark:text-gray-300 text-center">{value.occupation}</p>
+                            <p class="mt-2 text-sm text-blue-800 dark:text-blue-300 text-center">{value.affiliation}</p>
+                            </div>
+                        </div>
+                    </a>
+                    );
+                }
+            })
+        }
+        </dl>
+    </div>
+</div>

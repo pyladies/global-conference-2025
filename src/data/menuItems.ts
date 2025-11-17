@@ -3,8 +3,10 @@ export const getMenuItems = (t: (key: string) => string) => [
     title: t("About"),
     children: [
       { title: t("The event"), path: "/#event" },
+      { title: t("Keynotes"), path: "/#keynotes" },
       { title: t("FAQ"), path: "/#faq" },
       { title: t("The organizers"), path: "/#organization" },
+      { title: t("Our Sponsors"), path: "/#sponsors" },
     ],
   },
   {
