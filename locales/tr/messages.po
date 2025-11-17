@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyLadiesCon 2025\n"
 "Report-Msgid-Bugs-To: Open a PR 🤗\n"
-"POT-Creation-Date: 2025-11-17T16:24:26.092Z\n"
+"POT-Creation-Date: 2025-11-17T17:01:51.452Z\n"
 "PO-Revision-Date: 2025-11-16T07:27:15.297Z\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -226,11 +226,11 @@ msgid "The online conference of the PyLadies communities around the globe."
 msgstr ""
 
 #: src/components/keynotes_index.astro:21
-msgid "keynotes.title"
+msgid "Meet Our Keynotes"
 msgstr ""
 
-#: src/components/keynotes_index.astro:22
-msgid "keynotes.subtitle"
+#: src/components/keynotes_index.astro:22 src/data/menuItems.ts:6
+msgid "Keynotes"
 msgstr ""
 
 #: src/components/organization.astro:14
@@ -449,10 +449,6 @@ msgstr ""
 
 #: src/data/menuItems.ts:5
 msgid "The event"
-msgstr ""
-
-#: src/data/menuItems.ts:6
-msgid "Keynotes"
 msgstr ""
 
 #: src/data/menuItems.ts:7

@@ -51,7 +51,10 @@ const socials = {
         <div class="text-2xl">
         {speakerInfo.name}
       </div>
-      <p class="text-md text-pink dark:text-gray-400 pb-2">{speakerInfo.affiliation || <br> }</p>
+      <div class="h-30">
+        <p class="text-md text-pink dark:text-gray-400 pb-2">{speakerInfo.occupation}</p>
+        <p class="text-md text-pink dark:text-gray-300 pb-2">{speakerInfo.affiliation}</p>
+      </div>
       <div class="flex justify-center text-black dark:text-white">
         {speakerInfo.linkedin_url && (
           <a class="duration-300 hover:text-gray-900 dark:hover:text-gray-100 pr-3" href={speakerInfo.linkedin_url} title={socials.linkedin.title} target="blank" aria-label={socials.linkedin.title}>
