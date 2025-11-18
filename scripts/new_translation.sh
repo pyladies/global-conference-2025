@@ -38,7 +38,7 @@ fi
 
 if [ ! -f "$POT_FILE" ]; then
     echo "Error: POT template not found at $POT_FILE"
-    echo "Run: ./scripts/update_translations.sh first"
+    echo "Run: pnpm run i18n:extract"
     exit 1
 fi
 

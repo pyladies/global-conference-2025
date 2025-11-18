@@ -14,8 +14,9 @@
 		"i18n:extract": "node scripts/extract_translations.js",
 		"i18n:update": "./scripts/update_translations.sh",
 		"i18n:convert": "tsx scripts/po_to_json.js",
+		"i18n:format": "./scripts/format_po.sh",
 		"i18n:new": "./scripts/new_translation.sh",
-		"i18n": "pnpm run i18n:extract && pnpm run i18n:update && pnpm run i18n:convert"
+		"i18n": "pnpm run i18n:update && pnpm run i18n:format && pnpm run i18n:convert"
 	},
 	"dependencies": {
 		"@astrojs/alpinejs": "^0.4.8",
