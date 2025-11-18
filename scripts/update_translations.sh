@@ -10,7 +10,7 @@ if [ ! -f "locales/template/messages.pot" ]; then
     exit 1
 fi
 
-LANGS=$(node scripts/get_languages.js)
+LANGS=$(tsx scripts/get_languages.js)
 
 for lang in $LANGS; do
     PO_FILE="locales/${lang}/messages.po"
