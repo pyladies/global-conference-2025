@@ -19,7 +19,7 @@ importers:
         version: 3.4.2
       '@astrojs/tailwind':
         specifier: ^6.0.2
-        version: 6.0.2(astro@5.13.4(@types/node@22.15.17)(encoding@0.1.13)(jiti@1.21.7)(rollup@4.40.2)(terser@5.39.0)(typescript@5.8.2)(yaml@2.7.1))(tailwindcss@3.4.17)
+        version: 6.0.2(astro@5.13.4(@types/node@22.15.17)(encoding@0.1.13)(jiti@1.21.7)(rollup@4.40.2)(terser@5.39.0)(tsx@4.20.6)(typescript@5.8.2)(yaml@2.7.1))(tailwindcss@3.4.17)
       '@fontsource-variable/inter':
         specifier: ^5.2.5
         version: 5.2.5
@@ -34,7 +34,7 @@ importers:
         version: 3.46.0
       astro:
         specifier: ^5.13.4
-        version: 5.13.4(@types/node@22.15.17)(encoding@0.1.13)(jiti@1.21.7)(rollup@4.40.2)(terser@5.39.0)(typescript@5.8.2)(yaml@2.7.1)
+        version: 5.13.4(@types/node@22.15.17)(encoding@0.1.13)(jiti@1.21.7)(rollup@4.40.2)(terser@5.39.0)(tsx@4.20.6)(typescript@5.8.2)(yaml@2.7.1)
       astro-icon:
         specifier: ^1.1.5
         version: 1.1.5
@@ -82,7 +82,7 @@ importers:
         version: 3.4.17
       vite:
         specifier: ^6.3.5
-        version: 6.3.5(@types/node@22.15.17)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.1)
+        version: 6.3.5(@types/node@22.15.17)(jiti@1.21.7)(terser@5.39.0)(tsx@4.20.6)(yaml@2.7.1)
     devDependencies:
       '@biomejs/biome':
         specifier: 1.6.3
@@ -117,6 +117,9 @@ importers:
       sharp:
         specifier: ^0.33.5
         version: 0.33.5
+      tsx:
+        specifier: ^4.20.6
+        version: 4.20.6
       workbox-window:
         specifier: ^7.3.0
         version: 7.3.0
@@ -1432,6 +1435,9 @@ packages:
     resolution: {integrity: sha512-nBF+F1rAZVCu/p7rjzgA+Yb4lfYXrpl7a6VmJrU8wF9I1CKvP/QwPNZHnOlwbTkY6dvtFIzFMSyQXbLoTQPRpA==}
     engines: {node: '>=8'}
 
+  get-tsconfig@4.13.0:
+    resolution: {integrity: sha512-1VKTZJCwBrvbd+Wn3AOgQP/2Av+TfTCOlE4AcRJE72W1ksZXbAx8PPBR9RzgTeSPzlPMHrbANMH3LbltH73wxQ==}
+
   gettext-parser@8.0.0:
     resolution: {integrity: sha512-eFmhDi2xQ+2reMRY2AbJ2oa10uFOl1oyGbAKdCZiNOk94NJHi7aN0OBELSC9v35ZAPQdr+uRBi93/Gu4SlBdrA==}
     engines: {node: '>=18'}
@@ -2176,6 +2182,9 @@ packages:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
     engines: {node: '>=0.10.0'}
 
+  resolve-pkg-maps@1.0.0:
+    resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
+
   resolve@1.22.10:
     resolution: {integrity: sha512-NPRy+/ncIMeDlTAsuqwKIiferiawhefFJtkNSW0qZJEqMEb+qBt/77B/jGeeek+F0uOeN05CDa6HXbbIgtVX4w==}
     engines: {node: '>= 0.4'}
@@ -2412,6 +2421,11 @@ packages:
 
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+
+  tsx@4.20.6:
+    resolution: {integrity: sha512-ytQKuwgmrrkDTFP4LjR0ToE2nqgy886GpvRSpU0JAnrdBYppuY5rLkRUYPU1yCryb24SsKBTL/hlDQAEFVwtZg==}
+    engines: {node: '>=18.0.0'}
+    hasBin: true
 
   type-fest@4.41.0:
     resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
@@ -2941,9 +2955,9 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.24.4
 
-  '@astrojs/tailwind@6.0.2(astro@5.13.4(@types/node@22.15.17)(encoding@0.1.13)(jiti@1.21.7)(rollup@4.40.2)(terser@5.39.0)(typescript@5.8.2)(yaml@2.7.1))(tailwindcss@3.4.17)':
+  '@astrojs/tailwind@6.0.2(astro@5.13.4(@types/node@22.15.17)(encoding@0.1.13)(jiti@1.21.7)(rollup@4.40.2)(terser@5.39.0)(tsx@4.20.6)(typescript@5.8.2)(yaml@2.7.1))(tailwindcss@3.4.17)':
     dependencies:
-      astro: 5.13.4(@types/node@22.15.17)(encoding@0.1.13)(jiti@1.21.7)(rollup@4.40.2)(terser@5.39.0)(typescript@5.8.2)(yaml@2.7.1)
+      astro: 5.13.4(@types/node@22.15.17)(encoding@0.1.13)(jiti@1.21.7)(rollup@4.40.2)(terser@5.39.0)(tsx@4.20.6)(typescript@5.8.2)(yaml@2.7.1)
       autoprefixer: 10.4.21(postcss@8.5.3)
       postcss: 8.5.3
       postcss-load-config: 4.0.2(postcss@8.5.3)
@@ -3619,7 +3633,7 @@ snapshots:
       - prettier-plugin-astro
       - typescript
 
-  astro@5.13.4(@types/node@22.15.17)(encoding@0.1.13)(jiti@1.21.7)(rollup@4.40.2)(terser@5.39.0)(typescript@5.8.2)(yaml@2.7.1):
+  astro@5.13.4(@types/node@22.15.17)(encoding@0.1.13)(jiti@1.21.7)(rollup@4.40.2)(terser@5.39.0)(tsx@4.20.6)(typescript@5.8.2)(yaml@2.7.1):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.7.2
@@ -3675,8 +3689,8 @@ snapshots:
       unist-util-visit: 5.0.0
       unstorage: 1.16.0
       vfile: 6.0.3
-      vite: 6.3.5(@types/node@22.15.17)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.1)
-      vitefu: 1.0.6(vite@6.3.5(@types/node@22.15.17)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.1))
+      vite: 6.3.5(@types/node@22.15.17)(jiti@1.21.7)(terser@5.39.0)(tsx@4.20.6)(yaml@2.7.1)
+      vitefu: 1.0.6(vite@6.3.5(@types/node@22.15.17)(jiti@1.21.7)(terser@5.39.0)(tsx@4.20.6)(yaml@2.7.1))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.2
@@ -4248,6 +4262,10 @@ snapshots:
   get-stream@5.2.0:
     dependencies:
       pump: 3.0.2
+
+  get-tsconfig@4.13.0:
+    dependencies:
+      resolve-pkg-maps: 1.0.0
 
   gettext-parser@8.0.0:
     dependencies:
@@ -5230,6 +5248,8 @@ snapshots:
 
   require-from-string@2.0.2: {}
 
+  resolve-pkg-maps@1.0.0: {}
+
   resolve@1.22.10:
     dependencies:
       is-core-module: 2.16.1
@@ -5554,6 +5574,13 @@ snapshots:
 
   tslib@2.8.1: {}
 
+  tsx@4.20.6:
+    dependencies:
+      esbuild: 0.25.4
+      get-tsconfig: 4.13.0
+    optionalDependencies:
+      fsevents: 2.3.3
+
   type-fest@4.41.0: {}
 
   typesafe-path@0.2.2: {}
@@ -5677,7 +5704,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite@6.3.5(@types/node@22.15.17)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.1):
+  vite@6.3.5(@types/node@22.15.17)(jiti@1.21.7)(terser@5.39.0)(tsx@4.20.6)(yaml@2.7.1):
     dependencies:
       esbuild: 0.25.4
       fdir: 6.4.4(picomatch@4.0.2)
@@ -5690,11 +5717,12 @@ snapshots:
       fsevents: 2.3.3
       jiti: 1.21.7
       terser: 5.39.0
+      tsx: 4.20.6
       yaml: 2.7.1
 
-  vitefu@1.0.6(vite@6.3.5(@types/node@22.15.17)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.1)):
+  vitefu@1.0.6(vite@6.3.5(@types/node@22.15.17)(jiti@1.21.7)(terser@5.39.0)(tsx@4.20.6)(yaml@2.7.1)):
     optionalDependencies:
-      vite: 6.3.5(@types/node@22.15.17)(jiti@1.21.7)(terser@5.39.0)(yaml@2.7.1)
+      vite: 6.3.5(@types/node@22.15.17)(jiti@1.21.7)(terser@5.39.0)(tsx@4.20.6)(yaml@2.7.1)
 
   volar-service-css@0.0.62(@volar/language-service@2.4.13):
     dependencies:
