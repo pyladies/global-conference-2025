@@ -10,11 +10,7 @@ if [ ! -f "locales/template/messages.pot" ]; then
     exit 1
 fi
 
-LANGS=$(node -e "
-const { getTranslatableLanguages } = await import('./src/i18n/locales.ts');
-const langs = getTranslatableLanguages();
-console.log(langs.join(' '));
-")
+LANGS=$(node scripts/get_languages.js)
 
 for lang in $LANGS; do
     PO_FILE="locales/${lang}/messages.po"

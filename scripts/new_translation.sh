@@ -21,11 +21,7 @@ POT_FILE="locales/template/messages.pot"
 LANG_DIR="locales/${LANG_CODE}"
 PO_FILE="${LANG_DIR}/messages.po"
 
-VALID_LANGS=$(node -e "
-const { getTranslatableLanguages } = await import('./src/i18n/locales.ts');
-const langs = getTranslatableLanguages();
-console.log(langs.join(' '));
-")
+VALID_LANGS=$(node scripts/get_languages.js)
 
 if ! echo "$VALID_LANGS" | grep -wq "$LANG_CODE"; then
     echo "Error: Language '${LANG_CODE}' not found in src/i18n/locales.ts"

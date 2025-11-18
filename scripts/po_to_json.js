@@ -16,10 +16,7 @@ console.log('Converting PO files to JSON...\n');
 
 const allTranslations = {};
 
-const localesModule = await import('../src/i18n/locales.ts');
-const { getTranslatableLanguages } = localesModule;
-
-// Get all languages except default (default uses source strings)
+const { getTranslatableLanguages } = await import('../src/i18n/locales.ts');
 const langDirs = getTranslatableLanguages();
 
 for (const lang of langDirs) {
