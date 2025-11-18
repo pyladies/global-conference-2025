@@ -32,3 +32,6 @@ src/data/schedule.json
 
 # Generated translations
 src/i18n/translations.json
+
+# Compiled po files
+locales/**/messages.mo

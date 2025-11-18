@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyLadiesCon 2025\n"
 "Report-Msgid-Bugs-To: Open a PR 🤗\n"
-"POT-Creation-Date: 2025-11-17T17:02:26.901Z\n"
+"POT-Creation-Date: 2025-11-18T05:36:24.429Z\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1049,7 +1049,7 @@ msgid "More About The Speaker"
 msgstr ""
 
 #: src/pages/[lang]/speaker/[...slug].astro:117
-msgid "Sessions by"
+msgid "Sessions by {name}"
 msgstr ""
 
 #: src/pages/[lang]/speakers.astro:26

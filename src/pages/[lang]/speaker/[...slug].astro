@@ -114,7 +114,7 @@ export async function getStaticPaths() {
             </div>
             
             <div class="mt-16">
-              <h2 class="text-3xl font-bold text-black dark:text-white">{t("Sessions by")} {value.name}</h3>
+              <h2 class="text-3xl font-bold text-black dark:text-white">{t("Sessions by {name}").replace("{name}", value.name)}</h2>
               <ol class="list-decimal list-inside">
                 {
                   value.submissions.map((submissionId) => (
