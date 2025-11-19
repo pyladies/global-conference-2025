@@ -55,13 +55,13 @@ const steps = [
     </Sectionhead>
 
     <div class="mx-auto max-w-5xl mt-10 text-black dark:text-white">
-      <div class="flex items-center p-4 mb-4 text-sm text-yellow-800 rounded-lg bg-yellow-50 dark:bg-gray-800 dark:text-yellow-300" role="alert">
+      <div class="flex items-center p-4 mb-4 text-sm text-yellow-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-300" role="alert">
         <svg class="shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
           <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
         </svg>
         <span class="sr-only">Info</span>
         <div>
-          <span class="font-bold">{t("Attention!")}</span> {t("The discord server is still not available. We will keep you posted.")}
+          <span class="font-bold">{t("Update")}</span> {t("The discord server is available!")}
         </div>
       </div>
     </div>
@@ -102,7 +102,7 @@ const steps = [
         </div>
         <p class="py-2" set:html={t("You can get a conference ticket on <a href=\"https://pretix.eu/pyladiescon/2025\">our pretix page</a>.")} />
       </div>
-      <h2 class="text-3xl mt-4 py-10" id="join-discord">
+      <h2 class="text-3xl mt-4 py-10 w-5" id="join-discord">
         {t("Join Discord")}
       </h2>
       <div class="pl-5">
@@ -113,7 +113,15 @@ const steps = [
           <span class="sr-only">Info</span>
           <div set:html={t("<span class=\"font-medium\"><b>Note:</b></span> In case you already have a Discord account, you don't need to create a new one.")} />
         </div>
-        <p class="py-2" set:html={t("You should have received an invite link via email, but in case you cannot find it, use this one: <a href=\"#\">Not available yet</a>")} />
+        <p class="py-2" set:html={t("You will receive an invite link before the conference, but in case you want to join before, use this one:")} />
+        <div class="flex items-center justify-center mt-2">
+            <a href="https://discord.gg/8nwGuszz3Q">
+                <button class="flex items-center bg-white border border-gray-300 rounded-lg shadow-md px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                    <span class="pr-2 " set:html={discordSvg}/>
+                    <span class="text-xl">{t("Join Discord")}</span>
+                </button>
+            </a>
+        </div>
       </div>
       <h2 class="text-3xl mt-4 py-10" id="register-discord">
         {t("Register in Discord")}

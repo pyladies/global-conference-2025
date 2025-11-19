@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyLadiesCon 2025\n"
 "Report-Msgid-Bugs-To: Open a PR 🤗\n"
-"POT-Creation-Date: 2025-11-18T04:47:53.641Z\n"
+"POT-Creation-Date: 2025-11-19T15:16:29.070Z\n"
 "PO-Revision-Date: 2025-11-18 00:33-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -422,11 +422,11 @@ msgstr "Sonuç bulunamadı."
 msgid "Speakers:"
 msgstr "Konuşmacılar:"
 
-#: src/components/sponsors_gallery.astro:117
+#: src/components/sponsors_gallery.astro:138
 msgid "Meet the sponsors of our conference."
 msgstr "Konferansımızın sponsorlarıyla tanışın."
 
-#: src/components/sponsors_gallery.astro:118 src/data/menuItems.ts:9
+#: src/components/sponsors_gallery.astro:139 src/data/menuItems.ts:9
 msgid "Our Sponsors"
 msgstr "Sponsorlarımız"
 
@@ -607,6 +607,7 @@ msgid "Visit pretix to get one."
 msgstr "Bir tane almak için pretix'i ziyaret edin."
 
 #: src/pages/[lang]/attending.astro:28 src/pages/[lang]/attending.astro:106
+#: src/pages/[lang]/attending.astro:121
 msgid "Join Discord"
 msgstr "Discord'a Katıl"
 
@@ -614,7 +615,7 @@ msgstr "Discord'a Katıl"
 msgid "Using the invite link"
 msgstr "Davet bağlantısını kullanarak"
 
-#: src/pages/[lang]/attending.astro:34 src/pages/[lang]/attending.astro:119
+#: src/pages/[lang]/attending.astro:34 src/pages/[lang]/attending.astro:127
 msgid "Register in Discord"
 msgstr "Discord'da Kaydol"
 
@@ -654,14 +655,12 @@ msgid "Follow the next steps to enjoy the conference:"
 msgstr "Konferansın tadını çıkarmak için aşağıdaki adımları izleyin:"
 
 #: src/pages/[lang]/attending.astro:64
-msgid "Attention!"
-msgstr "Dikkat!"
+msgid "Update"
+msgstr ""
 
 #: src/pages/[lang]/attending.astro:64
-msgid "The discord server is still not available. We will keep you posted."
-msgstr ""
-"Discord sunucumuz henüz kullanıma hazır değil. Gelişmelerden sizi haberdar "
-"edeceğiz."
+msgid "The discord server is available!"
+msgstr "Discord sunucumuz kullanıma hazır!"
 
 #: src/pages/[lang]/attending.astro:101
 msgid ""
@@ -693,14 +692,13 @@ msgstr ""
 
 #: src/pages/[lang]/attending.astro:116
 msgid ""
-"You should have received an invite link via email, but in case you cannot "
-"find it, use this one: <a href=\"#\">Not available yet</a>"
+"You will receive an invite link before the conference, but in case you want "
+"to join before, use this one:"
 msgstr ""
-"E-posta yoluyla bir davet bağlantısı almış olmalısınız, ancak "
-"bulamıyorsanız, şu bağlantıyı kullanın: <a href=\"#\">Henüz kullanıma hazır "
-"ve nazır değil</a>"
+"Konferanstan önce bir davet bağlantısı alacaksınız, ancak daha önce "
+"katılmakisterseniz, bunu kullanın:"
 
-#: src/pages/[lang]/attending.astro:122
+#: src/pages/[lang]/attending.astro:130
 msgid ""
 "Once inside the server, head to the <code class=\"text-"
 "blue-400\">#registration-form</code> channel, click on the <button "
@@ -718,7 +716,7 @@ msgstr ""
 "button> butonuna tıklayın ve açılan pencerede, <b>İsminizi</b> ve <b>Bilet "
 "numaranızı</b> girin."
 
-#: src/pages/[lang]/attending.astro:123
+#: src/pages/[lang]/attending.astro:131
 msgid ""
 "You need to enter <b>the exact</b> information from your conference ticket, "
 "that you received via email with a subject:<br><code class=\"text-"
@@ -730,11 +728,11 @@ msgstr ""
 "olmalısınız:<br><code class=\"text-gray-300\">[PyLadiesCon 2025] Your order: "
 "XXXXX</code>."
 
-#: src/pages/[lang]/attending.astro:125
+#: src/pages/[lang]/attending.astro:133
 msgid "Joining as an Participant"
 msgstr "Katılımcı olarak katılmak"
 
-#: src/pages/[lang]/attending.astro:127
+#: src/pages/[lang]/attending.astro:135
 msgid ""
 "If this is your first PyLadiesCon, you should join Discord with the link "
 "that it will be sent to you a week before the conference."
@@ -742,7 +740,7 @@ msgstr ""
 "Eğer bu sizin ilk PyLadiesCon deneyiminiz ise, konferanstan bir hafta önce "
 "size gönderilecek bağlantı ile Discord'a katılmalısınız."
 
-#: src/pages/[lang]/attending.astro:128
+#: src/pages/[lang]/attending.astro:136
 msgid ""
 "Once you register successfully, you will get assigned the <code class=\"text-"
 "yellow-400\">Participant</code> role."
@@ -750,11 +748,11 @@ msgstr ""
 "Başarıyla kaydolduktan sonra, <code class=\"text-yellow-400\">Participant</"
 "code> rolü atanacaktır."
 
-#: src/pages/[lang]/attending.astro:130
+#: src/pages/[lang]/attending.astro:138
 msgid "Joining as a Sponsor"
 msgstr "Sponsor olarak katılmak"
 
-#: src/pages/[lang]/attending.astro:132
+#: src/pages/[lang]/attending.astro:140
 msgid ""
 "If you are from a company that is <b>sponsoring the conference</b>, and you "
 "will participate in the many activities like Panel Discussion, Speed "
@@ -767,7 +765,7 @@ msgstr ""
 "birçok etkinliğe katılacaksanız, şirketinizdeki iletişim kişisi aracılığıyla "
 "size gönderilecek <b>Voucher</b> ile bir bilet almanız gerekir."
 
-#: src/pages/[lang]/attending.astro:133
+#: src/pages/[lang]/attending.astro:141
 msgid ""
 "This is very important for you to get the <code class=\"text-"
 "yellow-400\">Sponsor</code> role."
@@ -775,11 +773,11 @@ msgstr ""
 "Bu, <code class=\"text-yellow-400\">Sponsor</code> rolünü alabilmeniz için "
 "çok önemlidir."
 
-#: src/pages/[lang]/attending.astro:135
+#: src/pages/[lang]/attending.astro:143
 msgid "Joining as a Speaker"
 msgstr "Konuşmacı olarak katılmak"
 
-#: src/pages/[lang]/attending.astro:137
+#: src/pages/[lang]/attending.astro:145
 msgid ""
 "If you have a confirmed Talk, Panel, or Keynote you should get a ticket "
 "using the Voucher that we will send you via email. The reason behind this is "
@@ -791,11 +789,11 @@ msgstr ""
 "Bunun nedeni, size <code class=\"text-yellow-400\">Speaker</code> rolünü "
 "otomatik olarak atamaktır."
 
-#: src/pages/[lang]/attending.astro:139
+#: src/pages/[lang]/attending.astro:147
 msgid "Joining as a Volunteer"
 msgstr "Gönüllü olarak katılmak"
 
-#: src/pages/[lang]/attending.astro:141
+#: src/pages/[lang]/attending.astro:149
 msgid ""
 "If you are a conference Volunteer, it's highly probable you are already "
 "inside the server, but you <span class=\"text-red-500\">will not</span> have "
@@ -807,7 +805,7 @@ msgstr ""
 "kanallarına <span class=\"text-red-500\">erişiminiz olmayacaktır</span> ve "
 "bu sayfanın en üstünde açıklanan kayıt sürecini tamamlamanız gerekecektir."
 
-#: src/pages/[lang]/attending.astro:142
+#: src/pages/[lang]/attending.astro:150
 msgid ""
 "If by some reason you haven't been assigned the <code class=\"text-"
 "yellow-400\">Volunteer</code> contact the organization in the <code "
@@ -817,11 +815,11 @@ msgstr ""
 "atanmadıysanız, lütfen <code class=\"text-blue-400\">#volunteers-general</"
 "code> kanalında organizasyon ile iletişime geçin."
 
-#: src/pages/[lang]/attending.astro:145
+#: src/pages/[lang]/attending.astro:153
 msgid "The server structure"
 msgstr "Sunucu yapısı"
 
-#: src/pages/[lang]/attending.astro:148
+#: src/pages/[lang]/attending.astro:156
 msgid ""
 "Once you join the server, you will see two categories, one called "
 "<b>Conference Information</b> with two channels:"
@@ -829,7 +827,7 @@ msgstr ""
 "Sunucuya katıldığınızda, iki kategori göreceksiniz, bunlardan biri "
 "<b>Conference Information</b> ve iki kanal içerir:"
 
-#: src/pages/[lang]/attending.astro:150
+#: src/pages/[lang]/attending.astro:158
 msgid ""
 "a text channel called <code class=\"text-blue-400\">#rules</code>, with the "
 "rules of the server, and"
@@ -837,7 +835,7 @@ msgstr ""
 "<code class=\"text-blue-400\">#rules</code>, sunucunun kurallarını içeren "
 "bir metin kanalı ve"
 
-#: src/pages/[lang]/attending.astro:151
+#: src/pages/[lang]/attending.astro:159
 msgid ""
 "a text channel called <code class=\"text-blue-400\">#code-of-conduct</code>, "
 "with the guidelines to participate in the event"
@@ -845,11 +843,11 @@ msgstr ""
 "<code class=\"text-blue-400\">#code-of-conduct</code>, etkinliğe katılmak "
 "için kuralları içeren bir metin kanalı"
 
-#: src/pages/[lang]/attending.astro:154
+#: src/pages/[lang]/attending.astro:162
 msgid "Another category called <b>Registration</b> with two channels:"
 msgstr "Başka bir kategori olan <b>Registration</b> iki kanal içerir:"
 
-#: src/pages/[lang]/attending.astro:156
+#: src/pages/[lang]/attending.astro:164
 msgid ""
 "a text channel called <code class=\"text-blue-400\">#registration-form</"
 "code> where you can see the button to register, and"
@@ -857,7 +855,7 @@ msgstr ""
 "<code class=\"text-blue-400\">#registration-form</code>, kaydolmak için "
 "butonu görebileceğiniz bir metin kanalı."
 
-#: src/pages/[lang]/attending.astro:157
+#: src/pages/[lang]/attending.astro:165
 msgid ""
 "a forum channel called <code class=\"text-blue-400\">💬registration-help</"
 "code>, where you can ask any question regarding the registration process."
@@ -865,7 +863,7 @@ msgstr ""
 "<code class=\"text-blue-400\">💬registration-help</code>, kayıt süreciyle "
 "ilgili her türlü soruyu sorabileceğiniz bir forum kanalı."
 
-#: src/pages/[lang]/attending.astro:159
+#: src/pages/[lang]/attending.astro:167
 msgid ""
 "If you have any question after you registered, you can leave your question "
 "in the <code class=\"text-blue-400\">💬help</code> forum."
@@ -873,11 +871,11 @@ msgstr ""
 "Kaydolduktan sonra herhangi bir sorunuz olursa, sorularınızı <code "
 "class=\"text-blue-400\">💬help</code> forumunda sorabilirsiniz."
 
-#: src/pages/[lang]/attending.astro:161
+#: src/pages/[lang]/attending.astro:169
 msgid "Get the latest updates"
 msgstr "Son gelişmeleri alın"
 
-#: src/pages/[lang]/attending.astro:163
+#: src/pages/[lang]/attending.astro:171
 msgid ""
 "Once registered, the <b>Conference Information</b> will contains more "
 "channels:"
@@ -885,7 +883,7 @@ msgstr ""
 "Kaydolduktan sonra, <b>Conference Information</b> daha fazla kanal "
 "içerecektir:"
 
-#: src/pages/[lang]/attending.astro:165
+#: src/pages/[lang]/attending.astro:173
 msgid ""
 "<code class=\"text-blue-400\">#announcements</code>, to get the general "
 "conference announcements,"
@@ -893,7 +891,7 @@ msgstr ""
 "<code class=\"text-blue-400\">#announcements</code>, genel konferans "
 "duyurularını almak için,"
 
-#: src/pages/[lang]/attending.astro:166
+#: src/pages/[lang]/attending.astro:174
 msgid ""
 "<code class=\"text-blue-400\">#outreach-social-media</code>, to get the "
 "conference posts on social media, so you can share them,"
@@ -901,7 +899,7 @@ msgstr ""
 "<code class=\"text-blue-400\">#outreach-social-media</code>, konferans "
 "paylaşımlarını alarak onları sosyal medyada paylaşabilmeniz için,"
 
-#: src/pages/[lang]/attending.astro:167
+#: src/pages/[lang]/attending.astro:175
 msgid ""
 "<code class=\"text-blue-400\">#donations</code>, to track the donations "
 "through <a href=\"https://pretix.eu/pyladiescon/2025\">Pretix</a> during the "
@@ -911,7 +909,7 @@ msgstr ""
 "href=\"https://pretix.eu/pyladiescon/2025\">Pretix</a> üzerinden bağışları "
 "takip etmek için,"
 
-#: src/pages/[lang]/attending.astro:168
+#: src/pages/[lang]/attending.astro:176
 msgid ""
 "<code class=\"text-blue-400\">#session-notifications</code>, to know the "
 "upcoming talks and events,"
@@ -919,7 +917,7 @@ msgstr ""
 "<code class=\"text-blue-400\">#session-notifications</code>, yaklaşan "
 "konuşmaları ve etkinlikleri öğrenmek için,"
 
-#: src/pages/[lang]/attending.astro:169
+#: src/pages/[lang]/attending.astro:177
 msgid ""
 "<code class=\"text-blue-400\">#global-events</code>, to discover events "
 "happening in the rest of the world."
@@ -927,11 +925,11 @@ msgstr ""
 "<code class=\"text-blue-400\">#global-events</code>, dünyanın geri kalanında "
 "gerçekleşen etkinlikleri keşfetmek için."
 
-#: src/pages/[lang]/attending.astro:172
+#: src/pages/[lang]/attending.astro:180
 msgid "Interact with others"
 msgstr "Başkalarıyla etkileşimde bulunun"
 
-#: src/pages/[lang]/attending.astro:174
+#: src/pages/[lang]/attending.astro:182
 msgid ""
 "The <b>Conference</b> category will be visible once you register, and will "
 "contain the following channels:"
@@ -939,7 +937,7 @@ msgstr ""
 "<b>Conference</b> kategorisi, kaydolduğunuzda görünür olacak ve aşağıdaki "
 "kanalları içerecektir:"
 
-#: src/pages/[lang]/attending.astro:176
+#: src/pages/[lang]/attending.astro:184
 msgid ""
 "<code class=\"text-blue-400\">#welcome</code>, for you to introduce yourself "
 "and say hi to others,"
@@ -947,7 +945,7 @@ msgstr ""
 "<code class=\"text-blue-400\">#welcome</code>, kendinizi tanıtmanız ve diğer "
 "katılımcılara merhaba demeniz için,"
 
-#: src/pages/[lang]/attending.astro:177
+#: src/pages/[lang]/attending.astro:185
 msgid ""
 "<code class=\"text-blue-400\">#general</code>, for a general conference "
 "discussion,"
@@ -955,7 +953,7 @@ msgstr ""
 "<code class=\"text-blue-400\">#general</code>, genel konferans tartışmaları "
 "için,"
 
-#: src/pages/[lang]/attending.astro:178
+#: src/pages/[lang]/attending.astro:186
 msgid ""
 "<code class=\"text-blue-400\">#networking</code>, so you can share your "
 "social media to connect with others,"
@@ -963,7 +961,7 @@ msgstr ""
 "<code class=\"text-blue-400\">#networking</code>, başkalarıyla sosyal "
 "medyanızı paylaşabilmeniz için,"
 
-#: src/pages/[lang]/attending.astro:179
+#: src/pages/[lang]/attending.astro:187
 msgid ""
 "<code class=\"text-blue-400\">#random</code>, for any discussion not related "
 "to the conference,"
@@ -971,14 +969,14 @@ msgstr ""
 "<code class=\"text-blue-400\">#random</code>, konferansla ilgili olmayan "
 "herhangi bir tartışma için,"
 
-#: src/pages/[lang]/attending.astro:180
+#: src/pages/[lang]/attending.astro:188
 msgid ""
 "<code class=\"text-blue-400\">#job-board</code>, in case you are looking for "
 "job offers,"
 msgstr ""
 "<code class=\"text-blue-400\">#job-board</code>, iş ilanları arıyorsanız,"
 
-#: src/pages/[lang]/attending.astro:181
+#: src/pages/[lang]/attending.astro:189
 msgid ""
 "<code class=\"text-blue-400\">#resources</code>, for sharing python-related "
 "resources,"
@@ -986,7 +984,7 @@ msgstr ""
 "<code class=\"text-blue-400\">#resources</code>, Python ile ilgili "
 "kaynakları paylaşmak için,"
 
-#: src/pages/[lang]/attending.astro:182
+#: src/pages/[lang]/attending.astro:190
 msgid ""
 "<code class=\"text-blue-400\">#news-discussion</code>, to interact with the "
 "latest Python/PyLadies blog posts,"
@@ -994,7 +992,7 @@ msgstr ""
 "<code class=\"text-blue-400\">#news-discussion</code>, en son Python/"
 "PyLadies blog paylaşımlarıyla etkileşimde bulunmak için,"
 
-#: src/pages/[lang]/attending.astro:183
+#: src/pages/[lang]/attending.astro:191
 msgid ""
 "<code class=\"text-blue-400\">#help</code>, in case you need help with "
 "something,"
@@ -1002,7 +1000,7 @@ msgstr ""
 "<code class=\"text-blue-400\">#help</code>, bir şeye ihtiyacınız olursa "
 "yardım almak için,"
 
-#: src/pages/[lang]/attending.astro:184
+#: src/pages/[lang]/attending.astro:192
 msgid ""
 "<code class=\"text-blue-400\">#ask-core-devs</code>, for you to meet and ask "
 "the many Python Core developers that will be around,"
@@ -1010,7 +1008,7 @@ msgstr ""
 "<code class=\"text-blue-400\">#ask-core-devs</code>, etrafta olacak birçok "
 "Python Core geliştiricisiyle tanışmanız ve onlara soru sormanız için,"
 
-#: src/pages/[lang]/attending.astro:185
+#: src/pages/[lang]/attending.astro:193
 msgid ""
 "<code class=\"text-blue-400\">#game</code>, for a little game we have "
 "prepared for you,"
@@ -1018,7 +1016,7 @@ msgstr ""
 "<code class=\"text-blue-400\">#game</code>, sizin için hazırladığımız küçük "
 "bir oyun için,"
 
-#: src/pages/[lang]/attending.astro:186
+#: src/pages/[lang]/attending.astro:194
 msgid ""
 "<code class=\"text-blue-400\">#game-ranking</code>, to see the ranking of "
 "the game!,"
@@ -1026,21 +1024,21 @@ msgstr ""
 "<code class=\"text-blue-400\">#game-ranking</code>, oyunun sıralamasını "
 "görmek için!,"
 
-#: src/pages/[lang]/attending.astro:188
+#: src/pages/[lang]/attending.astro:196
 msgid ""
 "And more importantly, you also will have channels related to the tracks of "
 "the conference:"
 msgstr ""
 "Ve daha önemlisi, konferansdaki farklı konularla ilgili kanallar da olacak:"
 
-#: src/pages/[lang]/attending.astro:190
+#: src/pages/[lang]/attending.astro:198
 msgid ""
 "<code class=\"text-blue-400\">#main-stream</code>, for the main conference "
 "track,"
 msgstr ""
 "<code class=\"text-blue-400\">#main-stream</code>, ana konferans yayını için,"
 
-#: src/pages/[lang]/attending.astro:191
+#: src/pages/[lang]/attending.astro:199
 msgid ""
 "<code class=\"text-blue-400\">#activities-open-spaces</code>, for the track "
 "for Activities, Workshops, and Open Spaces,"
@@ -1281,3 +1279,6 @@ msgstr "Seviye:"
 #: src/pages/[lang]/sprints.astro:117
 msgid "Languages:"
 msgstr "Diller:"
+
+#~ msgid "Attention!"
+#~ msgstr "Dikkat!"
