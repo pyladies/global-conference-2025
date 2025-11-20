@@ -656,7 +656,7 @@ msgstr "Konferansın tadını çıkarmak için aşağıdaki adımları izleyin:"
 
 #: src/pages/[lang]/attending.astro:64
 msgid "Update"
-msgstr ""
+msgstr "Duyuru"
 
 #: src/pages/[lang]/attending.astro:64
 msgid "The discord server is available!"
@@ -696,7 +696,7 @@ msgid ""
 "to join before, use this one:"
 msgstr ""
 "Konferanstan önce bir davet bağlantısı alacaksınız, ancak daha önce "
-"katılmakisterseniz, bunu kullanın:"
+"katılmak isterseniz, bunu kullanın:"
 
 #: src/pages/[lang]/attending.astro:130
 msgid ""
