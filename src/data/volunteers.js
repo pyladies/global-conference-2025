@@ -31,6 +31,14 @@ const volunteers = {
                 git: "https://github.com/TildaDares"
             },
         },
+        {
+            name: "Marco Richetta",
+            image: "/images/volunteers/marco_richetta.jpg",
+            links: {
+                linkedin: "https://www.linkedin.com/in/marco-richetta/",
+                mastodon: "https://mastodon.social/@mrichetta"
+            },
+        },
     ],
     program: [],
     communications: [],
