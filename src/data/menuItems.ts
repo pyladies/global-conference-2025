@@ -21,6 +21,7 @@ export const getMenuItems = (t: (key: string) => string) => [
       { title: t("Sessions"), path: "/sessions" },
       { title: t("Speakers"), path: "/speakers" },
       { title: t("Sprints"), path: "/sprints" },
+      { title: t("Volunteers"), path: "/volunteers" },
       { title: t("How to Join"), path: "/attending" },
     ],
   },
