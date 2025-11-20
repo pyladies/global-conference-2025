@@ -8,6 +8,7 @@ const defaultLinks = {
     twitter: null,
     youtube: null,
     git: null,
+    website: null,
 };
 
 //Add your info here, follow the existing structure :)
@@ -18,52 +19,20 @@ const volunteers = {
             image: "/images/volunteers/codingisads.jpeg",
             links: {
                 linkedin: "https://www.linkedin.com/in/isadora-micaela-dossantos/",
-                mastodon: "https://www.instagram.com/isadorads_/",
                 git: "https://github.com/codingisads",
 
             },
         },
         {
-            name: "Ege Akman",
-            image: "/logo.svg",
-            links: {
-                instagram: "https://www.instagram.com/isadorads_/",
-            },
-        },
-        {
             name: "Tilda Udufo",
-            image: "/logo.svg",
+            image: "/images/volunteers/tilda_udufo.jpg",
             links: {
-                instagram: "https://www.instagram.com/isadorads_/",
-            },
-        },
-        {
-            name: "Marco Richetta ",
-            image: "/logo.svg",
-            links: {
-                instagram: "https://www.instagram.com/isadorads_/",
+                linkedin: "https://www.linkedin.com/in/mathilda-udufo",
+                git: "https://github.com/TildaDares"
             },
         },
     ],
-    program: [
-        
-        {
-            name: "Tilda Udufo",
-            image: "/logo.svg",
-            links: {
-                instagram: "https://www.instagram.com/isadorads_/",
-            },
-        },
-        {
-            name: "Isadora Dos Santos",
-            image: "/images/volunteers/codingisads.jpeg",
-            links: {
-                linkedin: "https://www.linkedin.com/in/isadora-micaela-dossantos/",
-                mastodon: "https://www.instagram.com/isadorads_/",
-                git: "https://github.com/codingisads",
-            },
-        },
-    ],
+    program: [],
     communications: [],
     design_media: [],
 };
@@ -80,9 +49,9 @@ const volunteersWithDefaults = Object.fromEntries(
   ])
 );
 
-//shuffle array
+//shuffle array function
 function shuffleArray(array) {
-  const arr = [...array]; // clonamos para no mutar el original
+  const arr = [...array];
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [arr[i], arr[j]] = [arr[j], arr[i]];

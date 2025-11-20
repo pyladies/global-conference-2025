@@ -19,25 +19,28 @@ const t = useTranslations(lang);
 let value = false;
 function groupVolunteers(vols) {
     return vols.reduce((acc, v) => {
-        if (!acc[v.role]) acc[v.role] = [];
+        if (!acc[v.role])
+            acc[v.role] = [];
         acc[v.role].push(v);
         return acc;
     }, {});
 }
 
-// Función para eliminar duplicados pero manteniendo la primera aparición
-
+//Function to eliminate duplicates, but keeping the first occurrence
 function dedupeVolunteersByName(volunteersObj: any) { 
   const seen = new Set<string>();
   const result: Record<string, any[]> = {};
 
   for (const [groupName, groupList] of Object.entries(volunteersObj)) {
-    const list = groupList as { name: string }[]; // ← esto arregla el 'unknown'
+    const list = groupList as { name: string }[];  // This fixes the 'unknown'
 
     result[groupName] = list.filter(vol => {
-      if (seen.has(vol.name)) return false;
-      seen.add(vol.name);
-      return true;
+      if (seen.has(vol.name)) {
+          return false;
+      } else {
+          seen.add(vol.name);
+          return true;
+      }
     });
   }
 
@@ -172,6 +175,14 @@ const uniqueVolunteers = dedupeVolunteersByName(volunteers);
                                                         social="github"
                                                     />
                                                 )}
+                                                {volunteer.links.website && (
+                                                    <SocialsComponent
+                                                        speakersSocialUrl={
+                                                            volunteer.links.website
+                                                        }
+                                                        social="website"
+                                                    />
+                                                )}
                                             </div>
                                         </div>
                                     </div>
@@ -271,6 +282,14 @@ const uniqueVolunteers = dedupeVolunteersByName(volunteers);
                                                         social="github"
                                                     />
                                                 )}
+                                                {volunteer.links.website && (
+                                                    <SocialsComponent
+                                                        speakersSocialUrl={
+                                                            volunteer.links.website
+                                                        }
+                                                        social="website"
+                                                    />
+                                                )}
                                             </div>
                                         </div>
                                     </div>
@@ -322,7 +341,6 @@ const uniqueVolunteers = dedupeVolunteersByName(volunteers);
                             "text-white",
                         );
                     } else {
-                        // UTC is active
                         groupedBtn.classList.remove(
                             "bg-gradient-to-r",
                             "from-purple-600",
