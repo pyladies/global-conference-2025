@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyLadiesCon 2025\n"
 "Report-Msgid-Bugs-To: Open a PR 🤗\n"
-"POT-Creation-Date: 2025-11-21T07:42:50.148Z\n"
+"POT-Creation-Date: 2025-11-21T08:09:32.027Z\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1021,11 +1021,15 @@ msgstr ""
 msgid "Spread the word about PyLadiesCon on social media"
 msgstr ""
 
-#: src/pages/[lang]/donate.astro:121
+#: src/pages/[lang]/donate.astro:118
+msgid "Join or start a local PyLadies chapter"
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:125
 msgid "Thank You for Your Support!"
 msgstr ""
 
-#: src/pages/[lang]/donate.astro:124
+#: src/pages/[lang]/donate.astro:128
 msgid ""
 "Your generosity makes it possible for PyLadies communities worldwide to "
 "connect, learn, and grow together."
