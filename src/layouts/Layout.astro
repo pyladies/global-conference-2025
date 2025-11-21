@@ -5,10 +5,10 @@ import Navbar from "@components/navbar/navbar.astro";
 import "@fontsource-variable/inter";
 import { SEO } from "astro-seo";
 import { defaultLang } from "i18n/locales";
+import { getLangFromUrl } from "i18n/utils";
 
 export interface Props {
 	title?: string;
-	lang?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
@@ -18,7 +18,8 @@ const resolvedImageWithDomain = new URL(
 	Astro.site,
 ).toString();
 
-const { title, lang = null } = Astro.props;
+const { title = null } = Astro.props;
+const lang = getLangFromUrl(Astro.url) || defaultLang;
 
 const makeTitle = title
 	? `${title} | PyLadiesCon 2025`
@@ -26,7 +27,7 @@ const makeTitle = title
 ---
 
 <!doctype html>
-<html lang={lang ?? defaultLang}>
+<html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
