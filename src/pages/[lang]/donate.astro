@@ -1,0 +1,133 @@
+---
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import { getLocaleStaticPaths } from "../../i18n/locales";
+
+export function getStaticPaths() {
+  return getLocaleStaticPaths();
+}
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title={t("Donate")}>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{t("Support PyLadiesCon")}</Fragment>
+      <Fragment slot="subtitle">{t("Make a Donation")}</Fragment>
+      <Fragment slot="description">
+        {t("PyLadiesCon is an exciting online event dedicated to empowerment, learning, and diversity within the Python community. Organized by PyLadies, a global mentorship group helping more women become active participants and leaders in the Python open source community, your donation will help improve the diversity of the software industry as a whole.")}
+      </Fragment>
+    </Sectionhead>
+
+    <div class="mx-auto mt-12 max-w-6xl">
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
+          <div class="text-4xl mb-4">🌍</div>
+          <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">{t("Global Reach")}</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            {t("Help us bring PyLadies communities together from around the world.")}
+          </p>
+        </div>
+        
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">{t("Free Access")}</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            {t("Keep the conference free and accessible to all participants.")}
+          </p>
+        </div>
+        
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
+          <div class="text-4xl mb-4">💝</div>
+          <h3 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">{t("Community Support")}</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            {t("Support the PyLadies community and help organize future events.")}
+          </p>
+        </div>
+      </div>
+
+      <div class="relative">        
+        <div class="relative bg-white dark:bg-gray-800 rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-700">
+          <div class="bg-gradient-to-r from-purple-600 via-pinkpyladies to-pink-600 p-6 text-white">
+            <h2 class="text-2xl font-bold text-center">{t("Donation Form")}</h2>
+            <p class="text-center mt-2 text-white/90">
+              {t("All donations go directly to supporting PyLadiesCon and are managed by the Python Software Foundation.")}
+            </p>
+          </div>
+          
+          <div class="relative bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 p-12 text-center">
+            <div class="max-w-2xl mx-auto">
+              <div class="text-6xl mb-6">💝</div>
+              <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+                {t("Ready to Make a Difference?")}
+              </h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-8 text-lg">
+                {t("Click the button below to proceed to our donation form. You'll be redirected to the Python Software Foundation's payment system.")}
+              </p>
+              
+              <a 
+                href="https://psfmember.org/civicrm/contribute/transact/?reset=1&id=53"
+                target="_blank"
+                class="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 via-pinkpyladies to-pink-600 hover:from-purple-700 hover:via-pink-700 hover:to-pink-700 text-white hover:!text-white font-bold px-8 py-4 rounded-xl shadow-2xl transition-all transform hover:scale-105 text-lg"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+                {t("Proceed to Donation Form")}
+              </a>
+              
+              <div class="mt-8 flex items-center justify-center gap-2 text-sm text-gray-500 dark:text-gray-400">
+                <span class="text-lg">🔒</span>
+                <span>{t("Payment is processed securely via PayPal or physical check (US only)")}</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-gray-50 dark:bg-gray-900 p-6 border-t border-gray-200 dark:border-gray-700">
+            <div class="flex items-center gap-3">
+              <div class="text-xl">ℹ️</div>
+              <p class="text-sm text-gray-600 dark:text-gray-300">
+                {t("The Python Software Foundation is a 501(c)(3) non-profit organization. Donations may be tax-deductible.")}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6">
+        <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">{t("Other Ways to Support")}</h3>
+        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+          <li class="flex items-start gap-2">
+            <span class="text-pinkpyladies mt-1">→</span>
+            <span>{t("Become a sponsor - contact us at")} <a href="mailto:sponsors@pyladies.com" class="text-pinkpyladies hover:underline">sponsors@pyladies.com</a></span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-pinkpyladies mt-1">→</span>
+            <span><a href="https://conference.pyladies.com/docs/#section-volunteers" class="text-pinkpyladies hover:underline">{t("Volunteer your time and skills to help organize the conference")}</a></span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-pinkpyladies mt-1">→</span>
+            <span>{t("Spread the word about PyLadiesCon on social media")}</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-pinkpyladies mt-1">→</span>
+            <span>{t("Join or start a local PyLadies chapter")}</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mt-12 text-center pb-12">
+        <h3 class="text-3xl font-bold bg-gradient-to-r from-purple-600 via-pinkpyladies to-pink-600 bg-clip-text text-transparent mb-4">
+          {t("Thank You for Your Support!")}
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          {t("Your generosity makes it possible for PyLadies communities worldwide to connect, learn, and grow together.")}
+        </p>
+      </div>
+    </div>
+  </Container>
+</Layout>

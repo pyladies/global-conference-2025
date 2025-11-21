@@ -39,4 +39,8 @@ export const getMenuItems = (t: (key: string) => string) => [
       { title: t("Enforcement process"), path: "/coc-enforcing" },
     ],
   },
+  {
+    title: t("Donate"),
+    path: "/donate",
+  },
 ];

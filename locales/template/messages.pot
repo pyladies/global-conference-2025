@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyLadiesCon 2025\n"
 "Report-Msgid-Bugs-To: Open a PR 🤗\n"
-"POT-Creation-Date: 2025-11-19T15:21:31.330Z\n"
+"POT-Creation-Date: 2025-11-21T08:09:32.027Z\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -213,6 +213,8 @@ msgid "Register"
 msgstr ""
 
 #: src/components/hero.astro:77
+#: src/data/menuItems.ts:43
+#: src/pages/[lang]/donate.astro:16
 msgid "Donate"
 msgstr ""
 
@@ -371,11 +373,11 @@ msgstr ""
 msgid "Speakers:"
 msgstr ""
 
-#: src/components/sponsors_gallery.astro:138
+#: src/components/sponsors_gallery.astro:155
 msgid "Meet the sponsors of our conference."
 msgstr ""
 
-#: src/components/sponsors_gallery.astro:139
+#: src/components/sponsors_gallery.astro:156
 #: src/data/menuItems.ts:9
 msgid "Our Sponsors"
 msgstr ""
@@ -926,6 +928,111 @@ msgid ""
 "Members of the Python community are open, considerate, and respectful. "
 "Behaviors that reinforce these values contribute to a positive environment, "
 "and include:"
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:19
+msgid "Support PyLadiesCon"
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:20
+msgid "Make a Donation"
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:22
+msgid ""
+"PyLadiesCon is an exciting online event dedicated to empowerment, learning, "
+"and diversity within the Python community. Organized by PyLadies, a global "
+"mentorship group helping more women become active participants and leaders "
+"in the Python open source community, your donation will help improve the "
+"diversity of the software industry as a whole."
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:30
+msgid "Global Reach"
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:32
+msgid "Help us bring PyLadies communities together from around the world."
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:38
+msgid "Free Access"
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:40
+msgid "Keep the conference free and accessible to all participants."
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:46
+msgid "Community Support"
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:48
+msgid "Support the PyLadies community and help organize future events."
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:56
+msgid "Donation Form"
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:58
+msgid ""
+"All donations go directly to supporting PyLadiesCon and are managed by the "
+"Python Software Foundation."
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:66
+msgid "Ready to Make a Difference?"
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:69
+msgid ""
+"Click the button below to proceed to our donation form. You'll be "
+"redirected to the Python Software Foundation's payment system."
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:80
+msgid "Proceed to Donation Form"
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:85
+msgid "Payment is processed securely via PayPal or physical check (US only)"
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:94
+msgid ""
+"The Python Software Foundation is a 501(c)(3) non-profit organization. "
+"Donations may be tax-deductible."
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:102
+msgid "Other Ways to Support"
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:106
+msgid "Become a sponsor - contact us at"
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:110
+msgid "Volunteer your time and skills to help organize the conference"
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:114
+msgid "Spread the word about PyLadiesCon on social media"
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:118
+msgid "Join or start a local PyLadies chapter"
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:125
+msgid "Thank You for Your Support!"
+msgstr ""
+
+#: src/pages/[lang]/donate.astro:128
+msgid ""
+"Your generosity makes it possible for PyLadies communities worldwide to "
+"connect, learn, and grow together."
 msgstr ""
 
 #: src/pages/[lang]/jobs.astro:49
