@@ -1143,11 +1143,11 @@ msgstr ""
 
 #: src/pages/[lang]/donate.astro:19
 msgid "Support PyLadiesCon"
-msgstr "Asistir a PyLadiesCon"
+msgstr "Apoya PyLadiesCon"
 
 #: src/pages/[lang]/donate.astro:20
 msgid "Make a Donation"
-msgstr "Hacer una Donación"
+msgstr "Haz una Donación"
 
 #: src/pages/[lang]/donate.astro:22
 msgid ""
