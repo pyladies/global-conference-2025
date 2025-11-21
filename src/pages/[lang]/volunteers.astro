@@ -96,100 +96,108 @@ const uniqueVolunteers = dedupeVolunteersByName(volunteers);
                         <>
                         {groupVolunteers.length > 0 && (
 
-                            <div class="grid grid-flow-rows grid-cols-1 gap-10 mb-10 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
-                                {groupVolunteers.map((volunteer) => (
-                                    <div class="flex items-center justify-center lg:justify-start">
-                                        <div class="w-28 h-28 rounded-full overflow-hidden">
-                                            <img
-                                                class="w-full h-full object-cover"
-                                                src={volunteer.image}
-                                                loading="lazy"
-                                            />
-                                        </div>
-                                        <div class="pl-2">
-                                            <p class="text-black dark:text-white text-md font-bold">
-                                                {volunteer.name}
-                                            </p>
-                                            <p class="text-black dark:text-white capitalize text-sm font-light italic">
-                                                {t(groupName.replace("_", " "))}
+                            
+                            <div class="flex justify-center">
+                                    <div class="grid grid-flow-rows grid-cols-1 gap-10 mb-10 sm:grid-cols-2 md:grid-cols-3 sm:gap-4 lg:grid-cols-4">
+                                        {groupVolunteers.map((volunteer) => (
+                                            <div class="flex justify-start">
+                                                    <div class="w-28 h-28 rounded-full overflow-hidden">
+                                                    <img
+                                                        class="w-full h-full object-cover"
+                                                        src={volunteer.image}
+                                                        loading="lazy"
+                                                    />
+                                                    </div>
+                                                    <div class="pl-2">
+                                                        <p class="text-black dark:text-white text-md font-bold">
+                                                            {volunteer.name}
+                                                        </p>
+                                                <p class="text-black dark:text-white capitalize text-sm font-light italic">
+                                                    {t(groupName.replace("_", " "))}
 
-                                            </p>
-                                            <div class="flex pt-2">
-                                                {volunteer.links.mastodon && (
-                                                    <SocialsComponent
-                                                        speakersSocialUrl={
-                                                            volunteer.links
-                                                                .mastodon
-                                                        }
-                                                        social="mastodon"
-                                                    />
-                                                )}
-                                                {volunteer.links.bluesky && (
-                                                    <SocialsComponent
-                                                        speakersSocialUrl={
-                                                            volunteer.links
-                                                                .bluesky
-                                                        }
-                                                        social="bluesky"
-                                                    />
-                                                )}
-                                                {volunteer.links.instagram && (
-                                                    <SocialsComponent
-                                                        speakersSocialUrl={
-                                                            volunteer.links
-                                                                .instagram
-                                                        }
-                                                        social="instagram"
-                                                    />
-                                                )}
-                                                {volunteer.links.linkedin && (
-                                                    <SocialsComponent
-                                                        speakersSocialUrl={
-                                                            volunteer.links
-                                                                .linkedin
-                                                        }
-                                                        social="linkedin"
-                                                    />
-                                                )}
-                                                {volunteer.links.twitter && (
-                                                    <SocialsComponent
-                                                        speakersSocialUrl={
-                                                            volunteer.links
-                                                                .twitter
-                                                        }
-                                                        social="twitter"
-                                                    />
-                                                )}
-                                                {volunteer.links.youtube && (
-                                                    <SocialsComponent
-                                                        speakersSocialUrl={
-                                                            volunteer.links
-                                                                .youtube
-                                                        }
-                                                        social="youtube"
-                                                    />
-                                                )}
-                                                {volunteer.links.git && (
-                                                    <SocialsComponent
-                                                        speakersSocialUrl={
-                                                            volunteer.links.git
-                                                        }
-                                                        social="github"
-                                                    />
-                                                )}
-                                                {volunteer.links.website && (
-                                                    <SocialsComponent
-                                                        speakersSocialUrl={
-                                                            volunteer.links.website
-                                                        }
-                                                        social="website"
-                                                    />
-                                                )}
+                                                </p>
+                                                        <div class="flex pt-2">
+                                                            {volunteer.links.mastodon && (
+                                                                <SocialsComponent
+                                                                    speakersSocialUrl={
+                                                                        volunteer.links
+                                                                            .mastodon
+                                                                    }
+                                                                    social="mastodon"
+                                                                />
+                                                            )}
+                                                            {volunteer.links.bluesky && (
+                                                                <SocialsComponent
+                                                                    speakersSocialUrl={
+                                                                        volunteer.links
+                                                                            .bluesky
+                                                                    }
+                                                                    social="bluesky"
+                                                                />
+                                                            )}
+                                                            {volunteer.links.instagram && (
+                                                                <SocialsComponent
+                                                                    speakersSocialUrl={
+                                                                        volunteer.links
+                                                                            .instagram
+                                                                    }
+                                                                    social="instagram"
+                                                                />
+                                                            )}
+                                                            {volunteer.links.linkedin && (
+                                                                <SocialsComponent
+                                                                    speakersSocialUrl={
+                                                                        volunteer.links
+                                                                            .linkedin
+                                                                    }
+                                                                    social="linkedin"
+                                                                />
+                                                            )}
+                                                            {volunteer.links.twitter && (
+                                                                <SocialsComponent
+                                                                    speakersSocialUrl={
+                                                                        volunteer.links
+                                                                            .twitter
+                                                                    }
+                                                                    social="twitter"
+                                                                />
+                                                            )}
+                                                            {volunteer.links.youtube && (
+                                                                <SocialsComponent
+                                                                    speakersSocialUrl={
+                                                                        volunteer.links
+                                                                            .youtube
+                                                                    }
+                                                                    social="youtube"
+                                                                />
+                                                            )}
+                                                            {volunteer.links.git && (
+                                                                <SocialsComponent
+                                                                    speakersSocialUrl={
+                                                                        volunteer.links.git
+                                                                    }
+                                                                    social="github"
+                                                                />
+                                                            )}
+                                                            {volunteer.links.website && (
+                                                                <SocialsComponent
+                                                                    speakersSocialUrl={
+                                                                        volunteer.links.website
+                                                                    }
+                                                                    social="website"
+                                                                />
+                                                            )}
+                                                        </div>
+                                                    </div>
                                             </div>
-                                        </div>
+                                        ))}
                                     </div>
-                                ))}
-                            </div>)}
+                                
+                                </div>
+                            
+                        )
+                            
+                            }
                             
                         </>
                     ),
@@ -203,100 +211,104 @@ const uniqueVolunteers = dedupeVolunteersByName(volunteers);
                 Object.entries(volunteers).map(
                     ([groupName, groupVolunteers]) => (
                         <>
-                        {groupVolunteers.length > 0 && (<h1 class="text-3xl lg:text-4xl text-center font-bold lg:tracking-tight capitalize dark:text-white pb-5">
+                        {groupVolunteers.length > 0 && (
+                            <h1 class="text-3xl lg:text-4xl text-center font-bold lg:tracking-tight capitalize dark:text-white pb-5">
                                 {t(groupName.replace("_", " "))}
                             </h1>
 
-                            <div class="grid grid-flow-rows grid-cols-1 gap-10 mb-10 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
-                                {groupVolunteers.map((volunteer) => (
-                                    <div class="flex items-center justify-center lg:justify-start">
-                                        <div class="w-28 h-28 rounded-full overflow-hidden">
-                                            <img
-                                                class="w-full h-full object-cover"
-                                                src={volunteer.image}
-                                                loading="lazy"
-                                            />
-                                        </div>
-                                        <div class="pl-2">
-                                            <p class="text-black dark:text-white text-md font-bold">
-                                                {volunteer.name}
-                                            </p>
-                                            <div class="flex pt-2">
-                                                {volunteer.links.mastodon && (
-                                                    <SocialsComponent
-                                                        speakersSocialUrl={
-                                                            volunteer.links
-                                                                .mastodon
-                                                        }
-                                                        social="mastodon"
+                                <div class="flex justify-center">
+                                    <div class="grid grid-flow-rows grid-cols-1 gap-10 mb-10 sm:grid-cols-2 md:grid-cols-3 sm:gap-4 lg:grid-cols-4">
+                                        {groupVolunteers.map((volunteer) => (
+                                            <div class="flex justify-start">
+                                                    <div class="w-28 h-28 rounded-full overflow-hidden">
+                                                    <img
+                                                        class="w-full h-full object-cover"
+                                                        src={volunteer.image}
+                                                        loading="lazy"
                                                     />
-                                                )}
-                                                {volunteer.links.bluesky && (
-                                                    <SocialsComponent
-                                                        speakersSocialUrl={
-                                                            volunteer.links
-                                                                .bluesky
-                                                        }
-                                                        social="bluesky"
-                                                    />
-                                                )}
-                                                {volunteer.links.instagram && (
-                                                    <SocialsComponent
-                                                        speakersSocialUrl={
-                                                            volunteer.links
-                                                                .instagram
-                                                        }
-                                                        social="instagram"
-                                                    />
-                                                )}
-                                                {volunteer.links.linkedin && (
-                                                    <SocialsComponent
-                                                        speakersSocialUrl={
-                                                            volunteer.links
-                                                                .linkedin
-                                                        }
-                                                        social="linkedin"
-                                                    />
-                                                )}
-                                                {volunteer.links.twitter && (
-                                                    <SocialsComponent
-                                                        speakersSocialUrl={
-                                                            volunteer.links
-                                                                .twitter
-                                                        }
-                                                        social="twitter"
-                                                    />
-                                                )}
-                                                {volunteer.links.youtube && (
-                                                    <SocialsComponent
-                                                        speakersSocialUrl={
-                                                            volunteer.links
-                                                                .youtube
-                                                        }
-                                                        social="youtube"
-                                                    />
-                                                )}
-                                                {volunteer.links.git && (
-                                                    <SocialsComponent
-                                                        speakersSocialUrl={
-                                                            volunteer.links.git
-                                                        }
-                                                        social="github"
-                                                    />
-                                                )}
-                                                {volunteer.links.website && (
-                                                    <SocialsComponent
-                                                        speakersSocialUrl={
-                                                            volunteer.links.website
-                                                        }
-                                                        social="website"
-                                                    />
-                                                )}
+                                                    </div>
+                                                    <div class="pl-2">
+                                                        <p class="text-black dark:text-white text-md font-bold">
+                                                            {volunteer.name}
+                                                        </p>
+                                                        <div class="flex pt-2">
+                                                            {volunteer.links.mastodon && (
+                                                                <SocialsComponent
+                                                                    speakersSocialUrl={
+                                                                        volunteer.links
+                                                                            .mastodon
+                                                                    }
+                                                                    social="mastodon"
+                                                                />
+                                                            )}
+                                                            {volunteer.links.bluesky && (
+                                                                <SocialsComponent
+                                                                    speakersSocialUrl={
+                                                                        volunteer.links
+                                                                            .bluesky
+                                                                    }
+                                                                    social="bluesky"
+                                                                />
+                                                            )}
+                                                            {volunteer.links.instagram && (
+                                                                <SocialsComponent
+                                                                    speakersSocialUrl={
+                                                                        volunteer.links
+                                                                            .instagram
+                                                                    }
+                                                                    social="instagram"
+                                                                />
+                                                            )}
+                                                            {volunteer.links.linkedin && (
+                                                                <SocialsComponent
+                                                                    speakersSocialUrl={
+                                                                        volunteer.links
+                                                                            .linkedin
+                                                                    }
+                                                                    social="linkedin"
+                                                                />
+                                                            )}
+                                                            {volunteer.links.twitter && (
+                                                                <SocialsComponent
+                                                                    speakersSocialUrl={
+                                                                        volunteer.links
+                                                                            .twitter
+                                                                    }
+                                                                    social="twitter"
+                                                                />
+                                                            )}
+                                                            {volunteer.links.youtube && (
+                                                                <SocialsComponent
+                                                                    speakersSocialUrl={
+                                                                        volunteer.links
+                                                                            .youtube
+                                                                    }
+                                                                    social="youtube"
+                                                                />
+                                                            )}
+                                                            {volunteer.links.git && (
+                                                                <SocialsComponent
+                                                                    speakersSocialUrl={
+                                                                        volunteer.links.git
+                                                                    }
+                                                                    social="github"
+                                                                />
+                                                            )}
+                                                            {volunteer.links.website && (
+                                                                <SocialsComponent
+                                                                    speakersSocialUrl={
+                                                                        volunteer.links.website
+                                                                    }
+                                                                    social="website"
+                                                                />
+                                                            )}
+                                                        </div>
+                                                    </div>
                                             </div>
-                                        </div>
+                                        ))}
                                     </div>
-                                ))}
-                            </div>)}
+                                </div>
+                        )}
                             
                         </>
                     ),
