@@ -39,6 +39,16 @@ const volunteers = {
                 mastodon: "https://mastodon.social/@mrichetta"
             },
         },
+        {
+            name: "Ege Akman",
+            image: "/images/volunteers/egeakman.png",
+            links: {
+                linkedin: "https://linkedin.com/in/egeakman",
+                mastodon: "https://mastodon.social/@egeakman",
+                git: "https://github.com/egeakman",
+                twitter: "https://twitter.com/egeakmn",
+            },
+        },
     ],
     program: [],
     communications: [],
@@ -46,7 +56,7 @@ const volunteers = {
 };
 
 
-//adds de default socials
+//adds the default socials
 const volunteersWithDefaults = Object.fromEntries(
   Object.entries(volunteers).map(([group, arr]) => [
     group,

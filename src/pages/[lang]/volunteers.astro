@@ -88,6 +88,7 @@ const uniqueVolunteers = dedupeVolunteersByName(volunteers);
             </div>
         </div>
 
+        <!-- Displays all volunteers -->
         <div id="volunteers-all">
             {
                 Object.entries(uniqueVolunteers).map(
@@ -196,7 +197,7 @@ const uniqueVolunteers = dedupeVolunteersByName(volunteers);
             }
         </div>
 
-
+        <!-- Displays volunteers grouped by teams -->
         <div id="volunteers-grouped" class="hidden">
             {
                 Object.entries(volunteers).map(
@@ -309,7 +310,7 @@ const uniqueVolunteers = dedupeVolunteersByName(volunteers);
             let groupedSelectedBtn = true;
             //
 
-            //Just upsdates de switch buttons styles
+            //Just updates de switch buttons styles
             function updateSwitchButtons() {
                 const allBtn = document.getElementById("all-btn");
                 const groupedBtn = document.getElementById("grouped-btn");
