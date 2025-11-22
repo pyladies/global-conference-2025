@@ -6,6 +6,7 @@ export const getMenuItems = (t: (key: string) => string) => [
       { title: t("Keynotes"), path: "/#keynotes" },
       { title: t("FAQ"), path: "/#faq" },
       { title: t("The organizers"), path: "/#organization" },
+      { title: t("Volunteers"), path: "/volunteers" },
       { title: t("Our Sponsors"), path: "/#sponsors" },
     ],
   },
