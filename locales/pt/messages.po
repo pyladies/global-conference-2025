@@ -271,7 +271,7 @@ msgstr "A conferência online das comunidades PyLadies de todo o mundo."
 
 #: src/components/keynotes_index.astro:21
 msgid "Meet Our Keynotes"
-msgstr "Conhece os Nossos Keynotes"
+msgstr "Conhece os nossos Keynotes"
 
 #: src/components/keynotes_index.astro:22 src/data/menuItems.ts:6
 msgid "Keynotes"
@@ -283,6 +283,9 @@ msgid ""
 "workflow and documentation. She is active in the Python community as an "
 "advisor for the Global PyLadies, and PyCon US Chair."
 msgstr ""
+"A Mariatta é uma developer de Python core que se dedica a melhorar o fluxo de "
+"trabalho e a documentação. Ela é ativa na comunidade Python como conselheira "
+"para a Global PyLadies e presidente da PyCon US."
 
 #: src/components/organization.astro:21
 msgid ""
@@ -291,6 +294,10 @@ msgid ""
 "around our own planet, help to organize workshops and give talks in many "
 "python communities."
 msgstr ""
+"Sou uma biotecnóloga apaixonada, a trabalhar como Senior Data Scientist em "
+"Berlim. No meu tempo livre, adoro desenvolver projetos que possam ajudar "
+"pessoas em todo o nosso planeta, ajudar a organizar workshops e dar "
+"palestras em muitas comunidades Python."
 
 #: src/components/organization.astro:28
 msgid ""
@@ -298,12 +305,18 @@ msgid ""
 "(PSF) Fellow & Director. Advocates diversity and inclusion within tech "
 "communities. PyLadies chapters organizer."
 msgstr ""
+"Analista de QA de Software. Gestora de comunidade Python. Fellow e Diretora "
+"da Python Software Foundation (PSF). Defensora da diversidade e inclusão nas "
+"comunidades tecnológicas. Organizadora de capítulos PyLadies."
 
 #: src/components/organization.astro:35
 msgid ""
 "Mother of 2 adults | Director @PSF | Fellow Member | 2020 PSF community "
 "service award | PSF D&I Workgroup Chair | PyCon US Design Lead since 2022"
 msgstr ""
+"Mãe de 2 adultos | Diretora @PSF | Membro Fellow | Prémio de serviço "
+"comunitário PSF 2020 | Presidente do Grupo de Trabalho D&I da PSF | Líder de "
+"Design da PyCon US desde 2022"
 
 #: src/components/organization.astro:42
 msgid ""
@@ -311,13 +324,20 @@ msgid ""
 "and has served as an organizer for local and international community events. "
 "She is a Fellow and a Community Service award winner at the PSF."
 msgstr ""
+"Contribuidora e membro da comunidade na Comunidade de Software Python "
+"Africana e serviu como organizadora de eventos comunitários locais e "
+"internacionais. Ela é Fellow e vencedora do prémio de Serviço Comunitário na "
+"PSF."
 
 #: src/components/organization.astro:49
 msgid ""
 "Python community and conference serial organizer, contributing to many Open "
-"Source initiatives. He is a PSF Board Director and Fellow. He is currently "
+"Source initiatives. She is a PSF Board Director and Fellow. She is currently "
 "working at The Qt Company."
 msgstr ""
+"Organizadora em série de comunidades e conferências Python, contribuindo para "
+"muitas iniciativas Open Source. Ela é Diretora do Conselho e Fellow da PSF. "
+"Atualmente trabalha na The Qt Company."
 
 #: src/components/organization.astro:56
 msgid ""
@@ -326,6 +346,10 @@ msgid ""
 "tech community in 2005. She is a EuroPython Society Fellow, PSF Fellow and "
 "Community Service awardee."
 msgstr ""
+"Uma Pythonista irlandesa que defende a diversidade na tecnologia e organiza "
+"eventos regulares da PyLadies Dublin. Foi através de Python que ela se "
+"envolveu com a comunidade tecnológica irlandesa em 2005. Ela é Fellow da "
+"EuroPython Society, Fellow da PSF e premiada com Serviço Comunitário."
 
 #: src/components/organization.astro:63
 msgid ""
@@ -334,6 +358,10 @@ msgid ""
 "conferences such as EuroPython. Currently, she is one of the organizers of "
 "PyLadies Tampere."
 msgstr ""
+"Naa Ashiorkor Nortey é uma cientista de dados e construtora de comunidades "
+"tecnológicas. A Naa está profundamente envolvida na comunidade Python, "
+"servindo na organização de conferências como a EuroPython. Atualmente, é uma "
+"das organizadoras da PyLadies Tampere."
 
 #: src/components/organization.astro:72
 msgid "PyLadies Conference"
@@ -341,7 +369,7 @@ msgstr "Conferência PyLadies"
 
 #: src/components/organization.astro:73
 msgid "The Organizers"
-msgstr "Os Organizadores"
+msgstr "As Organizadoras"
 
 #: src/components/organization.astro:75
 msgid ""
@@ -367,7 +395,7 @@ msgstr "Pesquisar"
 
 #: src/components/sessions/filter.astro:27
 msgid "Search by title, speaker, or description..."
-msgstr "Pesquisar por título, orador ou descrição..."
+msgstr "Pesquisar por título, oradora ou descrição..."
 
 #: src/components/sessions/filter.astro:35
 #: src/pages/[lang]/session/[...session].astro:56
@@ -642,7 +670,7 @@ msgid ""
 "workshops, open spaces, get stream links, and many more activities!"
 msgstr ""
 "Junta-te ao servidor Discord da conferência para conheceres todos os "
-"participantes, incluindo Oradores, Patrocinadores, Keynotes, Voluntários e "
+"participantes, incluindo Oradoras, Patrocinadores, Keynotes, Voluntários e "
 "Organizadores. Aproveita as palestras, workshops, espaços abertos, obtém links "
 "de transmissão e muitas outras atividades!"
 
@@ -772,7 +800,7 @@ msgstr ""
 
 #: src/pages/[lang]/attending.astro:143
 msgid "Joining as a Speaker"
-msgstr "Participar como Orador"
+msgstr "Participar como Oradora"
 
 #: src/pages/[lang]/attending.astro:145
 msgid ""
@@ -1080,7 +1108,7 @@ msgstr ""
 
 #: src/pages/[lang]/coc.astro:83
 msgid "Our Community"
-msgstr "A Nossa Comunidade"
+msgstr "A nossa Comunidade"
 
 #: src/pages/[lang]/coc.astro:85
 msgid ""
@@ -1334,7 +1362,7 @@ msgstr "Ainda não há sessões disponíveis. Por favor, volta mais tarde!"
 
 #: src/pages/[lang]/speaker/[...slug].astro:63
 msgid "More About The Speaker"
-msgstr "Mais Sobre O Orador"
+msgstr "Mais sobre a Oradora"
 
 #: src/pages/[lang]/speaker/[...slug].astro:117
 msgid "Sessions by {name}"
@@ -1348,11 +1376,11 @@ msgstr ""
 
 #: src/pages/[lang]/speakers.astro:27 src/pages/[lang]/speakers.astro:65
 msgid "Our Speakers"
-msgstr "As Nossas Oradoras"
+msgstr "As nossas Oradoras"
 
 #: src/pages/[lang]/speakers.astro:33
 msgid "Our Keynotes"
-msgstr "Os Nossos Keynotes"
+msgstr "Os nossos Keynotes"
 
 #: src/pages/[lang]/speakers.astro:34
 msgid "Meet our Keynote speakers"
