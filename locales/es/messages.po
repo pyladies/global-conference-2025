@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyLadiesCon 2025\n"
 "Report-Msgid-Bugs-To: Open a PR 🤗\n"
-"POT-Creation-Date: 2025-11-21T08:09:32.027Z\n"
+"POT-Creation-Date: 2025-11-24T20:04:15.882Z\n"
 "PO-Revision-Date: 2025-11-21 15:30+0100\n"
 "Last-Translator: Marco Richetta <marcorichetta@gmail.com>\n"
 "Language-Team: none\n"
@@ -256,7 +256,7 @@ msgstr "PyLadiesCon 2025"
 msgid "5th-7th December | Multi-language | Multi-timezone"
 msgstr "Diciembre 5-7 | Multi-idioma | Multi-zona horaria"
 
-#: src/components/hero.astro:65 src/data/menuItems.ts:20
+#: src/components/hero.astro:65 src/data/menuItems.ts:21
 #: src/pages/[lang]/schedule.astro:22
 msgid "Schedule"
 msgstr "Programa"
@@ -265,7 +265,7 @@ msgstr "Programa"
 msgid "Register"
 msgstr "Registrarse"
 
-#: src/components/hero.astro:77 src/data/menuItems.ts:43
+#: src/components/hero.astro:77 src/data/menuItems.ts:44
 #: src/pages/[lang]/donate.astro:16
 msgid "Donate"
 msgstr "Donar"
@@ -459,11 +459,11 @@ msgstr "No se encontraron resultados."
 msgid "Speakers:"
 msgstr "Ponentes:"
 
-#: src/components/sponsors_gallery.astro:155
+#: src/components/sponsors_gallery.astro:147
 msgid "Meet the sponsors of our conference."
 msgstr "Conoce a los patrocinadores de nuestra conferencia."
 
-#: src/components/sponsors_gallery.astro:156 src/data/menuItems.ts:9
+#: src/components/sponsors_gallery.astro:148 src/data/menuItems.ts:10
 msgid "Our Sponsors"
 msgstr "Nuestros Patrocinadores"
 
@@ -566,57 +566,61 @@ msgstr "Preguntas frecuentes"
 msgid "The organizers"
 msgstr "La organización"
 
-#: src/data/menuItems.ts:13
+#: src/data/menuItems.ts:9
+msgid "Volunteers"
+msgstr "Voluntariado"
+
+#: src/data/menuItems.ts:14
 msgid "Blog"
 msgstr "Blog"
 
-#: src/data/menuItems.ts:18
+#: src/data/menuItems.ts:19
 msgid "Conference"
 msgstr "Conferencia"
 
-#: src/data/menuItems.ts:21 src/pages/[lang]/sessions.astro:70
+#: src/data/menuItems.ts:22 src/pages/[lang]/sessions.astro:70
 msgid "Sessions"
 msgstr "Sesiones"
 
-#: src/data/menuItems.ts:22 src/pages/[lang]/session/[...session].astro:120
+#: src/data/menuItems.ts:23 src/pages/[lang]/session/[...session].astro:120
 msgid "Speakers"
 msgstr "Ponentes"
 
-#: src/data/menuItems.ts:23
+#: src/data/menuItems.ts:24
 msgid "Sprints"
 msgstr "Sprints"
 
-#: src/data/menuItems.ts:24
+#: src/data/menuItems.ts:25
 msgid "How to Join"
 msgstr "Cómo unirse"
 
-#: src/data/menuItems.ts:28
+#: src/data/menuItems.ts:29
 msgid "Sponsors"
 msgstr "Patrocinadores"
 
-#: src/data/menuItems.ts:30
+#: src/data/menuItems.ts:31
 msgid "Sponsorship Plans"
 msgstr "Planes de Patrocinio"
 
-#: src/data/menuItems.ts:31
+#: src/data/menuItems.ts:32
 msgid "Jobs Board"
 msgstr "Bolsa de Trabajo"
 
-#: src/data/menuItems.ts:35 src/pages/[lang]/coc-enforcing.astro:23
+#: src/data/menuItems.ts:36 src/pages/[lang]/coc-enforcing.astro:23
 #: src/pages/[lang]/coc-reporting.astro:23 src/pages/[lang]/coc.astro:28
 #: src/pages/[lang]/coc.astro:31
 msgid "Code of Conduct"
 msgstr "Código de Conducta"
 
-#: src/data/menuItems.ts:37
+#: src/data/menuItems.ts:38
 msgid "Read the CoC"
 msgstr "Lee el CdC"
 
-#: src/data/menuItems.ts:38
+#: src/data/menuItems.ts:39
 msgid "Reporting process"
 msgstr "Proceso de reportes"
 
-#: src/data/menuItems.ts:39
+#: src/data/menuItems.ts:40
 msgid "Enforcement process"
 msgstr "Proceso de ejecución"
 
@@ -1450,6 +1454,22 @@ msgstr "Nivel:"
 #: src/pages/[lang]/sprints.astro:117
 msgid "Languages:"
 msgstr "Lenguajes:"
+
+#: src/pages/[lang]/volunteers.astro:58
+msgid "Thanks to all the volunteers for making this possible"
+msgstr ""
+
+#: src/pages/[lang]/volunteers.astro:61
+msgid "Our Volunteers"
+msgstr "Voluntariado"
+
+#: src/pages/[lang]/volunteers.astro:76
+msgid "See All"
+msgstr ""
+
+#: src/pages/[lang]/volunteers.astro:85
+msgid "Group by Team"
+msgstr ""
 
 #~ msgid "Attention!"
 #~ msgstr "¡Atención!"
