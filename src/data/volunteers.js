@@ -50,7 +50,28 @@ const volunteers = {
             },
         },
     ],
-    program: [],
+    program: [
+        {
+            name: "Nathan Bransby",
+            image: "/images/volunteers/nathan_bransby.png",
+            links: {
+                linkedin: "https://www.linkedin.com/in/nathan-bransby",
+                git: "https://github.com/Nathan-Bransby-NMT",
+                website: "https://www.nlb-software.dev",
+            },
+        },
+    ],
+    code_of_conduct: [
+        {
+            name: "Nathan Bransby",
+            image: "/images/volunteers/nathan_bransby.png",
+            links: {
+                linkedin: "https://www.linkedin.com/in/nathan-bransby",
+                git: "https://github.com/Nathan-Bransby-NMT",
+                website: "https://www.nlb-software.dev",
+            },
+        },
+    ],
     communications: [],
     design_media: [],
 };
