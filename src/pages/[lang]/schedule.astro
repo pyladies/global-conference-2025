@@ -154,7 +154,7 @@ const t = useTranslations(lang);
     return date.toLocaleTimeString('en-US', {
       hour: '2-digit',
       minute: '2-digit',
-      hour12: true,
+      hour12: false,
       timeZone: useLocal ? undefined : 'UTC'
     });
   }
@@ -229,7 +229,7 @@ const t = useTranslations(lang);
       marker.className = 'text-xs text-gray-500 dark:text-gray-400';
       marker.textContent = markerTime.toLocaleTimeString('en-US', {
         hour: 'numeric',
-        hour12: true,
+        hour12: false,
         timeZone: useLocalTime ? undefined : 'UTC'
       });
       timeMarkers.appendChild(marker);
