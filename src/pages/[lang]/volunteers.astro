@@ -113,8 +113,7 @@ const uniqueVolunteers = dedupeVolunteersByName(volunteers);
                                                             {volunteer.name}
                                                         </p>
                                                 <p class="text-black dark:text-white capitalize text-sm font-light italic">
-                                                    {t(groupName.replace("_", " "))}
-
+                                                    {t(groupName.replaceAll("_", " "))}
                                                 </p>
                                                         <div class="flex pt-2">
                                                             {volunteer.links.mastodon && (
