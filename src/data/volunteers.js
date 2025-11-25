@@ -50,7 +50,17 @@ const volunteers = {
             },
         },
     ],
-    program: [],
+    program: [
+        {
+            name: "Amethyst Reese",
+            image: "/images/volunteers/amethyst.png",
+            links: {
+                git: "https://github.com/amyreese",
+                mastodon: "https://toots.n7.gg/@amethyst",
+                website: "https://amethyst.cat",
+            },
+        },
+    ],
     communications: [],
     design_media: [],
 };
