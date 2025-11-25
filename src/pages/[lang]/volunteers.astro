@@ -29,6 +29,18 @@ function formatTeamName(str) {
     .join(' ');
 }
 
+//Function to format volunteer team names
+function formatTeamName(str) {
+  return str
+    .split('_')
+    .map(w =>
+      w.toLowerCase() === "of"
+        ? "of"
+        : w.charAt(0).toUpperCase() + w.slice(1)
+    )
+    .join(' ');
+}
+
 //Function to eliminate duplicates, but keeping the first occurrence
 function dedupeVolunteersByName(volunteersObj: any) {
   const seen = new Set<string>();
