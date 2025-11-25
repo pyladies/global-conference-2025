@@ -26,6 +26,18 @@ function groupVolunteers(vols) {
     }, {});
 }
 
+//Function to format volunteer team names
+function formatTeamName(str) {
+  return str
+    .split('_')
+    .map(w => 
+      w.toLowerCase() === "of"
+        ? "of"
+        : w.charAt(0).toUpperCase() + w.slice(1)
+    )
+    .join(' ');
+}
+
 //Function to eliminate duplicates, but keeping the first occurrence
 function dedupeVolunteersByName(volunteersObj: any) { 
   const seen = new Set<string>();
@@ -113,7 +125,7 @@ const uniqueVolunteers = dedupeVolunteersByName(volunteers);
                                                             {volunteer.name}
                                                         </p>
                                                 <p class="text-black dark:text-white capitalize text-sm font-light italic">
-                                                    {t(groupName.replace("_", " "))}
+                                                    {t(formatTeamName(groupName))}
 
                                                 </p>
                                                         <div class="flex pt-2">
@@ -213,7 +225,7 @@ const uniqueVolunteers = dedupeVolunteersByName(volunteers);
                         <>
                         {groupVolunteers.length > 0 && (
                             <h1 class="text-3xl lg:text-4xl text-center font-bold lg:tracking-tight capitalize dark:text-white pb-5">
-                                {t(groupName.replace("_", " "))}
+                                {t(formatTeamName(groupName))}
                             </h1>
 
                                 <div class="flex justify-center">
