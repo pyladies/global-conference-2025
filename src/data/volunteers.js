@@ -53,7 +53,7 @@ const volunteers = {
     program: [
         {
             name: "Amethyst Reese",
-            images: "/images/volunteers/amethyst.png",
+            image: "/images/volunteers/amethyst.png",
             links: {
                 git: "https://github.com/amyreese",
                 mastodon: "https://toots.n7.gg/@amethyst",
