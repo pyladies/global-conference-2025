@@ -60,6 +60,17 @@ const volunteers = {
                 website: "https://amethyst.cat",
             },
         },
+        {
+            name: "Stefanie Molin",
+            image: "/images/volunteers/stefanie-molin.png",
+            links: {
+                bluesky: "https://bsky.app/profile/stefaniemolin.com",
+                git: "https://github.com/stefmolin",
+                linkedin: "https://linkedin.com/in/stefanie-molin",
+                twitter: "https://x.com/StefanieMolin",
+                website: "https://stefaniemolin.com",
+            },
+        },
     ],
     communications: [],
     design_media: [],
