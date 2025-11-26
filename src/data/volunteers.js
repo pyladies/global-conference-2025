@@ -62,7 +62,7 @@ const volunteers = {
         },
         {
             name: "Stefanie Molin",
-            image: "/images/volunteers/stefanie-molin.png",
+            image: "/images/volunteers/stefanie-molin.jpeg",
             links: {
                 bluesky: "https://bsky.app/profile/stefaniemolin.com",
                 git: "https://github.com/stefmolin",
