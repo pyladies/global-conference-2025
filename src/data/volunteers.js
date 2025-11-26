@@ -51,13 +51,22 @@ const volunteers = {
         },
     ],
     program: [
-        {
+         {
             name: "Nathan Bransby",
             image: "/images/volunteers/nathan_bransby.png",
             links: {
                 linkedin: "https://www.linkedin.com/in/nathan-bransby",
                 git: "https://github.com/Nathan-Bransby-NMT",
                 website: "https://www.nlb-software.dev",
+            },
+        },
+        {
+            name: "Amethyst Reese",
+            image: "/images/volunteers/amethyst.png",
+            links: {
+                git: "https://github.com/amyreese",
+                mastodon: "https://toots.n7.gg/@amethyst",
+                website: "https://amethyst.cat",
             },
         },
     ],
