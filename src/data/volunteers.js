@@ -60,6 +60,14 @@ const volunteers = {
                 website: "https://amethyst.cat",
             },
         },
+        {
+            name: "Nina Comia",
+            image: "/images/volunteers/nina.jpg",
+            links: {
+                git: "https://github.com/ninabiik",
+                linkedin: "https://www.linkedin.com/in/nina-comia"
+            },
+        },
     ],
     communications: [],
     design_media: [],
