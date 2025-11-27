@@ -94,6 +94,15 @@ const volunteers = [
             },
             teams: ["program"]
         },
+        {
+            name: "Vassiliki Dalakiari",
+            image: "/images/volunteers/vassilikid.jpeg",
+            links: {
+                linkedin: "https://www.linkedin.com/in/vadalakiari/",
+                website: "https://medium.com/@vadal_",
+            },
+            teams: ["program"]
+        },
   ];
 
 //adds the default socials
