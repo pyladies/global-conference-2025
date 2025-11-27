@@ -54,6 +54,16 @@ const volunteers = [
             teams: ["infrastructure"]
         },
         {
+            name: "Nathan Bransby",
+            image: "/images/volunteers/nathan_bransby.png",
+            links: {
+                linkedin: "https://www.linkedin.com/in/nathan-bransby",
+                git: "https://github.com/Nathan-Bransby-NMT",
+                website: "https://www.nlb-software.dev",
+            },
+            teams: ["infrastructure", "code of conduct"]
+        },
+        {
             name: "Amethyst Reese",
             image: "/images/volunteers/amethyst.png",
             links: {
@@ -64,7 +74,6 @@ const volunteers = [
             teams: ["program"]
         },
   ];
-
 
 //adds the default socials
 function applyDefaultLinks(grouped) {
