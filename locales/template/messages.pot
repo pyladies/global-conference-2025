@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyLadiesCon 2025\n"
 "Report-Msgid-Bugs-To: Open a PR 🤗\n"
-"POT-Creation-Date: 2025-11-21T08:09:32.027Z\n"
+"POT-Creation-Date: 2025-11-27T15:37:23.040Z\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -203,7 +203,7 @@ msgid "5th-7th December | Multi-language | Multi-timezone"
 msgstr ""
 
 #: src/components/hero.astro:65
-#: src/data/menuItems.ts:20
+#: src/data/menuItems.ts:21
 #: src/pages/[lang]/schedule.astro:22
 msgid "Schedule"
 msgstr ""
@@ -213,7 +213,7 @@ msgid "Register"
 msgstr ""
 
 #: src/components/hero.astro:77
-#: src/data/menuItems.ts:43
+#: src/data/menuItems.ts:44
 #: src/pages/[lang]/donate.astro:16
 msgid "Donate"
 msgstr ""
@@ -373,12 +373,12 @@ msgstr ""
 msgid "Speakers:"
 msgstr ""
 
-#: src/components/sponsors_gallery.astro:155
+#: src/components/sponsors_gallery.astro:147
 msgid "Meet the sponsors of our conference."
 msgstr ""
 
-#: src/components/sponsors_gallery.astro:156
-#: src/data/menuItems.ts:9
+#: src/components/sponsors_gallery.astro:148
+#: src/data/menuItems.ts:10
 msgid "Our Sponsors"
 msgstr ""
 
@@ -462,45 +462,49 @@ msgstr ""
 msgid "The organizers"
 msgstr ""
 
-#: src/data/menuItems.ts:13
+#: src/data/menuItems.ts:9
+msgid "Volunteers"
+msgstr ""
+
+#: src/data/menuItems.ts:14
 msgid "Blog"
 msgstr ""
 
-#: src/data/menuItems.ts:18
+#: src/data/menuItems.ts:19
 msgid "Conference"
 msgstr ""
 
-#: src/data/menuItems.ts:21
+#: src/data/menuItems.ts:22
 #: src/pages/[lang]/sessions.astro:70
 msgid "Sessions"
 msgstr ""
 
-#: src/data/menuItems.ts:22
+#: src/data/menuItems.ts:23
 #: src/pages/[lang]/session/[...session].astro:120
 msgid "Speakers"
 msgstr ""
 
-#: src/data/menuItems.ts:23
+#: src/data/menuItems.ts:24
 msgid "Sprints"
 msgstr ""
 
-#: src/data/menuItems.ts:24
+#: src/data/menuItems.ts:25
 msgid "How to Join"
 msgstr ""
 
-#: src/data/menuItems.ts:28
+#: src/data/menuItems.ts:29
 msgid "Sponsors"
 msgstr ""
 
-#: src/data/menuItems.ts:30
+#: src/data/menuItems.ts:31
 msgid "Sponsorship Plans"
 msgstr ""
 
-#: src/data/menuItems.ts:31
+#: src/data/menuItems.ts:32
 msgid "Jobs Board"
 msgstr ""
 
-#: src/data/menuItems.ts:35
+#: src/data/menuItems.ts:36
 #: src/pages/[lang]/coc-enforcing.astro:23
 #: src/pages/[lang]/coc-reporting.astro:23
 #: src/pages/[lang]/coc.astro:28
@@ -508,15 +512,15 @@ msgstr ""
 msgid "Code of Conduct"
 msgstr ""
 
-#: src/data/menuItems.ts:37
+#: src/data/menuItems.ts:38
 msgid "Read the CoC"
 msgstr ""
 
-#: src/data/menuItems.ts:38
+#: src/data/menuItems.ts:39
 msgid "Reporting process"
 msgstr ""
 
-#: src/data/menuItems.ts:39
+#: src/data/menuItems.ts:40
 msgid "Enforcement process"
 msgstr ""
 
@@ -1185,11 +1189,11 @@ msgstr ""
 msgid "Prospectus for the global PyLadies Conference."
 msgstr ""
 
-#: src/pages/[lang]/sprints.astro:33
+#: src/pages/[lang]/sprints.astro:41
 msgid "Share, learn and contribute!"
 msgstr ""
 
-#: src/pages/[lang]/sprints.astro:36
+#: src/pages/[lang]/sprints.astro:44
 msgid ""
 "Sprints are informal coding sessions, and knowledge sharing where people "
 "gather together to work on Open-Source projects, suggest changes in "
@@ -1197,14 +1201,37 @@ msgid ""
 "and self-development while contributing to Open Source projects."
 msgstr ""
 
-#: src/pages/[lang]/sprints.astro:41
+#: src/pages/[lang]/sprints.astro:46
+msgid ""
+"We encourage maintainers to submit their projects by checking out our <a "
+"href=\"https://conference.pyladies.com/docs/speakers/sprints_guide/\" "
+"class=\"text-pinkpyladies\" target=\"_blank\">sprints guide</a>."
+msgstr ""
+
+#: src/pages/[lang]/sprints.astro:51
 msgid "-- No sprints added yet --"
 msgstr ""
 
-#: src/pages/[lang]/sprints.astro:116
+#: src/pages/[lang]/sprints.astro:126
 msgid "Level:"
 msgstr ""
 
-#: src/pages/[lang]/sprints.astro:117
+#: src/pages/[lang]/sprints.astro:127
 msgid "Languages:"
+msgstr ""
+
+#: src/pages/[lang]/volunteers.astro:92
+msgid "Thanks to all the volunteers for making this possible"
+msgstr ""
+
+#: src/pages/[lang]/volunteers.astro:95
+msgid "Our Volunteers"
+msgstr ""
+
+#: src/pages/[lang]/volunteers.astro:110
+msgid "See All"
+msgstr ""
+
+#: src/pages/[lang]/volunteers.astro:119
+msgid "Group by Team"
 msgstr ""

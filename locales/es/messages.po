@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyLadiesCon 2025\n"
 "Report-Msgid-Bugs-To: Open a PR 🤗\n"
-"POT-Creation-Date: 2025-11-24T20:04:15.882Z\n"
-"PO-Revision-Date: 2025-11-21 15:30+0100\n"
+"POT-Creation-Date: 2025-11-27T15:37:23.040Z\n"
+"PO-Revision-Date: 2025-11-27 16:38+0100\n"
 "Last-Translator: Marco Richetta <marcorichetta@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
@@ -1248,11 +1248,11 @@ msgstr "Conviértete en sponsor - contáctanos en"
 msgid "Volunteer your time and skills to help organize the conference"
 msgstr ""
 "Ofrece tu tiempo y tus habilidades como voluntaria para ayudar a organizar "
-"la conferencia."
+"la conferencia"
 
 #: src/pages/[lang]/donate.astro:114
 msgid "Spread the word about PyLadiesCon on social media"
-msgstr "Comparte información sobre PyLadiesCon en las redes sociales."
+msgstr "Comparte información sobre PyLadiesCon en las redes sociales"
 
 #: src/pages/[lang]/donate.astro:118
 msgid "Join or start a local PyLadies chapter"
@@ -1426,11 +1426,11 @@ msgstr "Conopce nuestras speakers"
 msgid "Prospectus for the global PyLadies Conference."
 msgstr "Prospectus de la conferencia global de PyLadies."
 
-#: src/pages/[lang]/sprints.astro:33
+#: src/pages/[lang]/sprints.astro:41
 msgid "Share, learn and contribute!"
 msgstr "¡Comparte, aprende y contribuye!"
 
-#: src/pages/[lang]/sprints.astro:36
+#: src/pages/[lang]/sprints.astro:44
 msgid ""
 "Sprints are informal coding sessions, and knowledge sharing where people "
 "gather together to work on Open-Source projects, suggest changes in existing "
@@ -1443,31 +1443,38 @@ msgstr ""
 "problemas. Un Sprint es una oportunidad para el aprendizaje y el desarrollo "
 "personal, al mismo tiempo que se contribuye a proyectos de código abierto."
 
-#: src/pages/[lang]/sprints.astro:41
+#: src/pages/[lang]/sprints.astro:46
+msgid ""
+"We encourage maintainers to submit their projects by checking out our <a "
+"href=\"https://conference.pyladies.com/docs/speakers/sprints_guide/\" "
+"class=\"text-pinkpyladies\" target=\"_blank\">sprints guide</a>."
+msgstr ""
+
+#: src/pages/[lang]/sprints.astro:51
 msgid "-- No sprints added yet --"
 msgstr "-- No se han agregado sprints aún --"
 
-#: src/pages/[lang]/sprints.astro:116
+#: src/pages/[lang]/sprints.astro:126
 msgid "Level:"
 msgstr "Nivel:"
 
-#: src/pages/[lang]/sprints.astro:117
+#: src/pages/[lang]/sprints.astro:127
 msgid "Languages:"
 msgstr "Lenguajes:"
 
-#: src/pages/[lang]/volunteers.astro:58
+#: src/pages/[lang]/volunteers.astro:92
 msgid "Thanks to all the volunteers for making this possible"
 msgstr ""
 
-#: src/pages/[lang]/volunteers.astro:61
+#: src/pages/[lang]/volunteers.astro:95
 msgid "Our Volunteers"
 msgstr "Voluntariado"
 
-#: src/pages/[lang]/volunteers.astro:76
+#: src/pages/[lang]/volunteers.astro:110
 msgid "See All"
 msgstr ""
 
-#: src/pages/[lang]/volunteers.astro:85
+#: src/pages/[lang]/volunteers.astro:119
 msgid "Group by Team"
 msgstr ""
 

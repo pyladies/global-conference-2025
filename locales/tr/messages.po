@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyLadiesCon 2025\n"
 "Report-Msgid-Bugs-To: Open a PR 🤗\n"
-"POT-Creation-Date: 2025-11-21T08:09:32.027Z\n"
+"POT-Creation-Date: 2025-11-27T15:37:23.040Z\n"
 "PO-Revision-Date: 2025-11-18 00:33-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -250,7 +250,7 @@ msgstr "PyLadiesCon 2025"
 msgid "5th-7th December | Multi-language | Multi-timezone"
 msgstr "5-7 Aralık | Çok Dilli | Çok Zaman Dilimli"
 
-#: src/components/hero.astro:65 src/data/menuItems.ts:20
+#: src/components/hero.astro:65 src/data/menuItems.ts:21
 #: src/pages/[lang]/schedule.astro:22
 msgid "Schedule"
 msgstr "Program"
@@ -259,7 +259,7 @@ msgstr "Program"
 msgid "Register"
 msgstr "Kaydol"
 
-#: src/components/hero.astro:77 src/data/menuItems.ts:43
+#: src/components/hero.astro:77 src/data/menuItems.ts:44
 #: src/pages/[lang]/donate.astro:16
 msgid "Donate"
 msgstr "Bağış Yap"
@@ -423,11 +423,11 @@ msgstr "Sonuç bulunamadı."
 msgid "Speakers:"
 msgstr "Konuşmacılar:"
 
-#: src/components/sponsors_gallery.astro:155
+#: src/components/sponsors_gallery.astro:147
 msgid "Meet the sponsors of our conference."
 msgstr "Konferansımızın sponsorlarıyla tanışın."
 
-#: src/components/sponsors_gallery.astro:156 src/data/menuItems.ts:9
+#: src/components/sponsors_gallery.astro:148 src/data/menuItems.ts:10
 msgid "Our Sponsors"
 msgstr "Sponsorlarımız"
 
@@ -527,57 +527,62 @@ msgstr "SSS"
 msgid "The organizers"
 msgstr "Organizatörler"
 
-#: src/data/menuItems.ts:13
+#: src/data/menuItems.ts:9
+#, fuzzy
+msgid "Volunteers"
+msgstr "Gönüllülük"
+
+#: src/data/menuItems.ts:14
 msgid "Blog"
 msgstr "Blog"
 
-#: src/data/menuItems.ts:18
+#: src/data/menuItems.ts:19
 msgid "Conference"
 msgstr "Konferans"
 
-#: src/data/menuItems.ts:21 src/pages/[lang]/sessions.astro:70
+#: src/data/menuItems.ts:22 src/pages/[lang]/sessions.astro:70
 msgid "Sessions"
 msgstr "Oturumlar"
 
-#: src/data/menuItems.ts:22 src/pages/[lang]/session/[...session].astro:120
+#: src/data/menuItems.ts:23 src/pages/[lang]/session/[...session].astro:120
 msgid "Speakers"
 msgstr "Konuşmacılar"
 
-#: src/data/menuItems.ts:23
+#: src/data/menuItems.ts:24
 msgid "Sprints"
 msgstr "Sprintler"
 
-#: src/data/menuItems.ts:24
+#: src/data/menuItems.ts:25
 msgid "How to Join"
 msgstr "Nasıl Katılınır"
 
-#: src/data/menuItems.ts:28
+#: src/data/menuItems.ts:29
 msgid "Sponsors"
 msgstr "Sponsorlar"
 
-#: src/data/menuItems.ts:30
+#: src/data/menuItems.ts:31
 msgid "Sponsorship Plans"
 msgstr "Sponsorluk Planları"
 
-#: src/data/menuItems.ts:31
+#: src/data/menuItems.ts:32
 msgid "Jobs Board"
 msgstr "İş İlanları"
 
-#: src/data/menuItems.ts:35 src/pages/[lang]/coc-enforcing.astro:23
+#: src/data/menuItems.ts:36 src/pages/[lang]/coc-enforcing.astro:23
 #: src/pages/[lang]/coc-reporting.astro:23 src/pages/[lang]/coc.astro:28
 #: src/pages/[lang]/coc.astro:31
 msgid "Code of Conduct"
 msgstr "Davranış Kuralları"
 
-#: src/data/menuItems.ts:37
+#: src/data/menuItems.ts:38
 msgid "Read the CoC"
 msgstr "Davranış Kurallarını Oku"
 
-#: src/data/menuItems.ts:38
+#: src/data/menuItems.ts:39
 msgid "Reporting process"
 msgstr "Bildirim Süreci"
 
-#: src/data/menuItems.ts:39
+#: src/data/menuItems.ts:40
 msgid "Enforcement process"
 msgstr "Uygulama Süreci"
 
@@ -1377,11 +1382,11 @@ msgstr "Konuşmacılarımızla Tanışın"
 msgid "Prospectus for the global PyLadies Conference."
 msgstr "Küresel PyLadies Konferansı için tanıtım dosyası."
 
-#: src/pages/[lang]/sprints.astro:33
+#: src/pages/[lang]/sprints.astro:41
 msgid "Share, learn and contribute!"
 msgstr "Paylaş, öğren ve katkıda bulun!"
 
-#: src/pages/[lang]/sprints.astro:36
+#: src/pages/[lang]/sprints.astro:44
 msgid ""
 "Sprints are informal coding sessions, and knowledge sharing where people "
 "gather together to work on Open-Source projects, suggest changes in existing "
@@ -1394,17 +1399,41 @@ msgstr ""
 "projelere katkıda bulunurken öğrenme ve kendini geliştirmek için çok iyi "
 "fırsatlardır."
 
-#: src/pages/[lang]/sprints.astro:41
+#: src/pages/[lang]/sprints.astro:46
+msgid ""
+"We encourage maintainers to submit their projects by checking out our <a "
+"href=\"https://conference.pyladies.com/docs/speakers/sprints_guide/\" "
+"class=\"text-pinkpyladies\" target=\"_blank\">sprints guide</a>."
+msgstr ""
+
+#: src/pages/[lang]/sprints.astro:51
 msgid "-- No sprints added yet --"
 msgstr "-- Henüz bir sprint eklenmedi --"
 
-#: src/pages/[lang]/sprints.astro:116
+#: src/pages/[lang]/sprints.astro:126
 msgid "Level:"
 msgstr "Seviye:"
 
-#: src/pages/[lang]/sprints.astro:117
+#: src/pages/[lang]/sprints.astro:127
 msgid "Languages:"
 msgstr "Diller:"
+
+#: src/pages/[lang]/volunteers.astro:92
+msgid "Thanks to all the volunteers for making this possible"
+msgstr ""
+
+#: src/pages/[lang]/volunteers.astro:95
+#, fuzzy
+msgid "Our Volunteers"
+msgstr "Gönüllülük"
+
+#: src/pages/[lang]/volunteers.astro:110
+msgid "See All"
+msgstr ""
+
+#: src/pages/[lang]/volunteers.astro:119
+msgid "Group by Team"
+msgstr ""
 
 #~ msgid "Attention!"
 #~ msgstr "Dikkat!"
