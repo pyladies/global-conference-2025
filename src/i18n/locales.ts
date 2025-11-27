@@ -2,6 +2,7 @@ export const languages = {
   en: "English",
   es: "Español",
   tr: "Türkçe",
+  pt: "Português",
 };
 
 export const defaultLang = "en";
