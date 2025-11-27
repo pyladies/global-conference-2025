@@ -22,7 +22,7 @@ const volunteers = [
                 git: "https://github.com/codingisads",
 
             },
-            teams: ["infrastructure"]
+            teams: ["infrastructure", "Program"]
         },
         {
             name: "Tilda Udufo",
@@ -84,7 +84,8 @@ function groupByTeams(list) {
 
   list.forEach(v => {
     v.teams.forEach(team => {
-      if (!result[team]) 
+      team = team.toLowerCase(); // to avoid duplication
+      if (!result[team])
         result[team] = [];
 
       result[team].push(v);
