@@ -12,9 +12,9 @@ const defaultLinks = {
 };
 
 //Add your info here, follow the existing structure :)
-const volunteers = {
-    infrastructure: [
-        {
+//Possible teams: infrastructure, program, communications, design_media, code_of_conduct
+const volunteers = [
+  {
             name: "Isadora Dos Santos",
             image: "/images/volunteers/codingisads.jpeg",
             links: {
@@ -22,6 +22,7 @@ const volunteers = {
                 git: "https://github.com/codingisads",
 
             },
+            teams: ["infrastructure", "Program"]
         },
         {
             name: "Tilda Udufo",
@@ -30,6 +31,7 @@ const volunteers = {
                 linkedin: "https://www.linkedin.com/in/mathilda-udufo",
                 git: "https://github.com/TildaDares"
             },
+            teams: ["infrastructure"]
         },
         {
             name: "Marco Richetta",
@@ -38,6 +40,7 @@ const volunteers = {
                 linkedin: "https://www.linkedin.com/in/marco-richetta/",
                 mastodon: "https://mastodon.social/@mrichetta"
             },
+            teams: ["infrastructure"]
         },
         {
             name: "Ege Akman",
@@ -48,9 +51,8 @@ const volunteers = {
                 git: "https://github.com/egeakman",
                 twitter: "https://twitter.com/egeakmn",
             },
+            teams: ["infrastructure"]
         },
-    ],
-    program: [
         {
             name: "Amethyst Reese",
             image: "/images/volunteers/amethyst.png",
@@ -59,23 +61,39 @@ const volunteers = {
                 mastodon: "https://toots.n7.gg/@amethyst",
                 website: "https://amethyst.cat",
             },
+            teams: ["program"]
         },
-    ],
-    communications: [],
-    design_media: [],
-};
+  ];
 
 
 //adds the default socials
-const volunteersWithDefaults = Object.fromEntries(
-  Object.entries(volunteers).map(([group, arr]) => [
-    group,
-    arr.map(v => ({
-      ...v,
-      links: { ...defaultLinks, ...v.links },
-    }))
-  ])
-);
+function applyDefaultLinks(grouped) {
+  return Object.fromEntries(
+    Object.entries(grouped).map(([team, arr]) => [
+      team,
+      arr.map(v => ({
+        ...v,
+        links: { ...defaultLinks, ...v.links }
+      }))
+    ])
+  );
+}
+
+function groupByTeams(list) {
+  const result = {};
+
+  list.forEach(v => {
+    v.teams.forEach(team => {
+      team = team.toLowerCase(); // to avoid duplication
+      if (!result[team])
+        result[team] = [];
+
+      result[team].push(v);
+    });
+  });
+
+  return result;
+}
 
 //shuffle array function
 function shuffleArray(array) {
@@ -87,14 +105,20 @@ function shuffleArray(array) {
   return arr;
 }
 
+function shuffleGroups(grouped) {
+  return Object.fromEntries(
+    Object.entries(grouped).map(([team, arr]) => [
+      team,
+      shuffleArray(arr)
+    ])
+  );
+}
+
 // shuffled array
-const volunteersShuffled = Object.fromEntries(
-  Object.entries(volunteersWithDefaults).map(([group, arr]) => [
-    group,
-    shuffleArray(arr),
-  ])
-);
 
 
+const grouped = groupByTeams(volunteers);
+const withDefaults = applyDefaultLinks(grouped);
+const volunteersFinal = shuffleGroups(withDefaults);
 
-export default volunteersShuffled;
+export default volunteersFinal;
