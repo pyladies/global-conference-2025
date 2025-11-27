@@ -73,6 +73,18 @@ const volunteers = [
             },
             teams: ["program"]
         },
+        {
+            name: "Stefanie Molin",
+            image: "/images/volunteers/stefanie-molin.jpeg",
+            links: {
+                bluesky: "https://bsky.app/profile/stefaniemolin.com",
+                git: "https://github.com/stefmolin",
+                linkedin: "https://linkedin.com/in/stefanie-molin",
+                twitter: "https://x.com/StefanieMolin",
+                website: "https://stefaniemolin.com",
+            },
+            teams: ["program"]
+        },
   ];
 
 //adds the default socials
