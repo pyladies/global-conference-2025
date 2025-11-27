@@ -74,6 +74,15 @@ const volunteers = [
             teams: ["program"]
         },
         {
+            name: "Nina Comia",
+            image: "/images/volunteers/nina.jpg",
+            links: {
+                git: "https://github.com/ninabiik",
+                linkedin: "https://www.linkedin.com/in/nina-comia"
+            },
+            teams: ["program"]
+        },
+        {
             name: "Stefanie Molin",
             image: "/images/volunteers/stefanie-molin.jpeg",
             links: {
