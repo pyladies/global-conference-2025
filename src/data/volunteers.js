@@ -103,6 +103,16 @@ const volunteers = [
             },
             teams: ["program"]
         },
+        {
+            name: "Parul Gupta",
+            image: "/images/volunteers/parul_gupta.jpg",
+            links: {
+                git: "https://github.com/parulgupta1004",
+                linkedin: "https://www.linkedin.com/in/parulgupta04/",
+                website: "https://parulgupta1004.github.io/",
+            },
+            teams: ["program"]
+        },
   ];
 
 //adds the default socials
