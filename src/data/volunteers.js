@@ -103,6 +103,23 @@ const volunteers = [
             },
             teams: ["program"]
         },
+        {
+            name: "Lokko Joyce Dzifa",
+            image: "/images/volunteers/lokko_joyce.jpg",
+            links: {
+                linkedin: "https://www.linkedin.com/in/joyce-dzifa-lokko/",
+                twitter: "https://x.com/DzifaLokko?s=20",
+            },
+            teams: ["communications"]
+        },
+        {
+            name: "Wendy N. Sànchez",
+            image: "/images/volunteers/wendy_n_sanchez.jpg",
+            links: {
+                linkedin: "https://www.linkedin.com/in/wendy-n-sanchez",
+            },
+            teams: ["communications"]
+        },
   ];
 
 //adds the default socials
