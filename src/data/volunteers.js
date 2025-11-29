@@ -103,6 +103,15 @@ const volunteers = [
             },
             teams: ["program"]
         },
+        {
+            name: "Rodrigo Silva Ferreira",
+            image: "/images/volunteers/rodrigosilvaferreira.jpg",
+            links: {
+                linkedin: "https://www.linkedin.com/in/rsf309",
+                git: "https://github.com/rodrigosf672"
+            },
+            teams: ["communications"]
+        },
   ];
 
 //adds the default socials
