@@ -105,7 +105,7 @@ const volunteers = [
         },
         {
           name: "Ellie Dela Cruz",
-          image: "/images/volunteers/ellie_dela_cruz.jpeg",
+          image: "/images/volunteers/ellie_dela_cruz.png",
           links: {
             git: "https://github.com/elliedel",
               linkedin: "https://www.linkedin.com/in/elliedel/",
