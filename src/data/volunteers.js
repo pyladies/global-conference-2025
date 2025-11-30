@@ -103,6 +103,15 @@ const volunteers = [
             },
             teams: ["program"]
         },
+        {
+          name: "Ellie Dela Cruz",
+          image: "/images/volunteers/ellie_dela_cruz.jpeg",
+          links: {
+            git: "https://github.com/elliedel",
+              linkedin: "https://www.linkedin.com/in/elliedel/",
+          },
+          teams: ["program"]
+      },
   ];
 
 //adds the default socials
