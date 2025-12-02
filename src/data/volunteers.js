@@ -22,7 +22,7 @@ const volunteers = [
                 git: "https://github.com/codingisads",
 
             },
-            teams: ["infrastructure", "Program"]
+            teams: ["infrastructure"]
         },
         {
             name: "Tilda Udufo",
@@ -100,6 +100,41 @@ const volunteers = [
             links: {
                 linkedin: "https://www.linkedin.com/in/vadalakiari/",
                 website: "https://medium.com/@vadal_",
+            },
+            teams: ["program"]
+        },
+        {
+            name: "Lokko Joyce Dzifa",
+            image: "/images/volunteers/lokko_joyce.jpg",
+            links: {
+                linkedin: "https://www.linkedin.com/in/joyce-dzifa-lokko/",
+                twitter: "https://x.com/DzifaLokko?s=20",
+            },
+            teams: ["communications"]
+        },
+        {
+            name: "Wendy N. Sànchez",
+            image: "/images/volunteers/wendy_n_sanchez.jpg",
+            links: {
+                linkedin: "https://www.linkedin.com/in/wendy-n-sanchez",
+            },
+            teams: ["communications"]
+        },
+        {
+            name: "Ana C. Zanon",
+            image: "/images/volunteers/ana_caloi.jpg",
+            links: {
+                linkedin: "https://www.linkedin.com/in/anacaloi",
+                instagram: "https://www.instagram.com/anacaloi.data/",
+            },
+            teams: ["program"]
+        },
+        {
+            name: "Thaily Samaniego",
+            image: "/images/volunteers/thaily_samaniego.jpg",
+            links: {
+                linkedin: "https://www.linkedin.com/in/thsamaniego/",
+                instagram: "https://www.instagram.com/thaisamfi/",
             },
             teams: ["program"]
         },
