@@ -104,6 +104,17 @@ const volunteers = [
             teams: ["program"]
         },
         {
+            name: "Laura Langdon",
+            image: "/images/volunteers/laura-langdon.png",
+            links: {
+                git: "https://github.com/LauraLangdon",
+                mastodon: "https://hachyderm.io/@LauraLangdon",
+                linkedin: "https://linkedin.com/in/laura-langdon",
+                website: "https://lauralangdon.io",
+            },
+            teams: ["program"],
+        },
+        {
           name: "Ellie Dela Cruz",
           image: "/images/volunteers/ellie_dela_cruz.png",
           links: {
