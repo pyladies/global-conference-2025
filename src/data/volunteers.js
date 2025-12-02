@@ -104,6 +104,15 @@ const volunteers = [
             teams: ["program"]
         },
         {
+          name: "Ellie Dela Cruz",
+          image: "/images/volunteers/ellie_dela_cruz.png",
+          links: {
+            git: "https://github.com/elliedel",
+              linkedin: "https://www.linkedin.com/in/elliedel/",
+          },
+          teams: ["program"]
+        },
+        {
             name: "Rodrigo Silva Ferreira",
             image: "/images/volunteers/rodrigosilvaferreira.jpg",
             links: {
