@@ -20,10 +20,8 @@ const volunteers = [
         links: {
             linkedin: "https://www.linkedin.com/in/isadora-micaela-dossantos/",
             git: "https://github.com/codingisads",
-            },
-            teams: ["infrastructure"]
         },
-        teams: ["infrastructure", "Program"]
+        teams: ["infrastructure"]
     },
     {
         name: "Tilda Udufo",
@@ -76,7 +74,7 @@ const volunteers = [
     },
     {
         name: "Nina Comia",
-        image: "/images/volunteers/nina.jpg",
+        image: "/images/volunteers/nina.JPG",
         links: {
             git: "https://github.com/ninabiik",
             linkedin: "https://www.linkedin.com/in/nina-comia"
@@ -130,68 +128,68 @@ const volunteers = [
         teams: ["program"],
     },
     {
-          name: "Ellie Dela Cruz",
-          image: "/images/volunteers/ellie_dela_cruz.png",
-          links: {
-            git: "https://github.com/elliedel",
-              linkedin: "https://www.linkedin.com/in/elliedel/",
-          },
-          teams: ["program"]
+        name: "Ellie Dela Cruz",
+        image: "/images/volunteers/ellie_dela_cruz.png",
+        links: {
+          git: "https://github.com/elliedel",
+            linkedin: "https://www.linkedin.com/in/elliedel/",
+        },
+        teams: ["program"]
     },
     {
-            name: "Rodrigo Silva Ferreira",
-            image: "/images/volunteers/rodrigosilvaferreira.jpg",
-            links: {
-                linkedin: "https://www.linkedin.com/in/rsf309",
-                git: "https://github.com/rodrigosf672"
-            },
-            teams: ["communications"]
+        name: "Rodrigo Silva Ferreira",
+        image: "/images/volunteers/rodrigosilvaferreira.jpg",
+        links: {
+            linkedin: "https://www.linkedin.com/in/rsf309",
+            git: "https://github.com/rodrigosf672"
         },
-        {
-            name: "Parul Gupta",
-            image: "/images/volunteers/parul_gupta.jpg",
-            links: {
-                git: "https://github.com/parulgupta1004",
-                linkedin: "https://www.linkedin.com/in/parulgupta04/",
-                website: "https://parulgupta1004.github.io/",
-            },
-            teams: ["program"]
+        teams: ["communications"]
+    },
+    {
+        name: "Parul Gupta",
+        image: "/images/volunteers/parul_gupta.jpg",
+        links: {
+            git: "https://github.com/parulgupta1004",
+            linkedin: "https://www.linkedin.com/in/parulgupta04/",
+            website: "https://parulgupta1004.github.io/",
         },
-        {
-            name: "Lokko Joyce Dzifa",
-            image: "/images/volunteers/lokko_joyce.jpg",
-            links: {
-                linkedin: "https://www.linkedin.com/in/joyce-dzifa-lokko/",
-                twitter: "https://x.com/DzifaLokko?s=20",
-            },
-            teams: ["communications"]
+        teams: ["program"]
+    },
+    {
+        name: "Lokko Joyce Dzifa",
+        image: "/images/volunteers/lokko_joyce.jpg",
+        links: {
+            linkedin: "https://www.linkedin.com/in/joyce-dzifa-lokko/",
+            twitter: "https://x.com/DzifaLokko?s=20",
         },
-        {
-            name: "Wendy N. Sànchez",
-            image: "/images/volunteers/wendy_n_sanchez.jpg",
-            links: {
-                linkedin: "https://www.linkedin.com/in/wendy-n-sanchez",
-            },
-            teams: ["communications"]
+        teams: ["communications"]
+    },
+    {
+        name: "Wendy N. Sànchez",
+        image: "/images/volunteers/wendy_n_sanchez.jpg",
+        links: {
+            linkedin: "https://www.linkedin.com/in/wendy-n-sanchez",
         },
-        {
-            name: "Ana C. Zanon",
-            image: "/images/volunteers/ana_caloi.jpg",
-            links: {
-                linkedin: "https://www.linkedin.com/in/anacaloi",
-                instagram: "https://www.instagram.com/anacaloi.data/",
-            },
-            teams: ["program"]
+        teams: ["communications"]
+    },
+    {
+        name: "Ana C. Zanon",
+        image: "/images/volunteers/ana_caloi.jpg",
+        links: {
+            linkedin: "https://www.linkedin.com/in/anacaloi",
+            instagram: "https://www.instagram.com/anacaloi.data/",
         },
-        {
-            name: "Thaily Samaniego",
-            image: "/images/volunteers/thaily_samaniego.jpg",
-            links: {
-                linkedin: "https://www.linkedin.com/in/thsamaniego/",
-                instagram: "https://www.instagram.com/thaisamfi/",
-            },
-            teams: ["program"]
+        teams: ["program"]
+    },
+    {
+        name: "Thaily Samaniego",
+        image: "/images/volunteers/thaily_samaniego.jpg",
+        links: {
+            linkedin: "https://www.linkedin.com/in/thsamaniego/",
+            instagram: "https://www.instagram.com/thaisamfi/",
         },
+        teams: ["program"]
+    },
   ];
 
 //adds the default socials
