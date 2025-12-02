@@ -3,6 +3,7 @@ export const languages = {
   es: "Español",
   tr: "Türkçe",
   fr: "Français",
+  pt: "Português",
 };
 
 export const defaultLang = "en";
