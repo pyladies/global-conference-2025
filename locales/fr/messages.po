@@ -23,7 +23,7 @@ msgid ""
 "on a two-day journey that promises to be unforgettable."
 msgstr ""
 "À PyLadiesCon, nous vous faisons découvrir l'univers Python exclusivement "
-"sur votre écran. N'oubliez pas de marquer vos agendas pour le prémier "
+"sur votre écran. N'oubliez pas de marquer vos agendas pour le premier "
 "weekend du mois de décembre, où nous vous amenons avec nous pendant deux "
 "(02) jours qui promettent d'être inoubliables."
 
@@ -395,7 +395,11 @@ msgid ""
 "community. Our mission is to promote, educate and advance a diverse Python "
 "community through outreach, education, conferences, events and social "
 "gatherings."
-msgstr ""
+msgstr "PyLadies est un groupe international de mentorat qui vise à aider davantage "
+"de femmes à devenir des participantes actives et des leaders dans la communauté "
+"open-source Python. Notre mission est de promouvoir, d'éduquer et de faire progresser "
+"une communauté Python diversifiée grâce à la sensibilisation, à l'éducation, "
+"aux conférences, aux événements et aux rencontres sociales."
 
 #: src/components/organization.astro:79
 msgid "To learn more, visit the PyLadies website"
@@ -450,7 +454,7 @@ msgstr "Effacer les filtres"
 
 #: src/components/sessions/filter.astro:121
 msgid "{count} result{plural} found."
-msgstr "{count} resultat.s{plural} toruvé.s"
+msgstr "{count} resultat.s{plural} trouvé.s"
 
 #: src/components/sessions/filter.astro:122
 msgid "No results found."
@@ -967,7 +971,7 @@ msgid ""
 "<code class=\"text-blue-400\">#session-notifications</code>, to know the "
 "upcoming talks and events,"
 msgstr ""
-"<code class=\"text-blue-400\">#session-notifications</code>, our connaître "
+"<code class=\"text-blue-400\">#session-notifications</code>, pour connaître "
 "les conférences et événements à venir"
 
 #: src/pages/[lang]/attending.astro:177
@@ -987,8 +991,8 @@ msgid ""
 "The <b>Conference</b> category will be visible once you register, and will "
 "contain the following channels:"
 msgstr ""
-"Le rôle de la <b>conférence</b> sera visible une fois que vous vous serez "
-"inscrit.e et contiendra les salons(canaux) suivants: "
+"La catégorie <b>Conference</b> sera visible une fois que vous vous serez "
+"inscrit.e et contiendra les salons (canaux) suivants : "
 
 #: src/pages/[lang]/attending.astro:184
 msgid ""
@@ -1059,7 +1063,7 @@ msgid ""
 "<code class=\"text-blue-400\">#ask-core-devs</code>, for you to meet and ask "
 "the many Python Core developers that will be around,"
 msgstr ""
-"<code class=\"text-blue-400\">#ask-core-devs</code>, pour vous de rencontrer "
+"<code class=\"text-blue-400\">#ask-core-devs</code>, pour que vous puissiez rencontrer "
 "et poser des questions aux développeur.ses principaux.les qui seront présent."
 "es,"
 
@@ -1224,7 +1228,7 @@ msgid ""
 "to the Python Software Foundation's payment system."
 msgstr ""
 "Cliquez sur le bouton ci-dessous pour accéder à notre formulaire de don. "
-"Vous serez redirigé. au système de paiement de la Python Software Foundation."
+"Vous serez redirigé au système de paiement de la Python Software Foundation."
 
 #: src/pages/[lang]/donate.astro:80
 msgid "Proceed to Donation Form"
@@ -1289,7 +1293,7 @@ msgstr "Offres d'emploi"
 
 #: src/pages/[lang]/jobs.astro:56
 msgid "-- No Jobs were added so far --"
-msgstr "-- Accun job disponible --"
+msgstr "-- Aucun job disponible --"
 
 #: src/pages/[lang]/schedule.astro:21
 msgid "What Awaits You at PyLadiesCon"
@@ -1440,7 +1444,7 @@ msgstr "Prospectus de la conférence globale PyLadies."
 
 #: src/pages/[lang]/sprints.astro:41
 msgid "Share, learn and contribute!"
-msgstr "Partager, apprener et collaborer !"
+msgstr "Partager, appapprendre et collaborer !"
 
 #: src/pages/[lang]/sprints.astro:44
 msgid ""
