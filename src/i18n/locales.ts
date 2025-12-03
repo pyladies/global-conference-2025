@@ -4,6 +4,7 @@ export const languages = {
   tr: "Türkçe",
   fr: "Français",
   pt: "Português",
+  el: "Ελληνικά",
 };
 
 export const defaultLang = "en";

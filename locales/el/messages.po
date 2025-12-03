@@ -1,0 +1,1165 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PyLadiesCon 2025\n"
+"Report-Msgid-Bugs-To: Open a PR 🤗\n"
+"POT-Creation-Date: 2025-11-27T16:06:35.403Z\n"
+"PO-Revision-Date: 2025-11-27T16:06:35.403Z\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/components/event.astro:12
+msgid "Experience"
+msgstr "Εμπειρία"
+
+#: src/components/event.astro:13
+msgid ""
+"At PyLadiesCon, we’re bringing the Python world right to your screen. Make "
+"sure to mark your calendars for the first weekend of December as we embark "
+"on a two-day journey that promises to be unforgettable."
+msgstr "Στο PyLadiesCon, φέρνουμε τον κόσμο της Python στην οθόνη σας. Σημειώστε "
+"στα ημερολόγιά σας το πρώτο Σαββατοκύριακο του Δεκεμβρίου, καθώς ξεκινάμε "
+"ένα διήμερο ταξίδι που υπόσχεται να σας μείνει αξέχαστο."
+
+#: src/components/event.astro:18
+msgid "The Goal"
+msgstr "Στόχος"
+
+#: src/components/event.astro:19
+msgid ""
+"This conference is designed to promote diversity, learning, and empowerment "
+"within the Python community. We enthusiastically welcome presenters from "
+"members and supporters of the PyLadies Community. Prior experience is not "
+"required. Everyone is welcome to share your insights and expertise."
+msgstr "Αυτό το συνέδριο στοχεύει στην προώθηση της ποικιλομορφίας, της μάθησης και της ενδυνάμωσης "
+"στην κοινότητα της Python. Ενθαρρύνουμε θερμά τις παρουσιάσεις από "
+"μέλη και υποστηρικτές της κοινότητας PyLadies. Δεν απαιτείται προηγούμενη "
+"εμπειρία. Όλα τα άτομα είναι ευπρόσδεκτα να μοιραστούν τις γνώσεις και την εμπειρία τους."
+
+#: src/components/event.astro:24
+msgid "The Languages"
+msgstr "Γλώσσες"
+
+#: src/components/event.astro:25
+msgid ""
+"Given that we are a global community, we warmly invite talks in the "
+"following languages: English, Español, Português, Deutsch, 日本語 and 中文."
+msgstr "Ως παγκόσμια κοινότητα, προσκαλούμε με χαρά ομιλίες στις ακόλουθες γλώσσες: Αγγλικά, Ισπανικά, Πορτογαλικά, Γερμανικά, Ιαπωνικά και Κινέζικα."
+
+#: src/components/event.astro:30
+msgid "Insightful Talks"
+msgstr "Τεχνικές ομιλίες με βάθος"
+
+#: src/components/event.astro:31
+msgid ""
+"Dive deep into Python's latest trends, best practices, and cutting-edge "
+"technologies with our inspiring speakers."
+msgstr "Εξερευνήστε τις τελευταίες τάσεις, τις βέλτιστες πρακτικές και τις τεχνολογίες αιχμής "
+"της Python μαζί με τα άτομα που θα μιλήσουν και θα σας εμπνεύσουν."
+
+#: src/components/event.astro:36
+msgid "Engaging Panels"
+msgstr "Ενδιαφέροντα Πάνελ"
+
+#: src/components/event.astro:37
+msgid ""
+"Join thought-provoking discussions on topics ranging from Python "
+"development to career growth and beyond."
+msgstr "Παρακολουθήστε ενδιαφέρουσες συζητήσεις για θέματα που κυμαίνονται "
+"από την ανάπτυξη σε Python έως την επαγγελματική εξέλιξη."
+
+#: src/components/event.astro:42
+msgid "Sprints and Workshop"
+msgstr "Sprints και Workshops"
+
+#: src/components/event.astro:43
+msgid ""
+"Learning hands-on or contributing to a project, you decide! Join the "
+"sprints and workshops."
+msgstr "Μάθετε μέσα από την πρακτική άσκηση ή συνεισφέρετε σε ένα έργο, η επιλογή είναι δική σας! Λάβετε "
+"μέρος στα sprints και τα workshops."
+
+#: src/components/event.astro:48
+msgid "Open Spaces"
+msgstr "Open Spaces"
+
+#: src/components/event.astro:49
+msgid ""
+"Motivated during the event? Organize an open space for people to gather and "
+"discuss any topic!"
+msgstr "Νιώθετε έμπνευση κατά τη διάρκεια της εκδήλωσης; Οργανώστε ένα open space "
+"όπου άτομα που συμμετέχουν θα μπορούν να συναντηθούν και να συζητήσουν οποιοδήποτε θέμα!"
+
+#: src/components/event.astro:54
+msgid "Collaborative Networking"
+msgstr "Συνεργατική Δικτύωση"
+
+#: src/components/event.astro:55
+msgid ""
+"Connect with fellow Python enthusiasts, expand your professional network, "
+"and forge new friendships."
+msgstr "Συνδεθείτε με άλλα άτομα που αγαπούν την Python, επεκτείνετε το επαγγελματικό σας δίκτυο "
+"και κάντε νέες φιλίες."
+
+#: src/components/event.astro:60
+msgid "Volunteer"
+msgstr "Προσφέρετε εθελοντικά"
+
+#: src/components/event.astro:61
+msgid ""
+"We would not be able to run this conference without help from our "
+"volunteers. Please check the Volunteer guide for more details on how to "
+"volunteer!"
+msgstr "Αυτό το συνέδριο δεν θα μπορούσε να πραγματοποιηθεί χωρίς τη βοήθεια "
+"των εθελοντών μας. Παρακαλούμε, συμβουλευτείτε τον οδηγό εθελοντών για περισσότερες πληροφορίες!"
+
+#: src/components/event.astro:70
+msgid "Conference Details"
+msgstr "Λεπτομέρειες Συνεδρίου"
+
+#: src/components/event.astro:71
+msgid "The Event"
+msgstr "Η εκδήλωση"
+
+#: src/components/event.astro:73
+msgid ""
+"PyLadies Conference (PyLadiesCon) is the third PyLadies conference held– an "
+"exciting online and FREE event dedicated to empowerment, learning, and "
+"diversity within the Python community! 🎉"
+msgstr "Το PyLadies Conference (PyLadiesCon) είναι το τρίτο συνέδριο των PyLadies — "
+"μια συναρπαστική, δωρεάν διαδικτυακή εκδήλωση αφιερωμένη στην ενδυνάμωση, τη μάθηση και "
+"την ποικιλομορφία στην κοινότητα της Python! 🎉"
+
+#: src/components/event.astro:91
+#: src/components/organization.astro:102
+msgid "Learn more"
+msgstr "Μάθετε περισσότερα"
+
+#: src/components/faq.astro:10
+msgid "Why an online event?"
+msgstr "Γιατί διαδικτυακά;"
+
+#: src/components/faq.astro:11
+msgid ""
+"We would love to have PyLadiesCon as a physical event, but that limits the "
+"amount of participants we can get around the world. We aim to reduce "
+"barriers in participating and create an inclusive environment for our "
+"community."
+msgstr "Θα θέλαμε πολύ το PyLadiesCon να είναι μια εκδήλωση με φυσική παρουσία, αλλά αυτό περιορίζει "
+"τον αριθμό των ατόμων που μπορούν να συμμετάσχουν από όλο τον κόσμο. Στόχος μας είναι να μειώσουμε "
+"τα εμπόδια συμμετοχής και να δημιουργήσουμε ένα περιβάλλον χωρίς αποκλεισμούς για "
+"την κοινότητά μας."
+
+#: src/components/faq.astro:14
+msgid "Why do you use Discord?"
+msgstr "Γιατί χρησιμοποιείτε το Discord;"
+
+#: src/components/faq.astro:15
+msgid ""
+"Having tried various other online event platforms, we are happy with "
+"Discord because not only that is affordable, but also offers enough "
+"capabilities for the conference to work."
+msgstr "Έχοντας δοκιμάσει διάφορες άλλες πλατφόρμες για διαδικτυακές εκδηλώσεις, είμαστε ικανοποιημένοι "
+"με το Discord, επειδή εκτός από οικονομικό, προσφέρει και αρκετές "
+"δυνατότητες για την ομαλή διεξαγωγή του συνεδρίου."
+
+#: src/components/faq.astro:18
+msgid "There are no PyLadies groups in my city, can I still attend?"
+msgstr "Δεν υπάρχει ομάδα PyLadies στην πόλη μου. Μπορώ παρόλα αυτά να συμμετάσχω;"
+
+#: src/components/faq.astro:19
+msgid "Yes, everyone is welcome, independently if you belong to a chapter or no"
+msgstr "Ναι, όλα τα άτομα είναι ευπρόσδεκτα, ανεξάρτητα από το αν ανήκετε ή όχι σε κάποιο τοπικό παράρτημα."
+
+#: src/components/faq.astro:22
+msgid "My language is not within the conference languages, how can I include it?"
+msgstr "Η γλώσσα μου δεν είναι μία από τις επίσημες γλώσσες του συνεδρίου. Πώς μπορώ να την προσθέσω;"
+
+#: src/components/faq.astro:23
+msgid ""
+"We would be happy to include your language, as long as there is a group of "
+"volunteers that can take care of reviewing proposals, generating and "
+"verifying subtitles, host talks, and translate the content in our platforms."
+msgstr "Θα χαρούμε να συμπεριλάβουμε και τη δική σας γλώσσα, αρκεί να υπάρχει μια ομάδα "
+"εθελοντών που μπορεί να αναλάβει την αξιολόγηση των προτάσεων, τη δημιουργία και "
+"επαλήθευση των υποτίτλων, την παρουσίαση των ομιλιών και τη μετάφραση του περιεχομένου στις πλατφόρμες μας."
+
+#: src/components/faq.astro:26
+msgid "I don't know Python, but I'm interested into learning, should I join?"
+msgstr "Δεν γνωρίζω Python, αλλά ενδιαφέρομαι να μάθω. Αξίζει να συμμετάσχω;"
+
+#: src/components/faq.astro:27
+msgid ""
+"Some topics might be difficult to understand, but we aim to have talks from "
+"many levels, including beginner topics, and also some activities for people "
+"to learn."
+msgstr "Κάποια θέματα μπορεί να είναι δύσκολα στην κατανόηση, αλλά στόχος μας είναι να "
+"έχουμε ομιλίες για όλα τα επίπεδα, συμπεριλαμβανομένων και εισαγωγικών θεμάτων, καθώς "
+"και δραστηριότητες για όσα άτομα θέλουν να μάθουν."
+
+#: src/components/faq.astro:30
+msgid "Do you need help with the conference?"
+msgstr "Χρειάζεστε βοήθεια με το συνέδριο;"
+
+#: src/components/faq.astro:31
+msgid ""
+"Yes!, we are usually looking for volunteers that can help us in tasks like "
+"reviewing proposals, generate and check subtitles, moderate "
+"sprints/workshops/panels, moderate discord, help us with the website, and "
+"many other things."
+msgstr "Ναι! Συνήθως αναζητούμε εθελοντές για να μας βοηθήσουν με "
+"την αξιολόγηση προτάσεων, τη δημιουργία και τον έλεγχο υποτίτλων, το συντονισμό "
+"των sprints/workshops/πάνελ, τη διαχείριση του Discord, την ιστοσελίδα "
+"και πολλά άλλα."
+
+#: src/components/faq.astro:38
+msgid "Frequently Asked Questions"
+msgstr "Συχνές Ερωτήσεις"
+
+#: src/components/hero.astro:42
+msgid "PyLadiesCon 2025"
+msgstr "PyLadiesCon 2025"
+
+#: src/components/hero.astro:44
+msgid "5th-7th December | Multi-language | Multi-timezone"
+msgstr "5-7 Δεκεμβρίου | Πολύγλωσσο | Πολλαπλές ζώνες ώρας"
+
+#: src/components/hero.astro:65
+#: src/data/menuItems.ts:21
+#: src/pages/[lang]/schedule.astro:22
+msgid "Schedule"
+msgstr "Πρόγραμμα"
+
+#: src/components/hero.astro:73
+msgid "Register"
+msgstr "Εγγραφή"
+
+#: src/components/hero.astro:77
+#: src/data/menuItems.ts:44
+#: src/pages/[lang]/donate.astro:16
+msgid "Donate"
+msgstr "Δωρεά"
+
+#: src/components/hero.astro:80
+msgid "Visit our meta website"
+msgstr "Κεντρική ιστοσελίδα"
+
+#: src/components/hero.astro:93
+msgid "The online conference of the PyLadies communities around the globe."
+msgstr "Το διαδικτυακό συνέδριο των κοινοτήτων PyLadies από όλο τον κόσμο."
+
+#: src/components/keynotes_index.astro:21
+msgid "Meet Our Keynotes"
+msgstr "Γνωρίστε τους κεντρικοί ομιλητές μας"
+
+#: src/components/keynotes_index.astro:22
+#: src/data/menuItems.ts:6
+msgid "Keynotes"
+msgstr "Κεντρικοί ομιλητές"
+
+#: src/components/organization.astro:14
+msgid ""
+"Mariatta is a Python core developer where she focuses on improving the "
+"workflow and documentation. She is active in the Python community as an "
+"advisor for the Global PyLadies, and PyCon US Chair."
+msgstr "Η Mariatta είναι Python core developer και επικεντρώνεται στη βελτίωση "
+"της ροής εργασιών και της τεκμηρίωσης. Συμμετέχει ενεργά στην κοινότητα της Python ως "
+"σύμβουλος για το Global PyLadies και ως chair του PyCon US."
+
+#: src/components/organization.astro:21
+msgid ""
+"I am a passionate biotechnologist, working as a Sr. Data Scientist in "
+"Berlin. In my spare time, I love to develop projects that can help people "
+"around our own planet, help to organize workshops and give talks in many "
+"python communities."
+msgstr "Είμαι μια ενθουσιώδης βιοτεχνολόγος και εργάζομαι ως Sr. Data Scientist στο "
+"Βερολίνο. Στον ελεύθερο μου χρόνο, μου αρέσει να αναπτύσσω έργα που βοηθούν ανθρώπους "
+"σε όλο τον πλανήτη, να συνδιοργανώνω workshops και να δίνω ομιλίες σε πολλές "
+"Python κοινότητες."
+
+#: src/components/organization.astro:28
+msgid ""
+"Software QA Analyst. Python community manager. Python Software Foundation "
+"(PSF) Fellow & Director. Advocates diversity and inclusion within tech "
+"communities. PyLadies chapters organizer."
+msgstr "Software QA Analyst. Διαχειρίστρια της κοινότητας Python. Μέλος και Διευθύντρια "
+"του Python Software Foundation (PSF). Υποστηρίζει την ποικιλομορφία και την ενσωμάτωση στις "
+"τεχνολογικές κοινότητες. Διοργανώτρια παραρτημάτων PyLadies."
+
+#: src/components/organization.astro:35
+msgid ""
+"Mother of 2 adults | Director @PSF | Fellow Member | 2020 PSF community "
+"service award | PSF D&I Workgroup Chair | PyCon US Design Lead since 2022"
+msgstr "Μητέρα 2 ενηλίκων | Διευθύντρια στο PSF | Fellow Member | Βραβείο Κοινοτικής Προσφοράς PSF 2020 | "
+"Πρόεδρος της Ομάδας Εργασίας D&I του PSF | Επικεφαλής Σχεδιασμού του PyCon US από το 2022"
+
+#: src/components/organization.astro:42
+msgid ""
+"Contributor and community member in the African Python Software Community "
+"and has served as an organizer for local and international community "
+"events. She is a Fellow and a Community Service award winner at the PSF."
+msgstr "Συνεισφέρει και είναι μέλος της Αφρικανικής Κοινότητας Λογισμικού Python. "
+"Έχει διατελέσει διοργανώτρια τοπικών και διεθνών εκδηλώσεων της κοινότητας. "
+"Είναι Fellow και έχει βραβευτεί με το Βραβείο Κοινοτικής Προσφοράς από το PSF."
+
+#: src/components/organization.astro:49
+msgid ""
+"Python community and conference serial organizer, contributing to many Open "
+"Source initiatives. He is a PSF Board Director and Fellow. He is currently "
+"working at The Qt Company."
+msgstr "Διοργανωτής συνεδρίων και ενεργό μέλος της κοινότητας Python, συνεισφέρει σε πολλές "
+"πρωτοβουλίες Ανοιχτού Κώδικα. Είναι μέλος του Διοικητικού Συμβουλίου και Fellow του PSF. "
+"Αυτή τη στιγμή εργάζεται στην The Qt Company."
+
+#: src/components/organization.astro:56
+msgid ""
+"An Irish Pythonista advocating diversity in tech, and runs regular PyLadies "
+"Dublin events. It was through Python that she got involved with the Irish "
+"tech community in 2005. She is a EuroPython Society Fellow, PSF Fellow and "
+"Community Service awardee."
+msgstr "Ιρλανδή προγραμματίστρια Python που υποστηρίζει την ποικιλομορφία στην τεχνολογία και "
+"διοργανώνει τακτικές εκδηλώσεις για τα PyLadies Dublin. Μέσω της Python εντάχθηκε "
+"στην ιρλανδική τεχνολογική κοινότητα το 2005. Είναι Fellow της EuroPython Society, Fellow του PSF "
+"και βραβευμένη με το Βραβείο Κοινοτικής Προσφοράς."
+
+#: src/components/organization.astro:63
+msgid ""
+"Naa Ashiorkor Nortey is a data scientist and tech community builder. Naa is "
+"deeply involved in the Python community, serving in organizing at "
+"conferences such as EuroPython. Currently, she is one of the organizers of "
+"PyLadies Tampere."
+msgstr "Η Naa Ashiorkor Nortey είναι data scientist και δημιουργός τεχνολογικών κοινοτήτων. "
+"Η Naa συμμετέχει ενεργά στην κοινότητα της Python, συμβάλλοντας στη διοργάνωση "
+"συνεδρίων όπως το EuroPython. Αυτή τη στιγμή, είναι μία από τις διοργανώτριες των "
+"PyLadies Tampere."
+
+#: src/components/organization.astro:72
+msgid "PyLadies Conference"
+msgstr "Συνέδριο PyLadies"
+
+#: src/components/organization.astro:73
+msgid "The Organizers"
+msgstr "Οι Διοργανωτές"
+
+#: src/components/organization.astro:75
+msgid ""
+"PyLadies is an international mentorship group with a focus on helping more "
+"women become active participants and leaders in the Python open-source "
+"community. Our mission is to promote, educate and advance a diverse Python "
+"community through outreach, education, conferences, events and social "
+"gatherings."
+msgstr "Οι PyLadies είναι μια διεθνής ομάδα mentoring που στοχεύει στο να βοηθήσει "
+"περισσότερες γυναίκες να γίνουν ενεργά μέλη και ηγέτιδες στην κοινότητα ανοιχτού κώδικα "
+"της Python. Η αποστολή μας είναι να προωθούμε, να εκπαιδεύουμε και να αναπτύσσουμε "
+"μια ποικιλόμορφη κοινότητα Python μέσω της εξωστρέφειας, της εκπαίδευσης, των συνεδρίων, "
+"των εκδηλώσεων και των κοινωνικών συναντήσεων."
+
+#: src/components/organization.astro:79
+msgid "To learn more, visit the PyLadies website"
+msgstr "Για να μάθετε περισσότερα, επισκεφθείτε την ιστοσελίδα των PyLadies"
+
+#: src/components/sessions/filter.astro:20
+msgid "Search"
+msgstr "Αναζήτηση"
+
+#: src/components/sessions/filter.astro:27
+msgid "Search by title, speaker, or description..."
+msgstr "Αναζήτηση βάσει τίτλου, ομιλητή ή περιγραφής..."
+
+#: src/components/sessions/filter.astro:35
+#: src/pages/[lang]/session/[...session].astro:56
+msgid "Track"
+msgstr "Θεματική ενότητα"
+
+#: src/components/sessions/filter.astro:42
+msgid "All Tracks"
+msgstr "Όλες οι θεματικές ενότητες"
+
+#: src/components/sessions/filter.astro:53
+msgid "Session Type"
+msgstr "Τύπος συνεδρίας"
+
+#: src/components/sessions/filter.astro:60
+msgid "All Types"
+msgstr "Όλοι οι τύποι"
+
+#: src/components/sessions/filter.astro:71
+#: src/pages/[lang]/session/[...session].astro:67
+msgid "Level"
+msgstr "Επίπεδο"
+
+#: src/components/sessions/filter.astro:78
+msgid "All Levels"
+msgstr "Όλα τα επίπεδα"
+
+#: src/components/sessions/filter.astro:89
+#: src/pages/[lang]/session/[...session].astro:73
+msgid "Language"
+msgstr "Γλώσσα"
+
+#: src/components/sessions/filter.astro:96
+msgid "All Languages"
+msgstr "Όλες οι γλώσσες"
+
+#: src/components/sessions/filter.astro:113
+msgid "Reset Filters"
+msgstr "Επαναφορά φίλτρων"
+
+#: src/components/sessions/filter.astro:121
+msgid "{count} result{plural} found."
+msgstr "Βρέθηκαν {count} αποτέλεσμα(τα)."
+
+#: src/components/sessions/filter.astro:122
+msgid "No results found."
+msgstr "Δεν βρέθηκαν αποτελέσματα."
+
+#: src/components/sessions/list-sessions.astro:61
+msgid "Speakers:"
+msgstr "Ομιλητές:"
+
+#: src/components/sponsors_gallery.astro:147
+msgid "Meet the sponsors of our conference."
+msgstr "Γνωρίστε τους χορηγούς του συνεδρίου μας."
+
+#: src/components/sponsors_gallery.astro:148
+#: src/data/menuItems.ts:10
+msgid "Our Sponsors"
+msgstr "Οι χορηγοί μας"
+
+#: src/components/sponsorship_faq.astro:10
+msgid "What is the «Keynote Intro»?"
+msgstr "Τι είναι το «Keynote Intro»;"
+
+#: src/components/sponsorship_faq.astro:11
+msgid ""
+"We will play a short 2-5 minutes video from our Champion sponsor before "
+"each of the keynote session."
+msgstr "Πριν από κάθε κεντρική ομιλία, θα προβάλλεται ένα σύντομο βίντεο (2-5 λεπτών) "
+"από τον Champion χορηγό μας."
+
+#: src/components/sponsorship_faq.astro:15
+msgid "What is the «Technical Talk Slot»?"
+msgstr "Τι είναι το «Technical Talk Slot»;"
+
+#: src/components/sponsorship_faq.astro:16
+msgid ""
+"Sponsors on the Champion and Supporter tier will have an accepted talk in "
+"the conference. Talks at PyLadiesCon last 15 minutes + 5 minutes Q&A, and "
+"the slot will be assigned once the schedule is announced."
+msgstr "Οι χορηγοί των πακέτων Champion και Supporter θα έχουν μια εγκεκριμένη "
+"ομιλία στο συνέδριο. Οι ομιλίες στο PyLadiesCon διαρκούν 15 λεπτά, με 5 επιπλέον λεπτά "
+"για ερωτήσεις. Η ακριβής ώρα θα καθοριστεί με την ανακοίνωση του προγράμματος."
+
+#: src/components/sponsorship_faq.astro:20
+msgid "What is the «Panel Discussion»?"
+msgstr "Τι είναι το «Panel Discussion»;"
+
+#: src/components/sponsorship_faq.astro:21
+msgid ""
+"Participate in a panel discussion formed by Sponsors (topic of choice) with "
+"all participants. Share your perspective and clarify participant's "
+"questions about the tech industry and the job market. These are the most "
+"popular sessions of the conference. It lasts around 35 minutes and is "
+"usually allocated on the timezone with higher demand."
+msgstr "Σας καλούμε να συμμετάσχετε σε ένα πάνελ συζήτησης που αποτελείται "
+"από χορηγούς (σε θέμα της επιλογής τους) μαζί με όλα τα άτομα που συμμετέχουν. "
+"Μοιραστείτε την άποψή σας και απαντήστε σε ερωτήσεις σχετικά με τη βιομηχανία της τεχνολογίας "
+"και την αγορά εργασίας. Αυτές οι συνεδρίες είναι από τις πιο δημοφιλείς του συνεδρίου. "
+"Διαρκούν περίπου 35 λεπτά και συνήθως προγραμματίζονται στη ζώνη ώρας με τη μεγαλύτερη συμμετοχή."
+
+#: src/components/sponsorship_faq.astro:25
+msgid "What does the «Mentions in social media» includes?"
+msgstr "Τι περιλαμβάνουν οι «Αναφορές στα social media»;"
+
+#: src/components/sponsorship_faq.astro:26
+msgid ""
+"We will create a series of posts for all our sponsors in order to thank "
+"them by their support and post in our social media."
+msgstr "Θα δημιουργήσουμε μια σειρά αναρτήσεων για όλους τους χορηγούς μας, "
+"ως ευχαριστία για την υποστήριξή τους, και θα τις δημοσιεύσουμε στα social media μας."
+
+#: src/components/sponsorship_faq.astro:30
+msgid "How does the «Speed job interviews» work?"
+msgstr "Πώς λειτουργούν οι «Γρήγορες συνεντεύξεις για δουλειά»;"
+
+#: src/components/sponsorship_faq.astro:31
+msgid ""
+"A fast-paced online networking event where employers and job seekers get 5 "
+"minutes to introduce themselves and ask crucial questions. If both parties "
+"are interested, they connect for a formal interview afterwards. "
+"Participants should be able to check the job description beforehand."
+msgstr "Μια γρήγορη διαδικτυακή εκδήλωση δικτύωσης, όπου εργοδότες και υποψήφιοι "
+"έχουν 5 λεπτά για να συστηθούν και να θέσουν βασικές ερωτήσεις. Αν υπάρξει αμοιβαίο "
+"ενδιαφέρον, μπορούν να προχωρήσουν σε μια κανονική συνέντευξη αργότερα. "
+"Τα άτομα που συμμετέχουν θα έχουν πρόσβαση στις περιγραφές των θέσεων εργασίας εκ των προτέρων."
+
+#: src/components/sponsorship_faq.astro:39
+msgid "Sponsorship Frequently Asked Questions"
+msgstr "Συχνές ερωτήσεις για τη χορηγία"
+
+#: src/components/ui/ticketbutton.astro:22
+msgid "Get Your Ticket"
+msgstr "Αποκτήστε το εισιτήριό σας"
+
+#: src/data/menuItems.ts:3
+msgid "About"
+msgstr "Σχετικά με"
+
+#: src/data/menuItems.ts:5
+msgid "The event"
+msgstr "Η εκδήλωση"
+
+#: src/data/menuItems.ts:7
+msgid "FAQ"
+msgstr "Συχνές ερωτήσεις"
+
+#: src/data/menuItems.ts:8
+msgid "The organizers"
+msgstr "Οι διοργανωτές"
+
+#: src/data/menuItems.ts:9
+msgid "Volunteers"
+msgstr "Εθελοντές"
+
+#: src/data/menuItems.ts:14
+msgid "Blog"
+msgstr "Blog"
+
+#: src/data/menuItems.ts:19
+msgid "Conference"
+msgstr "Συνέδριο"
+
+#: src/data/menuItems.ts:22
+#: src/pages/[lang]/sessions.astro:70
+msgid "Sessions"
+msgstr "Συνεδρίες"
+
+#: src/data/menuItems.ts:23
+#: src/pages/[lang]/session/[...session].astro:120
+msgid "Speakers"
+msgstr "Ομιλητές"
+
+#: src/data/menuItems.ts:24
+msgid "Sprints"
+msgstr "Sprints"
+
+#: src/data/menuItems.ts:25
+msgid "How to Join"
+msgstr "Πώς να συμμετάσχετε"
+
+#: src/data/menuItems.ts:29
+msgid "Sponsors"
+msgstr "Χορηγοί"
+
+#: src/data/menuItems.ts:31
+msgid "Sponsorship Plans"
+msgstr "Πακέτα χορηγίας"
+
+#: src/data/menuItems.ts:32
+msgid "Jobs Board"
+msgstr "Πίνακας αγγελιών"
+
+#: src/data/menuItems.ts:36
+#: src/pages/[lang]/coc-enforcing.astro:23
+#: src/pages/[lang]/coc-reporting.astro:23
+#: src/pages/[lang]/coc.astro:28
+#: src/pages/[lang]/coc.astro:31
+msgid "Code of Conduct"
+msgstr "Κώδικας δεοντολογίας"
+
+#: src/data/menuItems.ts:38
+msgid "Read the CoC"
+msgstr "Διαβάστε τον Κώδικα Δεοντολογίας"
+
+#: src/data/menuItems.ts:39
+msgid "Reporting process"
+msgstr "Διαδικασία αναφοράς"
+
+#: src/data/menuItems.ts:40
+msgid "Enforcement process"
+msgstr "Διαδικασία επιβολής"
+
+#: src/pages/404.astro:14
+msgid "Error 404"
+msgstr "Σφάλμα 404"
+
+#: src/pages/404.astro:22
+msgid "Sorry, we couldn't find this page."
+msgstr "Λυπούμαστε, αυτή η σελίδα δεν βρέθηκε."
+
+#: src/pages/404.astro:23
+msgid "But dont worry, you can find plenty of other things on our homepage."
+msgstr "Μην ανησυχείτε όμως, μπορείτε να βρείτε πολλά στην αρχική μας σελίδα."
+
+#: src/pages/404.astro:24
+msgid "Back to homepage"
+msgstr "Επιστροφή στην αρχική σελίδα"
+
+#: src/pages/[lang]/attending.astro:22
+#: src/pages/[lang]/attending.astro:93
+msgid "Get your ticket"
+msgstr "Αποκτήστε το εισιτήριό σας"
+
+#: src/pages/[lang]/attending.astro:23
+msgid "Visit pretix to get one."
+msgstr "Επισκεφθείτε το pretix για να το αποκτήσετε."
+
+#: src/pages/[lang]/attending.astro:28
+#: src/pages/[lang]/attending.astro:106
+#: src/pages/[lang]/attending.astro:121
+msgid "Join Discord"
+msgstr "Συνδεθείτε στο Discord"
+
+#: src/pages/[lang]/attending.astro:29
+msgid "Using the invite link"
+msgstr "Χρησιμοποιώντας τον σύνδεσμο πρόσκλησης"
+
+#: src/pages/[lang]/attending.astro:34
+#: src/pages/[lang]/attending.astro:127
+msgid "Register in Discord"
+msgstr "Εγγραφείτε στο Discord"
+
+#: src/pages/[lang]/attending.astro:35
+msgid "With your <b>Name</b> and <b>Order number</b>"
+msgstr "Με το <b>Όνομά</b> σας και τον <b>αριθμό Παραγγελίας</b>"
+
+#: src/pages/[lang]/attending.astro:40
+msgid "Enjoy the conference!"
+msgstr "Απολαύστε το συνέδριο!"
+
+#: src/pages/[lang]/attending.astro:41
+msgid "Check the server structure"
+msgstr "Ελέγξτε τη δομή του server"
+
+#: src/pages/[lang]/attending.astro:49
+msgid "The online venue of the conference"
+msgstr "Ο διαδικτυακός χώρος του συνεδρίου"
+
+#: src/pages/[lang]/attending.astro:50
+msgid "Attending PyLadiesCon"
+msgstr "Συμμετοχή το PyLadiesCon"
+
+#: src/pages/[lang]/attending.astro:52
+msgid ""
+"Join the conference Discord server to meet every participant, including "
+"Speakers, Sponsors, Keynotes, Volunteers and Organizers. Enjoy talks, "
+"workshops, open spaces, get stream links, and many more activities!"
+msgstr "Συνδεθείτε στον Discord server του συνεδρίου για να γνωρίσετε "
+"όλα τα άτομα που συμμετέχουν, συμπεριλαμβανομένων των ομιλητών, "
+"χορηγών, κεντρικών ομιλητριών, εθελοντών και διοργανωτριών/ών. "
+"Απολαύστε ομιλίες, εργαστήρια, open spaces, λάβετε συνδέσμους για τις "
+"μεταδόσεις και πολλές άλλες δραστηριότητες!"
+
+#: src/pages/[lang]/attending.astro:53
+msgid "Follow the next steps to enjoy the conference:"
+msgstr "Ακολουθήστε τα παρακάτω βήματα για να απολαύσετε το συνέδριο:"
+
+#: src/pages/[lang]/attending.astro:64
+msgid "Update"
+msgstr "Ενημέρωση"
+
+#: src/pages/[lang]/attending.astro:64
+msgid "The discord server is available!"
+msgstr "Ο Discord server είναι διαθέσιμος!"
+
+#: src/pages/[lang]/attending.astro:101
+msgid "<span class=\"font-bold\">Important:</span> every participant needs a <a class=\"underline\" href=\"https://pretix.eu/pyladiescon/2025\">conference ticket</a> in order to access the right channels in the Discord server; including Participants, Volunteers, and Sponsors."
+msgstr "<span class=\"font-bold\">Σημαντικό:</span> Κάθε άτομο που συμμετέχει χρειάζεται ένα <a class=\"underline\" href=\"https://pretix.eu/pyladiescon/2025\">εισιτήριο συνεδρίου</a> για να έχει πρόσβαση στα κανάλια του Discord server, συμπεριλαμβανομένων των ατόμων που συμμετέχουν, που προσφέρουν εθελοντικά και των Χορηγών."
+
+#: src/pages/[lang]/attending.astro:103
+msgid "You can get a conference ticket on <a href=\"https://pretix.eu/pyladiescon/2025\">our pretix page</a>."
+msgstr "Μπορείτε να αποκτήσετε το εισιτήριό σας στη <a href=\"https://pretix.eu/pyladiescon/2025\">σελίδα μας στο pretix</a>."
+
+#: src/pages/[lang]/attending.astro:114
+msgid "<span class=\"font-medium\"><b>Note:</b></span> In case you already have a Discord account, you don't need to create a new one."
+msgstr "<span class=\"font-medium\"><b>Σημείωση:</b></span> Αν έχετε ήδη λογαριασμό στο Discord, δεν χρειάζεται να δημιουργήσετε καινούριο."
+
+#: src/pages/[lang]/attending.astro:116
+msgid "You will receive an invite link before the conference, but in case you want to join before, use this one:"
+msgstr "Θα λάβετε έναν σύνδεσμο πρόσκλησης πριν το συνέδριο, αλλά αν θέλετε να συνδεθείτε νωρίτερα, χρησιμοποιήστε αυτόν:"
+
+#: src/pages/[lang]/attending.astro:130
+msgid "Once inside the server, head to the <code class=\"text-blue-400\">#registration-form</code> channel, click on the <button type=\"button\" class=\"focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-3 py-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800\">Register here 👈</button> button and a modal window will open, where you will need to enter your <b>Name</b> and <b>Ticket number</b>."
+msgstr "Μόλις μπείτε στον server, πηγαίνετε στο κανάλι <code class=\"text-blue-400\">#registration-form</code>, κάντε κλικ στο κουμπί <button type=\"button\" class=\"focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-3 py-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800\">Register here 👈</button> και θα ανοίξει ένα παράθυρο όπου θα πρέπει να εισαγάγετε το <b>Όνομά</b> σας και τον <b>Αριθμό Εισιτηρίου</b> σας."
+
+#: src/pages/[lang]/attending.astro:131
+msgid "You need to enter <b>the exact</b> information from your conference ticket, that you received via email with a subject:<br><code class=\"text-gray-300\">[PyLadiesCon 2025] Your order: XXXXX</code>, when you acquired the ticket."
+msgstr "Πρέπει να εισαγάγετε <b>ακριβώς</b> τις πληροφορίες που αναγράφονται στο εισιτήριό σας, τις οποίες λάβατε μέσω email με θέμα:<br><code class=\"text-gray-300\">[PyLadiesCon 2025] Your order: XXXXX</code>."
+
+#: src/pages/[lang]/attending.astro:133
+msgid "Joining as an Participant"
+msgstr "Απλή συμμετοχή"
+
+#: src/pages/[lang]/attending.astro:135
+msgid "If this is your first PyLadiesCon, you should join Discord with the link that it will be sent to you a week before the conference."
+msgstr "Αν αυτό είναι το πρώτο σας PyLadiesCon, θα πρέπει να συνδεθείτε στο Discord με τον σύνδεσμο που θα σας σταλεί μια εβδομάδα πριν το συνέδριο."
+
+#: src/pages/[lang]/attending.astro:136
+msgid "Once you register successfully, you will get assigned the <code class=\"text-yellow-400\">Participant</code> role."
+msgstr "Μόλις ολοκληρώσετε την εγγραφή σας, θα σας αποδοθεί αυτόματα ο ρόλος <code class=\"text-yellow-400\">Participant</code>."
+
+#: src/pages/[lang]/attending.astro:138
+msgid "Joining as a Sponsor"
+msgstr "Συμμετοχή ως χορηγός"
+
+#: src/pages/[lang]/attending.astro:140
+msgid "If you are from a company that is <b>sponsoring the conference</b>, and you will participate in the many activities like Panel Discussion, Speed Interview, sharing information in your company's channel, you need to get a ticket with the <b>Voucher</b> that it will be sent to you, through the contact person at your company."
+msgstr "Αν εκπροσωπείτε μια εταιρεία που <b>χορηγεί το συνέδριο</b> και θα συμμετάσχετε σε δραστηριότητες όπως το Panel Discussion, το Speed Interview ή θα μοιράζεστε πληροφορίες στο κανάλι της εταιρείας σας, θα πρέπει να αποκτήσετε ένα εισιτήριο με το <b>Voucher</b> που θα σας σταλεί μέσω του υπεύθυνου επικοινωνίας της εταιρείας σας."
+
+#: src/pages/[lang]/attending.astro:141
+msgid "This is very important for you to get the <code class=\"text-yellow-400\">Sponsor</code> role."
+msgstr "Αυτό είναι πολύ σημαντικό για να λάβετε τον ρόλο <code class=\"text-yellow-400\">Sponsor</code>."
+
+#: src/pages/[lang]/attending.astro:143
+msgid "Joining as a Speaker"
+msgstr "Συμμετοχή με ομιλία"
+
+#: src/pages/[lang]/attending.astro:145
+msgid "If you have a confirmed Talk, Panel, or Keynote you should get a ticket using the Voucher that we will send you via email. The reason behind this is to automatically assign you the <code class=\"text-yellow-400\">Speaker</code> role."
+msgstr "Αν έχετε επιβεβαιωμένη ομιλία, πάνελ ή κεντρική ομιλία, θα πρέπει να χρησιμοποιήσετε το Voucher που θα σας στείλουμε με email για να πάρετε το εισιτήριό σας. Αυτό γίνεται για να σας αποδοθεί αυτόματα ο ρόλος <code class=\"text-yellow-400\">Speaker</code>."
+
+#: src/pages/[lang]/attending.astro:147
+msgid "Joining as a Volunteer"
+msgstr "Εθελοντική συμμετοχή"
+
+#: src/pages/[lang]/attending.astro:149
+msgid "If you are a conference Volunteer, it's highly probable you are already inside the server, but you <span class=\"text-red-500\">will not</span> have access to the conference channels as long as you don't get a conference ticket, and do the registration process described at the top of this page."
+msgstr "Αν προσφέρετε εθελοντικά στο συνέδριο, πιθανότατα βρίσκεστε ήδη στον server. Ωστόσο, <span class=\"text-red-500\">δεν θα</span> έχετε πρόσβαση στα κανάλια του συνεδρίου αν δεν αποκτήσετε εισιτήριο και δεν ολοκληρώσετε τη διαδικασία εγγραφής που περιγράφεται παραπάνω."
+
+#: src/pages/[lang]/attending.astro:150
+msgid "If by some reason you haven't been assigned the <code class=\"text-yellow-400\">Volunteer</code> contact the organization in the <code class=\"text-blue-400\">#volunteers-general</code> channel."
+msgstr "Αν για κάποιο λόγο δεν σας έχει αποδοθεί ο ρόλος <code class=\"text-yellow-400\">Volunteer</code>, επικοινωνήστε με τη διοργάνωση στο κανάλι <code class=\"text-blue-400\">#volunteers-general</code>."
+
+#: src/pages/[lang]/attending.astro:153
+msgid "The server structure"
+msgstr "Η δομή του server"
+
+#: src/pages/[lang]/attending.astro:156
+msgid "Once you join the server, you will see two categories, one called <b>Conference Information</b> with two channels:"
+msgstr "Μόλις συνδεθείτε στον server, θα δείτε δύο κατηγορίες. Η πρώτη, με όνομα <b>Conference Information</b>, περιλαμβάνει δύο κανάλια:"
+
+#: src/pages/[lang]/attending.astro:158
+msgid "a text channel called <code class=\"text-blue-400\">#rules</code>, with the rules of the server, and"
+msgstr "ένα κανάλι κειμένου με όνομα <code class=\"text-blue-400\">#rules</code>, που περιέχει τους κανόνες του server, και"
+
+#: src/pages/[lang]/attending.astro:159
+msgid "a text channel called <code class=\"text-blue-400\">#code-of-conduct</code>, with the guidelines to participate in the event"
+msgstr "ένα κανάλι κειμένου με όνομα <code class=\"text-blue-400\">#code-of-conduct</code>, με τις οδηγίες για τη συμμετοχή στην εκδήλωση."
+
+#: src/pages/[lang]/attending.astro:162
+msgid "Another category called <b>Registration</b> with two channels:"
+msgstr "Η δεύτερη κατηγορία, με όνομα <b>Registration</b>, περιλαμβάνει δύο κανάλια:"
+
+#: src/pages/[lang]/attending.astro:164
+msgid "a text channel called <code class=\"text-blue-400\">#registration-form</code> where you can see the button to register, and"
+msgstr "ένα κανάλι κειμένου με όνομα <code class=\"text-blue-400\">#registration-form</code>, όπου βρίσκεται το κουμπί για την εγγραφή, και"
+
+#: src/pages/[lang]/attending.astro:165
+msgid "a forum channel called <code class=\"text-blue-400\">💬registration-help</code>, where you can ask any question regarding the registration process."
+msgstr "ένα κανάλι forum με όνομα <code class=\"text-blue-400\">💬registration-help</code>, όπου μπορείτε να θέσετε ερωτήσεις σχετικά με τη διαδικασία εγγραφής."
+
+#: src/pages/[lang]/attending.astro:167
+msgid "If you have any question after you registered, you can leave your question in the <code class=\"text-blue-400\">💬help</code> forum."
+msgstr "Αν έχετε οποιαδήποτε ερώτηση μετά την εγγραφή σας, μπορείτε να τη δημοσιεύσετε στο forum <code class=\"text-blue-400\">💬help</code>."
+
+#: src/pages/[lang]/attending.astro:169
+msgid "Get the latest updates"
+msgstr "Μείνετε ενήμεροι"
+
+#: src/pages/[lang]/attending.astro:171
+msgid "Once registered, the <b>Conference Information</b> will contains more channels:"
+msgstr "Μόλις εγγραφείτε, η κατηγορία <b>Conference Information</b> θα περιλαμβάνει περισσότερα κανάλια:"
+
+#: src/pages/[lang]/attending.astro:173
+msgid "<code class=\"text-blue-400\">#announcements</code>, to get the general conference announcements,"
+msgstr "<code class=\"text-blue-400\">#announcements</code>, για τις γενικές ανακοινώσεις του συνεδρίου,"
+
+#: src/pages/[lang]/attending.astro:174
+msgid "<code class=\"text-blue-400\">#outreach-social-media</code>, to get the conference posts on social media, so you can share them,"
+msgstr "<code class=\"text-blue-400\">#outreach-social-media</code>, για να βλέπετε τις αναρτήσεις του συνεδρίου στα social media και να τις μοιράζεστε,"
+
+#: src/pages/[lang]/attending.astro:175
+msgid "<code class=\"text-blue-400\">#donations</code>, to track the donations through <a href=\"https://pretix.eu/pyladiescon/2025\">Pretix</a> during the conference,"
+msgstr "<code class=\"text-blue-400\">#donations</code>, για να παρακολουθείτε τις δωρεές μέσω του <a href=\"https://pretix.eu/pyladiescon/2025\">Pretix</a> κατά τη διάρκεια του συνεδρίου,"
+
+#: src/pages/[lang]/attending.astro:176
+msgid "<code class=\"text-blue-400\">#session-notifications</code>, to know the upcoming talks and events,"
+msgstr "<code class=\"text-blue-400\">#session-notifications</code>, για να ενημερώνεστε για τις επερχόμενες ομιλίες και εκδηλώσεις,"
+
+#: src/pages/[lang]/attending.astro:177
+msgid "<code class=\"text-blue-400\">#global-events</code>, to discover events happening in the rest of the world."
+msgstr "<code class=\"text-blue-400\">#global-events</code>, για να ανακαλύπτετε εκδηλώσεις που συμβαίνουν σε όλο τον κόσμο."
+
+#: src/pages/[lang]/attending.astro:180
+msgid "Interact with others"
+msgstr "Αλληλεπιδράστε με άλλα άτομα"
+
+#: src/pages/[lang]/attending.astro:182
+msgid "The <b>Conference</b> category will be visible once you register, and will contain the following channels:"
+msgstr "Η κατηγορία <b>Conference</b> θα είναι ορατή μετά την εγγραφή σας και θα περιλαμβάνει τα παρακάτω κανάλια:"
+
+#: src/pages/[lang]/attending.astro:184
+msgid "<code class=\"text-blue-400\">#welcome</code>, for you to introduce yourself and say hi to others,"
+msgstr "<code class=\"text-blue-400\">#welcome</code>, για να συστηθείτε και να χαιρετήσετε τους υπόλοιπους,"
+
+#: src/pages/[lang]/attending.astro:185
+msgid "<code class=\"text-blue-400\">#general</code>, for a general conference discussion,"
+msgstr "<code class=\"text-blue-400\">#general</code>, για γενική συζήτηση σχετικά με το συνέδριο,"
+
+#: src/pages/[lang]/attending.astro:186
+msgid "<code class=\"text-blue-400\">#networking</code>, so you can share your social media to connect with others,"
+msgstr "<code class=\"text-blue-400\">#networking</code>, για να μοιράζεστε τα social media σας και να συνδεθείτε με άλλα άτομα,"
+
+#: src/pages/[lang]/attending.astro:187
+msgid "<code class=\"text-blue-400\">#random</code>, for any discussion not related to the conference,"
+msgstr "<code class=\"text-blue-400\">#random</code>, για οποιαδήποτε συζήτηση που δεν σχετίζεται με το συνέδριο,"
+
+#: src/pages/[lang]/attending.astro:188
+msgid "<code class=\"text-blue-400\">#job-board</code>, in case you are looking for job offers,"
+msgstr "<code class=\"text-blue-400\">#job-board</code>, αν αναζητάτε αγγελίες εργασίας,"
+
+#: src/pages/[lang]/attending.astro:189
+msgid "<code class=\"text-blue-400\">#resources</code>, for sharing python-related resources,"
+msgstr "<code class=\"text-blue-400\">#resources</code>, για να μοιράζεστε χρήσιμο υλικό σχετικό με την Python,"
+
+#: src/pages/[lang]/attending.astro:190
+msgid "<code class=\"text-blue-400\">#news-discussion</code>, to interact with the latest Python/PyLadies blog posts,"
+msgstr "<code class=\"text-blue-400\">#news-discussion</code>, για να συζητάτε τα τελευταία νέα από τα blog της Python και των PyLadies,"
+
+#: src/pages/[lang]/attending.astro:191
+msgid "<code class=\"text-blue-400\">#help</code>, in case you need help with something,"
+msgstr "<code class=\"text-blue-400\">#help</code>, αν χρειάζεστε βοήθεια με κάτι,"
+
+#: src/pages/[lang]/attending.astro:192
+msgid "<code class=\"text-blue-400\">#ask-core-devs</code>, for you to meet and ask the many Python Core developers that will be around,"
+msgstr "<code class=\"text-blue-400\">#ask-core-devs</code>, για να συναντήσετε και να ρωτήσετε τους Python Core developers που θα βρίσκονται εδώ,"
+
+#: src/pages/[lang]/attending.astro:193
+msgid "<code class=\"text-blue-400\">#game</code>, for a little game we have prepared for you,"
+msgstr "<code class=\"text-blue-400\">#game</code>, για ένα μικρό παιχνίδι που ετοιμάσαμε για εσάς,"
+
+#: src/pages/[lang]/attending.astro:194
+msgid "<code class=\"text-blue-400\">#game-ranking</code>, to see the ranking of the game!,"
+msgstr "<code class=\"text-blue-400\">#game-ranking</code>, για να δείτε την κατάταξη του παιχνιδιού!,"
+
+#: src/pages/[lang]/attending.astro:196
+msgid "And more importantly, you also will have channels related to the tracks of the conference:"
+msgstr "Και το πιο σημαντικό, θα έχετε επίσης κανάλια που σχετίζονται με τις θεματικές ενότητες του συνεδρίου:"
+
+#: src/pages/[lang]/attending.astro:198
+msgid "<code class=\"text-blue-400\">#main-stream</code>, for the main conference track,"
+msgstr "<code class=\"text-blue-400\">#main-stream</code>, για την κύρια θεματική ενότητα του συνεδρίου,"
+
+#: src/pages/[lang]/attending.astro:199
+msgid "<code class=\"text-blue-400\">#activities-open-spaces</code>, for the track for Activities, Workshops, and Open Spaces,"
+msgstr "<code class=\"text-blue-400\">#activities-open-spaces</code>, για τη θεματική ενότητα των Δραστηριοτήτων, Workshops και Open Spaces,"
+
+#: src/pages/[lang]/coc-enforcing.astro:24
+msgid "General Enforcing Procedure"
+msgstr "Γενική διαδικασία επιβολής"
+
+#: src/pages/[lang]/coc-enforcing.astro:26
+msgid "This document summarizes the procedures the PyLadiesCon CoC team uses to enforce the Code of Conduct."
+msgstr "Αυτό το έγγραφο συνοψίζει τις διαδικασίες που ακολουθεί η ομάδα του Κώδικα Δεοντολογίας (CoC) του PyLadiesCon για την επιβολή του."
+
+#: src/pages/[lang]/coc-reporting.astro:24
+msgid "General Reporting Procedure"
+msgstr "Γενική διαδικασία αναφοράς"
+
+#: src/pages/[lang]/coc-reporting.astro:26
+msgid "Steps for doing a proper report of an event that happened in the conference"
+msgstr "Βήματα για την ορθή αναφορά ενός περιστατικού που συνέβη στο συνέδριο"
+
+#: src/pages/[lang]/coc.astro:34
+msgid "PyLadiesCon is a community conference intended for networking and collaboration. We aim to provide a safe, inclusive, welcoming, and harassment-free for everyone in our community."
+msgstr "Το PyLadiesCon είναι ένα συνέδριο που διοργανώνεται από την κοινότητα με στόχο τη δικτύωση και τη συνεργασία. Σκοπός μας είναι να παρέχουμε ένα ασφαλές, συμπεριληπτικό, φιλόξενο και ελεύθερο από παρενοχλήσεις περιβάλλον για όλα τα άτομα της κοινότητά μας."
+
+#: src/pages/[lang]/coc.astro:83
+msgid "Our Community"
+msgstr "Η κοινότητά μας"
+
+#: src/pages/[lang]/coc.astro:85
+msgid "Members of the Python community are open, considerate, and respectful. Behaviors that reinforce these values contribute to a positive environment, and include:"
+msgstr "Τα μέλη της κοινότητας Python διακατέχονται από διακριτικότητα και σεβασμό. Οι συμπεριφορές που ενισχύουν αυτές τις αξίες συμβάλλουν σε ένα θετικό περιβάλλον και περιλαμβάνουν:"
+
+#: src/pages/[lang]/donate.astro:19
+msgid "Support PyLadiesCon"
+msgstr "Υποστηρίξτε το PyLadiesCon"
+
+#: src/pages/[lang]/donate.astro:20
+msgid "Make a Donation"
+msgstr "Κάντε μια δωρεά"
+
+#: src/pages/[lang]/donate.astro:22
+msgid "PyLadiesCon is an exciting online event dedicated to empowerment, learning, and diversity within the Python community. Organized by PyLadies, a global mentorship group helping more women become active participants and leaders in the Python open source community, your donation will help improve the diversity of the software industry as a whole."
+msgstr "Το PyLadiesCon είναι μια συναρπαστική διαδικτυακή εκδήλωση αφιερωμένη στην ενδυνάμωση, τη μάθηση και την ποικιλομορφία στην κοινότητα της Python. Διοργανώνεται από το PyLadies, μια παγκόσμια ομάδα mentoring που βοηθά περισσότερες γυναίκες να γίνουν ενεργά μέλη και ηγέτιδες στην κοινότητα ανοιχτού κώδικα της Python. Η δωρεά σας θα συμβάλει στη βελτίωση της ποικιλομορφίας στη βιομηχανία λογισμικού συνολικά."
+
+#: src/pages/[lang]/donate.astro:30
+msgid "Global Reach"
+msgstr "Παγκόσμια εμβέλεια"
+
+#: src/pages/[lang]/donate.astro:32
+msgid "Help us bring PyLadies communities together from around the world."
+msgstr "Βοηθήστε μας να φέρουμε κοντά τις κοινότητες PyLadies από όλο τον κόσμο."
+
+#: src/pages/[lang]/donate.astro:38
+msgid "Free Access"
+msgstr "Δωρεάν πρόσβαση"
+
+#: src/pages/[lang]/donate.astro:40
+msgid "Keep the conference free and accessible to all participants."
+msgstr "Διατηρήστε το συνέδριο δωρεάν και προσβάσιμο σε όλους τους συμμετέχοντες."
+
+#: src/pages/[lang]/donate.astro:46
+msgid "Community Support"
+msgstr "Υποστήριξη της κοινότητας"
+
+#: src/pages/[lang]/donate.astro:48
+msgid "Support the PyLadies community and help organize future events."
+msgstr "Υποστηρίξτε την κοινότητα των PyLadies και βοηθήστε στη διοργάνωση μελλοντικών εκδηλώσεων."
+
+#: src/pages/[lang]/donate.astro:56
+msgid "Donation Form"
+msgstr "Φόρμα δωρεάς"
+
+#: src/pages/[lang]/donate.astro:58
+msgid "All donations go directly to supporting PyLadiesCon and are managed by the Python Software Foundation."
+msgstr "Όλες οι δωρεές διατίθενται απευθείας για την υποστήριξη του PyLadiesCon και η διαχείρισή τους γίνεται από το Python Software Foundation."
+
+#: src/pages/[lang]/donate.astro:66
+msgid "Ready to Make a Difference?"
+msgstr "Είστε έτοιμες/οι να κάνετε τη διαφορά;"
+
+#: src/pages/[lang]/donate.astro:69
+msgid "Click the button below to proceed to our donation form. You'll be redirected to the Python Software Foundation's payment system."
+msgstr "Κάντε κλικ στο παρακάτω κουμπί για να μεταβείτε στη φόρμα δωρεάς. Θα ανακατευθυνθείτε στο σύστημα πληρωμών του Python Software Foundation."
+
+#: src/pages/[lang]/donate.astro:80
+msgid "Proceed to Donation Form"
+
+msgstr "Μετάβαση στη φόρμα δωρεάς"
+
+#: src/pages/[lang]/donate.astro:85
+msgid "Payment is processed securely via PayPal or physical check (US only)"
+msgstr "Η πληρωμή διεκπεραιώνεται με ασφάλεια μέσω PayPal ή με επιταγή (μόνο για τις ΗΠΑ)."
+
+#: src/pages/[lang]/donate.astro:94
+msgid "The Python Software Foundation is a 501(c)(3) non-profit organization. Donations may be tax-deductible."
+msgstr "Το Python Software Foundation είναι ένας μη κερδοσκοπικός οργανισμός 501(c)(3). Οι δωρεές ενδέχεται να εκπίπτουν φορολογικά."
+
+#: src/pages/[lang]/donate.astro:102
+msgid "Other Ways to Support"
+msgstr "Άλλοι τρόποι υποστήριξης"
+
+#: src/pages/[lang]/donate.astro:106
+msgid "Become a sponsor - contact us at"
+msgstr "Γίνετε χορηγός - επικοινωνήστε μαζί μας στο"
+
+#: src/pages/[lang]/donate.astro:110
+msgid "Volunteer your time and skills to help organize the conference"
+msgstr "Προσφέρετε εθελοντικά τον χρόνο και τις δεξιότητές σας για να βοηθήσετε στη διοργάνωση του συνεδρίου."
+
+#: src/pages/[lang]/donate.astro:114
+msgid "Spread the word about PyLadiesCon on social media"
+msgstr "Διαδώστε το PyLadiesCon στα social media."
+
+#: src/pages/[lang]/donate.astro:118
+msgid "Join or start a local PyLadies chapter"
+msgstr "Γίνετε μέλος ή δημιουργήστε ένα τοπικό παράρτημα PyLadies."
+
+#: src/pages/[lang]/donate.astro:125
+msgid "Thank You for Your Support!"
+msgstr "Σας ευχαριστούμε για την υποστήριξή σας!"
+
+#: src/pages/[lang]/donate.astro:128
+msgid "Your generosity makes it possible for PyLadies communities worldwide to connect, learn, and grow together."
+msgstr "Η γενναιοδωρία σας δίνει τη δυνατότητα στις κοινότητες PyLadies σε όλο τον κόσμο να συνδεθούν, να μάθουν και να αναπτυχθούν μαζί."
+
+#: src/pages/[lang]/jobs.astro:49
+msgid "Find opportunities from our sponsors"
+msgstr "Βρείτε ευκαιρίες από τους χορηγούς μας"
+
+#: src/pages/[lang]/jobs.astro:50
+msgid "Job Board"
+msgstr "Πίνακας αγγελιών εργασίας"
+
+#: src/pages/[lang]/jobs.astro:56
+msgid "-- No Jobs were added so far --"
+msgstr "-- Δεν έχουν προστεθεί αγγελίες εργασίας ακόμη --"
+
+#: src/pages/[lang]/schedule.astro:21
+msgid "What Awaits You at PyLadiesCon"
+msgstr "Τι σας περιμένει στο PyLadiesCon"
+
+#: src/pages/[lang]/schedule.astro:24
+msgid "This year's edition of PyLadiesCon is packed with exciting opportunities for learning and community engagement. By registering, you'll gain access to: Keynotes, Talks, Interactive Sessions & Panels, Networking, and more!"
+msgstr "Η φετινή διοργάνωση του PyLadiesCon είναι γεμάτη με συναρπαστικές ευκαιρίες για μάθηση και συμμετοχή στην κοινότητα. Με την εγγραφή σας, αποκτάτε πρόσβαση σε: κεντρικές ομιλίες, ομιλίες, διαδραστικές συνεδρίες & πάνελ, δικτύωση και πολλά άλλα!"
+
+#: src/pages/[lang]/schedule.astro:47
+msgid "Local Time"
+msgstr "Τοπική ώρα"
+
+#: src/pages/[lang]/schedule.astro:62
+msgid "Session Types"
+msgstr "Τύποι συνεδριών"
+
+#: src/pages/[lang]/schedule.astro:66
+msgid "Keynote"
+msgstr "Κεντρική ομιλία"
+
+#: src/pages/[lang]/schedule.astro:69
+msgid "Talk"
+msgstr "Ομιλία"
+
+#: src/pages/[lang]/schedule.astro:72
+msgid "Panel"
+msgstr "Πάνελ"
+
+#: src/pages/[lang]/schedule.astro:75
+msgid "Workshop"
+msgstr "Workshop"
+
+#: src/pages/[lang]/schedule.astro:78
+msgid "Sponsor Talk"
+msgstr "Ομιλία χορηγού"
+
+#: src/pages/[lang]/schedule.astro:84
+msgid "Difficulty Levels"
+msgstr "Επίπεδα δυσκολίας"
+
+#: src/pages/[lang]/schedule.astro:88
+msgid "Beginner"
+msgstr "Εισαγωγικό"
+
+#: src/pages/[lang]/schedule.astro:91
+msgid "Intermediate"
+msgstr "Μεσαίο"
+
+#: src/pages/[lang]/schedule.astro:94
+msgid "Advanced"
+msgstr "Προχωρημένο"
+
+#: src/pages/[lang]/session/[...session].astro:61
+msgid "Type"
+msgstr "Τύπος"
+
+#: src/pages/[lang]/session/[...session].astro:79
+msgid "Room"
+msgstr "Αίθουσα"
+
+#: src/pages/[lang]/session/[...session].astro:86
+msgid "Start"
+msgstr "Έναρξη"
+
+#: src/pages/[lang]/session/[...session].astro:93
+msgid "End"
+msgstr "Λήξη"
+
+#: src/pages/[lang]/session/[...session].astro:99
+msgid "Duration"
+msgstr "Διάρκεια"
+
+#: src/pages/[lang]/session/[...session].astro:100
+msgid "minutes"
+msgstr "λεπτά"
+
+#: src/pages/[lang]/session/[...session].astro:112
+msgid "Abstract"
+msgstr "Περίληψη"
+
+#: src/pages/[lang]/sessions.astro:73
+msgid "List of Sessions"
+msgstr "Λίστα συνεδριών"
+
+#: src/pages/[lang]/sessions.astro:76
+msgid "Here you can find a list of all the sessions at the conference. You can filter the sessions by track, type, and level."
+msgstr "Εδώ μπορείτε να βρείτε τη λίστα με όλες τις συνεδρίες του συνεδρίου. Μπορείτε να φιλτράρετε τις συνεδρίες ανά θεματική ενότητα, τύπο και επίπεδο."
+
+#: src/pages/[lang]/sessions.astro:81
+msgid "Filters"
+msgstr "Φίλτρα"
+
+#: src/pages/[lang]/sessions.astro:85
+msgid "Search results"
+msgstr "Αποτελέσματα αναζήτησης"
+
+#: src/pages/[lang]/sessions.astro:89
+msgid "No sessions available yet. Please check back later!"
+msgstr "Δεν υπάρχουν ακόμη διαθέσιμες συνεδρίες. Παρακαλώ, ελέγξτε ξανά αργότερα!"
+
+#: src/pages/[lang]/speaker/[...slug].astro:63
+msgid "More About The Speaker"
+msgstr "Περισσότερα"
+
+#: src/pages/[lang]/speaker/[...slug].astro:117
+msgid "Sessions by {name}"
+msgstr "Συνεδρίες από την/τον {name}"
+
+#: src/pages/[lang]/speakers.astro:26
+msgid "We are excited to have an amazing lineup of speakers from around the world."
+msgstr "Είναι χαρά μας που έχουμε μια καταπληκτική ομάδα ομιλητών από όλο τον κόσμο."
+
+#: src/pages/[lang]/speakers.astro:27
+#: src/pages/[lang]/speakers.astro:65
+msgid "Our Speakers"
+msgstr "Οι ομιλητές μας"
+
+#: src/pages/[lang]/speakers.astro:33
+msgid "Our Keynotes"
+msgstr "Οι κεντρικοί ομιλητές μας"
+
+#: src/pages/[lang]/speakers.astro:34
+msgid "Meet our Keynote speakers"
+msgstr "Γνωρίστε τους κεντρικούς ομιλητές μας"
+
+#: src/pages/[lang]/speakers.astro:60
+msgid "Meet our Speakers"
+msgstr "Γνωρίστε τις/τους ομιλητές μας"
+
+#: src/pages/[lang]/sponsors.astro:216
+msgid "Prospectus for the global PyLadies Conference."
+msgstr "Ενημερωτικό δελτίο για το παγκόσμιο συνέδριο PyLadies."
+
+#: src/pages/[lang]/sprints.astro:41
+msgid "Share, learn and contribute!"
+msgstr "Μοιραστείτε, μάθετε και συνεισφέρετε!"
+
+#: src/pages/[lang]/sprints.astro:44
+msgid "Sprints are informal coding sessions, and knowledge sharing where people gather together to work on Open-Source projects, suggest changes in existing libraries solve problems. A Sprint is an opportunity for learning and self-development while contributing to Open Source projects."
+msgstr "Τα Sprints είναι ανεπίσημες συνεδρίες προγραμματισμού και ανταλλαγής γνώσεων, όπου τα άτομα που συμμετέχουν συνεργάζονται σε έργα Ανοιχτού Κώδικα, προτείνουν αλλαγές σε υπάρχουσες βιβλιοθήκες και λύνουν προβλήματα. Ένα Sprint είναι μια ευκαιρία για μάθηση και προσωπική εξέλιξη, συνεισφέροντας ταυτόχρονα σε έργα Ανοιχτού Κώδικα."
+
+#: src/pages/[lang]/sprints.astro:46
+msgid "We encourage maintainers to submit their projects by checking out our <a href=\"https://conference.pyladies.com/docs/speakers/sprints_guide/\" class=\"text-pinkpyladies\" target=\"_blank\">sprints guide</a>."
+msgstr "Ενθαρρύνουμε τους συντηρητές έργων (maintainers) να υποβάλουν τα έργα τους, συμβουλευόμενοι τον <a href=\"https://conference.pyladies.com/docs/speakers/sprints_guide/\" class=\"text-pinkpyladies\" target=\"_blank\">οδηγό για τα sprints</a>."
+
+#: src/pages/[lang]/sprints.astro:51
+msgid "-- No sprints added yet --"
+msgstr "-- Δεν έχουν προστεθεί sprints ακόμη --"
+
+#: src/pages/[lang]/sprints.astro:126
+msgid "Level:"
+msgstr "Επίπεδο:"
+
+#: src/pages/[lang]/sprints.astro:127
+msgid "Languages:"
+msgstr "Γλώσσες:"
+
+#: src/pages/[lang]/volunteers.astro:92
+msgid "Thanks to all the volunteers for making this possible"
+msgstr "Ευχαριστούμε όλους τους εθελοντές που το έκαναν εφικτό"
+
+#: src/pages/[lang]/volunteers.astro:95
+msgid "Our Volunteers"
+msgstr "Οι εθελοντές μας"
+
+#: src/pages/[lang]/volunteers.astro:110
+msgid "See All"
+msgstr "Δείτε όλα τα άτομα"
+
+#: src/pages/[lang]/volunteers.astro:119
+msgid "Group by Team"
+msgstr "Ομαδοποίηση ανά ομάδα"
