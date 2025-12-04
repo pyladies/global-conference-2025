@@ -206,6 +206,14 @@ const volunteers = [
         },
         teams: ["communications"]
     },
+    {
+        name: "Persephone Megaliou",
+        image: "/images/volunteers/devpersi.jpg",
+        links: {
+            website: "https://devper.si",
+        },
+        teams: ["program"]
+    },
   ];
 
 //adds the default socials
