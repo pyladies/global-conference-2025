@@ -190,6 +190,22 @@ const volunteers = [
         },
         teams: ["program"]
     },
+    {
+        name: "Kalyan Prasad",
+        image: "/images/volunteers/kalyan.jpg",
+        links: {
+            linkedin: "https://www.linkedin.com/in/itskpflow",
+        },
+        teams: ["program"]
+    },
+    {
+        name: "Nydia Mejía",
+        image: "/images/volunteers/nydia.jpg",
+        links: {
+            linkedin: "https://www.linkedin.com/in/nydia-mejia-004485237",
+        },
+        teams: ["communications"]
+    },
   ];
 
 //adds the default socials
