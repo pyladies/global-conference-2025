@@ -207,6 +207,14 @@ const volunteers = [
         teams: ["communications"]
     },
     {
+        name: "Persephone Megaliou",
+        image: "/images/volunteers/devpersi.jpeg",
+        links: {
+            website: "https://devper.si",
+        },
+        teams: ["program"]
+    },
+    {
         name: "Raquel Dou",
         image: "https://avatars.githubusercontent.com/u/6319134",
         links : {
