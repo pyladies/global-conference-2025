@@ -208,7 +208,7 @@ const volunteers = [
     },
     {
         name: "Persephone Megaliou",
-        image: "/images/volunteers/devpersi.jpg",
+        image: "/images/volunteers/devpersi.jpeg",
         links: {
             website: "https://devper.si",
         },
