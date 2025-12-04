@@ -214,6 +214,14 @@ const volunteers = [
         },
         teams: ["program"]
     },
+    {
+        name: "Raquel Dou",
+        image: "https://avatars.githubusercontent.com/u/6319134",
+        links : {
+            git: "https://github.com/hypha",
+        },
+        teams: ["infrastructure"]
+    },
   ];
 
 //adds the default socials
