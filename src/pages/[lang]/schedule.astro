@@ -517,6 +517,15 @@ const t = useTranslations(lang);
   }
 
   function initializeSchedulePage() {
+    // Load timezone preference from localStorage
+    const savedTimezone = localStorage.getItem('timezone');
+
+    if (savedTimezone === 'local') {
+      useLocalTime = true;
+    } else if (savedTimezone === 'utc') {
+      useLocalTime = false;
+    }
+
     // Get local timezone name
     try {
       localTimezoneName = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -535,6 +544,7 @@ const t = useTranslations(lang);
     if (utcBtn) {
       utcBtn.addEventListener('click', () => {
         useLocalTime = false;
+        localStorage.setItem('timezone', 'utc');
         updateTimezoneButtons();
         updateAllTimes();
       });
@@ -543,6 +553,7 @@ const t = useTranslations(lang);
     if (localBtn) {
       localBtn.addEventListener('click', () => {
         useLocalTime = true;
+        localStorage.setItem('timezone', 'local');
         updateTimezoneButtons();
         updateAllTimes();
       });
@@ -731,7 +742,7 @@ const t = useTranslations(lang);
     // Initial update
     updateScrollIndicator();
     updateTimeTooltip();
-    reorganizeSchedule();
+    updateTimezoneButtons(); // Esto aplicará el estado guardado
   }
 
   // Call initialization onboth DOMContentLoaded and Astro page load
