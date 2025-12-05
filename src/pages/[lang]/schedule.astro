@@ -518,7 +518,7 @@ const t = useTranslations(lang);
 
   function initializeSchedulePage() {
     // Load timezone preference from localStorage
-    const savedTimezone = localStorage.getItem('timezone');
+    const savedTimezone = localStorage.getItem('preferredTimezone');
 
     if (savedTimezone === 'local') {
       useLocalTime = true;
@@ -544,7 +544,7 @@ const t = useTranslations(lang);
     if (utcBtn) {
       utcBtn.addEventListener('click', () => {
         useLocalTime = false;
-        localStorage.setItem('timezone', 'utc');
+        localStorage.setItem('preferredTimezone', 'utc');
         updateTimezoneButtons();
         updateAllTimes();
       });
@@ -553,7 +553,7 @@ const t = useTranslations(lang);
     if (localBtn) {
       localBtn.addEventListener('click', () => {
         useLocalTime = true;
-        localStorage.setItem('timezone', 'local');
+        localStorage.setItem('preferredTimezone', 'local');
         updateTimezoneButtons();
         updateAllTimes();
       });
