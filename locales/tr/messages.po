@@ -945,10 +945,10 @@ msgstr ""
 
 #: src/pages/[lang]/attending.astro:184
 msgid ""
-"<code class=\"text-blue-400\">#welcome</code>, for you to introduce yourself "
+"<code class=\"text-blue-400\">#introductions</code>, for you to introduce yourself "
 "and say hi to others,"
 msgstr ""
-"<code class=\"text-blue-400\">#welcome</code>, kendinizi tanıtmanız ve diğer "
+"<code class=\"text-blue-400\">#introductions</code>, kendinizi tanıtmanız ve diğer "
 "katılımcılara merhaba demeniz için,"
 
 #: src/pages/[lang]/attending.astro:185
