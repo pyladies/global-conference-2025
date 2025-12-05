@@ -31,5 +31,6 @@ const { details } = Astro.props;
       ))
     }
   </ul>
-  {details.joburl && <Link href={details.joburl} aria-describedby="tier-enterprise" style="outline" class="">Read more</Link>}
+  {details.joburl && <Link href={details.joburl} aria-describedby="tier-enterprise" style="outline" class="mr-5">Read more</Link>}
+  {details.email  && <Link href=`mailto:${details.email}`  aria-describedby="tier-enterprise" style="outline" class="">Contact</Link>}
 </div>
