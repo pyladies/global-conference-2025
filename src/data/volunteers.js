@@ -165,7 +165,7 @@ const volunteers = [
         teams: ["communications"]
     },
     {
-        name: "Wendy N. Sànchez",
+        name: "Wendy N. Sánchez",
         image: "/images/volunteers/wendy_n_sanchez.jpg",
         links: {
             linkedin: "https://www.linkedin.com/in/wendy-n-sanchez",

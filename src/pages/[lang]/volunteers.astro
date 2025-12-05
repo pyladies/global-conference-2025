@@ -256,7 +256,7 @@ const volunteerGroups = buildVolunteerGroupMap(volunteers);
                                                         <p class="text-black dark:text-white text-md font-bold">
                                                             {volunteer.name}
                                                         </p>
-                                                        <div class="flex pt-2">
+                                                        <div class="grid grid-cols-4 pt-2">
                                                             {volunteer.links.mastodon && (
                                                                 <SocialsComponent
                                                                     speakersSocialUrl={
