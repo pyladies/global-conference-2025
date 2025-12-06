@@ -222,6 +222,14 @@ const volunteers = [
         },
         teams: ["infrastructure"]
     },
+    {
+        name: "Debbie",
+        image: "/images/volunteers/debbie.jpg",
+        links : {
+            linkedin: "https://www.linkedin.com/in/debbie-chou",
+        },
+        teams: ["code of conduct"]
+    },
   ];
 
 //adds the default socials
