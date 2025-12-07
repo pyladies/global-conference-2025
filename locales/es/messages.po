@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PyLadiesCon 2025\n"
 "Report-Msgid-Bugs-To: Open a PR 🤗\n"
 "POT-Creation-Date: 2025-12-07T09:29:50.697Z\n"
-"PO-Revision-Date: 2025-11-27 16:38+0100\n"
-"Last-Translator: Marco Richetta <marcorichetta@gmail.com>\n"
+"PO-Revision-Date: 2025-12-07 20:31+0100\n"
+"Last-Translator: Cristián Maureira-Fredes <cmaureirafredes@gmail.com>\n"
 "Language-Team: none\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -250,11 +250,11 @@ msgstr "Preguntas frecuentes"
 
 #: src/components/footer.astro:66
 msgid "Home"
-msgstr ""
+msgstr "Inicio"
 
 #: src/components/footer.astro:106
 msgid "Copyright © PyLadiesCon 2025 - Present. All rights reserved"
-msgstr ""
+msgstr "Copyright © PyLadiesCon 2025 - Presente. Todos los derechos reservados"
 
 #: src/components/hero.astro:42
 msgid "PyLadiesCon 2025"
@@ -289,16 +289,15 @@ msgstr ""
 
 #: src/components/jobsboard.astro:27
 msgid "About the job:"
-msgstr ""
+msgstr "Acerca del trabajo:"
 
 #: src/components/jobsboard.astro:38
-#, fuzzy
 msgid "Read more"
-msgstr "Obtén más información"
+msgstr "Leer más"
 
 #: src/components/jobsboard.astro:39
 msgid "Contact"
-msgstr ""
+msgstr "Contacto"
 
 #: src/components/keynotes_index.astro:21
 msgid "Meet Our Keynotes"
@@ -482,16 +481,15 @@ msgstr "Ponentes:"
 
 #: src/components/sponsors.astro:18
 msgid "Sold out"
-msgstr ""
+msgstr "Agotado"
 
 #: src/components/sponsors.astro:20
 msgid "Popular"
-msgstr ""
+msgstr "Popular"
 
 #: src/components/sponsors.astro:28
-#, fuzzy
 msgid "Get Started"
-msgstr "Inicio"
+msgstr "Comienza"
 
 #: src/components/sponsors_gallery.astro:183
 msgid "Meet the sponsors of our conference."
@@ -1174,6 +1172,10 @@ msgid ""
 "other participants throughout the conference and at all conference-related "
 "events and activities."
 msgstr ""
+"Queremos que las personas que participan tengan una experiencia agradable y "
+"gratificante. Por lo tanto, se espera que muestren respeto y cortesía entre "
+"ellos durante la conferencia y en todos los eventos y actividades "
+"relacionados."
 
 #: src/pages/[lang]/coc.astro:51
 msgid ""
@@ -1183,6 +1185,11 @@ msgid ""
 "by the Python Software Foundation. Organizers will enforce this code "
 "throughout the event."
 msgstr ""
+"Para aclarar las expectativas, todas las personas del comité organizador, "
+"asistentes, ponentes, organizadoras, patrocinadores y voluntarias de "
+"cualquier evento de PyLadiesCon deben cumplir con el siguiente Código de "
+"Conducta, establecido por la Python Software Foundation. Los organizadores "
+"harán cumplir este código durante todo el evento."
 
 #: src/pages/[lang]/coc.astro:57
 msgid ""
@@ -1193,6 +1200,12 @@ msgid ""
 "Conduct will help steer your interactions and keep Python a positive, "
 "successful, and growing community."
 msgstr ""
+"La comunidad Python está formada por personas de todo el mundo con diversas "
+"habilidades, personalidades y experiencias. Gracias a estas diferencias, "
+"nuestra comunidad alcanza grandes éxitos y un crecimiento continuo. Al "
+"trabajar con miembros de la comunidad, este Código de Conducta te ayudará a "
+"orientar tus interacciones y a mantener a Python como una comunidad "
+"positiva, exitosa y en constante crecimiento."
 
 #: src/pages/[lang]/coc.astro:71
 msgid "Our Community"
@@ -1214,6 +1227,9 @@ msgid ""
 "are open to collaboration, whether it's on PEPs, patches, problems, or "
 "otherwise."
 msgstr ""
+"<strong class=\"text-pink\">Tener receptividad.</strong> Las personas de la "
+"comunidad están abiertas a la colaboración, ya sea en PEP, parches, "
+"problemas o cualquier otro tema."
 
 #: src/pages/[lang]/coc.astro:86
 msgid ""
@@ -1221,6 +1237,9 @@ msgid ""
 "strong> We're respectful of the processes set forth in the community, and we "
 "work within them."
 msgstr ""
+"<strong class=\"text-pink\">Nos centramos en lo que es mejor para la "
+"comunidad.</strong> Respetamos los procesos establecidos en la comunidad y "
+"trabajamos dentro de ellos."
 
 #: src/pages/[lang]/coc.astro:89
 msgid ""
@@ -1229,6 +1248,11 @@ msgid ""
 "We're thoughtful when addressing the efforts of others, keeping in mind that "
 "often times the labor was completed simply for the good of the community."
 msgstr ""
+"<strong class=\"text-pink\">Reconocimiento del tiempo y el esfuerzo.</"
+"strong> Respetamos los esfuerzos de personas voluntarias que permean la "
+"comunidad Python. Tenemos consideración al reconocer el esfuerzo de otras "
+"personas, teniendo en cuenta que, a menudo, el trabajo se realizó "
+"simplemente por el bien de la comunidad."
 
 #: src/pages/[lang]/coc.astro:92
 msgid ""
@@ -1237,6 +1261,10 @@ msgid ""
 "criticism, experiences and skill sets of other members contribute to the "
 "whole of our efforts."
 msgstr ""
+"<strong class=\"text-pink\">Tener respeto con los diferentes puntos de vista "
+"y experiencias.</strong> Tenemos receptividad con los comentarios y críticas "
+"constructivas, las experiencias y las habilidades de otros personas "
+"contribuyen a todos nuestros esfuerzos."
 
 #: src/pages/[lang]/coc.astro:95
 msgid ""
@@ -1244,24 +1272,35 @@ msgid ""
 "</strong> We're attentive in our communications, whether in person or "
 "online, and we're tactful when approaching differing views."
 msgstr ""
+"<strong class=\"text-pink\">Mostrar empatía hacia otras personas de la "
+"comunidad.</strong> Estamos atentas en nuestras comunicaciones, ya sea en "
+"persona o en línea, y somos diplomáticos al abordar diferentes puntos de "
+"vista."
 
 #: src/pages/[lang]/coc.astro:98
 msgid ""
 "<strong class=\"text-pink\">Being considerate.</strong> Members of the "
 "community are considerate of their peers – other Python users."
 msgstr ""
+"<strong class=\"text-pink\">Tener consideración.</strong> Las personas de la "
+"comunidad son considerados con sus pares: otros usuarios de Python."
 
 #: src/pages/[lang]/coc.astro:101
 msgid ""
 "<strong class=\"text-pink\">Being respectful.</strong> We're respectful of "
 "others, their positions, their skills, their commitments, and their efforts."
 msgstr ""
+"<strong class=\"text-pink\">Tener respeto.</strong> Respetamos a las demás "
+"personas, sus posiciones, sus habilidades, sus compromisos y sus esfuerzos."
 
 #: src/pages/[lang]/coc.astro:104
 msgid ""
 "<strong class=\"text-pink\">Gracefully accepting constructive criticism.</"
 "strong> When we disagree, we are courteous in raising our issues."
 msgstr ""
+"<strong class=\"text-pink\">Aceptar con gracia las críticas constructivas.</"
+"strong> Cuando no estamos de acuerdo, somos corteses al plantear nuestros "
+"problemas."
 
 #: src/pages/[lang]/coc.astro:107
 msgid ""
@@ -1269,11 +1308,14 @@ msgid ""
 "We're accepting of all who wish to take part in our activities, fostering an "
 "environment where anyone can participate and everyone can make a difference."
 msgstr ""
+"<strong class=\"text-pink\">Utilizamos un lenguaje acogedor e inclusivo.</"
+"strong> Aceptamos a todas las personas que deseen participar en nuestras "
+"actividades, fomentando un entorno donde cualquiera puede participar y todas "
+"pueden marcar la diferencia."
 
 #: src/pages/[lang]/coc.astro:126
-#, fuzzy
 msgid "Our Standards"
-msgstr "Nuestros Patrocinadores"
+msgstr "Nuestros estándares"
 
 #: src/pages/[lang]/coc.astro:128
 msgid ""
@@ -1284,42 +1326,44 @@ msgid ""
 "nationality, race, or religion (or lack thereof), education, or socio-"
 "economic status."
 msgstr ""
+"Todos las personas de nuestra comunidad tienen derecho a que se respete su "
+"identidad. La comunidad Python se dedica a brindar una experiencia positiva "
+"para todos, independientemente de su edad, identidad y expresión de género, "
+"orientación sexual, discapacidad, apariencia física, tamaño corporal, etnia, "
+"nacionalidad, raza o religión (o ausencia de ella), educación o nivel "
+"socioeconómico."
 
 #: src/pages/[lang]/coc.astro:134
 msgid "Inappropriate Behavior"
-msgstr ""
+msgstr "Comportamiento inapropiado"
 
 #: src/pages/[lang]/coc.astro:145
-#, fuzzy
 msgid "Consequences"
-msgstr "Conferencia"
+msgstr "Consecuencias"
 
 #: src/pages/[lang]/coc.astro:156
 msgid "Scope"
-msgstr ""
+msgstr "Ámbito"
 
 #: src/pages/[lang]/coc.astro:177
-#, fuzzy
 msgid "Our Process"
-msgstr "Nuestros Patrocinadores"
+msgstr "Nuestro proceso"
 
 #: src/pages/[lang]/coc.astro:182
-#, fuzzy
 msgid "Reporting an Incident"
-msgstr "Proceso de reportes"
+msgstr "Reportando un incidente"
 
 #: src/pages/[lang]/coc.astro:193
 msgid "Procedure for handling incidents"
-msgstr ""
+msgstr "Procedimiento para el manejo de incidentes"
 
 #: src/pages/[lang]/coc.astro:204
 msgid "License"
-msgstr ""
+msgstr "Licencia"
 
 #: src/pages/[lang]/coc.astro:215
-#, fuzzy
 msgid "Attribution"
-msgstr "¡Atención!"
+msgstr "Atribución"
 
 #: src/pages/[lang]/donate.astro:19
 msgid "Support PyLadiesCon"
@@ -1608,6 +1652,10 @@ msgid ""
 "into the Python community and to support both seasoned and budding "
 "developers through workshops, community activities, and local advocacy."
 msgstr ""
+"Apoya a PyLadies mientras trabajamos para mejorar la diversidad incorporando "
+"nuevos talentos a la comunidad Python y apoyando tanto a personas "
+"desarrolladoras experimentadas como a principiantes a través de talleres, "
+"actividades comunitarias y defensa local."
 
 #: src/pages/[lang]/sponsors.astro:220
 msgid ""
@@ -1615,6 +1663,9 @@ msgid ""
 "around the world with training, mentorship, and aid to attend conferences "
 "and community events."
 msgstr ""
+"Tu apoyo ayudará a PyLadies a brindar apoyo financiero para ayudar a más "
+"mujeres de todo el mundo con capacitación, tutoría y ayuda para asistir a "
+"conferencias y eventos comunitarios."
 
 #: src/pages/[lang]/sponsors.astro:221
 msgid ""
@@ -1622,19 +1673,22 @@ msgid ""
 "of our sponsorship team will get back to you soon. Please get in touch by "
 "writing to <a href=\"mailto:sponsors@pyladies.com\">sponsors@pyladies.com</a>"
 msgstr ""
+"Para obtener más información y unirse como patrocinador, contáctenos y una "
+"persona de nuestro equipo de patrocinio se pondrá en contacto con usted en "
+"breve. Para contactarnos, escriba a <a "
+"href=\"mailto:sponsors@pyladies.com\">sponsors@pyladies.com</a>"
 
 #: src/pages/[lang]/sponsors.astro:231
 msgid "Download Sponsorship Prospectus"
-msgstr ""
+msgstr "Descargar prospecto de patrocinio"
 
 #: src/pages/[lang]/sponsors.astro:241
-#, fuzzy
 msgid "Custom Sponsorship"
-msgstr "Nuestros Patrocinadores"
+msgstr "Patrocinio personalizado"
 
 #: src/pages/[lang]/sponsors.astro:242
 msgid "Most requested"
-msgstr ""
+msgstr "Más solicitado"
 
 #: src/pages/[lang]/sponsors.astro:245
 msgid ""
@@ -1642,24 +1696,25 @@ msgid ""
 "to choose what you think works best in order to meet your event "
 "participation goals."
 msgstr ""
+"También estaremos encantadas de personalizar un paquete de patrocinio para "
+"darle la libertad de elegir lo que crea que funciona mejor para alcanzar sus "
+"objetivos de participación en el evento."
 
 #: src/pages/[lang]/sponsors.astro:248
 msgid "Contact us"
-msgstr ""
+msgstr "Contáctanos"
 
 #: src/pages/[lang]/sponsors.astro:258
-#, fuzzy
 msgid "Other Sponsorship Options"
-msgstr "Planes de Patrocinio"
+msgstr "Otras opciones de patrocinio"
 
 #: src/pages/[lang]/sponsors.astro:262
-#, fuzzy
 msgid "PyLadies Chapter Sponsor"
-msgstr "Conferencia de PyLadies"
+msgstr "Patrocinio Capítulo PyLadies"
 
 #: src/pages/[lang]/sponsors.astro:263
 msgid "$600 | Unlimited"
-msgstr ""
+msgstr "$600 | Ilimitado"
 
 #: src/pages/[lang]/sponsors.astro:265
 msgid ""
@@ -1669,30 +1724,38 @@ msgid ""
 "videocard. These videos will also remain on our official Youtube channel "
 "which means you will enjoy an evergreen branding visibility."
 msgstr ""
+"Cada año publicamos videos cortos especiales de diferentes capítulos de "
+"PyLadies en todo el mundo. El patrocinador del capítulo de PyLadies tendrá "
+"visibilidad exclusiva de marca en estos videos durante la introducción y el "
+"cierre. Estos videos también permanecerán en nuestro canal oficial de "
+"YouTube, lo que significa que disfrutarás de una visibilidad de marca "
+"permanente."
 
 #: src/pages/[lang]/sponsors.astro:272 src/pages/[lang]/sponsors.astro:301
 msgid "Prominent placement of logo and link on the website (all year round)"
 msgstr ""
+"Ubicación destacada del logotipo y el enlace en el sitio web (todo el año)"
 
 #: src/pages/[lang]/sponsors.astro:277 src/pages/[lang]/sponsors.astro:306
 msgid "Social media mentions"
-msgstr ""
+msgstr "Menciones en redes sociales"
 
 #: src/pages/[lang]/sponsors.astro:282
 msgid "Logo visibility on opening and closing of every PyLadies Chapter"
 msgstr ""
+"Visibilidad del logotipo en la apertura y cierre de cada capítulo de PyLadies"
 
 #: src/pages/[lang]/sponsors.astro:287 src/pages/[lang]/sponsors.astro:316
 msgid "Custom Discord Role"
-msgstr ""
+msgstr "Rol de Discord personalizado"
 
 #: src/pages/[lang]/sponsors.astro:291
 msgid "PyLadies Discussion Sponsor"
-msgstr ""
+msgstr "Patrocinador del debate de PyLadies"
 
 #: src/pages/[lang]/sponsors.astro:292
 msgid "$600 | 6 slots"
-msgstr ""
+msgstr "$600 | 6 cupos"
 
 #: src/pages/[lang]/sponsors.astro:294
 msgid ""
@@ -1700,15 +1763,20 @@ msgid ""
 "different regions around the world. These panels are usually one of the most "
 "popular talks."
 msgstr ""
+"PyLadiesCon cuenta con seis paneles de discusión diferentes cada año, "
+"transmitidos en vivo desde diferentes regiones del mundo. Estos paneles "
+"suelen ser una de las charlas más populares."
 
 #: src/pages/[lang]/sponsors.astro:311
 msgid ""
 "Logo visibility on opening and closing of every PyLadies Panel Discussions"
 msgstr ""
+"Visibilidad del logotipo en la apertura y cierre de cada panel de discusión "
+"de PyLadies"
 
 #: src/pages/[lang]/sponsors.astro:327
 msgid "The Attendees"
-msgstr ""
+msgstr "Asistentes"
 
 #: src/pages/[lang]/sponsors.astro:332
 msgid ""
@@ -1716,22 +1784,25 @@ msgid ""
 "organizations from all sectors, and held the types of position on the right "
 "table."
 msgstr ""
+"Quienes asistieron a la conferencia del año pasado representaban empresas y "
+"organizaciones de todos los sectores y ocupaban los mismos puestos en la "
+"mesa."
 
 #: src/pages/[lang]/sponsors.astro:334
 msgid "Quick stats"
-msgstr ""
+msgstr "Estadísticas rápidas"
 
 #: src/pages/[lang]/sponsors.astro:336
 msgid "In 2023, we had more than 600 attendees,"
-msgstr ""
+msgstr "En 2023, tuvimos más de 600 personas participando,"
 
 #: src/pages/[lang]/sponsors.astro:337
 msgid "In 2024, we had 732 attendees"
-msgstr ""
+msgstr "En 2024, tuvimos 732 personas participando"
 
 #: src/pages/[lang]/sponsors.astro:339
 msgid "Benefits of Sponsorship"
-msgstr ""
+msgstr "Beneficios del patrocinio"
 
 #: src/pages/[lang]/sponsors.astro:342
 msgid ""
@@ -1739,30 +1810,37 @@ msgid ""
 "those who could potentially become your employees. Find passionate "
 "Pythonistas to hire."
 msgstr ""
+"<strong>Público objetivo</strong>: Contacta con un mercado objetivo que "
+"incluya a quienes podrían convertirse en tus empleados. Encuentra a "
+"Pythonistas apasionados para contratar."
 
 #: src/pages/[lang]/sponsors.astro:345
 msgid ""
 "<strong>Branding</strong>: Increasing your brand exposure and elevating your "
 "corporate identity within the community."
 msgstr ""
+"<strong>Marca</strong>: Aumentar la exposición de su marca y elevar su "
+"identidad corporativa dentro de la comunidad."
 
 #: src/pages/[lang]/sponsors.astro:348
 msgid ""
 "<strong>Community Contribution</strong>: Contribute, support and sustain the "
 "underrepresented Python community."
 msgstr ""
+"<strong>Contribución a la comunidad</strong>: Contribuir, apoyar y sostener "
+"a la comunidad Python subrepresentada."
 
 #: src/pages/[lang]/sponsors.astro:358
 msgid "Current Position"
-msgstr ""
+msgstr "Posición actual"
 
 #: src/pages/[lang]/sponsors.astro:361
 msgid "Count"
-msgstr ""
+msgstr "Conteo"
 
 #: src/pages/[lang]/sponsors.astro:364
 msgid "Percentage"
-msgstr ""
+msgstr "Porcentaje"
 
 #: src/pages/[lang]/sprints.astro:69
 msgid "Share, learn and contribute!"
@@ -1787,10 +1865,14 @@ msgid ""
 "href=\"https://conference.pyladies.com/docs/speakers/sprints_guide/\" "
 "class=\"text-pinkpyladies\" target=\"_blank\">sprints guide</a>."
 msgstr ""
+"Alentamos a personas mantenedoras a enviar sus proyectos consultando nuestra "
+"<a href=\"https://conference.pyladies.com/docs/speakers/sprints_guide/\" "
+"class=\"text-pinkpyladies\" target=\"_blank\">guía de sprints</a>."
 
 #: src/pages/[lang]/sprints.astro:76
 msgid "Sprints will run on Sunday, December 7th, from 08:00 to 23:59 UTC."
 msgstr ""
+"Los sprints se realizarán el domingo 7 de diciembre, de 08:00 a 23:59 UTC."
 
 #: src/pages/[lang]/sprints.astro:81
 msgid "-- No sprints added yet --"
@@ -1806,7 +1888,7 @@ msgstr "Lenguajes:"
 
 #: src/pages/[lang]/volunteers.astro:92
 msgid "Thanks to all the volunteers for making this possible"
-msgstr ""
+msgstr "Gracias a todas las personas del voluntariado por hacer esto posible"
 
 #: src/pages/[lang]/volunteers.astro:95
 msgid "Our Volunteers"
@@ -1814,8 +1896,8 @@ msgstr "Voluntariado"
 
 #: src/pages/[lang]/volunteers.astro:110
 msgid "See All"
-msgstr ""
+msgstr "Ver todo"
 
 #: src/pages/[lang]/volunteers.astro:119
 msgid "Group by Team"
-msgstr ""
+msgstr "Agrupar por equipo"
