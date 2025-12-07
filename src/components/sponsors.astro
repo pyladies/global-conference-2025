@@ -2,6 +2,10 @@
 import { Tick } from "@components/ui/icons";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon/components";
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const { plan } = Astro.props;
 ---
@@ -11,9 +15,9 @@ const { plan } = Astro.props;
     <h3 id="tier-enterprise" class="text-xl font-semibold leading-8 text-gray-900 dark:text-white" class:list={[{"line-through": plan.soldout}]}>
       {plan.name}
      </h3>
-    {plan.soldout && <h3 class="text-xl font-semibold leading-8 text-gray-900 dark:text-red-800">Sold out</h3>}
+    {plan.soldout && <h3 class="text-xl font-semibold leading-8 text-gray-900 dark:text-red-800">{t("Sold out")}</h3>}
     {plan.popular && <h3 class="flex align-center text-pinkpyladies"><slot name="icon">
-                <Icon name="bx:bxs-star" class="inline-icon mt-1"/>Popular
+                <Icon name="bx:bxs-star" class="inline-icon mt-1"/>{t("Popular")}
     </slot></h3>}
   </div>
   <p class="mt-6 flex items-baseline gap-x-1">
@@ -21,7 +25,7 @@ const { plan } = Astro.props;
       {plan.price && typeof plan.price === "object" ? plan.price.monthly : plan.price}
     </span>
   </p>
-  <Link href={plan.button.link} aria-describedby="tier-enterprise" style="outline" class="block w-full mt-6">{plan.button.text || "Get Started"}</Link>
+  <Link href={plan.button.link} aria-describedby="tier-enterprise" style="outline" class="block w-full mt-6">{plan.button.text || t("Get Started")}</Link>
   <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-600 dark:text-gray-300 xl:mt-10">
     {
       plan.features.map((item) => (

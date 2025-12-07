@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PyLadiesCon 2025\n"
 "Report-Msgid-Bugs-To: Open a PR 🤗\n"
-"POT-Creation-Date: 2025-11-27T16:06:35.403Z\n"
+"POT-Creation-Date: 2025-12-07T09:43:02.755Z\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -194,6 +194,14 @@ msgstr ""
 msgid "Frequently Asked Questions"
 msgstr ""
 
+#: src/components/footer.astro:66
+msgid "Home"
+msgstr ""
+
+#: src/components/footer.astro:106
+msgid "Copyright © PyLadiesCon 2025 - Present. All rights reserved"
+msgstr ""
+
 #: src/components/hero.astro:42
 msgid "PyLadiesCon 2025"
 msgstr ""
@@ -204,7 +212,7 @@ msgstr ""
 
 #: src/components/hero.astro:65
 #: src/data/menuItems.ts:21
-#: src/pages/[lang]/schedule.astro:22
+#: src/pages/[lang]/schedule.astro:23
 msgid "Schedule"
 msgstr ""
 
@@ -224,6 +232,18 @@ msgstr ""
 
 #: src/components/hero.astro:93
 msgid "The online conference of the PyLadies communities around the globe."
+msgstr ""
+
+#: src/components/jobsboard.astro:27
+msgid "About the job:"
+msgstr ""
+
+#: src/components/jobsboard.astro:38
+msgid "Read more"
+msgstr ""
+
+#: src/components/jobsboard.astro:39
+msgid "Contact"
 msgstr ""
 
 #: src/components/keynotes_index.astro:21
@@ -373,11 +393,23 @@ msgstr ""
 msgid "Speakers:"
 msgstr ""
 
-#: src/components/sponsors_gallery.astro:147
+#: src/components/sponsors.astro:18
+msgid "Sold out"
+msgstr ""
+
+#: src/components/sponsors.astro:20
+msgid "Popular"
+msgstr ""
+
+#: src/components/sponsors.astro:28
+msgid "Get Started"
+msgstr ""
+
+#: src/components/sponsors_gallery.astro:183
 msgid "Meet the sponsors of our conference."
 msgstr ""
 
-#: src/components/sponsors_gallery.astro:148
+#: src/components/sponsors_gallery.astro:184
 #: src/data/menuItems.ts:10
 msgid "Our Sponsors"
 msgstr ""
@@ -481,6 +513,7 @@ msgstr ""
 
 #: src/data/menuItems.ts:23
 #: src/pages/[lang]/session/[...session].astro:120
+#: src/pages/[lang]/speakers.astro:23
 msgid "Speakers"
 msgstr ""
 
@@ -493,6 +526,8 @@ msgid "How to Join"
 msgstr ""
 
 #: src/data/menuItems.ts:29
+#: src/pages/[lang]/sponsors.astro:213
+#: src/pages/[lang]/sponsors.astro:217
 msgid "Sponsors"
 msgstr ""
 
@@ -923,15 +958,153 @@ msgid ""
 "harassment-free for everyone in our community."
 msgstr ""
 
-#: src/pages/[lang]/coc.astro:83
+#: src/pages/[lang]/coc.astro:45
+msgid ""
+"We want all participants to have an enjoyable and fulfilling experience. "
+"Accordingly, all participants are expected to show respect and courtesy to "
+"other participants throughout the conference and at all conference-related "
+"events and activities."
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:51
+msgid ""
+"To make clear what is expected, all members of the organizing committee, "
+"attendees, speakers, organizers, sponsors, and volunteers at any "
+"PyLadiesCon event are required to conform to the following Code of Conduct "
+"as set forth by the Python Software Foundation. Organizers will enforce "
+"this code throughout the event."
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:57
+msgid ""
+"The Python community is made up of members from around the globe with a "
+"diverse set of skills, personalities, and experiences. It is through these "
+"differences that our community experiences great successes and continued "
+"growth. When you're working with members of the community, this Code of "
+"Conduct will help steer your interactions and keep Python a positive, "
+"successful, and growing community."
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:71
 msgid "Our Community"
 msgstr ""
 
-#: src/pages/[lang]/coc.astro:85
+#: src/pages/[lang]/coc.astro:73
 msgid ""
 "Members of the Python community are open, considerate, and respectful. "
 "Behaviors that reinforce these values contribute to a positive environment, "
 "and include:"
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:83
+msgid ""
+"<strong class=\"text-pink\">Being open.</strong> Members of the community "
+"are open to collaboration, whether it's on PEPs, patches, problems, or "
+"otherwise."
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:86
+msgid ""
+"<strong class=\"text-pink\">Focusing on what is best for the "
+"community.</strong> We're respectful of the processes set forth in the "
+"community, and we work within them."
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:89
+msgid ""
+"<strong class=\"text-pink\">Acknowledging time and effort.</strong> We're "
+"respectful of the volunteer efforts that permeate the Python community. "
+"We're thoughtful when addressing the efforts of others, keeping in mind "
+"that often times the labor was completed simply for the good of the "
+"community."
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:92
+msgid ""
+"<strong class=\"text-pink\">Being respectful of differing viewpoints and "
+"experiences.</strong> We're receptive to constructive comments and "
+"criticism, experiences and skill sets of other members contribute to the "
+"whole of our efforts."
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:95
+msgid ""
+"<strong class=\"text-pink\">Showing empathy towards other community "
+"members.</strong> We're attentive in our communications, whether in person "
+"or online, and we're tactful when approaching differing views."
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:98
+msgid ""
+"<strong class=\"text-pink\">Being considerate.</strong> Members of the "
+"community are considerate of their peers – other Python users."
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:101
+msgid ""
+"<strong class=\"text-pink\">Being respectful.</strong> We're respectful of "
+"others, their positions, their skills, their commitments, and their efforts."
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:104
+msgid ""
+"<strong class=\"text-pink\">Gracefully accepting constructive "
+"criticism.</strong> When we disagree, we are courteous in raising our "
+"issues."
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:107
+msgid ""
+"<strong class=\"text-pink\">Using welcoming and inclusive "
+"language.</strong> We're accepting of all who wish to take part in our "
+"activities, fostering an environment where anyone can participate and "
+"everyone can make a difference."
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:126
+msgid "Our Standards"
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:128
+msgid ""
+"Every member of our community has the right to have their identity "
+"respected. The Python community is dedicated to providing a positive "
+"experience for everyone, regardless of age, gender identity and expression, "
+"sexual orientation, disability, physical appearance, body size, ethnicity, "
+"nationality, race, or religion (or lack thereof), education, or "
+"socio-economic status."
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:134
+msgid "Inappropriate Behavior"
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:145
+msgid "Consequences"
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:156
+msgid "Scope"
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:177
+msgid "Our Process"
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:182
+msgid "Reporting an Incident"
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:193
+msgid "Procedure for handling incidents"
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:204
+msgid "License"
+msgstr ""
+
+#: src/pages/[lang]/coc.astro:215
+msgid "Attribution"
 msgstr ""
 
 #: src/pages/[lang]/donate.astro:19
@@ -1039,70 +1212,70 @@ msgid ""
 "connect, learn, and grow together."
 msgstr ""
 
-#: src/pages/[lang]/jobs.astro:49
+#: src/pages/[lang]/jobs.astro:159
 msgid "Find opportunities from our sponsors"
 msgstr ""
 
-#: src/pages/[lang]/jobs.astro:50
+#: src/pages/[lang]/jobs.astro:160
 msgid "Job Board"
 msgstr ""
 
-#: src/pages/[lang]/jobs.astro:56
+#: src/pages/[lang]/jobs.astro:166
 msgid "-- No Jobs were added so far --"
 msgstr ""
 
-#: src/pages/[lang]/schedule.astro:21
+#: src/pages/[lang]/schedule.astro:22
 msgid "What Awaits You at PyLadiesCon"
 msgstr ""
 
-#: src/pages/[lang]/schedule.astro:24
+#: src/pages/[lang]/schedule.astro:25
 msgid ""
 "This year's edition of PyLadiesCon is packed with exciting opportunities "
 "for learning and community engagement. By registering, you'll gain access "
 "to: Keynotes, Talks, Interactive Sessions & Panels, Networking, and more!"
 msgstr ""
 
-#: src/pages/[lang]/schedule.astro:47
+#: src/pages/[lang]/schedule.astro:48
 msgid "Local Time"
 msgstr ""
 
-#: src/pages/[lang]/schedule.astro:62
+#: src/pages/[lang]/schedule.astro:63
 msgid "Session Types"
 msgstr ""
 
-#: src/pages/[lang]/schedule.astro:66
+#: src/pages/[lang]/schedule.astro:67
 msgid "Keynote"
 msgstr ""
 
-#: src/pages/[lang]/schedule.astro:69
+#: src/pages/[lang]/schedule.astro:70
 msgid "Talk"
 msgstr ""
 
-#: src/pages/[lang]/schedule.astro:72
+#: src/pages/[lang]/schedule.astro:73
 msgid "Panel"
 msgstr ""
 
-#: src/pages/[lang]/schedule.astro:75
+#: src/pages/[lang]/schedule.astro:76
 msgid "Workshop"
 msgstr ""
 
-#: src/pages/[lang]/schedule.astro:78
+#: src/pages/[lang]/schedule.astro:79
 msgid "Sponsor Talk"
 msgstr ""
 
-#: src/pages/[lang]/schedule.astro:84
+#: src/pages/[lang]/schedule.astro:85
 msgid "Difficulty Levels"
 msgstr ""
 
-#: src/pages/[lang]/schedule.astro:88
+#: src/pages/[lang]/schedule.astro:89
 msgid "Beginner"
 msgstr ""
 
-#: src/pages/[lang]/schedule.astro:91
+#: src/pages/[lang]/schedule.astro:92
 msgid "Intermediate"
 msgstr ""
 
-#: src/pages/[lang]/schedule.astro:94
+#: src/pages/[lang]/schedule.astro:95
 msgid "Advanced"
 msgstr ""
 
@@ -1189,11 +1362,173 @@ msgstr ""
 msgid "Prospectus for the global PyLadies Conference."
 msgstr ""
 
-#: src/pages/[lang]/sprints.astro:41
+#: src/pages/[lang]/sponsors.astro:219
+msgid ""
+"Support PyLadies as we work to improve diversity by bringing fresh talent "
+"into the Python community and to support both seasoned and budding "
+"developers through workshops, community activities, and local advocacy."
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:220
+msgid ""
+"Your support will help PyLadies provide financial support to help more "
+"women around the world with training, mentorship, and aid to attend "
+"conferences and community events."
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:221
+msgid ""
+"To learn more and to join us as a sponsor, please contact us, and a member "
+"of our sponsorship team will get back to you soon. Please get in touch by "
+"writing to <a "
+"href=\"mailto:sponsors@pyladies.com\">sponsors@pyladies.com</a>"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:231
+msgid "Download Sponsorship Prospectus"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:241
+msgid "Custom Sponsorship"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:242
+msgid "Most requested"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:245
+msgid ""
+"We are also happy to customize a sponsorship package to give you the "
+"freedom to choose what you think works best in order to meet your event "
+"participation goals."
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:248
+msgid "Contact us"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:258
+msgid "Other Sponsorship Options"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:262
+msgid "PyLadies Chapter Sponsor"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:263
+msgid "$600 | Unlimited"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:265
+msgid ""
+"Every year we have special short videos featuring different PyLadies "
+"Chapters around the world. The PyLadies Chapter Sponsor get to have the "
+"exclusive branding visibility on these videos during the intro and outro "
+"videocard. These videos will also remain on our official Youtube channel "
+"which means you will enjoy an evergreen branding visibility."
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:272
+#: src/pages/[lang]/sponsors.astro:301
+msgid "Prominent placement of logo and link on the website (all year round)"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:277
+#: src/pages/[lang]/sponsors.astro:306
+msgid "Social media mentions"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:282
+msgid "Logo visibility on opening and closing of every PyLadies Chapter"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:287
+#: src/pages/[lang]/sponsors.astro:316
+msgid "Custom Discord Role"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:291
+msgid "PyLadies Discussion Sponsor"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:292
+msgid "$600 | 6 slots"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:294
+msgid ""
+"PyLadiesCon has 6 different panel discussions each year streaming live from "
+"different regions around the world. These panels are usually one of the "
+"most popular talks."
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:311
+msgid "Logo visibility on opening and closing of every PyLadies Panel Discussions"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:327
+msgid "The Attendees"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:332
+msgid ""
+"The attendees of last year's conference represented companies and "
+"organizations from all sectors, and held the types of position on the right "
+"table."
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:334
+msgid "Quick stats"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:336
+msgid "In 2023, we had more than 600 attendees,"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:337
+msgid "In 2024, we had 732 attendees"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:339
+msgid "Benefits of Sponsorship"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:342
+msgid ""
+"<strong>Targeted Audience</strong>: Reach out to a targeted market with "
+"those who could potentially become your employees. Find passionate "
+"Pythonistas to hire."
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:345
+msgid ""
+"<strong>Branding</strong>: Increasing your brand exposure and elevating "
+"your corporate identity within the community."
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:348
+msgid ""
+"<strong>Community Contribution</strong>: Contribute, support and sustain "
+"the underrepresented Python community."
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:358
+msgid "Current Position"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:361
+msgid "Count"
+msgstr ""
+
+#: src/pages/[lang]/sponsors.astro:364
+msgid "Percentage"
+msgstr ""
+
+#: src/pages/[lang]/sprints.astro:69
 msgid "Share, learn and contribute!"
 msgstr ""
 
-#: src/pages/[lang]/sprints.astro:44
+#: src/pages/[lang]/sprints.astro:72
 msgid ""
 "Sprints are informal coding sessions, and knowledge sharing where people "
 "gather together to work on Open-Source projects, suggest changes in "
@@ -1201,22 +1536,26 @@ msgid ""
 "and self-development while contributing to Open Source projects."
 msgstr ""
 
-#: src/pages/[lang]/sprints.astro:46
+#: src/pages/[lang]/sprints.astro:74
 msgid ""
 "We encourage maintainers to submit their projects by checking out our <a "
 "href=\"https://conference.pyladies.com/docs/speakers/sprints_guide/\" "
 "class=\"text-pinkpyladies\" target=\"_blank\">sprints guide</a>."
 msgstr ""
 
-#: src/pages/[lang]/sprints.astro:51
+#: src/pages/[lang]/sprints.astro:76
+msgid "Sprints will run on Sunday, December 7th, from 08:00 to 23:59 UTC."
+msgstr ""
+
+#: src/pages/[lang]/sprints.astro:81
 msgid "-- No sprints added yet --"
 msgstr ""
 
-#: src/pages/[lang]/sprints.astro:126
+#: src/pages/[lang]/sprints.astro:156
 msgid "Level:"
 msgstr ""
 
-#: src/pages/[lang]/sprints.astro:127
+#: src/pages/[lang]/sprints.astro:157
 msgid "Languages:"
 msgstr ""
 

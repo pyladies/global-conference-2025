@@ -63,7 +63,7 @@ export const socials = [
     </a> -->
     <ul role="list" class="flex flex-wrap justify-center gap-4 py-4 text-gray-600 dark:text-white sm:gap-8">
       <li role="listitem">
-        <a href={translatePath("/")} class="duration-300">Home</a>
+        <a href={translatePath("/")} class="duration-300">{t("Home")}</a>
       </li>
       {
         menuitems.map((item) =>
@@ -103,7 +103,7 @@ export const socials = [
       <ThemeSelector />
     </div>
     <div class="mt-4 text-center">
-      <span class="text-sm tracking-wide text-gray-500 dark:text-white">Copyright © PyLadiesCon 2025 - Present. All rights reserved</span>
+      <span class="text-sm tracking-wide text-gray-500 dark:text-white">{t("Copyright © PyLadiesCon 2025 - Present. All rights reserved")}</span>
     </div>
   </div>
 </footer>

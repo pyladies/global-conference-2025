@@ -210,24 +210,15 @@ const attendeesPositions = [
 
 ---
 
-<Layout title="Sponsors">
+<Layout title={t("Sponsors")}>
   <Container>
     <Sectionhead>
       <Fragment slot="subtitle">{t("Prospectus for the global PyLadies Conference.")}</Fragment>
-      <Fragment slot="title">Sponsors</Fragment>
+      <Fragment slot="title">{t("Sponsors")}</Fragment>
       <Fragment slot="description">
-        Support PyLadies as we work to improve diversity by bringing fresh
-        talent into the Python community and to support both seasoned and
-        budding developers through workshops, community activities, and local
-        advocacy.<br><br>
-
-        Your support will help PyLadies provide financial
-        support to help more women around the world with training, mentorship,
-        and aid to attend conferences and community events.<br><br>
-
-        To learn more and to join us as a sponsor, please contact us, and
-        a member of our sponsorship team will get back to you soon. Please get
-        in touch by writing to <a href="mailto:sponsors@pyladies.com">sponsors@pyladies.com</a>
+        <span set:html={t("Support PyLadies as we work to improve diversity by bringing fresh talent into the Python community and to support both seasoned and budding developers through workshops, community activities, and local advocacy.")} /><br><br>
+        <span set:html={t("Your support will help PyLadies provide financial support to help more women around the world with training, mentorship, and aid to attend conferences and community events.")} /><br><br>
+        <span set:html={t("To learn more and to join us as a sponsor, please contact us, and a member of our sponsorship team will get back to you soon. Please get in touch by writing to <a href=\"mailto:sponsors@pyladies.com\">sponsors@pyladies.com</a>")} />
         <span class="pl-1 text-black dark:text-white" aria-hidden="true">
           →
         </span>
@@ -237,7 +228,7 @@ const attendeesPositions = [
     <div class="rounded-md xl:-8 dark:bg-stone-950 grid md:grid-cols-1 gap-10 mx-auto max-w-xl mt-5">
       <Link class="bg-pinkpyladies text-white dark:hover:bg-black"
           href="/PyLadiesCon2025_sponsorship.pdf">
-        <Icon name="bx:chevrons-down" class="inline-icon"/> Download Sponsorship Prospectus
+        <Icon name="bx:chevrons-down" class="inline-icon"/> {t("Download Sponsorship Prospectus")}
       </Link>
     </div>
 
@@ -247,14 +238,14 @@ const attendeesPositions = [
 
     <div class="rounded-md p-5 xl:-8 ring-1 ring-gray-200 dark:bg-stone-950 dark:ring-gray-700 grid md:grid-cols-1 gap-10 mx-auto max-w-5xl mt-20">
       <div class="flex items-center justify-between gap-x-4">
-        <h3 id="tier-enterprise" class="text-xl font-semibold leading-8 text-gray-900 dark:text-white">Custom Sponsorship</h3>
-        <span class="text-pinkpyladies flex align-center"><Icon name="bx:heart" class="inline-icon mt-1"/>Most requested</span></h3>
+        <h3 id="tier-enterprise" class="text-xl font-semibold leading-8 text-gray-900 dark:text-white">{t("Custom Sponsorship")}</h3>
+        <span class="text-pinkpyladies flex align-center"><Icon name="bx:heart" class="inline-icon mt-1"/>{t("Most requested")}</span></h3>
       </div>
       <p class="text-black dark:text-white">
-      We are also happy to customize a sponsorship package to give you the freedomn to choose what you think works best in order to meet your event participation goals.
+      {t("We are also happy to customize a sponsorship package to give you the freedom to choose what you think works best in order to meet your event participation goals.")}
       </p>
       <Link href="mailto:sponsors@pyladies.com" aria-describedby="tier-enterprise" style="outline" class="block w-full">
-        Contact us
+        {t("Contact us")}
       </Link>
     </div>
 
@@ -264,71 +255,65 @@ const attendeesPositions = [
   <Container>
     <div class:list={["mt-8", "md:mt-16", align === "center" && "text-center"]}>
       <h2 class="text-3xl mt-4 text-slate-800 pb-10 dark:text-white">
-        Other Sponsorship Options
+        {t("Other Sponsorship Options")}
       </h2>
       <div class="grid md:grid-cols-2 gap-10 mx-auto dark:text-white">
         <div class="rounded-md p-8 xl:p-10 ring-1 ring-gray-200 dark:bg-stone-950 dark:ring-gray-700 text-start">
-          <h3 class="text-2xl font-bold py-2">PyLadies Chapter Sponsor</h3>
-          <h4 class="text-xl">$600 | Unlimited</h4>
+          <h3 class="text-2xl font-bold py-2">{t("PyLadies Chapter Sponsor")}</h3>
+          <h4 class="text-xl">{t("$600 | Unlimited")}</h4>
           <p class="py-5">
-            Every year we have special short videos featuring different
-            PyLadies Chapters around the world. The PyLadies Chapter Sponsor get to have
-            the exclusive branding visibility on these videos during the intro and outro
-            videcard. These videos will also remain on our official Youtube channel which
-            means you will enjoy an evergreen branding visibility.
+            {t("Every year we have special short videos featuring different PyLadies Chapters around the world. The PyLadies Chapter Sponsor get to have the exclusive branding visibility on these videos during the intro and outro videocard. These videos will also remain on our official Youtube channel which means you will enjoy an evergreen branding visibility.")}
           </p>
           <ul class="list-inside pt-5">
             <li class="flex gap-x-3">
               <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
               </svg>
-              Prominent placement of logo and link on the website (all year round)</li>
+              {t("Prominent placement of logo and link on the website (all year round)")}</li>
             <li class="flex gap-x-3">
               <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
               </svg>
-              Social media mentions</li>
+              {t("Social media mentions")}</li>
             <li class="flex gap-x-3">
               <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
               </svg>
-              Logo visibility on opening and closing of every PyLadies Chapter</li>
+              {t("Logo visibility on opening and closing of every PyLadies Chapter")}</li>
             <li class="flex gap-x-3">
               <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
               </svg>
-              Custom Discord Role</li>
+              {t("Custom Discord Role")}</li>
           </ul>
         </div>
         <div class="rounded-md p-8 xl:p-10 ring-1 ring-gray-200 dark:bg-stone-950 dark:ring-gray-700 text-start">
-          <h3 class="text-2xl font-bold py-2">PyLadies Discussion Sponsor</h3>
-          <h4 class="text-xl">$600 | 6 slots</h4>
+          <h3 class="text-2xl font-bold py-2">{t("PyLadies Discussion Sponsor")}</h3>
+          <h4 class="text-xl">{t("$600 | 6 slots")}</h4>
           <p class="py-10">
-            PyLadiesCon has 6 different panel discussion each year streaming
-            live from different regions around the world. These panels are usually one of
-            the most popular talks. Panel discussion sponsors
+            {t("PyLadiesCon has 6 different panel discussions each year streaming live from different regions around the world. These panels are usually one of the most popular talks.")}
           </p>
           <ul class="list-inside pt-5">
             <li class="flex gap-x-3">
               <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
               </svg>
-              Prominent placement of logo and link on the website (all year round)</li>
+              {t("Prominent placement of logo and link on the website (all year round)")}</li>
             <li class="flex gap-x-3">
               <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
               </svg>
-              Social media mentions</li>
+              {t("Social media mentions")}</li>
             <li class="flex gap-x-3">
               <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
               </svg>
-              Logo visibility on opening and closing of every PyLadies Panel Discussions</li>
+              {t("Logo visibility on opening and closing of every PyLadies Panel Discussions")}</li>
             <li class="flex gap-x-3">
               <svg class="h-6 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
               </svg>
-              Custom Discord Role</li>
+              {t("Custom Discord Role")}</li>
           </ul>
         </div>
       </div>
@@ -339,34 +324,28 @@ const attendeesPositions = [
   <Container>
     <div class:list={["mt-8", "md:mt-16", align === "center" && "text-center"]}>
       <h2 class="text-3xl mt-4 text-slate-800 dark:text-white">
-        The Attendees
+        {t("The Attendees")}
       </h2>
       <div class="grid md:grid-cols-2 gap-10 mx-auto dark:text-white">
         <div>
           <p class="text-lg mt-4 text-white text-start px-10 pt-10">
-            The attendees of last year’s conference represented companies and
-            organizations from all sectors, and held the types of
-            position on the right table.
+            {t("The attendees of last year's conference represented companies and organizations from all sectors, and held the types of position on the right table.")}
           </p>
-          <h2 class="text-start pl-10 text-lg pt-10">Quick stats</h2>
+          <h2 class="text-start pl-10 text-lg pt-10">{t("Quick stats")}</h2>
           <ul class="list-disc list-inside pl-10 pt-5 text-start">
-            <li>In 2023, we had more than 600 attendees,</li>
-            <li>In 2024, we had 732 attendees</li>
+            <li>{t("In 2023, we had more than 600 attendees,")}</li>
+            <li>{t("In 2024, we had 732 attendees")}</li>
           </ul>
-          <h2 class="text-start pl-10 text-lg pt-10">Benefits of Sponsorship</h2>
+          <h2 class="text-start pl-10 text-lg pt-10">{t("Benefits of Sponsorship")}</h2>
           <ul class="list-disc list-inside pl-10 pt-5 text-start">
             <li>
-              <strong>Targeted Audience</strong>: Reach out to a targeted
-              market with those who could potentially become your employees. Find
-              passionate Pythonistas to hire.
+              <span set:html={t("<strong>Targeted Audience</strong>: Reach out to a targeted market with those who could potentially become your employees. Find passionate Pythonistas to hire.")} />
             </li>
             <li>
-              <strong>Branding</strong>: Increasing your brand exposure and
-              elevating your corporate identity within the community.
+              <span set:html={t("<strong>Branding</strong>: Increasing your brand exposure and elevating your corporate identity within the community.")} />
             </li>
             <li>
-              <strong>Community Contribution</strong>: Contribute, support and
-              sustain the underrepresented Python community.
+              <span set:html={t("<strong>Community Contribution</strong>: Contribute, support and sustain the underrepresented Python community.")} />
             </li>
           </ul>
         </div>
@@ -376,13 +355,13 @@ const attendeesPositions = [
               <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-300 dark:text-gray-800">
                   <tr>
                       <th scope="col" class="px-6 py-3">
-                          Current Position
+                          {t("Current Position")}
                       </th>
                       <th scope="col" class="px-6 py-3">
-                          Count
+                          {t("Count")}
                       </th>
                       <th scope="col" class="px-6 py-3">
-                          Percentage
+                          {t("Percentage")}
                       </th>
                   </tr>
               </thead>
