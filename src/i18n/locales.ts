@@ -6,6 +6,7 @@ export const languages = {
   pt: "Português",
   el: "Ελληνικά",
   pl: "Polski",
+  cs: "Česky",
 };
 
 export const defaultLang = "en";
