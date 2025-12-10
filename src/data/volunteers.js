@@ -131,7 +131,7 @@ const volunteers = [
         name: "Ellie Dela Cruz",
         image: "/images/volunteers/ellie_dela_cruz.png",
         links: {
-          git: "https://github.com/elliedel",
+            git: "https://github.com/elliedel",
             linkedin: "https://www.linkedin.com/in/elliedel/",
         },
         teams: ["program"]
@@ -217,7 +217,7 @@ const volunteers = [
     {
         name: "Raquel Dou",
         image: "https://avatars.githubusercontent.com/u/6319134",
-        links : {
+        links: {
             git: "https://github.com/hypha",
         },
         teams: ["infrastructure"]
@@ -225,14 +225,14 @@ const volunteers = [
     {
         name: "Debbie",
         image: "/images/volunteers/debbie.jpg",
-        links : {
+        links: {
             linkedin: "https://www.linkedin.com/in/debbie-chou",
         },
         teams: ["code of conduct"]
     },
     {
         name: "Rahmat Akintola",
-        image: "/images/volunteers/rahmat.png",
+        image: "/images/volunteers/rahmat_akintola.jpg",
         links: {
             git: "https://github.com/mihrab34",
             mastodon: "https://mastodon.social/@rahmatakintola",
@@ -240,7 +240,7 @@ const volunteers = [
         },
         teams: ["program"]
     },
-  ];
+];
 
 //adds the default socials
 function applyDefaultLinks(grouped) {
