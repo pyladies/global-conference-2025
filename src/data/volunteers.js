@@ -230,6 +230,16 @@ const volunteers = [
         },
         teams: ["code of conduct"]
     },
+    {
+        name: "Rahmat Akintola",
+        image: "/images/volunteers/rahmat.png",
+        links: {
+            git: "https://github.com/mihrab34",
+            mastodon: "https://mastodon.social/@rahmatakintola",
+            linkedin: "https://www.linkedin.com/in/akintolaramota/"
+        },
+        teams: ["program"]
+    },
   ];
 
 //adds the default socials
