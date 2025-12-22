@@ -240,6 +240,15 @@ const volunteers = [
         },
         teams: ["program"]
     },
+    {
+        name: "Raffaella Suardini",
+        image: "/images/volunteers/raffaella_suardini.jpeg",
+        links: {
+            mastodon: "https://mastodon.social/@raffaellasuardini",
+            linkedin: "https://www.linkedin.com/in/raffaella-s/"
+        },
+        teams: ["program"]
+    },
 ];
 
 //adds the default socials
