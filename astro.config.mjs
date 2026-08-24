@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
+import { unified } from "@astrojs/markdown-remark";
+import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { autolinkConfig } from "./plugins/rehype-autolink-config";
@@ -12,22 +13,24 @@ import { getSupportedLocales, defaultLang } from "./src/i18n/locales";
 export default defineConfig({
 	site: "https://2025.conference.pyladies.com",
 	vite: {
+		plugins: [tailwindcss()],
 		define: {
 			__DATE__: `'${new Date().toISOString()}'`,
 		},
 	},
 	integrations: [
-		tailwind(),
 		sitemap(),
 		alpinejs(),
 		icon(),
 	],
 	markdown: {
-		rehypePlugins: [
-			rehypeSlug,
-			// This adds links to headings
-			[rehypeAutolinkHeadings, autolinkConfig],
-		],
+		processor: unified({
+			rehypePlugins: [
+				rehypeSlug,
+				// This adds links to headings
+				[rehypeAutolinkHeadings, autolinkConfig],
+			],
+		}),
 	},
 	i18n: {
 		locales: getSupportedLocales(),

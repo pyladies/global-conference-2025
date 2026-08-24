@@ -2,12 +2,29 @@
 const globeMaxSize = 500;
 ---
 
-<canvas id="cobe" width={globeMaxSize} height={globeMaxSize} class="dark:opacity-50"></canvas>
+<!--
+  `mx-auto` centers the canvas itself rather than relying on the parent's
+  flex centering: cobe v2 inserts its own `width:100%;height:100%` wrapper
+  <div> around the canvas (for its CSS-anchor marker feature), which fills
+  the whole flex container and makes the parent's `justify-center` a no-op.
+-->
+<canvas id="cobe" width={globeMaxSize} height={globeMaxSize} class="mx-auto dark:opacity-50" data-max-size={globeMaxSize}></canvas>
 
-<script define:vars={{ globeMaxSize }} type="module">
-	import createGlobe from "https://cdn.skypack.dev/cobe";
+<script>
+	// No attributes on this tag (not even `type="module"`) — Astro only
+	// bundles/hoists a <script> (resolving npm imports like `cobe` below)
+	// when the tag itself has none; any attribute makes it fall back to
+	// `is:inline`, which serves the tag verbatim and can't resolve bare
+	// module specifiers in the browser.
+	import createGlobe from "cobe";
 
-	let canvas = document.getElementById("cobe");
+	const canvas = document.getElementById("cobe") as HTMLCanvasElement | null;
+	if (!canvas) throw new Error("cobe.astro: #cobe canvas not found");
+
+	// Read via a data attribute (rather than `define:vars`) so this stays a
+	// normal module script: `define:vars` forces `is:inline`, which would
+	// stop Astro/Vite from bundling the `cobe` npm import below.
+	let globeMaxSize = Number(canvas.dataset.maxSize);
 	let globeSize = computeGlobeSize(globeMaxSize);
 
 	canvas.width = globeSize;
@@ -15,7 +32,7 @@ const globeMaxSize = 500;
 
 	let phi = 0;
 
-	function computeGlobeSize(globeMaxSize) {
+	function computeGlobeSize(globeMaxSize: number) {
 		let size = globeMaxSize;
 		const { innerWidth: width } = window;
 		if (width < globeMaxSize) {
@@ -24,7 +41,7 @@ const globeMaxSize = 500;
 		return size;
 	}
 
-	function addGlobe(canvas) {
+	function addGlobe(canvas: HTMLCanvasElement) {
 		const globe = createGlobe(canvas, {
 			width: globeSize,
 			height: globeSize,
@@ -40,6 +57,11 @@ const globeMaxSize = 500;
 			glowColor: [1, 1, 1],
 			offset: [0, 0],
 			opacity: 0.9,
+			// Kept at 1 (not `window.devicePixelRatio`): this component only ever
+			// sets the canvas's `width`/`height` attributes, with no separate CSS
+			// display size, so a higher ratio here would inflate the canvas's
+			// on-page box past its centered flex container instead of sharpening it.
+			devicePixelRatio: 1,
 			markers: [
 				{ location: [52.37, 4.89], size: 0.05 }, // Amsterdam, the Netherlands
 				{ location: [39.9167, 32.8333], size: 0.05 }, // Ankara, Turkey
@@ -172,18 +194,26 @@ const globeMaxSize = 500;
 				{ location: [-17.6394, -71.3376], size: 0.05 }, // Ilo, PERU
 				{ location: [8.54, 80.78], size: 0.05 }, // Panama
 			],
-			onRender: (state) => {
-				// Called on every animation frame.
-				// `state` will be an empty object, return updated params.
-				state.phi = phi;
-				phi += 0.005;
-			},
 		});
 
 		return globe;
 	}
 
-	addGlobe(canvas);
+	const globe = addGlobe(canvas);
+
+	// cobe v2 dropped the old `onRender` auto-rotation callback in favor of a
+	// manual `.update()` API, so we drive the rotation ourselves.
+	let rafId = 0;
+	function renderLoop(): void {
+		phi += 0.005;
+		globe.update({ phi });
+		rafId = requestAnimationFrame(renderLoop);
+	}
+	rafId = requestAnimationFrame(renderLoop);
+
+	// Stop the loop if we navigate away via Astro's client-side view transitions,
+	// since the canvas (and this script instance) won't be reused.
+	document.addEventListener("astro:before-swap", () => cancelAnimationFrame(rafId), { once: true });
 
 	// TODO: Update the globe dimensions when the window is resized
 	//   window.addEventListener("resize", () => {

@@ -34,7 +34,7 @@ const speakers = Object.entries(speakerData);
                     <a href=`/speaker/${value.slug}` class="p-5 hover:bg-gray-100 hover:dark:bg-gray-900">
                         <div class="grid grid-columns-2 place-items-center">
                             <img class="size-64 object-cover rounded-2xl" src={value.avatar || "/logo.svg" } />
-                            <h1 class="mt-2 text-lg font-bold">{value.name}</h2>
+                            <h1 class="mt-2 text-lg font-bold">{value.name}</h1>
                             <div class="h-20">
                             <p class="mt-2 text-md text-gray-600 dark:text-gray-300 text-center">{value.occupation}</p>
                             <p class="mt-2 text-sm text-blue-800 dark:text-blue-300 text-center">{value.affiliation}</p>
