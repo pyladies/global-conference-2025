@@ -40,7 +40,7 @@ export async function getStaticPaths() {
         .map(([key, value]) => (
           <div class="flex flex-col md:flex-row items-center md:items-start gap-10 my-12">
             
-            <div class="flex-shrink-0 w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg">
+            <div class="shrink-0 w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg">
               <img
                 class="w-full h-full object-cover"
                 src={value.avatar || "/logo.svg"}
@@ -60,7 +60,7 @@ export async function getStaticPaths() {
           </div>
           
             <div class="mt-16">
-              <h2 class="text-3xl font-bold text-black dark:text-white">{t("More About The Speaker")}</h3>
+              <h2 class="text-3xl font-bold text-black dark:text-white">{t("More About The Speaker")}</h2>
               <div class="max-w-md">
                 <div class="grid grid-cols-1 md:grid-cols-2 mt-6 ">
                 { value.homepage &&

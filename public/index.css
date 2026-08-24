@@ -7,10 +7,6 @@
   --pyladies-lightyellow: #ffed8c;
 }
 
-@theme {
-  --color-pyladies-pink: var(--pyladies-pink);
-}
-
 .bg-pink-777 {
   bakground-color: var(--pyladies-pink);
 }

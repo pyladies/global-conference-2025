@@ -1,8 +1,9 @@
 ---
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import "@fontsource-variable/inter";
+import "../styles/global.css";
 import { SEO } from "astro-seo";
 import { defaultLang } from "i18n/locales";
 import { getLangFromUrl } from "i18n/utils";
@@ -36,7 +37,7 @@ const makeTitle = title
 		<meta name="theme-color" content="#ffffff" />
 		<!--<HeadHrefLangs />-->
 
-		<ViewTransitions />
+		<ClientRouter />
 
 		<!-- Global CSS -->
 		<link rel="stylesheet" href="/index.css" />
